@@ -16,15 +16,15 @@ const DateFilter = ({ startDate, endDate, onStartDateChange, onEndDateChange }) 
 
   return (
     <div>
-      <h3 className="text-xs sm:text-sm font-medium mb-2" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>期間</h3>
+      <h3 className="text-[10px] sm:text-xs md:text-sm font-medium mb-2" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>期間</h3>
 
       {/* プリセット */}
-      <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
+      <div className="flex flex-wrap gap-1 sm:gap-1.5 md:gap-2 mb-3">
         {DATE_FILTER_PRESETS.map(preset => (
           <button
             key={preset.label}
             onClick={() => handlePreset(preset.days)}
-            className="px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-primary-800/30 rounded-lg hover:bg-primary-700/40 transition-all border border-primary-700/60 shadow-sm"
+            className="px-1.5 sm:px-2 md:px-3 py-0.5 sm:py-1 md:py-1.5 text-[10px] sm:text-xs md:text-sm bg-primary-800/30 rounded-lg hover:bg-primary-700/40 transition-all border border-primary-700/60 shadow-sm"
             style={{ color: 'rgba(255, 255, 255, 0.9)' }}
           >
             {preset.label}
@@ -33,7 +33,7 @@ const DateFilter = ({ startDate, endDate, onStartDateChange, onEndDateChange }) 
         {(startDate || endDate) && (
           <button
             onClick={handleClear}
-            className="px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm transition-colors font-semibold hover:underline"
+            className="px-1.5 sm:px-2 md:px-3 py-0.5 sm:py-1 md:py-1.5 text-[10px] sm:text-xs md:text-sm transition-colors font-semibold hover:underline"
             style={{ color: 'rgba(255, 255, 255, 0.9)' }}
           >
             クリア
@@ -44,21 +44,21 @@ const DateFilter = ({ startDate, endDate, onStartDateChange, onEndDateChange }) 
       {/* 日付入力 */}
       <div className="grid grid-cols-2 gap-2 sm:gap-3">
         <div>
-          <label className="block text-xs mb-1" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>開始日</label>
+          <label className="block text-[10px] sm:text-xs mb-1" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>開始日</label>
           <input
             type="date"
             value={startDate ? startDate.toISOString().split('T')[0] : ''}
             onChange={(e) => onStartDateChange(e.target.value ? new Date(e.target.value) : null)}
-            className="input-field text-xs sm:text-sm"
+            className="input-field text-[10px] sm:text-xs md:text-sm"
           />
         </div>
         <div>
-          <label className="block text-xs mb-1" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>終了日</label>
+          <label className="block text-[10px] sm:text-xs mb-1" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>終了日</label>
           <input
             type="date"
             value={endDate ? endDate.toISOString().split('T')[0] : ''}
             onChange={(e) => onEndDateChange(e.target.value ? new Date(e.target.value) : null)}
-            className="input-field text-xs sm:text-sm"
+            className="input-field text-[10px] sm:text-xs md:text-sm"
           />
         </div>
       </div>
