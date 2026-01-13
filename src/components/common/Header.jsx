@@ -32,9 +32,9 @@ const Header = () => {
               <img
                 src={`${import.meta.env.BASE_URL}${import.meta.env.BASE_URL.endsWith('/') ? '' : '/'}logo-256.png`}
                 alt="arXiv Sound Papers Logo"
-                className="h-16 w-16 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+                className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
               />
-              <span className="text-xl font-bold bg-gradient-to-r from-primary-200 via-primary-100 to-primary-200 bg-clip-text text-transparent tracking-tight">
+              <span className="text-base sm:text-lg md:text-xl font-bold bg-gradient-to-r from-primary-200 via-primary-100 to-primary-200 bg-clip-text text-transparent tracking-tight">
                 arXiv Sound Papers
               </span>
             </Link>
@@ -43,7 +43,7 @@ const Header = () => {
             <nav className="hidden md:flex space-x-4">
               <Link
                 to="/"
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-all ${
+                className={`px-2 sm:px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition-all ${
                   isActive('/')
                     ? 'bg-primary-600/70 shadow-sm'
                     : 'hover:bg-primary-800/30'
@@ -56,7 +56,7 @@ const Header = () => {
                 <>
                   <Link
                     to="/bookmarks"
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-all ${
+                    className={`px-2 sm:px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition-all ${
                       isActive('/bookmarks')
                         ? 'bg-primary-600/70 shadow-sm'
                         : 'hover:bg-primary-800/30'
@@ -67,7 +67,7 @@ const Header = () => {
                   </Link>
                   <Link
                     to="/tags"
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-all ${
+                    className={`px-2 sm:px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition-all ${
                       isActive('/tags')
                         ? 'bg-primary-600/70 shadow-sm'
                         : 'hover:bg-primary-800/30'
@@ -87,12 +87,12 @@ const Header = () => {
             <button
               onClick={handleRefresh}
               disabled={isRefreshing || loading}
-              className="px-3 py-2 rounded-lg text-sm font-medium transition-all bg-primary-700/60 hover:bg-primary-600/60 disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+              className="px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-all bg-primary-700/60 hover:bg-primary-600/60 disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-1 sm:space-x-2"
               style={{ color: 'rgba(255, 255, 255, 0.9)' }}
               title="最新の論文データに更新"
             >
               <svg
-                className={`w-4 h-4 ${isRefreshing ? 'animate-spin' : ''}`}
+                className={`w-3 h-3 sm:w-4 sm:h-4 ${isRefreshing ? 'animate-spin' : ''}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -115,16 +115,16 @@ const Header = () => {
                     <img
                       src={user.photoURL}
                       alt={user.displayName}
-                      className="w-8 h-8 rounded-full"
+                      className="w-6 h-6 sm:w-8 sm:h-8 rounded-full"
                     />
                   )}
-                  <span className="text-sm hidden sm:block" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+                  <span className="text-xs sm:text-sm hidden sm:block" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
                     {user.displayName}
                   </span>
                 </div>
                 <button
                   onClick={logout}
-                  className="btn-secondary"
+                  className="btn-secondary text-xs sm:text-sm px-2 sm:px-3 py-1.5 sm:py-2"
                 >
                   ログアウト
                 </button>
@@ -132,7 +132,7 @@ const Header = () => {
             ) : (
               <button
                 onClick={login}
-                className="btn-primary"
+                className="btn-primary text-xs sm:text-sm px-2 sm:px-3 py-1.5 sm:py-2"
               >
                 Googleでログイン
               </button>
