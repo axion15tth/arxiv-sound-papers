@@ -15,7 +15,9 @@ export const PapersProvider = ({ children }) => {
     try {
       // キャッシュを回避するためにタイムスタンプを追加
       const basePath = import.meta.env.BASE_URL || '/';
-      const dataPath = `${basePath}data/papers.json`.replace('//', '/');
+      // 末尾スラッシュを確保してパスを結合
+      const normalizedBasePath = basePath.endsWith('/') ? basePath : `${basePath}/`;
+      const dataPath = `${normalizedBasePath}data/papers.json`;
       const timestamp = new Date().getTime();
 
       const response = await fetch(`${dataPath}?t=${timestamp}`);

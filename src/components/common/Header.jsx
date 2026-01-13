@@ -30,7 +30,7 @@ const Header = () => {
           <div className="flex items-center space-x-8">
             <Link to="/" className="flex items-center space-x-3 group">
               <img
-                src={`${import.meta.env.BASE_URL}logo-256.png`}
+                src={`${import.meta.env.BASE_URL}${import.meta.env.BASE_URL.endsWith('/') ? '' : '/'}logo-256.png`}
                 alt="arXiv Sound Papers Logo"
                 className="h-16 w-16 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
               />
