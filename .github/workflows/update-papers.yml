@@ -1,0 +1,38 @@
+name: Update Papers Data
+
+on:
+  schedule:
+    # 毎日0時（UTC）= 日本時間9時に実行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: |
+          cd scripts
+          pip install -r requirements.txt
+
+      - name: Fetch and translate papers
+        env:
+          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+        run: |
+          cd scripts
+          python main.py
+
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/papers.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update papers data [skip ci]" && git push)

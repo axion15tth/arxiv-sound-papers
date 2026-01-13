@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    overscroll-behavior-y: none;
+  }
+
+  body {
+    @apply font-sans;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #3a2058;
+    color: #f5f5f5;
+  }
+
+  #root {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* スペクトログラム背景 - 線形周波数軸（下：低周波＝密、上：高周波＝疎） */
+.spectrogram-bg {
+  position: relative;
+}
+
+.spectrogram-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    /* 0-10vh: 非常に密（1.5vh間隔）- グラデーション線 */
+    linear-gradient(0deg, transparent calc(0vh - 10px), #1f1341 0vh, transparent calc(0vh + 10px)),
+    linear-gradient(0deg, transparent calc(1.5vh - 10px), #3f2666 1.5vh, transparent calc(1.5vh + 10px)),
+    linear-gradient(0deg, transparent calc(3vh - 10px), #2a1b54 3vh, transparent calc(3vh + 10px)),
+    linear-gradient(0deg, transparent calc(4.5vh - 10px), #3f2666 4.5vh, transparent calc(4.5vh + 10px)),
+    linear-gradient(0deg, transparent calc(6vh - 10px), #1f1341 6vh, transparent calc(6vh + 10px)),
+    linear-gradient(0deg, transparent calc(7.5vh - 10px), #3f2666 7.5vh, transparent calc(7.5vh + 10px)),
+    linear-gradient(0deg, transparent calc(9vh - 10px), #2a1b54 9vh, transparent calc(9vh + 10px)),
+    linear-gradient(0deg, transparent calc(10.5vh - 10px), #1f1341 10.5vh, transparent calc(10.5vh + 10px)),
+    /* 10-30vh: 密（2.5-4vh間隔）- グラデーション線 */
+    linear-gradient(0deg, transparent calc(13vh - 12px), #3f2666 13vh, transparent calc(13vh + 12px)),
+    linear-gradient(0deg, transparent calc(16vh - 12px), #4d3073 16vh, transparent calc(16vh + 12px)),
+    linear-gradient(0deg, transparent calc(19vh - 12px), #3f2666 19vh, transparent calc(19vh + 12px)),
+    linear-gradient(0deg, transparent calc(22.5vh - 12px), #2a1b54 22.5vh, transparent calc(22.5vh + 12px)),
+    linear-gradient(0deg, transparent calc(26vh - 12px), #3f2666 26vh, transparent calc(26vh + 12px)),
+    linear-gradient(0deg, transparent calc(30vh - 12px), #1f1341 30vh, transparent calc(30vh + 12px)),
+    /* 30-60vh: やや疎（8-9vh間隔）- グラデーション線 */
+    linear-gradient(0deg, transparent calc(36vh - 15px), #3f2666 36vh, transparent calc(36vh + 15px)),
+    linear-gradient(0deg, transparent calc(44vh - 15px), #5b2f7a 44vh, transparent calc(44vh + 15px)),
+    linear-gradient(0deg, transparent calc(53vh - 15px), #3f2666 53vh, transparent calc(53vh + 15px)),
+    linear-gradient(0deg, transparent calc(60vh - 15px), #1f1341 60vh, transparent calc(60vh + 15px)),
+    /* 60-100vh: 非常に疎（13-17vh間隔）- グラデーション線 */
+    linear-gradient(0deg, transparent calc(73vh - 18px), #3f2666 73vh, transparent calc(73vh + 18px)),
+    linear-gradient(0deg, transparent calc(90vh - 18px), #1f1341 90vh, transparent calc(90vh + 18px)),
+    linear-gradient(to bottom, #3a2058, #4a2868, #3a2058);
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-500 rounded-lg
+           hover:from-primary-500 hover:to-primary-400
+           transition-all duration-200 font-medium shadow-lg hover:shadow-xl
+           shadow-primary-500/30 hover:shadow-primary-400/40;
+    color: #ffffff;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-primary-700/60
+           rounded-lg hover:bg-primary-600/60
+           transition-all duration-200 font-medium backdrop-blur-md
+           border border-primary-600/60
+           shadow-sm shadow-primary-700/20 hover:shadow-md hover:shadow-primary-600/30;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .card {
+    @apply bg-primary-900/80 rounded-xl shadow-lg p-6
+           hover:shadow-2xl hover:shadow-primary-600/40
+           transition-all duration-300
+           border border-primary-800/80
+           backdrop-blur-xl
+           ring-1 ring-primary-700/50
+           relative overflow-hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(155, 79, 150, 0.5), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-primary-800/70
+           bg-primary-900/70
+           rounded-lg focus:outline-none
+           focus:ring-2 focus:ring-primary-400
+           focus:border-transparent
+           transition-all backdrop-blur-lg
+           shadow-sm shadow-primary-900/50;
+    color: #ffffff;
+  }
+
+  .input-field::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .badge {
+    @apply inline-block px-3 py-1 text-sm rounded-full font-medium;
+  }
+}
