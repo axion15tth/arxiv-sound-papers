@@ -77,6 +77,14 @@ def main():
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+    # public/dataディレクトリにもコピー（ビルド用）
+    public_data_dir = os.path.join(os.path.dirname(__file__), '..', 'public', 'data')
+    os.makedirs(public_data_dir, exist_ok=True)
+
+    public_output_path = os.path.join(public_data_dir, 'papers.json')
+    with open(public_output_path, 'w', encoding='utf-8') as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+
     print(f"✓ データを保存しました: {output_path}")
 
     # 統計情報を表示
