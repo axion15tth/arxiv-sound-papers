@@ -967,7 +967,7 @@
       "abstract": "Time Series Foundation Models (TSFMs) have emerged as a promising approach for zero-shot financial forecasting, demonstrating strong transferability and data efficiency gains. However, their adoption in financial applications is hindered by fundamental limitations in uncertainty quantification: current approaches either rely on restrictive distributional assumptions, conflate different sources of uncertainty, or lack principled calibration mechanisms. While recent TSFMs employ sophisticated techniques such as mixture models, Student's t-distributions, or conformal prediction, they fail to address the core challenge of providing theoretically-grounded uncertainty decomposition. For the very first time, we present a novel transformer-based probabilistic framework, ProbFM (probabilistic foundation model), that leverages Deep Evidential Regression (DER) to provide principled uncertainty quantification with explicit epistemic-aleatoric decomposition. Unlike existing approaches that pre-specify distributional forms or require sampling-based inference, ProbFM learns optimal uncertainty representations through higher-order evidence learning while maintaining single-pass computational efficiency. To rigorously evaluate the core DER uncertainty quantification approach independent of architectural complexity, we conduct an extensive controlled comparison study using a consistent LSTM architecture across five probabilistic methods: DER, Gaussian NLL, Student's-t NLL, Quantile Loss, and Conformal Prediction. Evaluation on cryptocurrency return forecasting demonstrates that DER maintains competitive forecasting accuracy while providing explicit epistemic-aleatoric uncertainty decomposition. This work establishes both an extensible framework for principled uncertainty quantification in foundation models and empirical evidence for DER's effectiveness in financial applications.",
       "url": "https://arxiv.org/abs/2601.10591",
       "pdfUrl": "https://arxiv.org/pdf/2601.10591.pdf",
-      "titleJa": "ProbFM: 不確実性分解を伴う確率時系列基礎モデル"
+      "titleJa": "ProbFM: 不確実性分解を伴う確率的時系列基礎モデル"
     },
     {
       "id": "2601.10587",
@@ -1034,7 +1034,7 @@
       "abstract": "In this article, we argue that understanding the collective behavior of agents based on large language models (LLMs) is an essential area of inquiry, with important implications in terms of risks and benefits, impacting us as a society at many levels. We claim that the distinctive nature of LLMs--namely, their initialization with extensive pre-trained knowledge and implicit social priors, together with their capability of adaptation through in-context learning--motivates the need for an interactionist paradigm consisting of alternative theoretical foundations, methodologies, and analytical tools, in order to systematically examine how prior knowledge and embedded values interact with social context to shape emergent phenomena in multi-agent generative AI systems. We propose and discuss four directions that we consider crucial for the development and deployment of LLM-based collectives, focusing on theory, methods, and trans-disciplinary dialogue.",
       "url": "https://arxiv.org/abs/2601.10567",
       "pdfUrl": "https://arxiv.org/pdf/2601.10567.pdf",
-      "titleJa": "生成AIの集団行動には相互作用主義のパラダイムが必要"
+      "titleJa": "生成AIの集団行動には相互作用主義パラダイムが必要"
     },
     {
       "id": "2601.10562",
@@ -1504,7 +1504,7 @@
       "abstract": "Speech Emotion Recognition (SER) systems often assume congruence between vocal emotion and lexical semantics. However, in real-world interactions, acoustic-semantic conflict is common yet overlooked, where the emotion conveyed by tone contradicts the literal meaning of spoken words. We show that state-of-the-art SER models, including ASR-based, self-supervised learning (SSL) approaches and Audio Language Models (ALMs), suffer performance degradation under such conflicts due to semantic bias or entangled acoustic-semantic representations. To address this, we propose the Fusion Acoustic-Semantic (FAS) framework, which explicitly disentangles acoustic and semantic pathways and bridges them through a lightweight, query-based attention module. To enable systematic evaluation, we introduce the Conflict in Acoustic-Semantic Emotion (CASE), the first dataset dominated by clear and interpretable acoustic-semantic conflicts in varied scenarios. Extensive experiments demonstrate that FAS consistently outperforms existing methods in both in-domain and zero-shot settings. Notably, on the CASE benchmark, conventional SER models fail dramatically, while FAS sets a new SOTA with 59.38% accuracy. Our code and datasets is available at https://github.com/24DavidHuang/FAS.",
       "url": "https://arxiv.org/abs/2601.04564",
       "pdfUrl": "https://arxiv.org/pdf/2601.04564.pdf",
-      "titleJa": "音調と言葉が一致しない場合：音響的・意味的矛盾下での堅牢な音声感情認識に向けて"
+      "titleJa": "音調と言葉が一致しないとき：音響的・意味的矛盾下におけるロバストな音声感情認識に向けて"
     },
     {
       "id": "2601.03712",
@@ -1565,6 +1565,6 @@
       "titleJa": "ハイブリッドLSTM-KANアーキテクチャを用いた不均衡なデータセットの呼吸音分類の調査"
     }
   ],
-  "lastUpdated": "2026-01-18T00:58:43.637276",
+  "lastUpdated": "2026-01-19T00:58:18.027375",
   "totalCount": 70
 }
