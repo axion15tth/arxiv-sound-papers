@@ -1,6 +1,347 @@
 {
   "papers": [
     {
+      "id": "2601.23174",
+      "arxivId": "2601.23174",
+      "title": "Beyond Fixed Frames: Dynamic Character-Aligned Speech Tokenization",
+      "authors": [
+        "Luca Della Libera",
+        "Cem Subakan",
+        "Mirco Ravanelli"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.SD"
+      ],
+      "abstract": "Neural audio codecs are at the core of modern conversational speech technologies, converting continuous speech into sequences of discrete tokens that can be processed by LLMs. However, existing codecs typically operate at fixed frame rates, allocating tokens uniformly in time and producing unnecessarily long sequences. In this work, we introduce DyCAST, a Dynamic Character-Aligned Speech Tokenizer that enables variable-frame-rate tokenization through soft character-level alignment and explicit duration modeling. DyCAST learns to associate tokens with character-level linguistic units during training and supports alignment-free inference with direct control over token durations at decoding time. To improve speech resynthesis quality at low frame rates, we further introduce a retrieval-augmented decoding mechanism that enhances reconstruction fidelity without increasing bitrate. Experiments show that DyCAST achieves competitive speech resynthesis quality and downstream performance while using significantly fewer tokens than fixed-frame-rate codecs.",
+      "url": "https://arxiv.org/abs/2601.23174",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23174.pdf",
+      "titleJa": "固定フレームを超えて: 動的な文字揃え音声トークン化"
+    },
+    {
+      "id": "2601.23161",
+      "arxivId": "2601.23161",
+      "title": "DIFFA-2: A Practical Diffusion Large Language Model for General Audio Understanding",
+      "authors": [
+        "Jiaming Zhou",
+        "Xuxin Cheng",
+        "Shiwan Zhao",
+        "Yuhang Jia",
+        "Cao Liu",
+        "Ke Zeng",
+        "Xunliang Cai",
+        "Yong Qin"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.SD",
+        "cs.CL"
+      ],
+      "abstract": "Autoregressive (AR) large audio language models (LALMs) such as Qwen-2.5-Omni have achieved strong performance on audio understanding and interaction, but scaling them remains costly in data and computation, and strictly sequential decoding limits inference efficiency. Diffusion large language models (dLLMs) have recently been shown to make effective use of limited training data, and prior work on DIFFA indicates that replacing an AR backbone with a diffusion counterpart can substantially improve audio understanding under matched settings, albeit at a proof-of-concept scale without large-scale instruction tuning, preference alignment, or practical decoding schemes. We introduce DIFFA-2, a practical diffusion-based LALM for general audio understanding. DIFFA-2 upgrades the speech encoder, employs dual semantic and acoustic adapters, and is trained with a four-stage curriculum that combines semantic and acoustic alignment, large-scale supervised fine-tuning, and variance-reduced preference optimization, using only fully open-source corpora. Experiments on MMSU, MMAU, and MMAR show that DIFFA-2 consistently improves over DIFFA and is competitive to strong AR LALMs under practical training budgets, supporting diffusion-based modeling is a viable backbone for large-scale audio understanding. Our code is available at https://github.com/NKU-HLT/DIFFA.git.",
+      "url": "https://arxiv.org/abs/2601.23161",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23161.pdf",
+      "titleJa": "DIFFA-2: 一般的な音声理解のための実用的な拡散大規模言語モデル"
+    },
+    {
+      "id": "2601.23149",
+      "arxivId": "2601.23149",
+      "title": "Hearing is Believing? Evaluating and Analyzing Audio Language Model Sycophancy with SYAUDIO",
+      "authors": [
+        "Junchi Yao",
+        "Lokranjan Lakshmikanthan",
+        "Annie Zhao",
+        "Danielle Zhao",
+        "Shu Yang",
+        "Zikang Ding",
+        "Di Wang",
+        "Lijie Hu"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "Audio Language Models (ALMs) have recently shown strong capabilities in unified reasoning over speech, sound, and natural language; yet they inherit behavioral issues observed in Large Language Models, including sycophancy--the tendency to agree with user assertions even when they contradict objective evidence. While sycophancy has been extensively studied in text and vision-language models, its manifestation in audio-conditioned reasoning remains largely unexplored, despite the need for ALMs to rely on auditory cues such as acoustic events, speaker characteristics, and speech rate. To address this gap, we introduce SYAUDIO, the first benchmark dedicated to evaluating sycophancy in ALMs, consisting of 4,319 audio questions spanning Audio Perception, Audio Reasoning, Audio Math, and Audio Ethics. Built upon established audio benchmarks and augmented with TTS-generated arithmetic and moral reasoning tasks, SYAUDIO enables systematic evaluation across multiple domains and sycophancy types with carefully verified data quality. Furthermore, we analyze audio-specific sycophancy under realistic conditions involving noise and rate, and demonstrate that supervised fine-tuning with chain-of-thought data is an effective mitigation strategy for reducing sycophantic behavior in ALMs.",
+      "url": "https://arxiv.org/abs/2601.23149",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23149.pdf",
+      "titleJa": "聞くことは信じること？SYAUDIOによる音声言語モデルの追従性の評価と分析"
+    },
+    {
+      "id": "2601.23066",
+      "arxivId": "2601.23066",
+      "title": "Towards Explicit Acoustic Evidence Perception in Audio LLMs for Speech Deepfake Detection",
+      "authors": [
+        "Xiaoxuan Guo",
+        "Yuankun Xie",
+        "Haonan Cheng",
+        "Jiayi Zhou",
+        "Jian Liu",
+        "Hengyan Huang",
+        "Long Ye",
+        "Qin Zhang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "Speech deepfake detection (SDD) focuses on identifying whether a given speech signal is genuine or has been synthetically generated. Existing audio large language model (LLM)-based methods excel in content understanding; however, their predictions are often biased toward semantically correlated cues, which results in fine-grained acoustic artifacts being overlooked during the decisionmaking process. Consequently, fake speech with natural semantics can bypass detectors despite harboring subtle acoustic anomalies; this suggests that the challenge stems not from the absence of acoustic data, but from its inadequate accessibility when semantic-dominant reasoning prevails. To address this issue, we investigate SDD within the audio LLM paradigm and introduce SDD with Auditory Perception-enhanced Audio Large Language Model (SDD-APALLM), an acoustically enhanced framework designed to explicitly expose fine-grained time-frequency evidence as accessible acoustic cues. By combining raw audio with structured spectrograms, the proposed framework empowers audio LLMs to more effectively capture subtle acoustic inconsistencies without compromising their semantic understanding. Experimental results indicate consistent gains in detection accuracy and robustness, especially in cases where semantic cues are misleading. Further analysis reveals that these improvements stem from a coordinated utilization of semantic and acoustic information, as opposed to simple modality aggregation.",
+      "url": "https://arxiv.org/abs/2601.23066",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23066.pdf",
+      "titleJa": "音声ディープフェイク検出のためのオーディオLLMにおける明示的な音響証拠認識に向けて"
+    },
+    {
+      "id": "2601.22889",
+      "arxivId": "2601.22889",
+      "title": "DiffuSpeech: Silent Thought, Spoken Answer via Unified Speech-Text Diffusion",
+      "authors": [
+        "Yuxuan Lou",
+        "Ziming Wu",
+        "Yaochen Wang",
+        "Yong Liu",
+        "Yingxuan Ren",
+        "Fuming Lai",
+        "Shaobing Lian",
+        "Jie Tang",
+        "Yang You"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "abstract": "Current speech language models generate responses directly without explicit reasoning, leading to errors that cannot be corrected once audio is produced. We introduce \\textbf{``Silent Thought, Spoken Answer''} -- a paradigm where speech LLMs generate internal text reasoning alongside spoken responses, with thinking traces informing speech quality. To realize this, we present \\method{}, the first diffusion-based speech-text language model supporting both understanding and generation, unifying discrete text and tokenized speech under a single masked diffusion framework. Unlike autoregressive approaches, \\method{} jointly generates reasoning traces and speech tokens through iterative denoising, with modality-specific masking schedules. We also construct \\dataset{}, the first speech QA dataset with paired text reasoning traces, containing 26K samples totaling 319 hours. Experiments show \\method{} achieves state-of-the-art speech-to-speech QA accuracy, outperforming the best baseline by up to 9 points, while attaining the best TTS quality among generative models (6.2\\% WER) and preserving language understanding (66.2\\% MMLU). Ablations confirm that both the diffusion architecture and thinking traces contribute to these gains.",
+      "url": "https://arxiv.org/abs/2601.22889",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22889.pdf",
+      "titleJa": "DiffuSpeech: 音声テキスト拡散技術による沈黙の思考と音声回答"
+    },
+    {
+      "id": "2601.22873",
+      "arxivId": "2601.22873",
+      "title": "EmoShift: Lightweight Activation Steering for Enhanced Emotion-Aware Speech Synthesis",
+      "authors": [
+        "Li Zhou",
+        "Hao Jiang",
+        "Junjie Li",
+        "Tianrui Wang",
+        "Haizhou Li"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "abstract": "Achieving precise and controllable emotional expression is crucial for producing natural and context-appropriate speech in text-to-speech (TTS) synthesis. However, many emotion-aware TTS systems, including large language model (LLM)-based designs, rely on scaling fixed emotion embeddings or external guidance, limiting their ability to model emotion-specific latent characteristics. To address this gap, we present EmoShift, a lightweight activation-steering framework incorporating a EmoSteer layer, which learns a steering vector for each target emotion in the output embedding space to capture its latent offset and maintain stable, appropriate expression across utterances and categories. With only 10M trainable parameters,less than 1/30 of full fine-tuning, EmoShift outperforms zero-shot and fully fine-tuned baselines in objective and subjective evaluations, enhancing emotional expressiveness while preserving naturalness and speaker similarity. Further analysis confirms the proposed EmoSteer layer's effectiveness and reveals its potential for controllable emotional intensity in speech synthesis.",
+      "url": "https://arxiv.org/abs/2601.22873",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22873.pdf",
+      "titleJa": "EmoShift: 感情認識音声合成を強化する軽量アクティベーションステアリング"
+    },
+    {
+      "id": "2601.22792",
+      "arxivId": "2601.22792",
+      "title": "CALM: Joint Contextual Acoustic-Linguistic Modeling for Personalization of Multi-Speaker ASR",
+      "authors": [
+        "Muhammad Shakeel",
+        "Yosuke Fukumoto",
+        "Chikara Maeda",
+        "Chyi-Jiunn Lin",
+        "Shinji Watanabe"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD"
+      ],
+      "abstract": "We present CALM, a joint Contextual Acoustic-Linguistic Modeling framework for multi-speaker automatic speech recognition (ASR). In personalized AI scenarios, the joint availability of acoustic and linguistic cues naturally motivates the integration of target-speaker conditioning with contextual biasing in overlapping conversations. CALM implements this integration in an end-to-end framework through speaker embedding-driven target-speaker extraction and dynamic vocabulary-based contextual biasing. We evaluate CALM on simulated English (LibriSpeechMix) and Japanese (Corpus of Spontaneous Japanese mixtures, CSJMix). On two-speaker mixtures, CALM reduces biased word error rate (B-WER) from 12.7 to 4.7 on LibriSpeech2Mix and biased character error rate (B-CER) from 16.6 to 8.4 on CSJMix2 (eval3), demonstrating the effectiveness of joint acoustic-linguistic modeling across languages. We additionally report results on the AMI corpus (IHM-mix condition) to validate performance on standardized speech mixtures.",
+      "url": "https://arxiv.org/abs/2601.22792",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22792.pdf",
+      "titleJa": "CALM: 複数話者ASRのパーソナライゼーションのためのコンテキスト音響言語モデリング"
+    },
+    {
+      "id": "2601.22783",
+      "arxivId": "2601.22783",
+      "title": "Compact Hypercube Embeddings for Fast Text-based Wildlife Observation Retrieval",
+      "authors": [
+        "Ilyass Moummad",
+        "Marius Miron",
+        "David Robinson",
+        "Kawtar Zaher",
+        "Hervé Goëau",
+        "Olivier Pietquin",
+        "Pierre Bonnet",
+        "Emmanuel Chemla",
+        "Matthieu Geist",
+        "Alexis Joly"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.IR",
+        "cs.CV",
+        "cs.LG",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "abstract": "Large-scale biodiversity monitoring platforms increasingly rely on multimodal wildlife observations. While recent foundation models enable rich semantic representations across vision, audio, and language, retrieving relevant observations from massive archives remains challenging due to the computational cost of high-dimensional similarity search. In this work, we introduce compact hypercube embeddings for fast text-based wildlife observation retrieval, a framework that enables efficient text-based search over large-scale wildlife image and audio databases using compact binary representations. Building on the cross-view code alignment hashing framework, we extend lightweight hashing beyond a single-modality setup to align natural language descriptions with visual or acoustic observations in a shared Hamming space. Our approach leverages pretrained wildlife foundation models, including BioCLIP and BioLingual, and adapts them efficiently for hashing using parameter-efficient fine-tuning. We evaluate our method on large-scale benchmarks, including iNaturalist2024 for text-to-image retrieval and iNatSounds2024 for text-to-audio retrieval, as well as multiple soundscape datasets to assess robustness under domain shift. Results show that retrieval using discrete hypercube embeddings achieves competitive, and in several cases superior, performance compared to continuous embeddings, while drastically reducing memory and search cost. Moreover, we observe that the hashing objective consistently improves the underlying encoder representations, leading to stronger retrieval and zero-shot generalization. These results demonstrate that binary, language-based retrieval enables scalable and efficient search over large wildlife archives for biodiversity monitoring systems.",
+      "url": "https://arxiv.org/abs/2601.22783",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22783.pdf",
+      "titleJa": "高速テキストベース野生生物観察検索のためのコンパクトハイパーキューブ埋め込み"
+    },
+    {
+      "id": "2601.22779",
+      "arxivId": "2601.22779",
+      "title": "Streaming Speech Recognition with Decoder-Only Large Language Models and Latency Optimization",
+      "authors": [
+        "Genshun Wan",
+        "Wenhui Zhang",
+        "Jing-Xuan Zhang",
+        "Shifu Xiong",
+        "Jianqing Gao",
+        "Zhongfu Ye"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "abstract": "Recent advances have demonstrated the potential of decoderonly large language models (LLMs) for automatic speech recognition (ASR). However, enabling streaming recognition within this framework remains a challenge. In this work, we propose a novel streaming ASR approach that integrates a read/write policy network with monotonic chunkwise attention (MoChA) to dynamically segment speech embeddings. These segments are interleaved with label sequences during training, enabling seamless integration with the LLM. During inference, the audio stream is buffered until the MoChA module triggers a read signal, at which point the buffered segment together with the previous token is fed into the LLM for the next token prediction. We also introduce a minimal-latency training objective to guide the policy network toward accurate segmentation boundaries. Furthermore, we adopt a joint training strategy in which a non-streaming LLM-ASR model and our streaming model share parameters. Experiments on the AISHELL-1 and AISHELL-2 Mandarin benchmarks demonstrate that our method consistently outperforms recent streaming ASR baselines, achieving character error rates of 5.1% and 5.5%, respectively. The latency optimization results in a 62.5% reduction in average token generation delay with negligible impact on recognition accuracy",
+      "url": "https://arxiv.org/abs/2601.22779",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22779.pdf",
+      "titleJa": "デコーダのみの大規模言語モデルとレイテンシ最適化によるストリーミング音声認識"
+    },
+    {
+      "id": "2601.22764",
+      "arxivId": "2601.22764",
+      "title": "How Far Can Pretrained LLMs Go in Symbolic Music? Controlled Comparisons of Supervised and Preference-based Adaptation",
+      "authors": [
+        "Deepak Kumar",
+        "Emmanouil Karystinaios",
+        "Gerhard Widmer",
+        "Markus Schedl"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "Music often shares notable parallels with language, motivating the use of pretrained large language models (LLMs) for symbolic music understanding and generation. Despite growing interest, the practical effectiveness of adapting instruction-tuned LLMs to symbolic music remains insufficiently characterized. We present a controlled comparative study of finetuning strategies for ABC-based generation and understanding, comparing an off-the-shelf instruction-tuned backbone to domain-adapted variants and a music-specialized LLM baseline. Across multiple symbolic music corpora and evaluation signals, we provide some insights into adaptation choices for symbolic music applications. We highlight the domain adaptation vs.~preserving prior information tradeoff as well as the distinct behaviour of metrics used to measure the domain adaptation for symbolic music.",
+      "url": "https://arxiv.org/abs/2601.22764",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22764.pdf",
+      "titleJa": "事前学習済みLLMは象徴音楽においてどこまで到達できるか？教師あり適応と選好に基づく適応の制御比較"
+    },
+    {
+      "id": "2601.22661",
+      "arxivId": "2601.22661",
+      "title": "Evaluating and Rewarding LALMs for Expressive Role-Play TTS via Mean Continuation Log-Probability",
+      "authors": [
+        "Yong Ren",
+        "Jingbei Li",
+        "Haiyang Sun",
+        "Yujie Chen",
+        "Cheng Yi",
+        "Yechang Huang",
+        "Hao Gu",
+        "Ye Bai",
+        "Xuerui Yang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "Recent advances in Large Audio Language Models (LALMs) have extended Text-to-Speech (TTS) to interactive role-play scenarios, which demand high expressiveness and strict adherence to role-play instructions. However, existing models struggle to maintain stylistic consistency with character profiles and scene descriptions across multi-turn dialogues. A critical bottleneck is the lack of objective metrics for quantifying speaking style. To bridge this gap, we propose Mean Continuation Log-Probability (MCLP) as both an evaluation metric and a reward signal, validated on LALM-based Role-Play TTS (RP-TTS) tasks. Critically, we leverage the In-Context Learning capability of pre-trained LALMs to formulate MCLP via a continuation log-probability prediction. This metric quantifies stylistic consistency by measuring the likelihood of the ground-truth speech conditioned on the generated speech. Furthermore, we employ MCLP as a reinforcement learning reward to enhance the style alignment between generated speech and Role-Play instructions. To facilitate evaluation, we construct an RP-TTS dataset with rich scene and character annotations. Experimental results demonstrate that our method significantly outperforms strong LALM baselines on both objective and subjective metrics.",
+      "url": "https://arxiv.org/abs/2601.22661",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22661.pdf",
+      "titleJa": "平均継続対数確率による表現ロールプレイTTSのLALMの評価と報酬"
+    },
+    {
+      "id": "2601.22599",
+      "arxivId": "2601.22599",
+      "title": "A Semantically Consistent Dataset for Data-Efficient Query-Based Universal Sound Separation",
+      "authors": [
+        "Kai Li",
+        "Jintao Cheng",
+        "Chang Zeng",
+        "Zijun Yan",
+        "Helin Wang",
+        "Zixiong Su",
+        "Bo Zheng",
+        "Xiaolin Hu"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.SD",
+        "cs.HC"
+      ],
+      "abstract": "Query-based universal sound separation is fundamental to intelligent auditory systems, aiming to isolate specific sources from mixtures. Despite recent advances, existing methods continue to suffer from residual interference in complex acoustic scenes. This performance limitation stems largely from a data bottleneck: in-the-wild datasets contain weak labels and severe co-occurrence of events. These flaws induce models to learn spurious correlations between background noise and target categories instead of robust acoustic features. To address this, we propose an automated pipeline that eliminates co-occurrence of events by mining high-purity single-event segments from in-the-wild datasets via a semantically consistent synthesis protocol. Utilizing this pipeline, we constructed Hive, a high-quality synthetic dataset comprising 2.4k hours of raw audio. Experimental results demonstrate that, compared with the state-of-the-art model SAM-Audio which was trained on a huge dataset $\\sim$500 times larger than Hive, certain open-source models trained on Hive achieve competitive separation accuracy and perceptual quality. Moreover, these models exhibited remarkable zero-shot generalization on out-of-distribution evaluation benchmarks. These findings highlight that prioritizing purity of supervised signals enables significant data efficiency, offering a new paradigm for training robust auditory foundation models with reduced computational costs. Code and dataset are available at https://shandaai.github.io/Hive.",
+      "url": "https://arxiv.org/abs/2601.22599",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22599.pdf",
+      "titleJa": "データ効率の高いクエリベースのユニバーサルサウンド分離のための意味的に一貫性のあるデータセット"
+    },
+    {
+      "id": "2601.22501",
+      "arxivId": "2601.22501",
+      "title": "MIRRORTALK: Forging Personalized Avatars Via Disentangled Style and Hierarchical Motion Control",
+      "authors": [
+        "Renjie Lu",
+        "Xulong Zhang",
+        "Xiaoyang Qu",
+        "Jianzong Wang",
+        "Shangfei Wang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.CV",
+        "cs.SD"
+      ],
+      "abstract": "Synthesizing personalized talking faces that uphold and highlight a speaker's unique style while maintaining lip-sync accuracy remains a significant challenge. A primary limitation of existing approaches is the intrinsic confounding of speaker-specific talking style and semantic content within facial motions, which prevents the faithful transfer of a speaker's unique persona to arbitrary speech. In this paper, we propose MirrorTalk, a generative framework based on a conditional diffusion model, combined with a Semantically-Disentangled Style Encoder (SDSE) that can distill pure style representations from a brief reference video. To effectively utilize this representation, we further introduce a hierarchical modulation strategy within the diffusion process. This mechanism guides the synthesis by dynamically balancing the contributions of audio and style features across distinct facial regions, ensuring both precise lip-sync accuracy and expressive full-face dynamics. Extensive experiments demonstrate that MirrorTalk achieves significant improvements over state-of-the-art methods in terms of lip-sync accuracy and personalization preservation.",
+      "url": "https://arxiv.org/abs/2601.22501",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22501.pdf",
+      "titleJa": "MIRRORTALK: 分離したスタイルと階層的なモーションコントロールによるパーソナライズされたアバターの作成"
+    },
+    {
+      "id": "2601.22480",
+      "arxivId": "2601.22480",
+      "title": "Rethinking Speech Representation Aggregation in Speech Enhancement: A Phonetic Mutual Information Perspective",
+      "authors": [
+        "Seungu Han",
+        "Sungho Lee",
+        "Kyogu Lee"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "abstract": "Recent speech enhancement (SE) models increasingly leverage self-supervised learning (SSL) representations for their rich semantic information. Typically, intermediate features are aggregated into a single representation via a lightweight adaptation module. However, most SSL models are not trained for noise robustness, which can lead to corrupted semantic representations. Moreover, the adaptation module is trained jointly with the SE model, potentially prioritizing acoustic details over semantic information, contradicting the original purpose. To address this issue, we first analyze the behavior of SSL models on noisy speech from an information-theoretic perspective. Specifically, we measure the mutual information (MI) between the corrupted SSL representations and the corresponding phoneme labels, focusing on preservation of linguistic contents. Building upon this analysis, we introduce the linguistic aggregation layer, which is pre-trained to maximize MI with phoneme labels (with optional dynamic aggregation) and then frozen during SE training. Experiments show that this decoupled approach improves Word Error Rate (WER) over jointly optimized baselines, demonstrating the benefit of explicitly aligning the adaptation module with linguistic contents.",
+      "url": "https://arxiv.org/abs/2601.22480",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22480.pdf",
+      "titleJa": "音声強調における音声表現集約の再考：音声相互情報量の観点"
+    },
+    {
+      "id": "2601.22390",
+      "arxivId": "2601.22390",
+      "title": "An Effective Energy Mask-based Adversarial Evasion Attacks against Misclassification in Speaker Recognition Systems",
+      "authors": [
+        "Chanwoo Park",
+        "Chanwoo Kim"
+      ],
+      "publishedDate": "2026-01-29",
+      "categories": [
+        "cs.SD",
+        "cs.CR",
+        "eess.AS"
+      ],
+      "abstract": "Evasion attacks pose significant threats to AI systems, exploiting vulnerabilities in machine learning models to bypass detection mechanisms. The widespread use of voice data, including deepfakes, in promising future industries is currently hindered by insufficient legal frameworks. Adversarial attack methods have emerged as the most effective countermeasure against the indiscriminate use of such data. This research introduces masked energy perturbation (MEP), a novel approach using power spectrum for energy masking of original voice data. MEP applies masking to small energy regions in the frequency domain before generating adversarial perturbations, targeting areas less noticeable to the human auditory model. The study primarily employs advanced speaker recognition models, including ECAPA-TDNN and ResNet34, which have shown remarkable performance in speaker verification tasks. The proposed MEP method demonstrated strong performance in both audio quality and evasion effectiveness. The energy masking approach effectively minimizes the perceptual evaluation of speech quality (PESQ) degradation, indicating that minimal perceptual distortion occurs to the human listener despite the adversarial perturbations. Specifically, in the PESQ evaluation, the relative performance of the MEP method was 26.68% when compared to the fast gradient sign method (FGSM) and iterative FGSM.",
+      "url": "https://arxiv.org/abs/2601.22390",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22390.pdf",
+      "titleJa": "話者認識システムにおける誤分類に対する効果的なエネルギーマスクベースの敵対的回避攻撃"
+    },
+    {
       "id": "2601.21960",
       "arxivId": "2601.21960",
       "title": "TidyVoice 2026 Challenge Evaluation Plan",
@@ -114,6 +455,179 @@
       "titleJa": "事前強化オーディオ LLM による音声編集検出とコンテンツ ローカリゼーションの統合"
     },
     {
+      "id": "2601.23196",
+      "arxivId": "2601.23196",
+      "title": "Beyond Omnidirectional: Neural Ambisonics Encoding for Arbitrary Microphone Directivity Patterns using Cross-Attention",
+      "authors": [
+        "Mikko Heikkinen",
+        "Archontis Politis",
+        "Konstantinos Drossos",
+        "Tuomas Virtanen"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "We present a deep neural network approach for encoding microphone array signals into Ambisonics that generalizes to arbitrary microphone array configurations with fixed microphone count but varying locations and frequency-dependent directional characteristics. Unlike previous methods that rely only on array geometry as metadata, our approach uses directional array transfer functions, enabling accurate characterization of real-world arrays. The proposed architecture employs separate encoders for audio and directional responses, combining them through cross-attention mechanisms to generate array-independent spatial audio representations. We evaluate the method on simulated data in two settings: a mobile phone with complex body scattering, and a free-field condition, both with varying numbers of sound sources in reverberant environments. Evaluations demonstrate that our approach outperforms both conventional digital signal processing-based methods and existing deep neural network solutions. Furthermore, using array transfer functions instead of geometry as metadata input improves accuracy on realistic arrays.",
+      "url": "https://arxiv.org/abs/2601.23196",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23196.pdf",
+      "titleJa": "全方向性を超えて：クロスアテンションを用いた任意のマイク指向性パターンのニューラルアンビソニックス符号化"
+    },
+    {
+      "id": "2601.23004",
+      "arxivId": "2601.23004",
+      "title": "Layer-Aware Early Fusion of Acoustic and Linguistic Embeddings for Cognitive Status Classification",
+      "authors": [
+        "Krystof Novotny",
+        "Laureano Moro-Velázquez",
+        "Jiri Mekyska"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "Speech contains both acoustic and linguistic patterns that reflect cognitive decline, and therefore models describing only one domain cannot fully capture such complexity. This study investigates how early fusion (EF) of speech and its corresponding transcription text embeddings, with attention to encoder layer depth, can improve cognitive status classification. Using a DementiaBank-derived collection of recordings (1,629 speakers; cognitively normal controls$\\unicode{x2013}$CN, Mild Cognitive Impairment$\\unicode{x2013}$MCI, and Alzheimer's Disease and Related Dementias$\\unicode{x2013}$ADRD), we extracted frame-aligned embeddings from different internal layers of wav2vec 2.0 or Whisper combined with DistilBERT or RoBERTa. Unimodal, EF and late fusion (LF) models were trained with a transformer classifier, optimized, and then evaluated across 10 seeds. Performance consistently peaked in mid encoder layers ($\\sim$8$\\unicode{x2013}$10), with the single best F1 at Whisper + RoBERTa layer 9 and the best log loss at Whisper + DistilBERT layer 10. Acoustic-only models consistently outperformed text-only variants. EF boosts discrimination for genuinely acoustic embeddings, whereas LF improves probability calibration. Layer choice critically shapes clinical multimodal synergy.",
+      "url": "https://arxiv.org/abs/2601.23004",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23004.pdf",
+      "titleJa": "認知状態分類のための音響と言語埋め込みのレイヤー認識型早期融合"
+    },
+    {
+      "id": "2601.22504",
+      "arxivId": "2601.22504",
+      "title": "Class-Aware Permutation-Invariant Signal-to-Distortion Ratio for Semantic Segmentation of Sound Scene with Same-Class Sources",
+      "authors": [
+        "Binh Thien Nguyen",
+        "Masahiro Yasuda",
+        "Daiki Takeuchi",
+        "Daisuke Niizumi",
+        "Noboru Harada"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "To advance immersive communication, the Detection and Classification of Acoustic Scenes and Events (DCASE) 2025 Challenge recently introduced Task 4 on Spatial Semantic Segmentation of Sound Scenes (S5). An S5 system takes a multi-channel audio mixture as input and outputs single-channel dry sources along with their corresponding class labels. Although the DCASE 2025 Challenge simplifies the task by constraining class labels in each mixture to be mutually exclusive, real-world mixtures frequently contain multiple sources from the same class. The presence of duplicated labels can significantly degrade the performance of the label-queried source separation (LQSS) model, which is the key component of many existing S5 systems, and can also limit the validity of the official evaluation metric of DCASE 2025 Task 4. To address these issues, we propose a class-aware permutation-invariant loss function that enables the LQSS model to handle queries involving duplicated labels. In addition, we redesign the S5 evaluation metric to eliminate ambiguities caused by these same-class sources. To evaluate the proposed method within the S5 system, we extend the label prediction model to support same-class labels. Experimental results demonstrate the effectiveness of the proposed methods and the robustness of the new metric on mixtures both with and without same-class sources.",
+      "url": "https://arxiv.org/abs/2601.22504",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22504.pdf",
+      "titleJa": "同一クラス音源によるサウンドシーンの意味的セグメンテーションのためのクラスを考慮した順列不変な信号対歪み比"
+    },
+    {
+      "id": "2601.22319",
+      "arxivId": "2601.22319",
+      "title": "Optimizing Domain-Adaptive Self-Supervised Learning for Clinical Voice-Based Disease Classification",
+      "authors": [
+        "Weixin Liu",
+        "Bowen Qu",
+        "Matthew Pontell",
+        "Maria Powell",
+        "Bradley Malin",
+        "Zhijun Yin"
+      ],
+      "publishedDate": "2026-01-29",
+      "categories": [
+        "eess.AS",
+        "eess.SP"
+      ],
+      "abstract": "The human voice is a promising non-invasive digital biomarker, yet deep learning for voice-based health analysis is hindered by data scarcity and domain mismatch, where models pre-trained on general audio fail to capture the subtle pathological features characteristic of clinical voice data. To address these challenges, we investigate domain-adaptive self-supervised learning (SSL) with Masked Autoencoders (MAE) and demonstrate that standard configurations are suboptimal for health-related audio. Using the Bridge2AI-Voice dataset, a multi-institutional collection of pathological voices, we systematically examine three performance-critical factors: reconstruction loss (Mean Absolute Error vs. Mean Squared Error), normalization (patch-wise vs. global), and masking (random vs. content-aware). Our optimized design, which combines Mean Absolute Error (MA-Error) loss, patch-wise normalization, and content-aware masking, achieves a Macro F1 of $0.688 \\pm 0.009$ (over 10 fine-tuning runs), outperforming a strong out-of-domain SSL baseline pre-trained on large-scale general audio, which has a Macro F1 of $0.663 \\pm 0.011$. The results show that MA-Error loss improves robustness and content-aware masking boosts performance by emphasizing information-rich regions. These findings highlight the importance of component-level optimization in data-constrained medical applications that rely on audio data.",
+      "url": "https://arxiv.org/abs/2601.22319",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22319.pdf",
+      "titleJa": "臨床音声に基づく疾患分類のためのドメイン適応型自己教師学習の最適化"
+    },
+    {
+      "id": "2601.22306",
+      "arxivId": "2601.22306",
+      "title": "Sylber 2.0: A Universal Syllable Embedding",
+      "authors": [
+        "Cheol Jun Cho",
+        "Nicholas Lee",
+        "Alan W Black",
+        "Gopala K. Anumanchipalli"
+      ],
+      "publishedDate": "2026-01-29",
+      "categories": [
+        "eess.AS",
+        "cs.CL"
+      ],
+      "abstract": "Scaling spoken language modeling requires speech tokens that are both efficient and universal. Recent work has proposed syllables as promising speech tokens at low temporal resolution, but existing models are constrained to English and fail to capture sufficient acoustic detail. To address this gap, we present Sylber 2.0, a self-supervised framework for coding speech at the syllable level that enables efficient temporal compression and high-fidelity reconstruction. Sylber 2.0 achieves a very low token frequency around 5 Hz, while retaining both linguistic and acoustic detail across multiple languages and expressive styles. Experiments show that it performs on par with previous models operating on high-frequency baselines. Furthermore, Sylber 2.0 enables efficient TTS modeling which can generate speech with competitive intelligibility and quality with SOTA models using only 72M parameters. Moreover, the universality of Sylber 2.0 provides more effective features for low resource ASR than previous speech coding frameworks. In sum, we establish an effective syllable-level abstraction for general spoken language.",
+      "url": "https://arxiv.org/abs/2601.22306",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22306.pdf",
+      "titleJa": "Sylber 2.0: ユニバーサル音節埋め込み"
+    },
+    {
+      "id": "2601.22288",
+      "arxivId": "2601.22288",
+      "title": "PersonaCite: VoC-Grounded Interviewable Agentic Synthetic AI Personas for Verifiable User and Design Research",
+      "authors": [
+        "Mario Truss"
+      ],
+      "publishedDate": "2026-01-29",
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "eess.AS",
+        "eess.IV"
+      ],
+      "abstract": "LLM-based and agent-based synthetic personas are increasingly used in design and product decision-making, yet prior work shows that prompt-based personas often produce persuasive but unverifiable responses that obscure their evidentiary basis. We present PersonaCite, an agentic system that reframes AI personas as evidence-bounded research instruments through retrieval-augmented interaction. Unlike prior approaches that rely on prompt-based roleplaying, PersonaCite retrieves actual voice-of-customer artifacts during each conversation turn, constrains responses to retrieved evidence, explicitly abstains when evidence is missing, and provides response-level source attribution. Through semi-structured interviews and deployment study with 14 industry experts, we identify preliminary findings on perceived benefits, validity concerns, and design tensions, and propose Persona Provenance Cards as a documentation pattern for responsible AI persona use in human-centered design workflows.",
+      "url": "https://arxiv.org/abs/2601.22288",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22288.pdf",
+      "titleJa": "PersonaCite: 検証可能なユーザーおよびデザインリサーチのための、VoC に基づいたインタビュー可能なエージェント型合成 AI ペルソナ"
+    },
+    {
+      "id": "2601.22260",
+      "arxivId": "2601.22260",
+      "title": "Brain-Informed Speech Separation for Cochlear Implants",
+      "authors": [
+        "Tom Gajecki",
+        "Jonas Althoff",
+        "Waldo Nogueira"
+      ],
+      "publishedDate": "2026-01-29",
+      "categories": [
+        "eess.AS",
+        "eess.SP"
+      ],
+      "abstract": "We propose a brain-informed speech separation method for cochlear implants (CIs) that uses electroencephalography (EEG)-derived attention cues to guide enhancement toward the attended speaker. An attention-guided network fuses audio mixtures with EEG features through a lightweight fusion layer, producing attended-source electrodograms for CI stimulation while resolving the label-permutation ambiguity of audio-only separators. Robustness to degraded attention cues is improved with a mixed curriculum that varies cue quality during training, yielding stable gains even when EEG-speech correlation is moderate. In multi-talker conditions, the model achieves higher signal-to-interference ratio improvements than an audio-only electrodogram baseline while remaining slightly smaller (167k vs. 171k parameters). With 2 ms algorithmic latency and comparable cost, the approach highlights the promise of coupling auditory and neural cues for cognitively adaptive CI processing.",
+      "url": "https://arxiv.org/abs/2601.22260",
+      "pdfUrl": "https://arxiv.org/pdf/2601.22260.pdf",
+      "titleJa": "人工内耳のための脳情報に基づく音声分離"
+    },
+    {
+      "id": "2601.21940",
+      "arxivId": "2601.21940",
+      "title": "DisContSE: Single-Step Diffusion Speech Enhancement Based on Joint Discrete and Continuous Embeddings",
+      "authors": [
+        "Yihui Fu",
+        "Tim Fingscheidt"
+      ],
+      "publishedDate": "2026-01-29",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "Diffusion speech enhancement on discrete audio codec features gain immense attention due to their improved speech component reconstruction capability. However, they usually suffer from high inference computational complexity due to multiple reverse process iterations. Furthermore, they generally achieve promising results on non-intrusive metrics but show poor performance on intrusive metrics, as they may struggle in reconstructing the correct phones. In this paper, we propose DisContSE, an efficient diffusion-based speech enhancement model on joint discrete codec tokens and continuous embeddings. Our contributions are three-fold. First, we formulate both a discrete and a continuous enhancement module operating on discrete audio codec tokens and continuous embeddings, respectively, to achieve improved fidelity and intelligibility simultaneously. Second, a semantic enhancement module is further adopted to achieve optimal phonetic accuracy. Third, we achieve a single-step efficient reverse process in inference with a novel quantization error mask initialization strategy, which, according to our knowledge, is the first successful single-step diffusion speech enhancement based on an audio codec. Trained and evaluated on URGENT 2024 Speech Enhancement Challenge data splits, the proposed DisContSE excels top-reported time- and frequency-domain diffusion baseline methods in PESQ, POLQA, UTMOS, and in a subjective ITU-T P.808 listening test, clearly achieving an overall top rank.",
+      "url": "https://arxiv.org/abs/2601.21940",
+      "pdfUrl": "https://arxiv.org/pdf/2601.21940.pdf",
+      "titleJa": "DisContSE: 離散的および連続的な埋め込みに基づくシングルステップ拡散音声強調"
+    },
+    {
+      "id": "2601.21886",
+      "arxivId": "2601.21886",
+      "title": "Speech Quality-Based Localization of Low-Quality Speech and Text-to-Speech Synthesis Artefacts",
+      "authors": [
+        "Michael Kuhlmann",
+        "Alexander Werning",
+        "Thilo von Neumann",
+        "Reinhold Haeb-Umbach"
+      ],
+      "publishedDate": "2026-01-29",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "A large number of works view the automatic assessment of speech from an utterance- or system-level perspective. While such approaches are good in judging overall quality, they cannot adequately explain why a certain score was assigned to an utterance. frame-level scores can provide better interpretability, but models predicting them are harder to tune and regularize since no strong targets are available during training. In this work, we show that utterance-level speech quality predictors can be regularized with a segment-based consistency constraint which notably reduces frame-level stochasticity. We then demonstrate two applications involving frame-level scores: The partial spoof scenario and the detection of synthesis artefacts in two state-of-the-art text-to-speech systems. For the latter, we perform listening tests and confirm that listeners rate segments to be of poor quality more often in the set defined by low frame-level scores than in a random control set.",
+      "url": "https://arxiv.org/abs/2601.21886",
+      "pdfUrl": "https://arxiv.org/pdf/2601.21886.pdf",
+      "titleJa": "低品質音声およびテキスト音声合成アーティファクトの音声品質ベースの定位"
+    },
+    {
       "id": "2601.21402",
       "arxivId": "2601.21402",
       "title": "SemanticAudio: Audio Generation and Editing in Semantic Space",
@@ -136,25 +650,6 @@
       "url": "https://arxiv.org/abs/2601.21402",
       "pdfUrl": "https://arxiv.org/pdf/2601.21402.pdf",
       "titleJa": "SemanticAudio: セマンティック空間におけるオーディオ生成と編集"
-    },
-    {
-      "id": "2601.21386",
-      "arxivId": "2601.21386",
-      "title": "Understanding Frechet Speech Distance for Synthetic Speech Quality Evaluation",
-      "authors": [
-        "June-Woo Kim",
-        "Dhruv Agarwal",
-        "Federica Cerina"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.SD",
-        "cs.AI"
-      ],
-      "abstract": "Objective evaluation of synthetic speech quality remains a critical challenge. Human listening tests are the gold standard, but costly and impractical at scale. Fréchet Distance has emerged as a promising alternative, yet its reliability depends heavily on the choice of embeddings and experimental settings. In this work, we comprehensively evaluate Fréchet Speech Distance (FSD) and its variant Speech Maximum Mean Discrepancy (SMMD) under varied embeddings and conditions. We further incorporate human listening evaluations alongside TTS intelligibility and synthetic-trained ASR WER to validate the perceptual relevance of these metrics. Our findings show that WavLM Base+ features yield the most stable alignment with human ratings. While FSD and SMMD cannot fully replace subjective evaluation, we show that they can serve as complementary, cost-efficient, and reproducible measures, particularly useful when large-scale or direct listening assessments are infeasible. Code is available at https://github.com/kaen2891/FrechetSpeechDistance.",
-      "url": "https://arxiv.org/abs/2601.21386",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21386.pdf",
-      "titleJa": "合成音声品質評価のためのフレシェ音声距離の理解"
     },
     {
       "id": "2601.21347",
@@ -228,6 +723,456 @@
       "titleJa": "XRにおける迅速な注意喚起のための空間化された聴覚手がかりの評価"
     },
     {
+      "id": "2601.23286",
+      "arxivId": "2601.23286",
+      "title": "VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation",
+      "authors": [
+        "Hongyang Du",
+        "Junjie Ye",
+        "Xiaoyan Cong",
+        "Runhao Li",
+        "Jingcheng Ni",
+        "Aman Agarwal",
+        "Zeqi Zhou",
+        "Zekun Li",
+        "Randall Balestriero",
+        "Yue Wang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "While recent video diffusion models (VDMs) produce visually impressive results, they fundamentally struggle to maintain 3D structural consistency, often resulting in object deformation or spatial drift. We hypothesize that these failures arise because standard denoising objectives lack explicit incentives for geometric coherence. To address this, we introduce VideoGPA (Video Geometric Preference Alignment), a data-efficient self-supervised framework that leverages a geometry foundation model to automatically derive dense preference signals that guide VDMs via Direct Preference Optimization (DPO). This approach effectively steers the generative distribution toward inherent 3D consistency without requiring human annotations. VideoGPA significantly enhances temporal stability, physical plausibility, and motion coherence using minimal preference pairs, consistently outperforming state-of-the-art baselines in extensive experiments.",
+      "url": "https://arxiv.org/abs/2601.23286",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23286.pdf",
+      "titleJa": "VideoGPA: 3D一貫性のあるビデオ生成のためのジオメトリ事前抽出"
+    },
+    {
+      "id": "2601.23285",
+      "arxivId": "2601.23285",
+      "title": "End-to-end Optimization of Belief and Policy Learning in Shared Autonomy Paradigms",
+      "authors": [
+        "MH Farhadi",
+        "Ali Rabiee",
+        "Sima Ghafoori",
+        "Anna Cetera",
+        "Andrew Fisher",
+        "Reza Abiri"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "abstract": "Shared autonomy systems require principled methods for inferring user intent and determining appropriate assistance levels. This is a central challenge in human-robot interaction, where systems must be successful while being mindful of user agency. Previous approaches relied on static blending ratios or separated goal inference from assistance arbitration, leading to suboptimal performance in unstructured environments. We introduce BRACE (Bayesian Reinforcement Assistance with Context Encoding), a novel framework that fine-tunes Bayesian intent inference and context-adaptive assistance through an architecture enabling end-to-end gradient flow between intent inference and assistance arbitration. Our pipeline conditions collaborative control policies on environmental context and complete goal probability distributions. We provide analysis showing (1) optimal assistance levels should decrease with goal uncertainty and increase with environmental constraint severity, and (2) integrating belief information into policy learning yields a quadratic expected regret advantage over sequential approaches. We validated our algorithm against SOTA methods (IDA, DQN) using a three-part evaluation progressively isolating distinct challenges of end-effector control: (1) core human-interaction dynamics in a 2D human-in-the-loop cursor task, (2) non-linear dynamics of a robotic arm, and (3) integrated manipulation under goal ambiguity and environmental constraints. We demonstrate improvements over SOTA, achieving 6.3% higher success rates and 41% increased path efficiency, and 36.3% success rate and 87% path efficiency improvement over unassisted control. Our results confirmed that integrated optimization is most beneficial in complex, goal-ambiguous scenarios, and is generalizable across robotic domains requiring goal-directed assistance, advancing the SOTA for adaptive shared autonomy.",
+      "url": "https://arxiv.org/abs/2601.23285",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23285.pdf",
+      "titleJa": "共有自律パラダイムにおける信念とポリシー学習のエンドツーエンド最適化"
+    },
+    {
+      "id": "2601.23266",
+      "arxivId": "2601.23266",
+      "title": "IRL-DAL: Safe and Adaptive Trajectory Planning for Autonomous Driving via Energy-Guided Diffusion Models",
+      "authors": [
+        "Seyed Ahmad Hosseini Miangoleh",
+        "Amin Jalal Aghdasian",
+        "Farzaneh Abdollahi"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "abstract": "This paper proposes a novel inverse reinforcement learning framework using a diffusion-based adaptive lookahead planner (IRL-DAL) for autonomous vehicles. Training begins with imitation from an expert finite state machine (FSM) controller to provide a stable initialization. Environment terms are combined with an IRL discriminator signal to align with expert goals. Reinforcement learning (RL) is then performed with a hybrid reward that combines diffuse environmental feedback and targeted IRL rewards. A conditional diffusion model, which acts as a safety supervisor, plans safe paths. It stays in its lane, avoids obstacles, and moves smoothly. Then, a learnable adaptive mask (LAM) improves perception. It shifts visual attention based on vehicle speed and nearby hazards. After FSM-based imitation, the policy is fine-tuned with Proximal Policy Optimization (PPO). Training is run in the Webots simulator with a two-stage curriculum. A 96\\% success rate is reached, and collisions are reduced to 0.05 per 1k steps, marking a new benchmark for safe navigation. By applying the proposed approach, the agent not only drives in lane but also handles unsafe conditions at an expert level, increasing robustness.We make our code publicly available.",
+      "url": "https://arxiv.org/abs/2601.23266",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23266.pdf",
+      "titleJa": "IRL-DAL: エネルギー誘導拡散モデルによる自動運転のための安全かつ適応的な軌道計画"
+    },
+    {
+      "id": "2601.23261",
+      "arxivId": "2601.23261",
+      "title": "TEON: Tensorized Orthonormalization Beyond Layer-Wise Muon for Large Language Model Pre-Training",
+      "authors": [
+        "Ruijie Zhang",
+        "Yequan Zhao",
+        "Ziyue Liu",
+        "Zhengyang Wang",
+        "Dongyang Li",
+        "Yupeng Su",
+        "Sijia Liu",
+        "Zheng Zhang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "abstract": "The Muon optimizer has demonstrated strong empirical performance in pre-training large language models by performing matrix-level gradient (or momentum) orthogonalization in each layer independently. In this work, we propose TEON, a principled generalization of Muon that extends orthogonalization beyond individual layers by modeling the gradients of a neural network as a structured higher-order tensor. We present TEON's improved convergence guarantee over layer-wise Muon, and further develop a practical instantiation of TEON based on the theoretical analysis with corresponding ablation. We evaluate our approach on two widely adopted architectures: GPT-style models, ranging from 130M to 774M parameters, and LLaMA-style models, ranging from 60M to 1B parameters. Experimental results show that TEON consistently improves training and validation perplexity across model scales and exhibits strong robustness under various approximate SVD schemes.",
+      "url": "https://arxiv.org/abs/2601.23261",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23261.pdf",
+      "titleJa": "TEON: 大規模言語モデルの事前学習のための層別ミューオンを超えるテンソル化直交化"
+    },
+    {
+      "id": "2601.23258",
+      "arxivId": "2601.23258",
+      "title": "Agnostic Language Identification and Generation",
+      "authors": [
+        "Mikael Møller Høgsgaard",
+        "Chirag Pabbaraju"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Recent works on language identification and generation have established tight statistical rates at which these tasks can be achieved. These works typically operate under a strong realizability assumption: that the input data is drawn from an unknown distribution necessarily supported on some language in a given collection. In this work, we relax this assumption of realizability entirely, and impose no restrictions on the distribution of the input data. We propose objectives to study both language identification and generation in this more general \"agnostic\" setup. Across both problems, we obtain novel interesting characterizations and nearly tight rates.",
+      "url": "https://arxiv.org/abs/2601.23258",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23258.pdf",
+      "titleJa": "不可知論的言語識別と生成"
+    },
+    {
+      "id": "2601.23255",
+      "arxivId": "2601.23255",
+      "title": "Now You Hear Me: Audio Narrative Attacks Against Large Audio-Language Models",
+      "authors": [
+        "Ye Yu",
+        "Haibo Jin",
+        "Yaoning Yu",
+        "Jun Zhuang",
+        "Haohan Wang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "abstract": "Large audio-language models increasingly operate on raw speech inputs, enabling more seamless integration across domains such as voice assistants, education, and clinical triage. This transition, however, introduces a distinct class of vulnerabilities that remain largely uncharacterized. We examine the security implications of this modality shift by designing a text-to-audio jailbreak that embeds disallowed directives within a narrative-style audio stream. The attack leverages an advanced instruction-following text-to-speech (TTS) model to exploit structural and acoustic properties, thereby circumventing safety mechanisms primarily calibrated for text. When delivered through synthetic speech, the narrative format elicits restricted outputs from state-of-the-art models, including Gemini 2.0 Flash, achieving a 98.26% success rate that substantially exceeds text-only baselines. These results highlight the need for safety frameworks that jointly reason over linguistic and paralinguistic representations, particularly as speech-based interfaces become more prevalent.",
+      "url": "https://arxiv.org/abs/2601.23255",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23255.pdf",
+      "titleJa": "さあ、聞いてください: 大規模音声言語モデルに対する音声ナラティブ攻撃"
+    },
+    {
+      "id": "2601.23236",
+      "arxivId": "2601.23236",
+      "title": "YuriiFormer: A Suite of Nesterov-Accelerated Transformers",
+      "authors": [
+        "Aleksandr Zimin",
+        "Yury Polyanskiy",
+        "Philippe Rigollet"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC",
+        "stat.ML"
+      ],
+      "abstract": "We propose a variational framework that interprets transformer layers as iterations of an optimization algorithm acting on token embeddings. In this view, self-attention implements a gradient step of an interaction energy, while MLP layers correspond to gradient updates of a potential energy. Standard GPT-style transformers emerge as vanilla gradient descent on the resulting composite objective, implemented via Lie--Trotter splitting between these two energy functionals. This perspective enables principled architectural design using classical optimization ideas. As a proof of concept, we introduce a Nesterov-style accelerated transformer that preserves the same attention and MLP oracles. The resulting architecture consistently outperforms a nanoGPT baseline on TinyStories and OpenWebText, demonstrating that optimization-theoretic insights can translate into practical gains.",
+      "url": "https://arxiv.org/abs/2601.23236",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23236.pdf",
+      "titleJa": "YuriiFormer: ネステロフ加速型トランスフォーマースイート"
+    },
+    {
+      "id": "2601.23232",
+      "arxivId": "2601.23232",
+      "title": "ShotFinder: Imagination-Driven Open-Domain Video Shot Retrieval via Web Search",
+      "authors": [
+        "Tao Yu",
+        "Haopeng Jin",
+        "Hao Wang",
+        "Shenghua Chai",
+        "Yujia Yang",
+        "Junhao Gong",
+        "Jiaming Guo",
+        "Minghui Zhang",
+        "Xinlong Chen",
+        "Zhenghao Zhang",
+        "Yuxuan Zhou",
+        "Yanpei Gong",
+        "YuanCheng Liu",
+        "Yiming Ding",
+        "Kangwei Zeng",
+        "Pengfei Yang",
+        "Zhongtian Luo",
+        "Yufei Xiong",
+        "Shanbin Zhang",
+        "Shaoxiong Cheng",
+        "Huang Ruilin",
+        "Li Shuo",
+        "Yuxi Niu",
+        "Xinyuan Zhang",
+        "Yueya Xu",
+        "Jie Mao",
+        "Ruixuan Ji",
+        "Yaru Zhao",
+        "Mingchen Zhang",
+        "Jiabing Yang",
+        "Jiaqi Liu",
+        "YiFan Zhang",
+        "Hongzhu Yi",
+        "Xinming Wang",
+        "Cheng Zhong",
+        "Xiao Ma",
+        "Zhang Zhang",
+        "Yan Huang",
+        "Liang Wang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "abstract": "In recent years, large language models (LLMs) have made rapid progress in information retrieval, yet existing research has mainly focused on text or static multimodal settings. Open-domain video shot retrieval, which involves richer temporal structure and more complex semantics, still lacks systematic benchmarks and analysis. To fill this gap, we introduce ShotFinder, a benchmark that formalizes editing requirements as keyframe-oriented shot descriptions and introduces five types of controllable single-factor constraints: Temporal order, Color, Visual style, Audio, and Resolution. We curate 1,210 high-quality samples from YouTube across 20 thematic categories, using large models for generation with human verification. Based on the benchmark, we propose ShotFinder, a text-driven three-stage retrieval and localization pipeline: (1) query expansion via video imagination, (2) candidate video retrieval with a search engine, and (3) description-guided temporal localization. Experiments on multiple closed-source and open-source models reveal a significant gap to human performance, with clear imbalance across constraints: temporal localization is relatively tractable, while color and visual style remain major challenges. These results reveal that open-domain video shot retrieval is still a critical capability that multimodal large models have yet to overcome.",
+      "url": "https://arxiv.org/abs/2601.23232",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23232.pdf",
+      "titleJa": "ShotFinder: ウェブ検索による想像力主導のオープンドメインビデオショット検索"
+    },
+    {
+      "id": "2601.23229",
+      "arxivId": "2601.23229",
+      "title": "Strongly Polynomial Time Complexity of Policy Iteration for $L_\\infty$ Robust MDPs",
+      "authors": [
+        "Ali Asadi",
+        "Krishnendu Chatterjee",
+        "Ehsan Goharshady",
+        "Mehrdad Karrabi",
+        "Alipasha Montaseri",
+        "Carlo Pagano"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.AI",
+        "cs.CC"
+      ],
+      "abstract": "Markov decision processes (MDPs) are a fundamental model in sequential decision making. Robust MDPs (RMDPs) extend this framework by allowing uncertainty in transition probabilities and optimizing against the worst-case realization of that uncertainty. In particular, $(s, a)$-rectangular RMDPs with $L_\\infty$ uncertainty sets form a fundamental and expressive model: they subsume classical MDPs and turn-based stochastic games. We consider this model with discounted payoffs. The existence of polynomial and strongly-polynomial time algorithms is a fundamental problem for these optimization models. For MDPs, linear programming yields polynomial-time algorithms for any arbitrary discount factor, and the seminal work of Ye established strongly--polynomial time for a fixed discount factor. The generalization of such results to RMDPs has remained an important open problem. In this work, we show that a robust policy iteration algorithm runs in strongly-polynomial time for $(s, a)$-rectangular $L_\\infty$ RMDPs with a constant (fixed) discount factor, resolving an important algorithmic question.",
+      "url": "https://arxiv.org/abs/2601.23229",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23229.pdf",
+      "titleJa": "$L_\\infty$ ロバストMDPに対する方策反復の強多項式時間計算量"
+    },
+    {
+      "id": "2601.23228",
+      "arxivId": "2601.23228",
+      "title": "Scaling Multiagent Systems with Process Rewards",
+      "authors": [
+        "Ed Li",
+        "Junyu Ren",
+        "Cat Yan"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.ET",
+        "cs.MA"
+      ],
+      "abstract": "While multiagent systems have shown promise for tackling complex tasks via specialization, finetuning multiple agents simultaneously faces two key challenges: (1) credit assignment across agents, and (2) sample efficiency of expensive multiagent rollouts. In this work, we propose finetuning multiagent systems with per-action process rewards from AI feedback (MAPPA) to address both. Through assigning credit to individual agent actions rather than only at task completion, MAPPA enables fine-grained supervision without ground truth labels while extracting maximal training signal from each rollout. We demonstrate our approach on competition math problems and tool-augmented data analysis tasks. On unseen math problems, MAPPA achieves +5.0--17.5pp on AIME and +7.8--17.2pp on AMC. For data analysis tasks, our method improves success rate by +12.5pp while quality metrics improve by up to 30%, validating that per-action supervision can lead to improvements across different multiagent system on various domains. By addressing these challenges, our work takes a first step toward scaling multiagent systems for complex, long-horizon tasks with minimal human supervision.",
+      "url": "https://arxiv.org/abs/2601.23228",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23228.pdf",
+      "titleJa": "プロセス報酬を用いたマルチエージェントシステムのスケーリング"
+    },
+    {
+      "id": "2601.23225",
+      "arxivId": "2601.23225",
+      "title": "Agile Reinforcement Learning through Separable Neural Architecture",
+      "authors": [
+        "Rajib Mostakim",
+        "Reza T. Batley",
+        "Sourav Saha"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "abstract": "Deep reinforcement learning (RL) is increasingly deployed in resource-constrained environments, yet the go-to function approximators - multilayer perceptrons (MLPs) - are often parameter-inefficient due to an imperfect inductive bias for the smooth structure of many value functions. This mismatch can also hinder sample efficiency and slow policy learning in this capacity-limited regime. Although model compression techniques exist, they operate post-hoc and do not improve learning efficiency. Recent spline-based separable architectures - such as Kolmogorov-Arnold Networks (KANs) - have been shown to offer parameter efficiency but are widely reported to exhibit significant computational overhead, especially at scale. In seeking to address these limitations, this work introduces SPAN (SPline-based Adaptive Networks), a novel function approximation approach to RL. SPAN adapts the low rank KHRONOS framework by integrating a learnable preprocessing layer with a separable tensor product B-spline basis. SPAN is evaluated across discrete (PPO) and high-dimensional continuous (SAC) control tasks, as well as offline settings (Minari/D4RL). Empirical results demonstrate that SPAN achieves a 30-50% improvement in sample efficiency and 1.3-9 times higher success rates across benchmarks compared to MLP baselines. Furthermore, SPAN demonstrates superior anytime performance and robustness to hyperparameter variations, suggesting it as a viable, high performance alternative for learning intrinsically efficient policies in resource-limited settings.",
+      "url": "https://arxiv.org/abs/2601.23225",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23225.pdf",
+      "titleJa": "分離可能なニューラルアーキテクチャによるアジャイル強化学習"
+    },
+    {
+      "id": "2601.23220",
+      "arxivId": "2601.23220",
+      "title": "Med-Scout: Curing MLLMs' Geometric Blindness in Medical Perception via Geometry-Aware RL Post-Training",
+      "authors": [
+        "Anglin Liu",
+        "Ruichao Chen",
+        "Yi Lu",
+        "Hongxia Xu",
+        "Jintai Chen"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "abstract": "Despite recent Multimodal Large Language Models (MLLMs)' linguistic prowess in medical diagnosis, we find even state-of-the-art MLLMs suffer from a critical perceptual deficit: geometric blindness. This failure to ground outputs in objective geometric constraints leads to plausible yet factually incorrect hallucinations, rooted in training paradigms that prioritize linguistic fluency over geometric fidelity. This paper introduces Med-Scout, a novel framework that \"cures\" this blindness via Reinforcement Learning (RL) that leverages the intrinsic geometric logic latent within unlabeled medical images. Instead of relying on costly expert annotations, Med-Scout derives verifiable supervision signals through three strategic proxy tasks: Hierarchical Scale Localization, Topological Jigsaw Reconstruction, and Anomaly Consistency Detection. To rigorously quantify this deficit, we present Med-Scout-Bench, a new benchmark specifically designed to evaluate geometric perception. Extensive evaluations show that Med-Scout significantly mitigates geometric blindness, outperforming leading proprietary and open-source MLLMs by over 40% on our benchmark. Furthermore, this enhanced geometric perception generalizes to broader medical understanding, achieving superior results on radiological and comprehensive medical VQA tasks.",
+      "url": "https://arxiv.org/abs/2601.23220",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23220.pdf",
+      "titleJa": "Med-Scout: 幾何学を考慮した強化学習後トレーニングによる MLLM の医療認識における幾何学的盲点の解消"
+    },
+    {
+      "id": "2601.23219",
+      "arxivId": "2601.23219",
+      "title": "MonoScale: Scaling Multi-Agent System with Monotonic Improvement",
+      "authors": [
+        "Shuai Shao",
+        "Yixiang Liu",
+        "Bingwei Lu",
+        "Weinan Zhang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "abstract": "In recent years, LLM-based multi-agent systems (MAS) have advanced rapidly, using a router to decompose tasks and delegate subtasks to specialized agents. A natural way to expand capability is to scale up the agent pool by continually integrating new functional agents or tool interfaces, but naive expansion can trigger performance collapse when the router cold-starts on newly added, heterogeneous, and unreliable agents. We propose MonoScale, an expansion-aware update framework that proactively generates a small set of agent-conditioned familiarization tasks, harvests evidence from both successful and failed interactions, and distills it into auditable natural-language memory to guide future routing. We formalize sequential augmentation as a contextual bandit and perform trust-region memory updates, yielding a monotonic non-decreasing performance guarantee across onboarding rounds. Experiments on GAIA and Humanity's Last Exam show stable gains as the agent pool grows, outperforming naive scale-up and strong-router fixed-pool baselines.",
+      "url": "https://arxiv.org/abs/2601.23219",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23219.pdf",
+      "titleJa": "MonoScale: 単調な改善を伴うマルチエージェントシステムのスケーリング"
+    },
+    {
+      "id": "2601.23212",
+      "arxivId": "2601.23212",
+      "title": "Disentangling multispecific antibody function with graph neural networks",
+      "authors": [
+        "Joshua Southern",
+        "Changpeng Lu",
+        "Santrupti Nerli",
+        "Samuel D. Stanton",
+        "Andrew M. Watkins",
+        "Franziska Seeger",
+        "Frédéric A. Dreyer"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "q-bio.BM",
+        "cs.AI"
+      ],
+      "abstract": "Multispecific antibodies offer transformative therapeutic potential by engaging multiple epitopes simultaneously, yet their efficacy is an emergent property governed by complex molecular architectures. Rational design is often bottlenecked by the inability to predict how subtle changes in domain topology influence functional outcomes, a challenge exacerbated by the scarcity of comprehensive experimental data. Here, we introduce a computational framework to address part of this gap. First, we present a generative method for creating large-scale, realistic synthetic functional landscapes that capture non-linear interactions where biological activity depends on domain connectivity. Second, we propose a graph neural network architecture that explicitly encodes these topological constraints, distinguishing between format configurations that appear identical to sequence-only models. We demonstrate that this model, trained on synthetic landscapes, recapitulates complex functional properties and, via transfer learning, has the potential to achieve high predictive accuracy on limited biological datasets. We showcase the model's utility by optimizing trade-offs between efficacy and toxicity in trispecific T-cell engagers and retrieving optimal common light chains. This work provides a robust benchmarking environment for disentangling the combinatorial complexity of multispecifics, accelerating the design of next-generation therapeutics.",
+      "url": "https://arxiv.org/abs/2601.23212",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23212.pdf",
+      "titleJa": "グラフニューラルネットワークによる多特異性抗体機能の解明"
+    },
+    {
+      "id": "2601.23207",
+      "arxivId": "2601.23207",
+      "title": "Learning to Execute Graph Algorithms Exactly with Graph Neural Networks",
+      "authors": [
+        "Muhammad Fetrat Qharabagh",
+        "Artur Back de Luca",
+        "George Giapitzakis",
+        "Kimon Fountoulakis"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "abstract": "Understanding what graph neural networks can learn, especially their ability to learn to execute algorithms, remains a central theoretical challenge. In this work, we prove exact learnability results for graph algorithms under bounded-degree and finite-precision constraints. Our approach follows a two-step process. First, we train an ensemble of multi-layer perceptrons (MLPs) to execute the local instructions of a single node. Second, during inference, we use the trained MLP ensemble as the update function within a graph neural network (GNN). Leveraging Neural Tangent Kernel (NTK) theory, we show that local instructions can be learned from a small training set, enabling the complete graph algorithm to be executed during inference without error and with high probability. To illustrate the learning power of our setting, we establish a rigorous learnability result for the LOCAL model of distributed computation. We further demonstrate positive learnability results for widely studied algorithms such as message flooding, breadth-first and depth-first search, and Bellman-Ford.",
+      "url": "https://arxiv.org/abs/2601.23207",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23207.pdf",
+      "titleJa": "グラフニューラルネットワークでグラフアルゴリズムを正確に実行する方法を学ぶ"
+    },
+    {
+      "id": "2601.23206",
+      "arxivId": "2601.23206",
+      "title": "High-quality generation of dynamic game content via small language models: A proof of concept",
+      "authors": [
+        "Morten I. K. Munk",
+        "Arturo Valdivia",
+        "Paolo Burelli"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Large language models (LLMs) offer promise for dynamic game content generation, but they face critical barriers, including narrative incoherence and high operational costs. Due to their large size, they are often accessed in the cloud, limiting their application in offline games. Many of these practical issues are solved by pivoting to small language models (SLMs), but existing studies using SLMs have resulted in poor output quality. We propose a strategy of achieving high-quality SLM generation through aggressive fine-tuning on deliberately scoped tasks with narrow context, constrained structure, or both. In short, more difficult tasks require narrower scope and higher specialization to the training corpus. Training data is synthetically generated via a DAG-based approach, grounding models in the specific game world. Such models can form the basis for agentic networks designed around the narratological framework at hand, representing a more practical and robust solution than cloud-dependent LLMs. To validate this approach, we present a proof-of-concept focusing on a single specialized SLM as the fundamental building block. We introduce a minimal RPG loop revolving around rhetorical battles of reputations, powered by this model. We demonstrate that a simple retry-until-success strategy reaches adequate quality (as defined by an LLM-as-a-judge scheme) with predictable latency suitable for real-time generation. While local quality assessment remains an open question, our results demonstrate feasibility for real-time generation under typical game engine constraints.",
+      "url": "https://arxiv.org/abs/2601.23206",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23206.pdf",
+      "titleJa": "小規模言語モデルによる高品質な動的ゲームコンテンツ生成：概念実証"
+    },
+    {
+      "id": "2601.23204",
+      "arxivId": "2601.23204",
+      "title": "TSAQA: Time Series Analysis Question And Answering Benchmark",
+      "authors": [
+        "Baoyu Jing",
+        "Sanhorn Chen",
+        "Lecheng Zheng",
+        "Boyu Liu",
+        "Zihao Li",
+        "Jiaru Zou",
+        "Tianxin Wei",
+        "Zhining Liu",
+        "Zhichen Zeng",
+        "Ruizhong Qiu",
+        "Xiao Lin",
+        "Yuchen Yan",
+        "Dongqi Fu",
+        "Jingchao Ni",
+        "Jingrui He",
+        "Hanghang Tong"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Time series data are integral to critical applications across domains such as finance, healthcare, transportation, and environmental science. While recent work has begun to explore multi-task time series question answering (QA), current benchmarks remain limited to forecasting and anomaly detection tasks. We introduce TSAQA, a novel unified benchmark designed to broaden task coverage and evaluate diverse temporal analysis capabilities. TSAQA integrates six diverse tasks under a single framework ranging from conventional analysis, including anomaly detection and classification, to advanced analysis, such as characterization, comparison, data transformation, and temporal relationship analysis. Spanning 210k samples across 13 domains, the dataset employs diverse formats, including true-or-false (TF), multiple-choice (MC), and a novel puzzling (PZ), to comprehensively assess time series analysis. Zero-shot evaluation demonstrates that these tasks are challenging for current Large Language Models (LLMs): the best-performing commercial LLM, Gemini-2.5-Flash, achieves an average score of only 65.08. Although instruction tuning boosts open-source performance: the best-performing open-source model, LLaMA-3.1-8B, shows significant room for improvement, highlighting the complexity of temporal analysis for LLMs.",
+      "url": "https://arxiv.org/abs/2601.23204",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23204.pdf",
+      "titleJa": "TSAQA: 時系列分析の質問と回答のベンチマーク"
+    },
+    {
+      "id": "2601.23179",
+      "arxivId": "2601.23179",
+      "title": "Make Anything Match Your Target: Universal Adversarial Perturbations against Closed-Source MLLMs via Multi-Crop Routed Meta Optimization",
+      "authors": [
+        "Hui Lu",
+        "Yi Yu",
+        "Yiming Yang",
+        "Chenyu Yi",
+        "Xueyi Ke",
+        "Qixing Zhang",
+        "Bingquan Shen",
+        "Alex Kot",
+        "Xudong Jiang"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "Targeted adversarial attacks on closed-source multimodal large language models (MLLMs) have been increasingly explored under black-box transfer, yet prior methods are predominantly sample-specific and offer limited reusability across inputs. We instead study a more stringent setting, Universal Targeted Transferable Adversarial Attacks (UTTAA), where a single perturbation must consistently steer arbitrary inputs toward a specified target across unknown commercial MLLMs. Naively adapting existing sample-wise attacks to this universal setting faces three core difficulties: (i) target supervision becomes high-variance due to target-crop randomness, (ii) token-wise matching is unreliable because universality suppresses image-specific cues that would otherwise anchor alignment, and (iii) few-source per-target adaptation is highly initialization-sensitive, which can degrade the attainable performance. In this work, we propose MCRMO-Attack, which stabilizes supervision via Multi-Crop Aggregation with an Attention-Guided Crop, improves token-level reliability through alignability-gated Token Routing, and meta-learns a cross-target perturbation prior that yields stronger per-target solutions. Across commercial MLLMs, we boost unseen-image attack success rate by +23.7\\% on GPT-4o and +19.9\\% on Gemini-2.0 over the strongest universal baseline.",
+      "url": "https://arxiv.org/abs/2601.23179",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23179.pdf",
+      "titleJa": "あらゆるものをターゲットにマッチさせる：マルチクロップルーティングメタ最適化によるクローズドソースMLLMに対する普遍的な敵対的摂動"
+    },
+    {
+      "id": "2601.23163",
+      "arxivId": "2601.23163",
+      "title": "Probing the Trajectories of Reasoning Traces in Large Language Models",
+      "authors": [
+        "Marthe Ballon",
+        "Brecht Verbeken",
+        "Vincent Ginis",
+        "Andres Algaba"
+      ],
+      "publishedDate": "2026-01-30",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "abstract": "Large language models (LLMs) increasingly solve difficult problems by producing \"reasoning traces\" before emitting a final response. However, it remains unclear how accuracy and decision commitment evolve along a reasoning trajectory, and whether intermediate trace segments provide answer-relevant information beyond generic length or stylistic effects. Here, we propose a protocol to systematically probe the trajectories of reasoning traces in LLMs by 1) generating a model's reasoning trace, 2) truncating it at fixed token-percentiles, and 3) injecting each partial trace back into the model (or a different model) to measure the induced distribution over answer choices via next-token probabilities. We apply this protocol to the open-source Qwen3-4B/-8B/-14B and gpt-oss-20b/-120b models across the multiple-choice GPQA Diamond and MMLU-Pro benchmarks. We find that accuracy and decision commitment consistently increase as the percentage of provided reasoning tokens grows. These gains are primarily driven by relevant content in the model generation rather than context length or generic \"reasoning style\" effects. Stronger models often backtrack successfully from incorrect partial traces, but immediate answers often remain anchored in the weaker model's incorrect response. More broadly, we show that trajectory probing provides diagnostics for efficient and safer deployment of reasoning models as the measurements can inform practical trace-handling and monitoring policies that improve reliability without assuming intermediate tokens are inherently faithful explanations.",
+      "url": "https://arxiv.org/abs/2601.23163",
+      "pdfUrl": "https://arxiv.org/pdf/2601.23163.pdf",
+      "titleJa": "大規模言語モデルにおける推論痕跡の軌跡の探究"
+    },
+    {
       "id": "2601.21260",
       "arxivId": "2601.21260",
       "title": "Music Plagiarism Detection: Problem Formulation and a Segment-based Solution",
@@ -246,758 +1191,6 @@
       "url": "https://arxiv.org/abs/2601.21260",
       "pdfUrl": "https://arxiv.org/pdf/2601.21260.pdf",
       "titleJa": "音楽盗作検出：問題の定式化とセグメントベースのソリューション"
-    },
-    {
-      "id": "2601.21205",
-      "arxivId": "2601.21205",
-      "title": "Multilingual Dysarthric Speech Assessment Using Universal Phone Recognition and Language-Specific Phonemic Contrast Modeling",
-      "authors": [
-        "Eunjung Yeo",
-        "Julie M. Liss",
-        "Visar Berisha",
-        "David R. Mortensen"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CL",
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "The growing prevalence of neurological disorders associated with dysarthria motivates the need for automated intelligibility assessment methods that are applicalbe across languages. However, most existing approaches are either limited to a single language or fail to capture language-specific factors shaping intelligibility. We present a multilingual phoneme-production assessment framework that integrates universal phone recognition with language-specific phoneme interpretation using contrastive phonological feature distances for phone-to-phoneme mapping and sequence alignment. The framework yields three metrics: phoneme error rate (PER), phonological feature error rate (PFER), and a newly proposed alignment-free measure, phoneme coverage (PhonCov). Analysis on English, Spanish, Italian, and Tamil show that PER benefits from the combination of mapping and alignment, PFER from alignment alone, and PhonCov from mapping. Further analyses demonstrate that the proposed framework captures clinically meaningful patterns of intelligibility degradation consistent with established observations of dysarthric speech.",
-      "url": "https://arxiv.org/abs/2601.21205",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21205.pdf",
-      "titleJa": "ユニバーサル音韻認識と言語特異的音素コントラストモデリングを用いた多言語構音障害音声評価"
-    },
-    {
-      "id": "2601.21124",
-      "arxivId": "2601.21124",
-      "title": "PhaseCoder: Microphone Geometry-Agnostic Spatial Audio Understanding for Multimodal LLMs",
-      "authors": [
-        "Artem Dementyev",
-        "Wazeer Zulfikar",
-        "Sinan Hersek",
-        "Pascal Getreuer",
-        "Anurag Kumar",
-        "Vivek Kumar"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "cs.SD",
-        "cs.AI",
-        "eess.AS"
-      ],
-      "abstract": "Current multimodal LLMs process audio as a mono stream, ignoring the rich spatial information essential for embodied AI. Existing spatial audio models, conversely, are constrained to fixed microphone geometries, preventing deployment across diverse devices. We present PhaseCoder, a transformer-only spatial audio encoder that is agnostic to microphone geometry. PhaseCoder takes raw multichannel audio and microphone coordinates as inputs to perform localization and produces robust spatial embeddings. We demonstrate that Gemma 3n LLM can be fine-tuned to reason over \"Spatial Audio Tokens\" produced by PhaseCoder. We show our encoder achieves state-of-the-art results on microphone-invariant localization benchmarks and, for the first time, enables an LLM to perform complex spatial reasoning and targeted transcription tasks from an arbitrary microphone array.",
-      "url": "https://arxiv.org/abs/2601.21124",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21124.pdf",
-      "titleJa": "PhaseCoder: マルチモーダル LLM のためのマイクロフォン形状に依存しない空間オーディオ理解"
-    },
-    {
-      "id": "2601.21114",
-      "arxivId": "2601.21114",
-      "title": "DNN-Based Online Source Counting Based on Spatial Generalized Magnitude Squared Coherence",
-      "authors": [
-        "Henri Gode",
-        "Simon Doclo"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "eess.AS",
-        "cs.SD"
-      ],
-      "abstract": "The number of active sound sources is a key parameter in many acoustic signal processing tasks, such as source localization, source separation, and multi-microphone speech enhancement. This paper proposes a novel method for online source counting by detecting changes in the number of active sources based on spatial coherence. The proposed method exploits the fact that a single coherent source in spatially white background noise yields high spatial coherence, whereas only noise results in low spatial coherence. By applying a spatial whitening operation, the source counting problem is reformulated as a change detection task, aiming to identify the time frames when the number of active sources changes. The method leverages the generalized magnitude-squared coherence as a measure to quantify spatial coherence, providing features for a compact neural network trained to detect source count changes framewise. Simulation results with binaural hearing aids in reverberant acoustic scenes with up to 4 speakers and background noise demonstrate the effectiveness of the proposed method for online source counting.",
-      "url": "https://arxiv.org/abs/2601.21114",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21114.pdf",
-      "titleJa": "空間一般化振幅二乗コヒーレンスに基づくDNNベースのオンラインソースカウント"
-    },
-    {
-      "id": "2601.21110",
-      "arxivId": "2601.21110",
-      "title": "Unseen but not Unknown: Using Dataset Concealment to Robustly Evaluate Speech Quality Estimation Models",
-      "authors": [
-        "Jaden Pieper",
-        "Stephen D. Voran"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "eess.AS",
-        "cs.SD"
-      ],
-      "abstract": "We introduce Dataset Concealment (DSC), a rigorous new procedure for evaluating and interpreting objective speech quality estimation models. DSC quantifies and decomposes the performance gap between research results and real-world application requirements, while offering context and additional insights into model behavior and dataset characteristics. We also show the benefits of addressing the corpus effect by using the dataset Aligner from AlignNet when training models with multiple datasets. We demonstrate DSC and the improvements from the Aligner using nine training datasets and nine unseen datasets with three well-studied models: MOSNet, NISQA, and a Wav2Vec2.0-based model. DSC provides interpretable views of the generalization capabilities and limitations of models, while allowing all available data to be used at training. An additional result is that adding the 1000 parameter dataset Aligner to the 94 million parameter Wav2Vec model during training does significantly improve the resulting model's ability to estimate speech quality for unseen data.",
-      "url": "https://arxiv.org/abs/2601.21110",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21110.pdf",
-      "titleJa": "目に見えないが未知ではない：データセットの隠蔽を利用した音声品質推定モデルの堅牢な評価"
-    },
-    {
-      "id": "2601.21084",
-      "arxivId": "2601.21084",
-      "title": "Position-invariant Fine-tuning of Speech Enhancement Models with Self-supervised Speech Representations",
-      "authors": [
-        "Amit Meghanani",
-        "Thomas Hain"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "cs.CL",
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "Integrating front-end speech enhancement (SE) models with self-supervised learning (SSL)-based speech models is effective for downstream tasks in noisy conditions. SE models are commonly fine-tuned using SSL representations with mean squared error (MSE) loss between enhanced and clean speech. However, MSE is prone to exploiting positional embeddings in SSL models, allowing the objective to be minimised through positional correlations instead of content-related information. This work frames the problem as a general limitation of self-supervised representation fine-tuning and investigates it through representation-guided SE. Two strategies are considered: (1) zero-padding, previously explored in SSL pre-training but here examined in the fine-tuning setting, and (2) speed perturbations with a soft-DTW loss. Experiments show that the soft-DTW-based approach achieves faster convergence and improved downstream performance, underscoring the importance of position-invariant fine-tuning in SSL-based speech modelling.",
-      "url": "https://arxiv.org/abs/2601.21084",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21084.pdf",
-      "titleJa": "自己教師音声表現を用いた音声強調モデルの位置不変微調整"
-    },
-    {
-      "id": "2601.20992",
-      "arxivId": "2601.20992",
-      "title": "asr_eval: Algorithms and tools for multi-reference and streaming speech recognition evaluation",
-      "authors": [
-        "Oleg Sedukhin",
-        "Andrey Kostin"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "cs.CL",
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "We propose several improvements to the speech recognition evaluation. First, we propose a string alignment algorithm that supports both multi-reference labeling, arbitrary-length insertions and better word alignment. This is especially useful for non-Latin languages, those with rich word formation, to label cluttered or longform speech. Secondly, we collect a novel test set DiverseSpeech-Ru of longform in-the-wild Russian speech with careful multi-reference labeling. We also perform multi-reference relabeling of popular Russian tests set and study fine-tuning dynamics on its corresponding train set. We demonstrate that the model often adopts to dataset-specific labeling, causing an illusion of metric improvement. Based on the improved word alignment, we develop tools to evaluate streaming speech recognition and to align multiple transcriptions to compare them visually. Additionally, we provide uniform wrappers for many offline and streaming speech recognition models. Our code will be made publicly available.",
-      "url": "https://arxiv.org/abs/2601.20992",
-      "pdfUrl": "https://arxiv.org/pdf/2601.20992.pdf",
-      "titleJa": "asr_eval: マルチリファレンスおよびストリーミング音声認識評価のためのアルゴリズムとツール"
-    },
-    {
-      "id": "2601.20573",
-      "arxivId": "2601.20573",
-      "title": "Gen-SER: When the generative model meets speech emotion recognition",
-      "authors": [
-        "Taihui Wang",
-        "Jinzheng Zhao",
-        "Rilin Chen",
-        "Tong Lei",
-        "Wenwu Wang",
-        "Dong Yu"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "cs.SD"
-      ],
-      "abstract": "Speech emotion recognition (SER) is crucial in speech understanding and generation. Most approaches are based on either classification models or large language models. Different from previous methods, we propose Gen-SER, a novel approach that reformulates SER as a distribution shift problem via generative models. We propose to project discrete class labels into a continuous space, and obtain the terminal distribution via sinusoidal taxonomy encoding. The target-matching-based generative model is adopted to transform the initial distribution into the terminal distribution efficiently. The classification is achieved by calculating the similarity of the generated terminal distribution and ground truth terminal distribution. The experimental results confirm the efficacy of the proposed method, demonstrating its extensibility to various speech-understanding tasks and suggesting its potential applicability to a broader range of classification tasks.",
-      "url": "https://arxiv.org/abs/2601.20573",
-      "pdfUrl": "https://arxiv.org/pdf/2601.20573.pdf",
-      "titleJa": "Gen-SER: 生成モデルと音声感情認識が出会うとき"
-    },
-    {
-      "id": "2601.20510",
-      "arxivId": "2601.20510",
-      "title": "Audio Deepfake Detection in the Age of Advanced Text-to-Speech models",
-      "authors": [
-        "Robin Singh",
-        "Aditya Yogesh Nair",
-        "Fabio Palumbo",
-        "Florian Barbaro",
-        "Anna Dyka",
-        "Lohith Rachakonda"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "cs.SD",
-        "cs.AI",
-        "eess.AS"
-      ],
-      "abstract": "Recent advances in Text-to-Speech (TTS) systems have substantially increased the realism of synthetic speech, raising new challenges for audio deepfake detection. This work presents a comparative evaluation of three state-of-the-art TTS models--Dia2, Maya1, and MeloTTS--representing streaming, LLM-based, and non-autoregressive architectures. A corpus of 12,000 synthetic audio samples was generated using the Daily-Dialog dataset and evaluated against four detection frameworks, including semantic, structural, and signal-level approaches. The results reveal significant variability in detector performance across generative mechanisms: models effective against one TTS architecture may fail against others, particularly LLM-based synthesis. In contrast, a multi-view detection approach combining complementary analysis levels demonstrates robust performance across all evaluated models. These findings highlight the limitations of single-paradigm detectors and emphasize the necessity of integrated detection strategies to address the evolving landscape of audio deepfake threats.",
-      "url": "https://arxiv.org/abs/2601.20510",
-      "pdfUrl": "https://arxiv.org/pdf/2601.20510.pdf",
-      "titleJa": "高度な音声合成モデル時代の音声ディープフェイク検出"
-    },
-    {
-      "id": "2601.20481",
-      "arxivId": "2601.20481",
-      "title": "Erasing Your Voice Before It's Heard: Training-free Speaker Unlearning for Zero-shot Text-to-Speech",
-      "authors": [
-        "Myungjin Lee",
-        "Eunji Shin",
-        "Jiyoung Lee"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "eess.AS",
-        "cs.SD"
-      ],
-      "abstract": "Modern zero-shot text-to-speech (TTS) models offer unprecedented expressivity but also pose serious crime risks, as they can synthesize voices of individuals who never consented. In this context, speaker unlearning aims to prevent the generation of specific speaker identities upon request. Existing approaches, reliant on retraining, are costly and limited to speakers seen in the training set. We present TruS, a training-free speaker unlearning framework that shifts the paradigm from data deletion to inference-time control. TruS steers identity-specific hidden activations to suppress target speakers while preserving other attributes (e.g., prosody and emotion). Experimental results show that TruS effectively prevents voice generation on both seen and unseen opt-out speakers, establishing a scalable safeguard for speech synthesis. The demo and code are available on http://mmai.ewha.ac.kr/trus.",
-      "url": "https://arxiv.org/abs/2601.20481",
-      "pdfUrl": "https://arxiv.org/pdf/2601.20481.pdf",
-      "titleJa": "聞かれる前に声を消す：ゼロショット音声合成のためのトレーニング不要のスピーカーアンラーニング"
-    },
-    {
-      "id": "2601.21940",
-      "arxivId": "2601.21940",
-      "title": "DisContSE: Single-Step Diffusion Speech Enhancement Based on Joint Discrete and Continuous Embeddings",
-      "authors": [
-        "Yihui Fu",
-        "Tim Fingscheidt"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "eess.AS"
-      ],
-      "abstract": "Diffusion speech enhancement on discrete audio codec features gain immense attention due to their improved speech component reconstruction capability. However, they usually suffer from high inference computational complexity due to multiple reverse process iterations. Furthermore, they generally achieve promising results on non-intrusive metrics but show poor performance on intrusive metrics, as they may struggle in reconstructing the correct phones. In this paper, we propose DisContSE, an efficient diffusion-based speech enhancement model on joint discrete codec tokens and continuous embeddings. Our contributions are three-fold. First, we formulate both a discrete and a continuous enhancement module operating on discrete audio codec tokens and continuous embeddings, respectively, to achieve improved fidelity and intelligibility simultaneously. Second, a semantic enhancement module is further adopted to achieve optimal phonetic accuracy. Third, we achieve a single-step efficient reverse process in inference with a novel quantization error mask initialization strategy, which, according to our knowledge, is the first successful single-step diffusion speech enhancement based on an audio codec. Trained and evaluated on URGENT 2024 Speech Enhancement Challenge data splits, the proposed DisContSE excels top-reported time- and frequency-domain diffusion baseline methods in PESQ, POLQA, UTMOS, and in a subjective ITU-T P.808 listening test, clearly achieving an overall top rank.",
-      "url": "https://arxiv.org/abs/2601.21940",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21940.pdf",
-      "titleJa": "DisContSE: 離散的および連続的な埋め込みに基づくシングルステップ拡散音声強調"
-    },
-    {
-      "id": "2601.21886",
-      "arxivId": "2601.21886",
-      "title": "Speech Quality-Based Localization of Low-Quality Speech and Text-to-Speech Synthesis Artefacts",
-      "authors": [
-        "Michael Kuhlmann",
-        "Alexander Werning",
-        "Thilo von Neumann",
-        "Reinhold Haeb-Umbach"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "eess.AS"
-      ],
-      "abstract": "A large number of works view the automatic assessment of speech from an utterance- or system-level perspective. While such approaches are good in judging overall quality, they cannot adequately explain why a certain score was assigned to an utterance. frame-level scores can provide better interpretability, but models predicting them are harder to tune and regularize since no strong targets are available during training. In this work, we show that utterance-level speech quality predictors can be regularized with a segment-based consistency constraint which notably reduces frame-level stochasticity. We then demonstrate two applications involving frame-level scores: The partial spoof scenario and the detection of synthesis artefacts in two state-of-the-art text-to-speech systems. For the latter, we perform listening tests and confirm that listeners rate segments to be of poor quality more often in the set defined by low frame-level scores than in a random control set.",
-      "url": "https://arxiv.org/abs/2601.21886",
-      "pdfUrl": "https://arxiv.org/pdf/2601.21886.pdf",
-      "titleJa": "低品質音声およびテキスト音声合成アーティファクトの音声品質ベースの定位"
-    },
-    {
-      "id": "2601.20542",
-      "arxivId": "2601.20542",
-      "title": "Decoding Speech Envelopes from Electroencephalogram with a Contrastive Pearson Correlation Coefficient Loss",
-      "authors": [
-        "Yayun Liang",
-        "Yuanming Zhang",
-        "Fei Chen",
-        "Jing Lu",
-        "Zhibin Lin"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "eess.AS"
-      ],
-      "abstract": "Recent advances in reconstructing speech envelopes from Electroencephalogram (EEG) signals have enabled continuous auditory attention decoding (AAD) in multi-speaker environments. Most Deep Neural Network (DNN)-based envelope reconstruction models are trained to maximize the Pearson correlation coefficients (PCC) between the attended envelope and the reconstructed envelope (attended PCC). While the difference between the attended PCC and the unattended PCC plays an essential role in auditory attention decoding, existing methods often focus on maximizing the attended PCC. We therefore propose a contrastive PCC loss which represents the difference between the attended PCC and the unattended PCC. The proposed approach is evaluated on three public EEG AAD datasets using four DNN architectures. Across many settings, the proposed objective improves envelope separability and AAD accuracy, while also revealing dataset- and architecture-dependent failure cases.",
-      "url": "https://arxiv.org/abs/2601.20542",
-      "pdfUrl": "https://arxiv.org/pdf/2601.20542.pdf",
-      "titleJa": "対照的なピアソン相関係数損失を用いた脳波からの音声エンベロープのデコード"
-    },
-    {
-      "id": "2601.20900",
-      "arxivId": "2601.20900",
-      "title": "Text-only adaptation in LLM-based ASR through text denoising",
-      "authors": [
-        "Sergio Burdisso",
-        "Esaú Villatoro-Tello",
-        "Andrés Carofilis",
-        "Shashi Kumar",
-        "Kadri Hacioglu",
-        "Srikanth Madikeri",
-        "Pradeep Rangappa",
-        "Manjunath K E",
-        "Petr Motlicek",
-        "Shankar Venkatesan",
-        "Andreas Stolcke"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "cs.SD",
-        "cs.CL",
-        "cs.LG",
-        "eess.AS"
-      ],
-      "abstract": "Adapting automatic speech recognition (ASR) systems based on large language models (LLMs) to new domains using text-only data is a significant yet underexplored challenge. Standard fine-tuning of the LLM on target-domain text often disrupts the critical alignment between speech and text modalities learned by the projector, degrading performance. We introduce a novel text-only adaptation method that emulates the audio projection task by treating it as a text denoising task. Our approach thus trains the LLM to recover clean transcripts from noisy inputs. This process effectively adapts the model to a target domain while preserving cross-modal alignment. Our solution is lightweight, requiring no architectural changes or additional parameters. Extensive evaluation on two datasets demonstrates up to 22.1% relative improvement, outperforming recent state-of-the-art text-only adaptation methods.",
-      "url": "https://arxiv.org/abs/2601.20900",
-      "pdfUrl": "https://arxiv.org/pdf/2601.20900.pdf",
-      "titleJa": "テキストノイズ除去によるLLMベースのASRにおけるテキストのみの適応"
-    },
-    {
-      "id": "2601.20898",
-      "arxivId": "2601.20898",
-      "title": "Reducing Prompt Sensitivity in LLM-based Speech Recognition Through Learnable Projection",
-      "authors": [
-        "Sergio Burdisso",
-        "Esaú Villatoro-Tello",
-        "Shashi Kumar",
-        "Srikanth Madikeri",
-        "Andrés Carofilis",
-        "Pradeep Rangappa",
-        "Manjunath K E",
-        "Kadri Hacioglu",
-        "Petr Motlicek",
-        "Andreas Stolcke"
-      ],
-      "publishedDate": "2026-01-28",
-      "categories": [
-        "eess.AS",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "abstract": "LLM-based automatic speech recognition (ASR), a well-established approach, connects speech foundation models to large language models (LLMs) through a speech-to-LLM projector, yielding promising results. A common design choice in these architectures is the use of a fixed, manually defined prompt during both training and inference. This setup not only enables applicability across a range of practical scenarios, but also helps maximize model performance. However, the impact of prompt design remains underexplored. This paper presents a comprehensive analysis of commonly used prompts across diverse datasets, showing that prompt choice significantly affects ASR performance and introduces instability, with no single prompt performing best across all cases. Inspired by the speech-to-LLM projector, we propose a prompt projector module, a simple, model-agnostic extension that learns to project prompt embeddings to more effective regions of the LLM input space, without modifying the underlying LLM-based ASR model. Experiments on four datasets show that the addition of a prompt projector consistently improves performance, reduces variability, and outperforms the best manually selected prompts.",
-      "url": "https://arxiv.org/abs/2601.20898",
-      "pdfUrl": "https://arxiv.org/pdf/2601.20898.pdf",
-      "titleJa": "学習可能な投影によるLLMベースの音声認識におけるプロンプト感度の低減"
-    },
-    {
-      "id": "2601.22159",
-      "arxivId": "2601.22159",
-      "title": "RedSage: A Cybersecurity Generalist LLM",
-      "authors": [
-        "Naufal Suryanto",
-        "Muzammal Naseer",
-        "Pengfei Li",
-        "Syed Talal Wasim",
-        "Jinhui Yi",
-        "Juergen Gall",
-        "Paolo Ceravolo",
-        "Ernesto Damiani"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CR",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "abstract": "Cybersecurity operations demand assistant LLMs that support diverse workflows without exposing sensitive data. Existing solutions either rely on proprietary APIs with privacy risks or on open models lacking domain adaptation. To bridge this gap, we curate 11.8B tokens of cybersecurity-focused continual pretraining data via large-scale web filtering and manual collection of high-quality resources, spanning 28.6K documents across frameworks, offensive techniques, and security tools. Building on this, we design an agentic augmentation pipeline that simulates expert workflows to generate 266K multi-turn cybersecurity samples for supervised fine-tuning. Combined with general open-source LLM data, these resources enable the training of RedSage, an open-source, locally deployable cybersecurity assistant with domain-aware pretraining and post-training. To rigorously evaluate the models, we introduce RedSage-Bench, a benchmark with 30K multiple-choice and 240 open-ended Q&A items covering cybersecurity knowledge, skills, and tool expertise. RedSage is further evaluated on established cybersecurity benchmarks (e.g., CTI-Bench, CyberMetric, SECURE) and general LLM benchmarks to assess broader generalization. At the 8B scale, RedSage achieves consistently better results, surpassing the baseline models by up to +5.59 points on cybersecurity benchmarks and +5.05 points on Open LLM Leaderboard tasks. These findings demonstrate that domain-aware agentic augmentation and pre/post-training can not only enhance cybersecurity-specific expertise but also help to improve general reasoning and instruction-following. All models, datasets, and code are publicly available.",
-      "url": "https://arxiv.org/abs/2601.22159",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22159.pdf",
-      "titleJa": "RedSage: サイバーセキュリティジェネラリスト LLM"
-    },
-    {
-      "id": "2601.22156",
-      "arxivId": "2601.22156",
-      "title": "Hybrid Linear Attention Done Right: Efficient Distillation and Effective Architectures for Extremely Long Contexts",
-      "authors": [
-        "Yingfa Chen",
-        "Zhen Leng Thai",
-        "Zihan Zhou",
-        "Zhu Zhang",
-        "Xingyu Shen",
-        "Shuo Wang",
-        "Chaojun Xiao",
-        "Xu Han",
-        "Zhiyuan Liu"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "abstract": "Hybrid Transformer architectures, which combine softmax attention blocks and recurrent neural networks (RNNs), have shown a desirable performance-throughput tradeoff for long-context modeling, but their adoption and studies are hindered by the prohibitive cost of large-scale pre-training from scratch. Some recent studies have shown that pre-trained softmax attention blocks can be converted into RNN blocks through parameter transfer and knowledge distillation. However, these transfer methods require substantial amounts of training data (more than 10B tokens), and the resulting hybrid models also exhibit poor long-context performance, which is the scenario where hybrid models enjoy significant inference speedups over Transformer-based models. In this paper, we present HALO (Hybrid Attention via Layer Optimization), a pipeline for distilling Transformer models into RNN-attention hybrid models. We then present HypeNet, a hybrid architecture with superior length generalization enabled by a novel position encoding scheme (named HyPE) and various architectural modifications. We convert the Qwen3 series into HypeNet using HALO, achieving performance comparable to the original Transformer models while enjoying superior long-context performance and efficiency. The conversion requires just 2.3B tokens, less than 0.01% of their pre-training data",
-      "url": "https://arxiv.org/abs/2601.22156",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22156.pdf",
-      "titleJa": "ハイブリッド線形注意の正しい使い方: 非常に長いコンテキストに対する効率的な蒸留と効果的なアーキテクチャ"
-    },
-    {
-      "id": "2601.22154",
-      "arxivId": "2601.22154",
-      "title": "Exploring Reasoning Reward Model for Agents",
-      "authors": [
-        "Kaixuan Fan",
-        "Kaituo Feng",
-        "Manyuan Zhang",
-        "Tianshuo Peng",
-        "Zhixun Li",
-        "Yilei Jiang",
-        "Shuang Chen",
-        "Peng Pei",
-        "Xunliang Cai",
-        "Xiangyu Yue"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.AI",
-        "cs.CL"
-      ],
-      "abstract": "Agentic Reinforcement Learning (Agentic RL) has achieved notable success in enabling agents to perform complex reasoning and tool use. However, most methods still relies on sparse outcome-based reward for training. Such feedback fails to differentiate intermediate reasoning quality, leading to suboptimal training results. In this paper, we introduce Agent Reasoning Reward Model (Agent-RRM), a multi-faceted reward model that produces structured feedback for agentic trajectories, including (1) an explicit reasoning trace , (2) a focused critique that provides refinement guidance by highlighting reasoning flaws, and (3) an overall score that evaluates process performance. Leveraging these signals, we systematically investigate three integration strategies: Reagent-C (text-augmented refinement), Reagent-R (reward-augmented guidance), and Reagent-U (unified feedback integration). Extensive evaluations across 12 diverse benchmarks demonstrate that Reagent-U yields substantial performance leaps, achieving 43.7% on GAIA and 46.2% on WebWalkerQA, validating the effectiveness of our reasoning reward model and training schemes. Code, models, and datasets are all released to facilitate future research.",
-      "url": "https://arxiv.org/abs/2601.22154",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22154.pdf",
-      "titleJa": "エージェントのための推論報酬モデルの探究"
-    },
-    {
-      "id": "2601.22149",
-      "arxivId": "2601.22149",
-      "title": "DynaWeb: Model-Based Reinforcement Learning of Web Agents",
-      "authors": [
-        "Hang Ding",
-        "Peidong Liu",
-        "Junqiao Wang",
-        "Ziwei Ji",
-        "Meng Cao",
-        "Rongzhao Zhang",
-        "Lynn Ai",
-        "Eric Yang",
-        "Tianyu Shi",
-        "Lei Yu"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "abstract": "The development of autonomous web agents, powered by Large Language Models (LLMs) and reinforcement learning (RL), represents a significant step towards general-purpose AI assistants. However, training these agents is severely hampered by the challenges of interacting with the live internet, which is inefficient, costly, and fraught with risks. Model-based reinforcement learning (MBRL) offers a promising solution by learning a world model of the environment to enable simulated interaction. This paper introduces DynaWeb, a novel MBRL framework that trains web agents through interacting with a web world model trained to predict naturalistic web page representations given agent actions. This model serves as a synthetic web environment where an agent policy can dream by generating vast quantities of rollout action trajectories for efficient online reinforcement learning. Beyond free policy rollouts, DynaWeb incorporates real expert trajectories from training data, which are randomly interleaved with on-policy rollouts during training to improve stability and sample efficiency. Experiments conducted on the challenging WebArena and WebVoyager benchmarks demonstrate that DynaWeb consistently and significantly improves the performance of state-of-the-art open-source web agent models. Our findings establish the viability of training web agents through imagination, offering a scalable and efficient way to scale up online agentic RL.",
-      "url": "https://arxiv.org/abs/2601.22149",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22149.pdf",
-      "titleJa": "DynaWeb: Webエージェントのモデルベース強化学習"
-    },
-    {
-      "id": "2601.22141",
-      "arxivId": "2601.22141",
-      "title": "Routing the Lottery: Adaptive Subnetworks for Heterogeneous Data",
-      "authors": [
-        "Grzegorz Stefanski",
-        "Alberto Presta",
-        "Michal Byra"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.AI",
-        "cs.CV",
-        "cs.LG"
-      ],
-      "abstract": "In pruning, the Lottery Ticket Hypothesis posits that large networks contain sparse subnetworks, or winning tickets, that can be trained in isolation to match the performance of their dense counterparts. However, most existing approaches assume a single universal winning ticket shared across all inputs, ignoring the inherent heterogeneity of real-world data. In this work, we propose Routing the Lottery (RTL), an adaptive pruning framework that discovers multiple specialized subnetworks, called adaptive tickets, each tailored to a class, semantic cluster, or environmental condition. Across diverse datasets and tasks, RTL consistently outperforms single- and multi-model baselines in balanced accuracy and recall, while using up to 10 times fewer parameters than independent models and exhibiting semantically aligned. Furthermore, we identify subnetwork collapse, a performance drop under aggressive pruning, and introduce a subnetwork similarity score that enables label-free diagnosis of oversparsification. Overall, our results recast pruning as a mechanism for aligning model structure with data heterogeneity, paving the way toward more modular and context-aware deep learning.",
-      "url": "https://arxiv.org/abs/2601.22141",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22141.pdf",
-      "titleJa": "宝くじのルーティング：異種データのための適応型サブネットワーク"
-    },
-    {
-      "id": "2601.22139",
-      "arxivId": "2601.22139",
-      "title": "Reasoning While Asking: Transforming Reasoning Large Language Models from Passive Solvers to Proactive Inquirers",
-      "authors": [
-        "Xin Chen",
-        "Feng Jiang",
-        "Yiqian Zhang",
-        "Hardy Chen",
-        "Shuo Yan",
-        "Wenya Xie",
-        "Min Yang",
-        "Shujian Huang"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "abstract": "Reasoning-oriented Large Language Models (LLMs) have achieved remarkable progress with Chain-of-Thought (CoT) prompting, yet they remain fundamentally limited by a \\emph{blind self-thinking} paradigm: performing extensive internal reasoning even when critical information is missing or ambiguous. We propose Proactive Interactive Reasoning (PIR), a new reasoning paradigm that transforms LLMs from passive solvers into proactive inquirers that interleave reasoning with clarification. Unlike existing search- or tool-based frameworks that primarily address knowledge uncertainty by querying external environments, PIR targets premise- and intent-level uncertainty through direct interaction with the user. PIR is implemented via two core components: (1) an uncertainty-aware supervised fine-tuning procedure that equips models with interactive reasoning capability, and (2) a user-simulator-based policy optimization framework driven by a composite reward that aligns model behavior with user intent. Extensive experiments on mathematical reasoning, code generation, and document editing demonstrate that PIR consistently outperforms strong baselines, achieving up to 32.70\\% higher accuracy, 22.90\\% higher pass rate, and 41.36 BLEU improvement, while reducing nearly half of the reasoning computation and unnecessary interaction turns. Further reliability evaluations on factual knowledge, question answering, and missing-premise scenarios confirm the strong generalization and robustness of PIR. Model and code are publicly available at: \\href{https://github.com/SUAT-AIRI/Proactive-Interactive-R1}",
-      "url": "https://arxiv.org/abs/2601.22139",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22139.pdf",
-      "titleJa": "質問しながら推論する：大規模言語モデルの推論を受動的な解決者から能動的な探究者へと変換する"
-    },
-    {
-      "id": "2601.22137",
-      "arxivId": "2601.22137",
-      "title": "PRISM: Distribution-free Adaptive Computation of Matrix Functions for Accelerating Neural Network Training",
-      "authors": [
-        "Shenghao Yang",
-        "Zhichao Wang",
-        "Oleg Balabanov",
-        "N. Benjamin Erichson",
-        "Michael W. Mahoney"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "math.NA",
-        "math.OC"
-      ],
-      "abstract": "Matrix functions such as square root, inverse roots, and orthogonalization play a central role in preconditioned gradient methods for neural network training. This has motivated the development of iterative algorithms that avoid explicit eigendecompositions and rely primarily on matrix multiplications, making them well suited for modern GPU accelerators. We present PRISM (Polynomial-fitting and Randomized Iterative Sketching for Matrix functions computation), a general framework for accelerating iterative algorithms for computing matrix functions. PRISM combines adaptive polynomial approximation with randomized sketching: at each iteration, it fits a polynomial surrogate to the current spectrum via a sketched least-squares problem, adapting to the instance at hand with minimal overhead. We apply PRISM to accelerate Newton-Schulz-like iterations for matrix square roots and orthogonalization, which are core primitives in machine learning. Unlike prior methods, PRISM requires no explicit spectral bounds or singular value estimates; and it adapts automatically to the evolving spectrum. Empirically, PRISM accelerates training when integrated into Shampoo and Muon optimizers.",
-      "url": "https://arxiv.org/abs/2601.22137",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22137.pdf",
-      "titleJa": "PRISM: ニューラルネットワークのトレーニングを加速するための分布フリー適応行列関数計算"
-    },
-    {
-      "id": "2601.22136",
-      "arxivId": "2601.22136",
-      "title": "StepShield: When, Not Whether to Intervene on Rogue Agents",
-      "authors": [
-        "Gloria Felicia",
-        "Michael Eniolade",
-        "Jinfeng He",
-        "Zitha Sasindran",
-        "Hemant Kumar",
-        "Milan Hussain Angati",
-        "Sandeep Bandarupalli"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CR",
-        "cs.SE"
-      ],
-      "abstract": "Existing agent safety benchmarks report binary accuracy, conflating early intervention with post-mortem analysis. A detector that flags a violation at step 8 enables intervention; one that reports it at step 48 provides only forensic value. This distinction is critical, yet current benchmarks cannot measure it. We introduce StepShield, the first benchmark to evaluate when violations are detected, not just whether. StepShield contains 9,213 code agent trajectories, including 1,278 meticulously annotated training pairs and a 7,935-trajectory test set with a realistic 8.1% rogue rate. Rogue behaviors are grounded in real-world security incidents across six categories. We propose three novel temporal metrics: Early Intervention Rate (EIR), Intervention Gap, and Tokens Saved. Surprisingly, our evaluation reveals that an LLM-based judge achieves 59% EIR while a static analyzer achieves only 26%, a 2.3x performance gap that is entirely invisible to standard accuracy metrics. We further show that early detection has direct economic benefits: our cascaded HybridGuard detector reduces monitoring costs by 75% and projects to $108M in cumulative savings over five years at enterprise scale. By shifting the focus of evaluation from whether to when, StepShield provides a new foundation for building safer and more economically viable AI agents. The code and data are released under an Apache 2.0 license.",
-      "url": "https://arxiv.org/abs/2601.22136",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22136.pdf",
-      "titleJa": "StepShield: 不正エージェントに介入するかどうかではなく、いつ介入するか"
-    },
-    {
-      "id": "2601.22130",
-      "arxivId": "2601.22130",
-      "title": "World of Workflows: a Benchmark for Bringing World Models to Enterprise Systems",
-      "authors": [
-        "Lakshya Gupta",
-        "Litao Li",
-        "Yizhe Liu",
-        "Sriram Ganapathi Subramanian",
-        "Kaheer Suleman",
-        "Zichen Zhang",
-        "Haoye Lu",
-        "Sumit Pasupalak"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.AI",
-        "cs.SE"
-      ],
-      "abstract": "Frontier large language models (LLMs) excel as autonomous agents in many domains, yet they remain untested in complex enterprise systems where hidden workflows create cascading effects across interconnected databases. Existing enterprise benchmarks evaluate surface-level agentic task completion similar to general consumer benchmarks, ignoring true challenges in enterprises, such as limited observability, large database state, and hidden workflows with cascading side effects. We introduce World of Workflows (WoW), a realistic ServiceNow-based environment incorporating 4,000+ business rules and 55 active workflows embedded in the system, alongside WoW-bench, a benchmark of 234 tasks evaluating constrained agentic task completion and enterprise dynamics modeling capabilities. We reveal two major takeaways: (1) Frontier LLMs suffer from dynamics blindness, consistently failing to predict the invisible, cascading side effects of their actions, which leads to silent constraint violations, and (2) reliability in opaque systems requires grounded world modeling, where agents must mentally simulate hidden state transitions to bridge the observability gap when high-fidelity feedback is unavailable. For reliable and useful enterprise agents, WoW motivates a new paradigm to explicitly learn system dynamics. We release our GitHub for setting up and evaluating WoW.",
-      "url": "https://arxiv.org/abs/2601.22130",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22130.pdf",
-      "titleJa": "ワークフローの世界: エンタープライズ システムに世界モデルを導入するためのベンチマーク"
-    },
-    {
-      "id": "2601.22129",
-      "arxivId": "2601.22129",
-      "title": "SWE-Replay: Efficient Test-Time Scaling for Software Engineering Agents",
-      "authors": [
-        "Yifeng Ding",
-        "Lingming Zhang"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.SE",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "abstract": "Test-time scaling has been widely adopted to enhance the capabilities of Large Language Model (LLM) agents in software engineering (SWE) tasks. However, the standard approach of repeatedly sampling trajectories from scratch is computationally expensive. While recent methods have attempted to mitigate costs using specialized value agents, they can suffer from model miscalibration and fail to generalize to modern agents that synthesize custom bash scripts as tools. In this paper, we introduce SWE-Replay, the first efficient and generalizable test-time scaling technique for modern agents without reliance on potentially noisy value estimates. SWE-Replay optimizes the scaling process by recycling trajectories from prior trials, dynamically choosing to either explore from scratch or exploit archived experience by branching at critical intermediate steps. This selection of intermediate steps is driven by the potential and reasoning significance of repository exploration, rather than external LLM-based quality estimates. Our evaluation shows that, on SWE-Bench Verified, SWE-Replay consistently outperforms naive scaling, reducing costs by up to 17.4% while maintaining or even improving performance by up to 3.8%. Further evaluation on SWE-Bench Pro and Multilingual validates the generalizability of SWE-Replay, establishing it as a robust foundation for efficient test-time scaling of software engineering agents.",
-      "url": "https://arxiv.org/abs/2601.22129",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22129.pdf",
-      "titleJa": "SWE-Replay: ソフトウェアエンジニアリングエージェントの効率的なテスト時間スケーリング"
-    },
-    {
-      "id": "2601.22128",
-      "arxivId": "2601.22128",
-      "title": "The Patient is not a Moving Document: A World Model Training Paradigm for Longitudinal EHR",
-      "authors": [
-        "Irsyad Adam",
-        "Zekai Chen",
-        "David Laprade",
-        "Shaun Porwal",
-        "David Laub",
-        "Erik Reinertsen",
-        "Arda Pekis",
-        "Kevin Brown"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.AI",
-        "cs.CE",
-        "q-bio.QM"
-      ],
-      "abstract": "Large language models (LLMs) trained with next-word-prediction have achieved success as clinical foundation models. Representations from these language backbones yield strong linear probe performance across biomedical tasks, suggesting that patient semantics emerge from next-token prediction at scale. However, this paradigm treats patients as a document to be summarized rather than a dynamical system to be simulated; a patient's trajectory emerges from their state evolving under interventions and time, requiring models that simulate dynamics rather than predict tokens. To address this, we introduce SMB-Structure, a world model for structured EHR that grounds a joint-embedding prediction architecture (JEPA) with next-token prediction (SFT). SFT grounds our model to reconstruct future patient states in token space, while JEPA predicts those futures in latent space from the initial patient representation alone, forcing trajectory dynamics to be encoded before the next state is observed. We validate across two large-scale cohorts: Memorial Sloan Kettering (23,319 oncology patients; 323,000+ patient-years) and INSPECT (19,402 pulmonary embolism patients). Using a linear probe evaluated at multiple points along the disease trajectory, we demonstrate that our training paradigm learns embeddings that capture disease dynamics not recoverable by autoregressive baselines, enabling SMB-Structure to achieve competitive performance on complex tasks characterized by high patient heterogeneity. Model weights are available at https://huggingface.co/standardmodelbio/SMB-v1-1.7B-Structure.",
-      "url": "https://arxiv.org/abs/2601.22128",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22128.pdf",
-      "titleJa": "患者は動く文書ではない：長期EHRのための世界モデルトレーニングパラダイム"
-    },
-    {
-      "id": "2601.22119",
-      "arxivId": "2601.22119",
-      "title": "Alpha Discovery via Grammar-Guided Learning and Search",
-      "authors": [
-        "Han Yang",
-        "Dong Hao",
-        "Zhuohan Wang",
-        "Qi Shi",
-        "Xingtong Li"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "q-fin.CP",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "abstract": "Automatically discovering formulaic alpha factors is a central problem in quantitative finance. Existing methods often ignore syntactic and semantic constraints, relying on exhaustive search over unstructured and unbounded spaces. We present AlphaCFG, a grammar-based framework for defining and discovering alpha factors that are syntactically valid, financially interpretable, and computationally efficient. AlphaCFG uses an alpha-oriented context-free grammar to define a tree-structured, size-controlled search space, and formulates alpha discovery as a tree-structured linguistic Markov decision process, which is then solved using a grammar-aware Monte Carlo Tree Search guided by syntax-sensitive value and policy networks. Experiments on Chinese and U.S. stock market datasets show that AlphaCFG outperforms state-of-the-art baselines in both search efficiency and trading profitability. Beyond trading strategies, AlphaCFG serves as a general framework for symbolic factor discovery and refinement across quantitative finance, including asset pricing and portfolio construction.",
-      "url": "https://arxiv.org/abs/2601.22119",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22119.pdf",
-      "titleJa": "文法ガイドによる学習と検索によるアルファ発見"
-    },
-    {
-      "id": "2601.22118",
-      "arxivId": "2601.22118",
-      "title": "Defining Operational Conditions for Safety-Critical AI-Based Systems from Data",
-      "authors": [
-        "Johann Christensen",
-        "Elena Hoemann",
-        "Frank Köster",
-        "Sven Hallerbach"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.AI"
-      ],
-      "abstract": "Artificial Intelligence (AI) has been on the rise in many domains, including numerous safety-critical applications. However, for complex systems found in the real world, or when data already exist, defining the underlying environmental conditions is extremely challenging. This often results in an incomplete description of the environment in which the AI-based system must operate. Nevertheless, this description, called the Operational Design Domain (ODD), is required in many domains for the certification of AI-based systems. Traditionally, the ODD is created in the early stages of the development process, drawing on sophisticated expert knowledge and related standards. This paper presents a novel Safety-by-Design method to a posteriori define the ODD from previously collected data using a multi-dimensional kernel-based representation. This approach is validated through both Monte Carlo methods and a real-world aviation use case for a future safety-critical collision-avoidance system. Moreover, by defining under what conditions two ODDs are equal, the paper shows that the data-driven ODD can equal the original, underlying hidden ODD of the data. Utilizing the novel, Safe-by-Design kernel-based ODD enables future certification of data-driven, safety-critical AI-based systems.",
-      "url": "https://arxiv.org/abs/2601.22118",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22118.pdf",
-      "titleJa": "データから安全性が重要なAIベースシステムの動作条件を定義する"
-    },
-    {
-      "id": "2601.22114",
-      "arxivId": "2601.22114",
-      "title": "SINA: A Circuit Schematic Image-to-Netlist Generator Using Artificial Intelligence",
-      "authors": [
-        "Saoud Aldowaish",
-        "Yashwanth Karumanchi",
-        "Kai-Chen Chiang",
-        "Soroosh Noorzad",
-        "Morteza Fayazi"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "eess.SY"
-      ],
-      "abstract": "Current methods for converting circuit schematic images into machine-readable netlists struggle with component recognition and connectivity inference. In this paper, we present SINA, an open-source, fully automated circuit schematic image-to-netlist generator. SINA integrates deep learning for accurate component detection, Connected-Component Labeling (CCL) for precise connectivity extraction, and Optical Character Recognition (OCR) for component reference designator retrieval, while employing a Vision-Language Model (VLM) for reliable reference designator assignments. In our experiments, SINA achieves 96.47% overall netlist-generation accuracy, which is 2.72x higher than state-of-the-art approaches.",
-      "url": "https://arxiv.org/abs/2601.22114",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22114.pdf",
-      "titleJa": "SINA: 人工知能を用いた回路図画像からネットリストを生成するツール"
-    },
-    {
-      "id": "2601.22108",
-      "arxivId": "2601.22108",
-      "title": "Value-Based Pre-Training with Downstream Feedback",
-      "authors": [
-        "Shuqi Ke",
-        "Giulia Fanti"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "abstract": "Can a small amount of verified goal information steer the expensive self-supervised pretraining of foundation models? Standard pretraining optimizes a fixed proxy objective (e.g., next-token prediction), which can misallocate compute away from downstream capabilities of interest. We introduce V-Pretraining: a value-based, modality-agnostic method for controlled continued pretraining in which a lightweight task designer reshapes the pretraining task to maximize the value of each gradient step. For example, consider self-supervised learning (SSL) with sample augmentation. The V-Pretraining task designer selects pretraining tasks (e.g., augmentations) for which the pretraining loss gradient is aligned with a gradient computed over a downstream task (e.g., image segmentation). This helps steer pretraining towards relevant downstream capabilities. Notably, the pretrained model is never updated on downstream task labels; they are used only to shape the pretraining task. Under matched learner update budgets, V-Pretraining of 0.5B--7B language models improves reasoning (GSM8K test Pass@1) by up to 18% relative over standard next-token prediction using only 12% of GSM8K training examples as feedback. In vision SSL, we improve the state-of-the-art results on ADE20K by up to 1.07 mIoU and reduce NYUv2 RMSE while improving ImageNet linear accuracy, and we provide pilot evidence of improved token efficiency in continued pretraining.",
-      "url": "https://arxiv.org/abs/2601.22108",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22108.pdf",
-      "titleJa": "下流フィードバックによる価値ベースの事前トレーニング"
-    },
-    {
-      "id": "2601.22101",
-      "arxivId": "2601.22101",
-      "title": "ECO: Quantized Training without Full-Precision Master Weights",
-      "authors": [
-        "Mahdi Nikdan",
-        "Amir Zandieh",
-        "Dan Alistarh",
-        "Vahab Mirrokni"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "abstract": "Quantization has significantly improved the compute and memory efficiency of Large Language Model (LLM) training. However, existing approaches still rely on accumulating their updates in high-precision: concretely, gradient updates must be applied to a high-precision weight buffer, known as $\\textit{master weights}$. This buffer introduces substantial memory overhead, particularly for Sparse Mixture of Experts (SMoE) models, where model parameters and optimizer states dominate memory usage. To address this, we introduce the Error-Compensating Optimizer (ECO), which eliminates master weights by applying updates directly to quantized parameters. ECO quantizes weights after each step and carefully injects the resulting quantization error into the optimizer momentum, forming an error-feedback loop with no additional memory. We prove that, under standard assumptions and a decaying learning rate, ECO converges to a constant-radius neighborhood of the optimum, while naive master-weight removal can incur an error that is inversely proportional to the learning rate. We show empirical results for pretraining small Transformers (30-800M), a Gemma-3 1B model, and a 2.1B parameter Sparse MoE model with FP8 quantization, and fine-tuning DeepSeek-MoE-16B in INT4 precision. Throughout, ECO matches baselines with master weights up to near-lossless accuracy, significantly shifting the static memory vs validation loss Pareto frontier.",
-      "url": "https://arxiv.org/abs/2601.22101",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22101.pdf",
-      "titleJa": "ECO: 完全精度のマスターウェイトを使用しない量子化トレーニング"
-    },
-    {
-      "id": "2601.22093",
-      "arxivId": "2601.22093",
-      "title": "Investigating Associational Biases in Inter-Model Communication of Large Generative Models",
-      "authors": [
-        "Fethiye Irmak Dogan",
-        "Yuval Weiss",
-        "Kajal Patel",
-        "Jiaee Cheong",
-        "Hatice Gunes"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CY",
-        "cs.AI"
-      ],
-      "abstract": "Social bias in generative AI can manifest not only as performance disparities but also as associational bias, whereby models learn and reproduce stereotypical associations between concepts and demographic groups, even in the absence of explicit demographic information (e.g., associating doctors with men). These associations can persist, propagate, and potentially amplify across repeated exchanges in inter-model communication pipelines, where one generative model's output becomes another's input. This is especially salient for human-centred perception tasks, such as human activity recognition and affect prediction, where inferences about behaviour and internal states can lead to errors or stereotypical associations that propagate into unequal treatment. In this work, focusing on human activity and affective expression, we study how such associations evolve within an inter-model communication pipeline that alternates between image generation and image description. Using the RAF-DB and PHASE datasets, we quantify demographic distribution drift induced by model-to-model information exchange and assess whether these drifts are systematic using an explainability pipeline. Our results reveal demographic drifts toward younger representations for both actions and emotions, as well as toward more female-presenting representations, primarily for emotions. We further find evidence that some predictions are supported by spurious visual regions (e.g., background or hair) rather than concept-relevant cues (e.g., body or face). We also examine whether these demographic drifts translate into measurable differences in downstream behaviour, i.e., while predicting activity and emotion labels. Finally, we outline mitigation strategies spanning data-centric, training and deployment interventions, and emphasise the need for careful safeguards when deploying interconnected models in human-centred AI systems.",
-      "url": "https://arxiv.org/abs/2601.22093",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22093.pdf",
-      "titleJa": "大規模生成モデルのモデル間通信における連想バイアスの調査"
-    },
-    {
-      "id": "2601.22083",
-      "arxivId": "2601.22083",
-      "title": "Latent Adversarial Regularization for Offline Preference Optimization",
-      "authors": [
-        "Enyi Jiang",
-        "Yibo Jacky Zhang",
-        "Yinglun Xu",
-        "Andreas Haupt",
-        "Nancy Amato",
-        "Sanmi Koyejo"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "abstract": "Learning from human feedback typically relies on preference optimization that constrains policy updates through token-level regularization. However, preference optimization for language models is particularly challenging because token-space similarity does not imply semantic or behavioral similarity. To address this challenge, we leverage latent-space regularization for language model preference optimization. We introduce GANPO, which achieves latent-space regularization by penalizing divergence between the internal representations of a policy model and a reference model. Given that latent representations are not associated with explicit probability densities, we adopt an adversarial approach inspired by GANs to minimize latent-space divergence. We integrate GANPO as a regularizer into existing offline preference optimization objectives. Experiments across multiple model architectures and tasks show consistent improvements from latent-space regularization. Further, by comparing GANPO-induced inferential biases with those from token-level regularization, we find that GANPO provides more robust structural feedback under distributional shift and noise while maintaining comparable downstream performance with minor computational overhead.",
-      "url": "https://arxiv.org/abs/2601.22083",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22083.pdf",
-      "titleJa": "オフライン選好最適化のための潜在的敵対的正則化"
-    },
-    {
-      "id": "2601.22060",
-      "arxivId": "2601.22060",
-      "title": "Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models",
-      "authors": [
-        "Wenxuan Huang",
-        "Yu Zeng",
-        "Qiuchen Wang",
-        "Zhen Fang",
-        "Shaosheng Cao",
-        "Zheng Chu",
-        "Qingyu Yin",
-        "Shuang Chen",
-        "Zhenfei Yin",
-        "Lin Chen",
-        "Zehui Chen",
-        "Yao Hu",
-        "Philip Torr",
-        "Feng Zhao",
-        "Wanli Ouyang"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "abstract": "Multimodal large language models (MLLMs) have achieved remarkable success across a broad range of vision tasks. However, constrained by the capacity of their internal world knowledge, prior work has proposed augmenting MLLMs by ``reasoning-then-tool-call'' for visual and textual search engines to obtain substantial gains on tasks requiring extensive factual information. However, these approaches typically define multimodal search in a naive setting, assuming that a single full-level or entity-level image query and few text query suffices to retrieve the key evidence needed to answer the question, which is unrealistic in real-world scenarios with substantial visual noise. Moreover, they are often limited in the reasoning depth and search breadth, making it difficult to solve complex questions that require aggregating evidence from diverse visual and textual sources. Building on this, we propose Vision-DeepResearch, which proposes one new multimodal deep-research paradigm, i.e., performs multi-turn, multi-entity and multi-scale visual and textual search to robustly hit real-world search engines under heavy noise. Our Vision-DeepResearch supports dozens of reasoning steps and hundreds of engine interactions, while internalizing deep-research capabilities into the MLLM via cold-start supervision and RL training, resulting in a strong end-to-end multimodal deep-research MLLM. It substantially outperforming existing multimodal deep-research MLLMs, and workflows built on strong closed-source foundation model such as GPT-5, Gemini-2.5-pro and Claude-4-Sonnet. The code will be released in https://github.com/Osilly/Vision-DeepResearch.",
-      "url": "https://arxiv.org/abs/2601.22060",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22060.pdf",
-      "titleJa": "Vision-DeepResearch: マルチモーダル大規模言語モデルにおけるDeepResearch機能の促進"
-    },
-    {
-      "id": "2601.22057",
-      "arxivId": "2601.22057",
-      "title": "Unsupervised Decomposition and Recombination with Discriminator-Driven Diffusion Models",
-      "authors": [
-        "Archer Wang",
-        "Emile Anand",
-        "Yilun Du",
-        "Marin Soljačić"
-      ],
-      "publishedDate": "2026-01-29",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "abstract": "Decomposing complex data into factorized representations can reveal reusable components and enable synthesizing new samples via component recombination. We investigate this in the context of diffusion-based models that learn factorized latent spaces without factor-level supervision. In images, factors can capture background, illumination, and object attributes; in robotic videos, they can capture reusable motion components. To improve both latent factor discovery and quality of compositional generation, we introduce an adversarial training signal via a discriminator trained to distinguish between single-source samples and those generated by recombining factors across sources. By optimizing the generator to fool this discriminator, we encourage physical and semantic consistency in the resulting recombinations. Our method outperforms implementations of prior baselines on CelebA-HQ, Virtual KITTI, CLEVR, and Falcor3D, achieving lower FID scores and better disentanglement as measured by MIG and MCC. Furthermore, we demonstrate a novel application to robotic video trajectories: by recombining learned action components, we generate diverse sequences that significantly increase state-space coverage for exploration on the LIBERO benchmark.",
-      "url": "https://arxiv.org/abs/2601.22057",
-      "pdfUrl": "https://arxiv.org/pdf/2601.22057.pdf",
-      "titleJa": "識別器駆動型拡散モデルによる教師なし分解と再結合"
     },
     {
       "id": "2601.20478",
@@ -1139,7 +1332,7 @@
       "abstract": "Symbolic music representation is a fundamental challenge in computational musicology. While grid-based representations effectively preserve pitch-time spatial correspondence, their inherent data sparsity leads to low encoding efficiency. Discrete-event representations achieve compact encoding but fail to adequately capture structural invariance and spatial locality. To address these complementary limitations, we propose Pianoroll-Event, a novel encoding scheme that describes pianoroll representations through events, combining structural properties with encoding efficiency while maintaining temporal dependencies and local spatial patterns. Specifically, we design four complementary event types: Frame Events for temporal boundaries, Gap Events for sparse regions, Pattern Events for note patterns, and Musical Structure Events for musical metadata. Pianoroll-Event strikes an effective balance between sequence length and vocabulary size, improving encoding efficiency by 1.36\\times to 7.16\\times over representative discrete sequence methods. Experiments across multiple autoregressive architectures show models using our representation consistently outperform baselines in both quantitative and human evaluations.",
       "url": "https://arxiv.org/abs/2601.19951",
       "pdfUrl": "https://arxiv.org/pdf/2601.19951.pdf",
-      "titleJa": "ピアノロールイベント：象徴音楽のための新しい楽譜表現"
+      "titleJa": "ピアノロールイベント：象徴音楽のための斬新な楽譜表現"
     },
     {
       "id": "2601.17645",
@@ -1253,7 +1446,7 @@
       "abstract": "This technical report describes our submission to the ICME 2025 audio encoder challenge. Our submitted system is built on BEATs, a masked speech token prediction based audio encoder. We extend the BEATs model using 74,000 hours of data derived from various speech, music, and sound corpora and scale its architecture upto 300 million parameters. We experiment with speech-heavy and balanced pre-training mixtures to study the impact of different domains on final performance. Our submitted system consists of an ensemble of the Dasheng 1.2 billion model with two custom scaled-up BEATs models trained on the aforementioned pre-training data mixtures. We also propose a simple ensembling technique that retains the best capabilities of constituent models and surpasses both the baseline and Dasheng 1.2B. For open science, we publicly release our trained checkpoints via huggingface at https://huggingface.co/shikhar7ssu/OpenBEATs-ICME-SOUND and https://huggingface.co/shikhar7ssu/OpenBEATs-ICME.",
       "url": "https://arxiv.org/abs/2601.16273",
       "pdfUrl": "https://arxiv.org/pdf/2601.16273.pdf",
-      "titleJa": "ICME 2025オーディオエンコーダチャレンジへのCMU-AISTの応募"
+      "titleJa": "ICME 2025 オーディオエンコーダチャレンジへの CMU-AIST の応募"
     },
     {
       "id": "2601.16150",
@@ -1380,23 +1573,22 @@
       "titleJa": "サンプリング周波数の不一致による音源分離の性能劣化の解析"
     },
     {
-      "id": "2601.15348",
-      "arxivId": "2601.15348",
-      "title": "Abusive music and song transformation using GenAI and LLMs",
+      "id": "2601.21114",
+      "arxivId": "2601.21114",
+      "title": "DNN-Based Online Source Counting Based on Spatial Generalized Magnitude Squared Coherence",
       "authors": [
-        "Jiyang Choi",
-        "Rohitash Chandra"
+        "Henri Gode",
+        "Simon Doclo"
       ],
-      "publishedDate": "2026-01-21",
+      "publishedDate": "2026-01-28",
       "categories": [
-        "cs.SD",
-        "cs.AI",
-        "cs.CL"
+        "eess.AS",
+        "cs.SD"
       ],
-      "abstract": "Repeated exposure to violence and abusive content in music and song content can influence listeners' emotions and behaviours, potentially normalising aggression or reinforcing harmful stereotypes. In this study, we explore the use of generative artificial intelligence (GenAI) and Large Language Models (LLMs) to automatically transform abusive words (vocal delivery) and lyrical content in popular music. Rather than simply muting or replacing a single word, our approach transforms the tone, intensity, and sentiment, thus not altering just the lyrics, but how it is expressed. We present a comparative analysis of four selected English songs and their transformed counterparts, evaluating changes through both acoustic and sentiment-based lenses. Our findings indicate that Gen-AI significantly reduces vocal aggressiveness, with acoustic analysis showing improvements in Harmonic to Noise Ratio, Cepstral Peak Prominence, and Shimmer. Sentiment analysis reduced aggression by 63.3-85.6\\% across artists, with major improvements in chorus sections (up to 88.6\\% reduction). The transformed versions maintained musical coherence while mitigating harmful content, offering a promising alternative to traditional content moderation that avoids triggering the \"forbidden fruit\" effect, where the censored content becomes more appealing simply because it is restricted. This approach demonstrates the potential for GenAI to create safer listening experiences while preserving artistic expression.",
-      "url": "https://arxiv.org/abs/2601.15348",
-      "pdfUrl": "https://arxiv.org/pdf/2601.15348.pdf",
-      "titleJa": "GenAIとLLMを使用した虐待的な音楽と歌の変換"
+      "abstract": "The number of active sound sources is a key parameter in many acoustic signal processing tasks, such as source localization, source separation, and multi-microphone speech enhancement. This paper proposes a novel method for online source counting by detecting changes in the number of active sources based on spatial coherence. The proposed method exploits the fact that a single coherent source in spatially white background noise yields high spatial coherence, whereas only noise results in low spatial coherence. By applying a spatial whitening operation, the source counting problem is reformulated as a change detection task, aiming to identify the time frames when the number of active sources changes. The method leverages the generalized magnitude-squared coherence as a measure to quantify spatial coherence, providing features for a compact neural network trained to detect source count changes framewise. Simulation results with binaural hearing aids in reverberant acoustic scenes with up to 4 speakers and background noise demonstrate the effectiveness of the proposed method for online source counting.",
+      "url": "https://arxiv.org/abs/2601.21114",
+      "pdfUrl": "https://arxiv.org/pdf/2601.21114.pdf",
+      "titleJa": "空間一般化振幅二乗コヒーレンスに基づくDNNベースのオンラインソースカウント"
     },
     {
       "id": "2601.20432",
@@ -1530,222 +1722,8 @@
       "url": "https://arxiv.org/abs/2601.19491",
       "pdfUrl": "https://arxiv.org/pdf/2601.19491.pdf",
       "titleJa": "領域間音場再構成のための順列不変な物理学に基づくニューラルネットワーク"
-    },
-    {
-      "id": "2601.19297",
-      "arxivId": "2601.19297",
-      "title": "Phase-Retrieval-Based Physics-Informed Neural Networks For Acoustic Magnitude Field Reconstruction",
-      "authors": [
-        "Karl Schrader",
-        "Shoichi Koyama",
-        "Tomohiko Nakamura",
-        "Mirco Pezzoli"
-      ],
-      "publishedDate": "2026-01-27",
-      "categories": [
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "We propose a method for estimating the magnitude distribution of an acoustic field from spatially sparse magnitude measurements. Such a method is useful when phase measurements are unreliable or inaccessible. Physics-informed neural networks (PINNs) have shown promise for sound field estimation by incorporating constraints derived from governing partial differential equations (PDEs) into neural networks. However, they do not extend to settings where phase measurements are unavailable, as the loss function based on the governing PDE relies on phase information. To remedy this, we propose a phase-retrieval-based PINN for magnitude field estimation. By representing the magnitude and phase distributions with separate networks, the PDE loss can be computed based on the reconstructed complex amplitude. We demonstrate the effectiveness of our phase-retrieval-based PINN through experimental evaluation.",
-      "url": "https://arxiv.org/abs/2601.19297",
-      "pdfUrl": "https://arxiv.org/pdf/2601.19297.pdf",
-      "titleJa": "音響振幅場再構成のための位相回復ベースの物理学に基づくニューラルネットワーク"
-    },
-    {
-      "id": "2601.19029",
-      "arxivId": "2601.19029",
-      "title": "Audio Foundation Models Outperform Symbolic Representations for Piano Performance Evaluation",
-      "authors": [
-        "Jai Dhiman"
-      ],
-      "publishedDate": "2026-01-26",
-      "categories": [
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "Automated piano performance evaluation traditionally relies on symbolic (MIDI) representations, which capture note-level information but miss the acoustic nuances that characterize expressive playing. I propose using pre-trained audio foundation models, specifically MuQ and MERT, to predict 19 perceptual dimensions of piano performance quality. Using synthesized audio from PercePiano MIDI files (rendered via Pianoteq), I compare audio and symbolic approaches under controlled conditions where both derive from identical source data. The best model, MuQ layers 9-12 with Pianoteq soundfont augmentation, achieves R^2 = 0.537 (95% CI: [0.465, 0.575]), representing a 55% improvement over the symbolic baseline (R^2 = 0.347). Statistical analysis confirms significance (p < 10^-25) with audio outperforming symbolic on all 19 dimensions. I validate the approach through cross-soundfont generalization (R^2 = 0.534 +/- 0.075), difficulty correlation with an external dataset (rho = 0.623), and multi-performer consistency analysis. Analysis of audio-symbolic fusion reveals high error correlation (r = 0.738), explaining why fusion provides minimal benefit: audio representations alone are sufficient. I release the complete training pipeline, pretrained models, and inference code.",
-      "url": "https://arxiv.org/abs/2601.19029",
-      "pdfUrl": "https://arxiv.org/pdf/2601.19029.pdf",
-      "titleJa": "ピアノ演奏評価において、オーディオ基礎モデルは記号表現よりも優れている"
-    },
-    {
-      "id": "2601.18908",
-      "arxivId": "2601.18908",
-      "title": "Enhancing Speech Emotion Recognition using Dynamic Spectral Features and Kalman Smoothing",
-      "authors": [
-        "Marouane El Hizabri",
-        "Abdelfattah Bezzaz",
-        "Ismail Hayoukane",
-        "Youssef Taki"
-      ],
-      "publishedDate": "2026-01-26",
-      "categories": [
-        "cs.SD",
-        "cs.LG",
-        "eess.AS"
-      ],
-      "abstract": "Speech Emotion Recognition systems often use static features like Mel-Frequency Cepstral Coefficients (MFCCs), Zero Crossing Rate (ZCR), and Root Mean Square Energy (RMSE). Because of this, they can misclassify emotions when there is acoustic noise in vocal signals. To address this, we added dynamic features using Dynamic Spectral features (Deltas and Delta-Deltas) along with the Kalman Smoothing algorithm. This approach reduces noise and improves emotion classification. Since emotion changes over time, the Kalman Smoothing filter also helped make the classifier outputs more stable. Tests on the RAVDESS dataset showed that this method achieved a state-of-the-art accuracy of 87\\% and reduced misclassification between emotions with similar acoustic features",
-      "url": "https://arxiv.org/abs/2601.18908",
-      "pdfUrl": "https://arxiv.org/pdf/2601.18908.pdf",
-      "titleJa": "動的スペクトル特徴とカルマンスムージングを用いた音声感情認識の強化"
-    },
-    {
-      "id": "2601.18415",
-      "arxivId": "2601.18415",
-      "title": "Pisets: A Robust Speech Recognition System for Lectures and Interviews",
-      "authors": [
-        "Ivan Bondarenko",
-        "Daniil Grebenkin",
-        "Oleg Sedukhin",
-        "Mikhail Klementev",
-        "Roman Derunets",
-        "Lyudmila Budneva"
-      ],
-      "publishedDate": "2026-01-26",
-      "categories": [
-        "cs.CL",
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "This work presents a speech-to-text system \"Pisets\" for scientists and journalists which is based on a three-component architecture aimed at improving speech recognition accuracy while minimizing errors and hallucinations associated with the Whisper model. The architecture comprises primary recognition using Wav2Vec2, false positive filtering via the Audio Spectrogram Transformer (AST), and final speech recognition through Whisper. The implementation of curriculum learning methods and the utilization of diverse Russian-language speech corpora significantly enhanced the system's effectiveness. Additionally, advanced uncertainty modeling techniques were introduced, contributing to further improvements in transcription quality. The proposed approaches ensure robust transcribing of long audio data across various acoustic conditions compared to WhisperX and the usual Whisper model. The source code of \"Pisets\" system is publicly available at GitHub: https://github.com/bond005/pisets.",
-      "url": "https://arxiv.org/abs/2601.18415",
-      "pdfUrl": "https://arxiv.org/pdf/2601.18415.pdf",
-      "titleJa": "Pisets: 講義やインタビューのための堅牢な音声認識システム"
-    },
-    {
-      "id": "2601.18086",
-      "arxivId": "2601.18086",
-      "title": "From Human Speech to Ocean Signals: Transferring Speech Large Models for Underwater Acoustic Target Recognition",
-      "authors": [
-        "Mengcheng Huang",
-        "Xue Zhou",
-        "Chen Xu",
-        "Dapeng Man"
-      ],
-      "publishedDate": "2026-01-26",
-      "categories": [
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "Underwater acoustic target recognition (UATR) plays a vital role in marine applications but remains challenging due to limited labeled data and the complexity of ocean environments. This paper explores a central question: can speech large models (SLMs), trained on massive human speech corpora, be effectively transferred to underwater acoustics? To investigate this, we propose UATR-SLM, a simple framework that reuses the speech feature pipeline, adapts the SLM as an acoustic encoder, and adds a lightweight classifier.Experiments on the DeepShip and ShipsEar benchmarks show that UATR-SLM achieves over 99% in-domain accuracy, maintains strong robustness across variable signal lengths, and reaches up to 96.67% accuracy in cross-domain evaluation. These results highlight the strong transferability of SLMs to UATR, establishing a promising paradigm for leveraging speech foundation models in underwater acoustics.",
-      "url": "https://arxiv.org/abs/2601.18086",
-      "pdfUrl": "https://arxiv.org/pdf/2601.18086.pdf",
-      "titleJa": "人間の音声から海洋信号へ：水中音響ターゲット認識のための音声大規模モデルの転送"
-    },
-    {
-      "id": "2601.19949",
-      "arxivId": "2601.19949",
-      "title": "RIR-Mega-Speech: A Reverberant Speech Corpus with Comprehensive Acoustic Metadata and Reproducible Evaluation",
-      "authors": [
-        "Mandip Goswami"
-      ],
-      "publishedDate": "2026-01-25",
-      "categories": [
-        "eess.AS",
-        "cs.CL",
-        "cs.SD",
-        "eess.SP"
-      ],
-      "abstract": "Despite decades of research on reverberant speech, comparing methods remains difficult because most corpora lack per-file acoustic annotations or provide limited documentation for reproduction. We present RIR-Mega-Speech, a corpus of approximately 117.5 hours created by convolving LibriSpeech utterances with roughly 5,000 simulated room impulse responses from the RIR-Mega collection. Every file includes RT60, direct-to-reverberant ratio (DRR), and clarity index ($C_{50}$) computed from the source RIR using clearly defined, reproducible procedures. We also provide scripts to rebuild the dataset and reproduce all evaluation results. Using Whisper small on 1,500 paired utterances, we measure 5.20% WER (95% CI: 4.69--5.78) on clean speech and 7.70% (7.04--8.35) on reverberant versions, corresponding to a paired increase of 2.50 percentage points (2.06--2.98). This represents a 48% relative degradation. WER increases monotonically with RT60 and decreases with DRR, consistent with prior perceptual studies. While the core finding that reverberation harms recognition is well established, we aim to provide the community with a standardized resource where acoustic conditions are transparent and results can be verified independently. The repository includes one-command rebuild instructions for both Windows and Linux environments.",
-      "url": "https://arxiv.org/abs/2601.19949",
-      "pdfUrl": "https://arxiv.org/pdf/2601.19949.pdf",
-      "titleJa": "RIR-Mega-Speech: 包括的な音響メタデータと再現可能な評価を備えた残響音声コーパス"
-    },
-    {
-      "id": "2601.17902",
-      "arxivId": "2601.17902",
-      "title": "dLLM-ASR: A Faster Diffusion LLM-based Framework for Speech Recognition",
-      "authors": [
-        "Wenjie Tian",
-        "Bingshen Mu",
-        "Guobin Ma",
-        "Xuelong Geng",
-        "Zhixian Zhao",
-        "Lei Xie"
-      ],
-      "publishedDate": "2026-01-25",
-      "categories": [
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "Automatic speech recognition (ASR) systems based on large language models (LLMs) achieve superior performance by leveraging pretrained LLMs as decoders, but their token-by-token generation mechanism leads to inference latency that grows linearly with sequence length. Meanwhile, discrete diffusion large language models (dLLMs) offer a promising alternative, enabling high-quality parallel sequence generation with pretrained decoders. However, directly applying native text-oriented dLLMs to ASR leads to a fundamental mismatch between open-ended text generation and the acoustically conditioned transcription paradigm required by ASR. As a result, it introduces unnecessary difficulty and computational redundancy, such as denoising from pure noise, inflexible generation lengths, and fixed denoising steps. We propose dLLM-ASR, an efficient dLLM-based ASR framework that formulates dLLM's decoding as a prior-guided and adaptive denoising process. It leverages an ASR prior to initialize the denoising process and provide an anchor for sequence length. Building upon this prior, length-adaptive pruning dynamically removes redundant tokens, while confidence-based denoising allows converged tokens to exit the denoising loop early, enabling token-level adaptive computation. Experiments demonstrate that dLLM-ASR achieves recognition accuracy comparable to autoregressive LLM-based ASR systems and delivers a 4.44$\\times$ inference speedup, establishing a practical and efficient paradigm for ASR.",
-      "url": "https://arxiv.org/abs/2601.17902",
-      "pdfUrl": "https://arxiv.org/pdf/2601.17902.pdf",
-      "titleJa": "dLLM-ASR: 音声認識のための高速拡散LLMベースのフレームワーク"
-    },
-    {
-      "id": "2601.17690",
-      "arxivId": "2601.17690",
-      "title": "Segment Length Matters: A Study of Segment Lengths on Audio Fingerprinting Performance",
-      "authors": [
-        "Ziling Gong",
-        "Yunyan Ouyang",
-        "Iram Kamdar",
-        "Melody Ma",
-        "Hongjie Chen",
-        "Franck Dernoncourt",
-        "Ryan A. Rossi",
-        "Nesreen K. Ahmed"
-      ],
-      "publishedDate": "2026-01-25",
-      "categories": [
-        "cs.SD",
-        "cs.AI",
-        "cs.IR",
-        "cs.LG",
-        "eess.AS"
-      ],
-      "abstract": "Audio fingerprinting provides an identifiable representation of acoustic signals, which can be later used for identification and retrieval systems. To obtain a discriminative representation, the input audio is usually segmented into shorter time intervals, allowing local acoustic features to be extracted and analyzed. Modern neural approaches typically operate on short, fixed-duration audio segments, yet the choice of segment duration is often made heuristically and rarely examined in depth. In this paper, we study how segment length affects audio fingerprinting performance. We extend an existing neural fingerprinting architecture to adopt various segment lengths and evaluate retrieval accuracy across different segment lengths and query durations. Our results show that short segment lengths (0.5-second) generally achieve better performance. Moreover, we evaluate LLM capacity in recommending the best segment length, which shows that GPT-5-mini consistently gives the best suggestions across five considerations among three studied LLMs. Our findings provide practical guidance for selecting segment duration in large-scale neural audio retrieval systems.",
-      "url": "https://arxiv.org/abs/2601.17690",
-      "pdfUrl": "https://arxiv.org/pdf/2601.17690.pdf",
-      "titleJa": "セグメント長の重要性：オーディオフィンガープリンティングの性能におけるセグメント長の研究"
-    },
-    {
-      "id": "2601.16774",
-      "arxivId": "2601.16774",
-      "title": "E2E-AEC: Implementing an end-to-end neural network learning approach for acoustic echo cancellation",
-      "authors": [
-        "Yiheng Jiang",
-        "Biao Tian",
-        "Haoxu Wang",
-        "Shengkui Zhao",
-        "Bin Ma",
-        "Daren Chen",
-        "Xiangang Li"
-      ],
-      "publishedDate": "2026-01-23",
-      "categories": [
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "We propose a novel neural network-based end-to-end acoustic echo cancellation (E2E-AEC) method capable of streaming inference, which operates effectively without reliance on traditional linear AEC (LAEC) techniques and time delay estimation. Our approach includes several key strategies: First, we introduce and refine progressive learning to gradually enhance echo suppression. Second, our model employs knowledge transfer by initializing with a pre-trained LAECbased model, harnessing the insights gained from LAEC training. Third, we optimize the attention mechanism with a loss function applied on attention weights to achieve precise time alignment between the reference and microphone signals. Lastly, we incorporate voice activity detection to enhance speech quality and improve echo removal by masking the network output when near-end speech is absent. The effectiveness of our approach is validated through experiments conducted on public datasets.",
-      "url": "https://arxiv.org/abs/2601.16774",
-      "pdfUrl": "https://arxiv.org/pdf/2601.16774.pdf",
-      "titleJa": "E2E-AEC: 音響エコーキャンセルのためのエンドツーエンドのニューラルネットワーク学習アプローチの実装"
-    },
-    {
-      "id": "2601.17086",
-      "arxivId": "2601.17086",
-      "title": "SonoEdit: Null-Space Constrained Knowledge Editing for Pronunciation Correction in LLM-Based TTS",
-      "authors": [
-        "Ayush Pratap Singh",
-        "Harshit Singh",
-        "Nityanand Mathur",
-        "Akshat Mandloi",
-        "Sudarshan Kamath"
-      ],
-      "publishedDate": "2026-01-23",
-      "categories": [
-        "cs.SD",
-        "cs.AI",
-        "eess.AS"
-      ],
-      "abstract": "Neural text-to-speech (TTS) systems systematically mispronounce low-resource proper nouns, particularly non-English names, brands, and geographic locations, due to their underrepresentation in predominantly English training corpora. Existing solutions typically rely on expensive multilingual data collection, supervised finetuning, or manual phonetic annotation, which limits the deployment of TTS systems in linguistically diverse settings. We introduce SonoEdit, a model editing technique that surgically corrects pronunciation errors in pre-trained TTS models without retraining. Instead of costly finetuning or explicit phoneme injection, we propose a parsimonious alternative based on Null-Space Pronunciation Editing, which performs a single-shot parameter update to modify the pronunciation of specific words while provably preserving all other model behavior. We first adapt Acoustic Causal Tracing to identify the Transformer layers responsible for text-to-pronunciation mapping. We then apply Null-Space Constrained Editing to compute a closed-form weight update that corrects the target pronunciation while remaining mathematically orthogonal to the subspace governing general speech generation. This constrained update steers the model's acoustic output toward a desired pronunciation exemplar while guaranteeing zero first-order change on a preserved speech corpus.",
-      "url": "https://arxiv.org/abs/2601.17086",
-      "pdfUrl": "https://arxiv.org/pdf/2601.17086.pdf",
-      "titleJa": "SonoEdit: LLMベースのTTSにおける発音訂正のためのヌル空間制約知識編集"
     }
   ],
-  "lastUpdated": "2026-02-02T01:06:43.144916",
-  "totalCount": 79
+  "lastUpdated": "2026-02-03T01:07:04.768717",
+  "totalCount": 77
 }
