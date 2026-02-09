@@ -426,8 +426,451 @@
       "url": "https://arxiv.org/abs/2602.05920",
       "pdfUrl": "https://arxiv.org/pdf/2602.05920.pdf",
       "titleJa": "容量付き車両経路問題のためのトランスフォーマーを用いた量子強化学習"
+    },
+    {
+      "id": "2602.05770",
+      "arxivId": "2602.05770",
+      "title": "Zero-Shot TTS With Enhanced Audio Prompts: Bsc Submission For The 2026 Wildspoof Challenge TTS Track",
+      "authors": [
+        "Jose Giraldo",
+        "Alex Peiró-Lilja",
+        "Rodolfo Zevallos",
+        "Cristina España-Bonet"
+      ],
+      "publishedDate": "2026-02-05",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "We evaluate two non-autoregressive architectures, StyleTTS2 and F5-TTS, to address the spontaneous nature of in-the-wild speech. Our models utilize flexible duration modeling to improve prosodic naturalness. To handle acoustic noise, we implement a multi-stage enhancement pipeline using the Sidon model, which significantly outperforms standard Demucs in signal quality. Experimental results show that finetuning enhanced audios yields superior robustness, achieving up to 4.21 UTMOS and 3.47 DNSMOS. Furthermore, we analyze the impact of reference prompt quality and length on zero-shot synthesis performance, demonstrating the effectiveness of our approach for realistic speech generation.",
+      "url": "https://arxiv.org/abs/2602.05770",
+      "pdfUrl": "https://arxiv.org/pdf/2602.05770.pdf",
+      "titleJa": "強化された音声プロンプトを備えたゼロショットTTS：2026年ワイルドスポフチャレンジTTSトラックへのBSC提出"
+    },
+    {
+      "id": "2602.05373",
+      "arxivId": "2602.05373",
+      "title": "Speech-XL: Towards Long-Form Speech Understanding in Large Speech Language Models",
+      "authors": [
+        "Haoqin Sun",
+        "Chenyang Lyu",
+        "Shiwan Zhao",
+        "Xuanfan Ni",
+        "Xiangyu Kong",
+        "Longyue Wang",
+        "Weihua Luo",
+        "Yong Qin"
+      ],
+      "publishedDate": "2026-02-05",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "Despite the growing success of Large Speech Language Models (LSLMs) in processing short-term acoustic signals, their extension to long-form audio understanding is severely bottlenecked. This limitation stems from the limited context length and the exorbitant memory footprints required for long-form inference. In this work, we propose Speech-XL, a new model that capitalizes on the intrinsic key-value (KV) sparsification capacity of Large Language Models (LLMs) to achieve high-ratio speech input compression. Specifically, we introduce a novel special token, the Speech Summarization Token (SST), for each speech interval to encapsulate the intra-interval speech information into its associated KV pairs. The SST module is trained via instruction fine-tuning, employing a curriculum learning strategy where the SST learns to compress information in a progressive manner--advancing from low-ratio (simple) to high-ratio (challenging) compression. Despite utilizing significantly less training data than other baselines, our model achieves highly competitive performance on major benchmarks, including LongSpeech and AUDIOMARATHON. By addressing the long-standing bottlenecks in long-form audio modeling, our approach offers a novel perspective on the condensation of extensive acoustic sequences.",
+      "url": "https://arxiv.org/abs/2602.05373",
+      "pdfUrl": "https://arxiv.org/pdf/2602.05373.pdf",
+      "titleJa": "Speech-XL: 大規模音声言語モデルにおける長文音声理解に向けて"
+    },
+    {
+      "id": "2602.05027",
+      "arxivId": "2602.05027",
+      "title": "AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders",
+      "authors": [
+        "Georgii Aparin",
+        "Tasnima Sadekova",
+        "Alexey Rukhovich",
+        "Assel Yermekova",
+        "Laida Kushnareva",
+        "Vadim Popov",
+        "Kristian Kuznetsov",
+        "Irina Piontkovskaya"
+      ],
+      "publishedDate": "2026-02-04",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, including environmental noises and paralinguistic sounds (e.g. laughter, whispering) and disentangle them effectively, requiring removal of only 19-27% of features to erase a concept. Feature steering reduces Whisper's false speech detections by 70% with negligible WER increase, demonstrating real-world applicability. Finally, we find SAE features correlated with human EEG activity during speech perception, indicating alignment with human neural processing. The code and checkpoints are available at https://github.com/audiosae/audiosae_demo.",
+      "url": "https://arxiv.org/abs/2602.05027",
+      "pdfUrl": "https://arxiv.org/pdf/2602.05027.pdf",
+      "titleJa": "AudioSAE: スパースオートエンコーダを用いたオーディオ処理モデルの理解に向けて"
+    },
+    {
+      "id": "2602.04683",
+      "arxivId": "2602.04683",
+      "title": "UniAudio 2.0: A Unified Audio Language Model with Text-Aligned Factorized Audio Tokenization",
+      "authors": [
+        "Dongchao Yang",
+        "Yuanyuan Wang",
+        "Dading Chong",
+        "Songxiang Liu",
+        "Xixin Wu",
+        "Helen Meng"
+      ],
+      "publishedDate": "2026-02-04",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "We study two foundational problems in audio language models: (1) how to design an audio tokenizer that can serve as an intermediate representation for both understanding and generation; and (2) how to build an audio foundation model that generalizes in few-shot and zero-shot settings, analogous to large language models. To this end, we make the following two contributions. First, we propose ReasoningCodec, a discrete audio codec that factorizes audio into (i) reasoning tokens, which encode text-aligned, high-level analysis and planning representations for audio understanding and hierarchical generation, and (ii) reconstruction tokens, which encode semantic-rich acoustic cues for high-fidelity waveform reconstruction. This design achieves understanding performance comparable to strong continuous representations while improving generation quality and reconstruction fidelity over prior discrete tokenizers. Second, we introduce a unified autoregressive architecture for text and audio, together with multi-stage training and multi-task data construction. Using this framework, we train UniAudio 2.0 on 100B text tokens and 60B audio tokens. Across a wide range of speech, sound, and music tasks, UniAudio 2.0 performs competitively on in-domain evaluations and demonstrates strong few-shot and zero-shot generalization to unseen tasks. Demo, code, and checkpoints will be available at \\href{https://dongchaoyang.top/UniAudio2Demo/}{https://dongchaoyang.top/UniAudio2Demo/}.",
+      "url": "https://arxiv.org/abs/2602.04683",
+      "pdfUrl": "https://arxiv.org/pdf/2602.04683.pdf",
+      "titleJa": "UniAudio 2.0: テキスト整合されたファクタライズされたオーディオトークン化を備えた統合オーディオ言語モデル"
+    },
+    {
+      "id": "2602.04307",
+      "arxivId": "2602.04307",
+      "title": "Universal Robust Speech Adaptation for Cross-Domain Speech Recognition and Enhancement",
+      "authors": [
+        "Chien-Chun Wang",
+        "Hung-Shin Lee",
+        "Hsin-Min Wang",
+        "Berlin Chen"
+      ],
+      "publishedDate": "2026-02-04",
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "abstract": "Pre-trained models for automatic speech recognition (ASR) and speech enhancement (SE) have exhibited remarkable capabilities under matched noise and channel conditions. However, these models often suffer from severe performance degradation when confronted with domain shifts, particularly in the presence of unseen noise and channel distortions. In view of this, we in this paper present URSA-GAN, a unified and domain-aware generative framework specifically designed to mitigate mismatches in both noise and channel conditions. URSA-GAN leverages a dual-embedding architecture that consists of a noise encoder and a channel encoder, each pre-trained with limited in-domain data to capture domain-relevant representations. These embeddings condition a GAN-based speech generator, facilitating the synthesis of speech that is acoustically aligned with the target domain while preserving phonetic content. To enhance generalization further, we propose dynamic stochastic perturbation, a novel regularization technique that introduces controlled variability into the embeddings during generation, promoting robustness to unseen domains. Empirical results demonstrate that URSA-GAN effectively reduces character error rates in ASR and improves perceptual metrics in SE across diverse noisy and mismatched channel scenarios. Notably, evaluations on compound test conditions with both channel and noise degradations confirm the generalization ability of URSA-GAN, yielding relative improvements of 16.16% in ASR performance and 15.58% in SE metrics.",
+      "url": "https://arxiv.org/abs/2602.04307",
+      "pdfUrl": "https://arxiv.org/pdf/2602.04307.pdf",
+      "titleJa": "クロスドメイン音声認識と拡張のためのユニバーサルロバスト音声適応"
+    },
+    {
+      "id": "2602.04247",
+      "arxivId": "2602.04247",
+      "title": "DementiaBank-Emotion: A Multi-Rater Emotion Annotation Corpus for Alzheimer's Disease Speech (Version 1.0)",
+      "authors": [
+        "Cheonkam Jeong",
+        "Jessica Liao",
+        "Audrey Lu",
+        "Yutong Song",
+        "Christopher Rashidian",
+        "Donna Krogh",
+        "Erik Krogh",
+        "Mahkameh Rasouli",
+        "Jung-Ah Lee",
+        "Nikil Dutt",
+        "Lisa M Gibbs",
+        "David Sultzer",
+        "Julie Rousseau",
+        "Jocelyn Ludlow",
+        "Margaret Galvez",
+        "Alexander Nuth",
+        "Chet Khay",
+        "Sabine Brunswicker",
+        "Adeline Nyamathi"
+      ],
+      "publishedDate": "2026-02-04",
+      "categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "abstract": "We present DementiaBank-Emotion, the first multi-rater emotion annotation corpus for Alzheimer's disease (AD) speech. Annotating 1,492 utterances from 108 speakers for Ekman's six basic emotions and neutral, we find that AD patients express significantly more non-neutral emotions (16.9%) than healthy controls (5.7%; p < .001). Exploratory acoustic analysis suggests a possible dissociation: control speakers showed substantial F0 modulation for sadness (Delta = -3.45 semitones from baseline), whereas AD speakers showed minimal change (Delta = +0.11 semitones; interaction p = .023), though this finding is based on limited samples (sadness: n=5 control, n=15 AD) and requires replication. Within AD speech, loudness differentiates emotion categories, indicating partially preserved emotion-prosody mappings. We release the corpus, annotation guidelines, and calibration workshop materials to support research on emotion recognition in clinical populations.",
+      "url": "https://arxiv.org/abs/2602.04247",
+      "pdfUrl": "https://arxiv.org/pdf/2602.04247.pdf",
+      "titleJa": "DementiaBank-Emotion: アルツハイマー病音声の多評価者感情注釈コーパス（バージョン 1.0）"
+    },
+    {
+      "id": "2602.03817",
+      "arxivId": "2602.03817",
+      "title": "Adaptive Evidence Weighting for Audio-Spatiotemporal Fusion",
+      "authors": [
+        "Oscar Ovanger",
+        "Levi Harris",
+        "Timothy H. Keitt"
+      ],
+      "publishedDate": "2026-02-03",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "Many machine learning systems have access to multiple sources of evidence for the same prediction target, yet these sources often differ in reliability and informativeness across inputs. In bioacoustic classification, species identity may be inferred both from the acoustic signal and from spatiotemporal context such as location and season; while Bayesian inference motivates multiplicative evidence combination, in practice we typically only have access to discriminative predictors rather than calibrated generative models. We introduce \\textbf{F}usion under \\textbf{IN}dependent \\textbf{C}onditional \\textbf{H}ypotheses (\\textbf{FINCH}), an adaptive log-linear evidence fusion framework that integrates a pre-trained audio classifier with a structured spatiotemporal predictor. FINCH learns a per-sample gating function that estimates the reliability of contextual information from uncertainty and informativeness statistics. The resulting fusion family \\emph{contains} the audio-only classifier as a special case and explicitly bounds the influence of contextual evidence, yielding a risk-contained hypothesis class with an interpretable audio-only fallback. Across benchmarks, FINCH consistently outperforms fixed-weight fusion and audio-only baselines, improving robustness and error trade-offs even when contextual information is weak in isolation. We achieve state-of-the-art performance on CBI and competitive or improved performance on several subsets of BirdSet using a lightweight, interpretable, evidence-based approach. Code is available: \\texttt{\\href{https://anonymous.4open.science/r/birdnoise-85CD/README.md}{anonymous-repository}}",
+      "url": "https://arxiv.org/abs/2602.03817",
+      "pdfUrl": "https://arxiv.org/pdf/2602.03817.pdf",
+      "titleJa": "音声時空間融合のための適応的証拠重み付け"
+    },
+    {
+      "id": "2602.03762",
+      "arxivId": "2602.03762",
+      "title": "Conditional Flow Matching for Visually-Guided Acoustic Highlighting",
+      "authors": [
+        "Hugo Malard",
+        "Gael Le Lan",
+        "Daniel Wong",
+        "David Lou Alon",
+        "Yi-Chiao Wu",
+        "Sanjeel Parekh"
+      ],
+      "publishedDate": "2026-02-03",
+      "categories": [
+        "eess.AS",
+        "cs.LG"
+      ],
+      "abstract": "Visually-guided acoustic highlighting seeks to rebalance audio in alignment with the accompanying video, creating a coherent audio-visual experience. While visual saliency and enhancement have been widely studied, acoustic highlighting remains underexplored, often leading to misalignment between visual and auditory focus. Existing approaches use discriminative models, which struggle with the inherent ambiguity in audio remixing, where no natural one-to-one mapping exists between poorly-balanced and well-balanced audio mixes. To address this limitation, we reframe this task as a generative problem and introduce a Conditional Flow Matching (CFM) framework. A key challenge in iterative flow-based generation is that early prediction errors -- in selecting the correct source to enhance -- compound over steps and push trajectories off-manifold. To address this, we introduce a rollout loss that penalizes drift at the final step, encouraging self-correcting trajectories and stabilizing long-range flow integration. We further propose a conditioning module that fuses audio and visual cues before vector field regression, enabling explicit cross-modal source selection. Extensive quantitative and qualitative evaluations show that our method consistently surpasses the previous state-of-the-art discriminative approach, establishing that visually-guided audio remixing is best addressed through generative modeling.",
+      "url": "https://arxiv.org/abs/2602.03762",
+      "pdfUrl": "https://arxiv.org/pdf/2602.03762.pdf",
+      "titleJa": "視覚誘導音響強調表示のための条件付きフローマッチング"
+    },
+    {
+      "id": "2602.03549",
+      "arxivId": "2602.03549",
+      "title": "EarResp-ANS : Audio-Based On-Device Respiration Rate Estimation on Earphones with Adaptive Noise Suppression",
+      "authors": [
+        "Michael Küttner",
+        "Valeria Zitz",
+        "Supraja Ramesh",
+        "Michael Beigl",
+        "Tobias Röddiger"
+      ],
+      "publishedDate": "2026-02-03",
+      "categories": [
+        "cs.SD",
+        "cs.HC"
+      ],
+      "abstract": "Respiratory rate (RR) is a key vital sign for clinical assessment and mental well-being, yet it is rarely monitored in everyday life due to the lack of unobtrusive sensing technologies. In-ear audio sensing is promising due to its high social acceptance and the amplification of physiological sounds caused by the occlusion effect; however, existing approaches often fail under real-world noise or rely on computationally expensive models. We present EarResp-ANS, the first system enabling fully on-device, real-time RR estimation on commercial earphones. The system employs LMS-based adaptive noise suppression (ANS) to attenuate ambient noise while preserving respiration-related acoustic components, without requiring neural networks or audio streaming, thereby explicitly addressing the energy and privacy constraints of wearable devices. We evaluate EarResp-ANS in a study with 18 participants under realistic acoustic conditions, including music, cafeteria noise, and white noise up to 80 dB SPL. EarResp-ANS achieves robust performance with a global MAE of 0.84 CPM , reduced to 0.47 CPM via automatic outlier rejection, while operating with less than 2% processor load directly on the earphone.",
+      "url": "https://arxiv.org/abs/2602.03549",
+      "pdfUrl": "https://arxiv.org/pdf/2602.03549.pdf",
+      "titleJa": "EarResp-ANS：適応型ノイズ抑制機能を備えたイヤホンにおける音声ベースのデバイス内呼吸数推定"
+    },
+    {
+      "id": "2602.03307",
+      "arxivId": "2602.03307",
+      "title": "GRAM: Spatial general-purpose audio representations for real-world environments",
+      "authors": [
+        "Goksenin Yuksel",
+        "Marcel van Gerven",
+        "Kiki van der Heijden"
+      ],
+      "publishedDate": "2026-02-03",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "Audio foundation models learn general-purpose audio representations that facilitate a wide range of downstream tasks. While the performance of these models has greatly increased for conventional single-channel, dry audio clips, their success in real-world acoustic environments with reverberation and noise is limited. Furthermore, most audio foundation models ignore the spatial dimension of real-world acoustic environments, ruling out tasks involving sound localization. To address these limitations, we propose GRAM: a general-purpose real-world audio model that employs a multi-channel masked autoencoder to efficiently learn spatial audio representations. We evaluated GRAM and other audio foundation models in a standardized manner on high-quality simulations of naturalistic, spatial acoustic environments as well as recordings of real-world environments and release these two complementary benchmark task suites: NatHEAR and RealSELD. Our results demonstrate that GRAM outperforms all state-of-the-art self-supervised audio foundation models on NatHEAR and the clean, single-channel version HEAR, while using only a fraction of the training data. GRAM also shows state-of-the-art localization performance in simulated environments and generalizes efficiently to real-world recordings in RealSELD. Taken together, GRAM presents a significant advance toward robust spatial audio foundation models for real-world environments.",
+      "url": "https://arxiv.org/abs/2602.03307",
+      "pdfUrl": "https://arxiv.org/pdf/2602.03307.pdf",
+      "titleJa": "GRAM: 現実世界環境のための空間汎用オーディオ表現"
+    },
+    {
+      "id": "2602.03891",
+      "arxivId": "2602.03891",
+      "title": "Sounding Highlights: Dual-Pathway Audio Encoders for Audio-Visual Video Highlight Detection",
+      "authors": [
+        "Seohyun Joo",
+        "Yoori Oh"
+      ],
+      "publishedDate": "2026-02-03",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.CV",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "abstract": "Audio-visual video highlight detection aims to automatically identify the most salient moments in videos by leveraging both visual and auditory cues. However, existing models often underutilize the audio modality, focusing on high-level semantic features while failing to fully leverage the rich, dynamic characteristics of sound. To address this limitation, we propose a novel framework, Dual-Pathway Audio Encoders for Video Highlight Detection (DAViHD). The dual-pathway audio encoder is composed of a semantic pathway for content understanding and a dynamic pathway that captures spectro-temporal dynamics. The semantic pathway extracts high-level information by identifying the content within the audio, such as speech, music, or specific sound events. The dynamic pathway employs a frequency-adaptive mechanism as time evolves to jointly model these dynamics, enabling it to identify transient acoustic events via salient spectral bands and rapid energy changes. We integrate the novel audio encoder into a full audio-visual framework and achieve new state-of-the-art performance on the large-scale MrHiSum benchmark. Our results demonstrate that a sophisticated, dual-faceted audio representation is key to advancing the field of highlight detection.",
+      "url": "https://arxiv.org/abs/2602.03891",
+      "pdfUrl": "https://arxiv.org/pdf/2602.03891.pdf",
+      "titleJa": "サウンドハイライト：オーディオビジュアルビデオハイライト検出のためのデュアルパスオーディオエンコーダ"
+    },
+    {
+      "id": "2602.02980",
+      "arxivId": "2602.02980",
+      "title": "WST-X Series: Wavelet Scattering Transform for Interpretable Speech Deepfake Detection",
+      "authors": [
+        "Xi Xuan",
+        "Davide Carbone",
+        "Ruchi Pandey",
+        "Wenxin Zhang",
+        "Tomi H. Kinnunen"
+      ],
+      "publishedDate": "2026-02-03",
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "eess.SP"
+      ],
+      "abstract": "Designing front-ends for speech deepfake detectors primarily focuses on two categories. Hand-crafted filterbank features are transparent but are limited in capturing high-level semantic details, often resulting in performance gaps compared to self-supervised (SSL) features. SSL features, in turn, lack interpretability and may overlook fine-grained spectral anomalies. We propose the WST-X series, a novel family of feature extractors that combines the best of both worlds via the wavelet scattering transform (WST), integrating wavelets with nonlinearities analogous to deep convolutional networks. We investigate 1D and 2D WSTs to extract acoustic details and higher-order structural anomalies, respectively. Experimental results on the recent and challenging Deepfake-Eval-2024 dataset indicate that WST-X outperforms existing front-ends by a wide margin. Our analysis reveals that a small averaging scale ($J$), combined with high-frequency and directional resolutions ($Q, L$), is critical for capturing subtle artifacts. This underscores the value of translation-invariant and deformation-stable features for robust and interpretable speech deepfake detection.",
+      "url": "https://arxiv.org/abs/2602.02980",
+      "pdfUrl": "https://arxiv.org/pdf/2602.02980.pdf",
+      "titleJa": "WST-Xシリーズ: 解釈可能な音声ディープフェイク検出のためのウェーブレット散乱変換"
+    },
+    {
+      "id": "2602.02725",
+      "arxivId": "2602.02725",
+      "title": "Automated Dysphagia Screening Using Noninvasive Neck Acoustic Sensing",
+      "authors": [
+        "Jade Chng",
+        "Rong Xing",
+        "Yunfei Luo",
+        "Kristen Linnemeyer-Risser",
+        "Tauhidur Rahman",
+        "Andrew Yousef",
+        "Philip A Weissbrod"
+      ],
+      "publishedDate": "2026-02-02",
+      "categories": [
+        "cs.LG",
+        "cs.SD",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "abstract": "Pharyngeal health plays a vital role in essential human functions such as breathing, swallowing, and vocalization. Early detection of swallowing abnormalities, also known as dysphagia, is crucial for timely intervention. However, current diagnostic methods often rely on radiographic imaging or invasive procedures. In this study, we propose an automated framework for detecting dysphagia using portable and noninvasive acoustic sensing coupled with applied machine learning. By capturing subtle acoustic signals from the neck during swallowing tasks, we aim to identify patterns associated with abnormal physiological conditions. Our approach achieves promising test-time abnormality detection performance, with an AUC-ROC of 0.904 under 5 independent train-test splits. This work demonstrates the feasibility of using noninvasive acoustic sensing as a practical and scalable tool for pharyngeal health monitoring.",
+      "url": "https://arxiv.org/abs/2602.02725",
+      "pdfUrl": "https://arxiv.org/pdf/2602.02725.pdf",
+      "titleJa": "非侵襲性頸部音響センシングを用いた自動嚥下障害スクリーニング"
+    },
+    {
+      "id": "2602.02249",
+      "arxivId": "2602.02249",
+      "title": "Evaluating Acoustic Data Transmission Schemes for Ad-Hoc Communication Between Nearby Smart Devices",
+      "authors": [
+        "Florentin Putz",
+        "Philipp Fortmann",
+        "Jan Frank",
+        "Christoph Haugwitz",
+        "Mario Kupnik",
+        "Matthias Hollick"
+      ],
+      "publishedDate": "2026-02-02",
+      "categories": [
+        "cs.NI",
+        "cs.SD"
+      ],
+      "abstract": "Acoustic data transmission offers a compelling alternative to Bluetooth and NFC by leveraging the ubiquitous speakers and microphones in smartphones and IoT devices. However, most research in this field relies on simulations or limited on-device testing, which makes the real-world reliability of proposed schemes difficult to assess. We systematically reviewed 31 acoustic communication studies for commodity devices and found that none provided accessible source code. After contacting authors and re-implementing three promising schemes, we assembled a testbed of eight representative acoustic communication systems. Using over 11000 smartphone transmissions in both realistic indoor environments and an anechoic chamber, we provide a systematic and repeatable methodology for evaluating the reliability and generalizability of these schemes under real-world conditions. Our results show that many existing schemes face challenges in practical usage, largely due to severe multipath propagation indoors and varying audio characteristics across device models. To support future research and foster more robust evaluations, we release our re-implementations alongside the first comprehensive dataset of real-world acoustic transmissions. Overall, our findings highlight the importance of rigorous on-device testing and underscore the need for robust design strategies to bridge the gap between simulation results and reliable IoT deployments.",
+      "url": "https://arxiv.org/abs/2602.02249",
+      "pdfUrl": "https://arxiv.org/pdf/2602.02249.pdf",
+      "titleJa": "近くのスマートデバイス間のアドホック通信のための音響データ伝送方式の評価"
+    },
+    {
+      "id": "2602.02198",
+      "arxivId": "2602.02198",
+      "title": "QuietPrint: Protecting 3D Printers Against Acoustic Side-Channel Attacks",
+      "authors": [
+        "Seyed Ali Ghazi Asgar",
+        "Narasimha Reddy"
+      ],
+      "publishedDate": "2026-02-02",
+      "categories": [
+        "cs.CR",
+        "eess.AS"
+      ],
+      "abstract": "The 3D printing market has experienced significant growth in recent years, with an estimated revenue of 15 billion USD for 2025. Cyber-attacks targeting the 3D printing process whether through the machine itself, the supply chain, or the fabricated components are becoming increasingly common. One major concern is intellectual property (IP) theft, where a malicious attacker gains access to the design file. One method for carrying out such theft is through side-channel attacks. In this work, we investigate the possibility of IP theft via acoustic side channels and propose a novel method to protect 3D printers against such attacks. The primary advantage of our approach is that it requires no additional hardware, such as large speakers or noise-canceling devices. Instead, it secures printed parts by minimal modifications to the G-code.",
+      "url": "https://arxiv.org/abs/2602.02198",
+      "pdfUrl": "https://arxiv.org/pdf/2602.02198.pdf",
+      "titleJa": "QuietPrint: 音響サイドチャネル攻撃から3Dプリンターを保護する"
+    },
+    {
+      "id": "2602.01861",
+      "arxivId": "2602.01861",
+      "title": "RIR-Former: Coordinate-Guided Transformer for Continuous Reconstruction of Room Impulse Responses",
+      "authors": [
+        "Shaoheng Xu",
+        "Chunyi Sun",
+        "Jihui Zhang",
+        "Prasanga N. Samarasinghe",
+        "Thushara D. Abhayapala"
+      ],
+      "publishedDate": "2026-02-02",
+      "categories": [
+        "eess.AS",
+        "cs.LG"
+      ],
+      "abstract": "Room impulse responses (RIRs) are essential for many acoustic signal processing tasks, yet measuring them densely across space is often impractical. In this work, we propose RIR-Former, a grid-free, one-step feed-forward model for RIR reconstruction. By introducing a sinusoidal encoding module into a transformer backbone, our method effectively incorporates microphone position information, enabling interpolation at arbitrary array locations. Furthermore, a segmented multi-branch decoder is designed to separately handle early reflections and late reverberation, improving reconstruction across the entire RIR. Experiments on diverse simulated acoustic environments demonstrate that RIR-Former consistently outperforms state-of-the-art baselines in terms of normalized mean square error (NMSE) and cosine distance (CD), under varying missing rates and array configurations. These results highlight the potential of our approach for practical deployment and motivate future work on scaling from randomly spaced linear arrays to complex array geometries, dynamic acoustic scenes, and real-world environments.",
+      "url": "https://arxiv.org/abs/2602.01861",
+      "pdfUrl": "https://arxiv.org/pdf/2602.01861.pdf",
+      "titleJa": "RIR-Former: 室内インパルス応答の連続再構成のための座標誘導型変換器"
+    },
+    {
+      "id": "2602.01634",
+      "arxivId": "2602.01634",
+      "title": "HuPER: A Human-Inspired Framework for Phonetic Perception",
+      "authors": [
+        "Chenxu Guo",
+        "Jiachen Lian",
+        "Yisi Liu",
+        "Baihe Huang",
+        "Shriyaa Narayanan",
+        "Cheol Jun Cho",
+        "Gopala Anumanchipalli"
+      ],
+      "publishedDate": "2026-02-02",
+      "categories": [
+        "eess.AS",
+        "cs.AI"
+      ],
+      "abstract": "We propose HuPER, a human-inspired framework that models phonetic perception as adaptive inference over acoustic-phonetics evidence and linguistic knowledge. With only 100 hours of training data, HuPER achieves state-of-the-art phonetic error rates on five English benchmarks and strong zero-shot transfer to 95 unseen languages. HuPER is also the first framework to enable adaptive, multi-path phonetic perception under diverse acoustic conditions. All training data, models, and code are open-sourced. Code and demo avaliable at https://github.com/HuPER29/HuPER.",
+      "url": "https://arxiv.org/abs/2602.01634",
+      "pdfUrl": "https://arxiv.org/pdf/2602.01634.pdf",
+      "titleJa": "HuPER: 人間に着想を得た音声知覚フレームワーク"
+    },
+    {
+      "id": "2602.01394",
+      "arxivId": "2602.01394",
+      "title": "SSNAPS: Audio-Visual Separation of Speech and Background Noise with Diffusion Inverse Sampling",
+      "authors": [
+        "Yochai Yemini",
+        "Yoav Ellinson",
+        "Rami Ben-Ari",
+        "Sharon Gannot",
+        "Ethan Fetaya"
+      ],
+      "publishedDate": "2026-02-01",
+      "categories": [
+        "eess.AS",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "abstract": "This paper addresses the challenge of audio-visual single-microphone speech separation and enhancement in the presence of real-world environmental noise. Our approach is based on generative inverse sampling, where we model clean speech and ambient noise with dedicated diffusion priors and jointly leverage them to recover all underlying sources. To achieve this, we reformulate a recent inverse sampler to match our setting. We evaluate on mixtures of 1, 2, and 3 speakers with noise and show that, despite being entirely unsupervised, our method consistently outperforms leading supervised baselines in \\ac{WER} across all conditions. We further extend our framework to handle off-screen speaker separation. Moreover, the high fidelity of the separated noise component makes it suitable for downstream acoustic scene detection. Demo page: https://ssnapsicml.github.io/ssnapsicml2026/",
+      "url": "https://arxiv.org/abs/2602.01394",
+      "pdfUrl": "https://arxiv.org/pdf/2602.01394.pdf",
+      "titleJa": "SSNAPS: 拡散逆サンプリングによる音声と背景雑音のオーディオビジュアル分離"
+    },
+    {
+      "id": "2602.02591",
+      "arxivId": "2602.02591",
+      "title": "VividVoice: A Unified Framework for Scene-Aware Visually-Driven Speech Synthesis",
+      "authors": [
+        "Chengyuan Ma",
+        "Jiawei Jin",
+        "Ruijie Xiong",
+        "Chunxiang Jin",
+        "Canxiang Yan",
+        "Wenming Yang"
+      ],
+      "publishedDate": "2026-02-01",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "We introduce and define a novel task-Scene-Aware Visually-Driven Speech Synthesis, aimed at addressing the limitations of existing speech generation models in creating immersive auditory experiences that align with the real physical world. To tackle the two core challenges of data scarcity and modality decoupling, we propose VividVoice, a unified generative framework. First, we constructed a large-scale, high-quality hybrid multimodal dataset, Vivid-210K, which, through an innovative programmatic pipeline, establishes a strong correlation between visual scenes, speaker identity, and audio for the first time. Second, we designed a core alignment module, D-MSVA, which leverages a decoupled memory bank architecture and a cross-modal hybrid supervision strategy to achieve fine-grained alignment from visual scenes to timbre and environmental acoustic features. Both subjective and objective experimental results provide strong evidence that VividVoice significantly outperforms existing baseline models in terms of audio fidelity, content clarity, and multimodal consistency. Our demo is available at https://chengyuann.github.io/VividVoice/.",
+      "url": "https://arxiv.org/abs/2602.02591",
+      "pdfUrl": "https://arxiv.org/pdf/2602.02591.pdf",
+      "titleJa": "VividVoice: シーン認識型視覚駆動型音声合成のための統合フレームワーク"
+    },
+    {
+      "id": "2602.00648",
+      "arxivId": "2602.00648",
+      "title": "High-Fidelity Generative Audio Compression at 0.275kbps",
+      "authors": [
+        "Hao Ma",
+        "Ruihao Jing",
+        "Shansong Liu",
+        "Cheng Gong",
+        "Chi Zhang",
+        "Xiao-Lei Zhang",
+        "Xuelong Li"
+      ],
+      "publishedDate": "2026-01-31",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "abstract": "High-fidelity general audio compression at ultra-low bitrates is crucial for applications ranging from low-bandwidth communication to generative audio-language modeling. Traditional audio compression methods and contemporary neural codecs are fundamentally designed for waveform reconstruction. As a result, when operating at ultra-low bitrates, these methods degrade rapidly and often fail to preserve essential information, leading to severe acoustic artifacts and pronounced semantic distortion. To overcome these limitations, we introduce Generative Audio Compression (GAC), a novel paradigm shift from signal fidelity to task-oriented effectiveness. Implemented within the AI Flow framework, GAC is theoretically grounded in the Law of Information Capacity. These foundations posit that abundant computational power can be leveraged at the receiver to offset extreme communication bottlenecks--exemplifying the More Computation, Less Bandwidth philosophy. By integrating semantic understanding at the transmitter with scalable generative synthesis at the receiver, GAC offloads the information burden to powerful model priors. Our 1.8B-parameter model achieves high-fidelity reconstruction of 32kHz general audio at an unprecedented bitrate of 0.275kbps. Even at 0.175kbps, it still preserves a strong intelligible audio transmission capability, which represents an about 3000x compression ratio, significantly outperforming current state-of-the-art neural codecs in maintaining both perceptual quality and semantic consistency.",
+      "url": "https://arxiv.org/abs/2602.00648",
+      "pdfUrl": "https://arxiv.org/pdf/2602.00648.pdf",
+      "titleJa": "0.275kbpsの高忠実度生成オーディオ圧縮"
     }
   ],
-  "lastUpdated": "2026-02-08T01:23:42.321652",
-  "totalCount": 20
+  "lastUpdated": "2026-02-09T01:10:54.888337",
+  "totalCount": 40
 }
