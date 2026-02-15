@@ -318,7 +318,7 @@
       "abstract": "Large Audio Language Models (LALMs) have demonstrated strong capabilities in audio understanding and reasoning. However, their performance on fine grained auditory perception remains unreliable, and existing approaches largely rely on data intensive training to internalize perceptual abilities. We propose AudioRouter, a reinforcement learning framework that enables LALMs to improve audio understanding by learning when and how to use external audio tools. Rather than tightly coupling tool usage with audio reasoning, AudioRouter formulates tool use as an explicit decision making problem and optimizes a lightweight routing policy while keeping the underlying reasoning model frozen. Experimental results show that AudioRouter achieves substantial improvements on standard audio understanding benchmarks while requiring up to 600x less training data to learn tool usage compared with conventional training paradigms. These findings suggest that learning effective tool usage offers a data efficient and scalable alternative to internalizing perceptual abilities in LALMs.",
       "url": "https://arxiv.org/abs/2602.10439",
       "pdfUrl": "https://arxiv.org/pdf/2602.10439.pdf",
-      "titleJa": "AudioRouter: RL ベースの二重推論によるデータ効率の高いオーディオ理解"
+      "titleJa": "AudioRouter: RLベースの二重推論によるデータ効率の高いオーディオ理解"
     },
     {
       "id": "2602.10230",
@@ -644,7 +644,7 @@
       "abstract": "Retrieval augmented generation (RAG) has been widely adopted to help Large Language Models (LLMs) to process tasks involving long documents. However, existing retrieval models are not designed for long document retrieval and fail to address several key challenges of long document retrieval, including context-awareness, causal dependence, and scope of retrieval. In this paper, we proposed AttentionRetriever, a novel long document retrieval model that leverages attention mechanism and entity-based retrieval to build context-aware embeddings for long document and determine the scope of retrieval. With extensive experiments, we found AttentionRetriever is able to outperform existing retrieval models on long document retrieval datasets by a large margin while remaining as efficient as dense retrieval models.",
       "url": "https://arxiv.org/abs/2602.12278",
       "pdfUrl": "https://arxiv.org/pdf/2602.12278.pdf",
-      "titleJa": "AttentionRetriever: Attention Layers は秘密に長いドキュメント取得ツールです"
+      "titleJa": "AttentionRetriever: Attention Layers は実は長いドキュメントリトリーバーです"
     },
     {
       "id": "2602.12276",
@@ -667,7 +667,7 @@
       "abstract": "Test-time scaling has become a standard way to improve performance and boost reliability of neural network models. However, its behavior on agentic, multi-step tasks remains less well-understood: small per-step errors can compound over long horizons; and we find that naive policies that uniformly increase sampling show diminishing returns. In this work, we present CATTS, a simple technique for dynamically allocating compute for multi-step agents. We first conduct an empirical study of inference-time scaling for web agents. We find that uniformly increasing per-step compute quickly saturates in long-horizon environments. We then investigate stronger aggregation strategies, including an LLM-based Arbiter that can outperform naive voting, but that can overrule high-consensus decisions. We show that uncertainty statistics derived from the agent's own vote distribution (entropy and top-1/top-2 margin) correlate with downstream success and provide a practical signal for dynamic compute allocation. Based on these findings, we introduce Confidence-Aware Test-Time Scaling (CATTS), which uses vote-derived uncertainty to allocate compute only when decisions are genuinely contentious. CATTS improves performance on WebArena-Lite and GoBrowse by up to 9.1% over React while using up to 2.3x fewer tokens than uniform scaling, providing both efficiency gains and an interpretable decision rule.",
       "url": "https://arxiv.org/abs/2602.12276",
       "pdfUrl": "https://arxiv.org/pdf/2602.12276.pdf",
-      "titleJa": "Webエージェント向けエージェントテスト時間スケーリング"
+      "titleJa": "WebAgents のエージェントテスト時間のスケーリング"
     },
     {
       "id": "2602.12270",
@@ -1685,6 +1685,6 @@
       "titleJa": "Speech-XL: 大規模音声言語モデルにおける長文音声理解に向けて"
     }
   ],
-  "lastUpdated": "2026-02-14T01:04:22.446256",
+  "lastUpdated": "2026-02-15T01:09:34.621081",
   "totalCount": 74
 }
