@@ -432,6 +432,186 @@
       "titleJa": "エンロールオンウェイクアップ：実際のノイズ環境における人間と機械の対話シナリオにおけるシームレスなインタラクションのためのターゲット音声抽出に関する初の比較研究"
     },
     {
+      "id": "2602.17598",
+      "arxivId": "2602.17598",
+      "title": "The Cascade Equivalence Hypothesis: When Do Speech LLMs Behave Like ASR$\\rightarrow$LLM Pipelines?",
+      "authors": [
+        "Jayadev Billa"
+      ],
+      "publishedDate": "2026-02-19",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "abstract": "Current speech LLMs largely perform implicit ASR: on tasks solvable from a transcript, they are behaviorally and mechanistically equivalent to simple Whisper$\\to$LLM cascades. We show this through matched-backbone testing across four speech LLMs and six tasks, controlling for the LLM backbone for the first time. Ultravox is statistically indistinguishable from its matched cascade ($κ{=}0.93$); logit lens reveals literal text emerging in hidden states; LEACE concept erasure confirms text representations are causally necessary in both architectures tested, collapsing accuracy to near-zero. Qwen2-Audio genuinely diverges, revealing cascade equivalence is architecture-dependent, not universal. For most deployed use cases, current speech LLMs are expensive cascades, and under noise, they are worse ones, with clean-condition advantages reversing by up to 7.6% at 0 dB.",
+      "url": "https://arxiv.org/abs/2602.17598",
+      "pdfUrl": "https://arxiv.org/pdf/2602.17598.pdf",
+      "titleJa": "カスケード等価性仮説: 音声 LLM が ASR$\\rightarrow$LLM パイプラインのように動作するのはどのような場合ですか?"
+    },
+    {
+      "id": "2602.17157",
+      "arxivId": "2602.17157",
+      "title": "CC-G2PnP: Streaming Grapheme-to-Phoneme and prosody with Conformer-CTC for unsegmented languages",
+      "authors": [
+        "Yuma Shirahata",
+        "Ryuichi Yamamoto"
+      ],
+      "publishedDate": "2026-02-19",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "We propose CC-G2PnP, a streaming grapheme-to-phoneme and prosody (G2PnP) model to connect large language model and text-to-speech in a streaming manner. CC-G2PnP is based on Conformer-CTC architecture. Specifically, the input grapheme tokens are processed chunk by chunk, which enables streaming inference of phonemic and prosodic (PnP) labels. By guaranteeing minimal look-ahead size to each input token, the proposed model can consider future context in each token, which leads to stable PnP label prediction. Unlike previous streaming methods that depend on explicit word boundaries, the CTC decoder in CC-G2PnP effectively learns the alignment between graphemes and phonemes during training, making it applicable to unsegmented languages. Experiments on a Japanese dataset, which has no explicit word boundaries, show that CC-G2PnP significantly outperforms the baseline streaming G2PnP model in the accuracy of PnP label prediction.",
+      "url": "https://arxiv.org/abs/2602.17157",
+      "pdfUrl": "https://arxiv.org/pdf/2602.17157.pdf",
+      "titleJa": "CC-G2PnP: 非分節言語における Conformer-CTC を用いた書記素から音素への変換と韻律のストリーミング"
+    },
+    {
+      "id": "2602.15537",
+      "arxivId": "2602.15537",
+      "title": "ZeroSyl: Simple Zero-Resource Syllable Tokenization for Spoken Language Modeling",
+      "authors": [
+        "Nicol Visser",
+        "Simon Malan",
+        "Danel Slabbert",
+        "Herman Kamper"
+      ],
+      "publishedDate": "2026-02-17",
+      "categories": [
+        "cs.CL",
+        "eess.AS"
+      ],
+      "abstract": "Pure speech language models aim to learn language directly from raw audio without textual resources. A key challenge is that discrete tokens from self-supervised speech encoders result in excessively long sequences, motivating recent work on syllable-like units. However, methods like Sylber and SyllableLM rely on intricate multi-stage training pipelines. We propose ZeroSyl, a simple training-free method to extract syllable boundaries and embeddings directly from a frozen WavLM model. Using L2 norms of features in WavLM's intermediate layers, ZeroSyl achieves competitive syllable segmentation performance. The resulting segments are mean-pooled, discretized using K-means, and used to train a language model. ZeroSyl outperforms prior syllabic tokenizers across lexical, syntactic, and narrative benchmarks. Scaling experiments show that while finer-grained units are beneficial for lexical tasks, our discovered syllabic units exhibit better scaling behavior for syntactic modeling.",
+      "url": "https://arxiv.org/abs/2602.15537",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15537.pdf",
+      "titleJa": "ZeroSyl: 音声言語モデルのためのシンプルなゼロリソース音節トークン化"
+    },
+    {
+      "id": "2602.15484",
+      "arxivId": "2602.15484",
+      "title": "Bottleneck Transformer-Based Approach for Improved Automatic STOI Score Prediction",
+      "authors": [
+        " Amartyaveer",
+        "Murali Kadambi",
+        "Chandra Mohan Sharma",
+        "Anupam Mondal",
+        "Prasanta Kumar Ghosh"
+      ],
+      "publishedDate": "2026-02-17",
+      "categories": [
+        "eess.AS",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "abstract": "In this study, we have presented a novel approach to predict the Short-Time Objective Intelligibility (STOI) metric using a bottleneck transformer architecture. Traditional methods for calculating STOI typically requires clean reference speech, which limits their applicability in the real world. To address this, numerous deep learning-based nonintrusive speech assessment models have garnered significant interest. Many studies have achieved commendable performance, but there is room for further improvement. We propose the use of bottleneck transformer, incorporating convolution blocks for learning frame-level features and a multi-head self-attention (MHSA) layer to aggregate the information. These components enable the transformer to focus on the key aspects of the input data. Our model has shown higher correlation and lower mean squared error for both seen and unseen scenarios compared to the state-of-the-art model using self-supervised learning (SSL) and spectral features as inputs.",
+      "url": "https://arxiv.org/abs/2602.15484",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15484.pdf",
+      "titleJa": "ボトルネックトランスフォーマーベースのアプローチによるSTOIスコア自動予測の改善"
+    },
+    {
+      "id": "2602.15307",
+      "arxivId": "2602.15307",
+      "title": "What Do Neurons Listen To? A Neuron-level Dissection of a General-purpose Audio Model",
+      "authors": [
+        "Takao Kawamura",
+        "Daisuke Niizumi",
+        "Nobutaka Ono"
+      ],
+      "publishedDate": "2026-02-17",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "abstract": "In this paper, we analyze the internal representations of a general-purpose audio self-supervised learning (SSL) model from a neuron-level perspective. Despite their strong empirical performance as feature extractors, the internal mechanisms underlying the robust generalization of SSL audio models remain unclear. Drawing on the framework of mechanistic interpretability, we identify and examine class-specific neurons by analyzing conditional activation patterns across diverse tasks. Our analysis reveals that SSL models foster the emergence of class-specific neurons that provide extensive coverage across novel task classes. These neurons exhibit shared responses across different semantic categories and acoustic similarities, such as speech attributes and musical pitch. We also confirm that these neurons have a functional impact on classification performance. To our knowledge, this is the first systematic neuron-level analysis of a general-purpose audio SSL model, providing new insights into its internal representation.",
+      "url": "https://arxiv.org/abs/2602.15307",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15307.pdf",
+      "titleJa": "ニューロンは何を聞いているのか？汎用オーディオモデルのニューロンレベルの解析"
+    },
+    {
+      "id": "2602.15909",
+      "arxivId": "2602.15909",
+      "title": "Resp-Agent: An Agent-Based System for Multimodal Respiratory Sound Generation and Disease Diagnosis",
+      "authors": [
+        "Pengfei Zhang",
+        "Tianxin Xie",
+        "Minghao Yang",
+        "Li Liu"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.DB",
+        "cs.HC",
+        "cs.MA",
+        "cs.SD"
+      ],
+      "abstract": "Deep learning-based respiratory auscultation is currently hindered by two fundamental challenges: (i) inherent information loss, as converting signals into spectrograms discards transient acoustic events and clinical context; (ii) limited data availability, exacerbated by severe class imbalance. To bridge these gaps, we present Resp-Agent, an autonomous multimodal system orchestrated by a novel Active Adversarial Curriculum Agent (Thinker-A$^2$CA). Unlike static pipelines, Thinker-A$^2$CA serves as a central controller that actively identifies diagnostic weaknesses and schedules targeted synthesis in a closed loop. To address the representation gap, we introduce a Modality-Weaving Diagnoser that weaves EHR data with audio tokens via Strategic Global Attention and sparse audio anchors, capturing both long-range clinical context and millisecond-level transients. To address the data gap, we design a Flow Matching Generator that adapts a text-only Large Language Model (LLM) via modality injection, decoupling pathological content from acoustic style to synthesize hard-to-diagnose samples. As a foundation for these efforts, we introduce Resp-229k, a benchmark corpus of 229k recordings paired with LLM-distilled clinical narratives. Extensive experiments demonstrate that Resp-Agent consistently outperforms prior approaches across diverse evaluation settings, improving diagnostic robustness under data scarcity and long-tailed class imbalance. Our code and data are available at https://github.com/zpforlove/Resp-Agent.",
+      "url": "https://arxiv.org/abs/2602.15909",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15909.pdf",
+      "titleJa": "Resp-Agent: マルチモーダル呼吸音生成と疾患診断のためのエージェントベースシステム"
+    },
+    {
+      "id": "2602.14785",
+      "arxivId": "2602.14785",
+      "title": "SA-SSL-MOS: Self-supervised Learning MOS Prediction with Spectral Augmentation for Generalized Multi-Rate Speech Assessment",
+      "authors": [
+        "Fengyuan Cao",
+        "Xinyu Liang",
+        "Fredrik Cumlin",
+        "Victor Ungureanu",
+        "Chandan K. A. Reddy",
+        "Christian Schuldt",
+        "Saikat Chatterjee"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "eess.AS",
+        "cs.LG"
+      ],
+      "abstract": "Designing a speech quality assessment (SQA) system for estimating mean-opinion-score (MOS) of multi-rate speech with varying sampling frequency (16-48 kHz) is a challenging task. The challenge arises due to the limited availability of a MOS-labeled training dataset comprising multi-rate speech samples. While self-supervised learning (SSL) models have been widely adopted in SQA to boost performance, a key limitation is that they are pretrained on 16 kHz speech and therefore discard high-frequency information present in higher sampling rates. To address this issue, we propose a spectrogram-augmented SSL method that incorporates high-frequency features (up to 48 kHz sampling rate) through a parallel-branch architecture. We further introduce a two-step training scheme: the model is first pre-trained on a large 48 kHz dataset and then fine-tuned on a smaller multi-rate dataset. Experimental results show that leveraging high-frequency information overlooked by SSL features is crucial for accurate multi-rate SQA, and that the proposed two-step training substantially improves generalization when multi-rate data is limited.",
+      "url": "https://arxiv.org/abs/2602.14785",
+      "pdfUrl": "https://arxiv.org/pdf/2602.14785.pdf",
+      "titleJa": "SA-SSL-MOS: スペクトル拡張を用いた自己教師学習によるMOS予測と一般化マルチレート音声評価"
+    },
+    {
+      "id": "2602.14686",
+      "arxivId": "2602.14686",
+      "title": "Disentangling Pitch and Creak for Speaker Identity Preservation in Speech Synthesis",
+      "authors": [
+        "Frederik Rautenberg",
+        "Jana Wiechmann",
+        "Petra Wagner",
+        "Reinhold Haeb-Umbach"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "We introduce a system capable of faithfully modifying the perceptual voice quality of creak while preserving the speaker's perceived identity. While it is well known that high creak probability is typically correlated with low pitch, it is important to note that this is a property observed on a population of speakers but does not necessarily hold across all situations. Disentanglement of pitch from creak is achieved by augmentation of the training dataset of a speech synthesis system with a speaker manipulation block based on conditional continuous normalizing flow. The experiments show greatly improved speaker verification performance over a range of creak manipulation strengths.",
+      "url": "https://arxiv.org/abs/2602.14686",
+      "pdfUrl": "https://arxiv.org/pdf/2602.14686.pdf",
+      "titleJa": "音声合成における話者識別の保持のためのピッチとキーキー音の分離"
+    },
+    {
+      "id": "2602.14671",
+      "arxivId": "2602.14671",
+      "title": "Data Augmentation for Pathological Speech Enhancement",
+      "authors": [
+        "Mingchi Hou",
+        "Enno Hermann",
+        "Ina Kodrasi"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "The performance of state-of-the-art speech enhancement (SE) models considerably degrades for pathological speech due to atypical acoustic characteristics and limited data availability. This paper systematically investigates data augmentation (DA) strategies to improve SE performance for pathological speakers, evaluating both predictive and generative SE models. We examine three DA categories, i.e., transformative, generative, and noise augmentation, assessing their impact with objective SE metrics. Experimental results show that noise augmentation consistently delivers the largest and most robust gains, transformative augmentations provide moderate improvements, while generative augmentation yields limited benefits and can harm performance as the amount of synthetic data increases. Furthermore, we show that the effectiveness of DA varies depending on the SE model, with DA being more beneficial for predictive SE models. While our results demonstrate that DA improves SE performance for pathological speakers, a performance gap between neurotypical and pathological speech persists, highlighting the need for future research on targeted DA strategies for pathological speech.",
+      "url": "https://arxiv.org/abs/2602.14671",
+      "pdfUrl": "https://arxiv.org/pdf/2602.14671.pdf",
+      "titleJa": "病的な音声強調のためのデータ拡張"
+    },
+    {
       "id": "2602.17664",
       "arxivId": "2602.17664",
       "title": "Sink-Aware Pruning for Diffusion Language Models",
@@ -709,24 +889,6 @@
       "titleJa": "MolHIT: 階層的離散拡散モデルを用いた分子グラフ生成の高度化"
     },
     {
-      "id": "2602.17598",
-      "arxivId": "2602.17598",
-      "title": "The Cascade Equivalence Hypothesis: When Do Speech LLMs Behave Like ASR$\\rightarrow$LLM Pipelines?",
-      "authors": [
-        "Jayadev Billa"
-      ],
-      "publishedDate": "2026-02-19",
-      "categories": [
-        "cs.CL",
-        "cs.AI",
-        "eess.AS"
-      ],
-      "abstract": "Current speech LLMs largely perform implicit ASR: on tasks solvable from a transcript, they are behaviorally and mechanistically equivalent to simple Whisper$\\to$LLM cascades. We show this through matched-backbone testing across four speech LLMs and six tasks, controlling for the LLM backbone for the first time. Ultravox is statistically indistinguishable from its matched cascade ($κ{=}0.93$); logit lens reveals literal text emerging in hidden states; LEACE concept erasure confirms text representations are causally necessary in both architectures tested, collapsing accuracy to near-zero. Qwen2-Audio genuinely diverges, revealing cascade equivalence is architecture-dependent, not universal. For most deployed use cases, current speech LLMs are expensive cascades, and under noise, they are worse ones, with clean-condition advantages reversing by up to 7.6% at 0 dB.",
-      "url": "https://arxiv.org/abs/2602.17598",
-      "pdfUrl": "https://arxiv.org/pdf/2602.17598.pdf",
-      "titleJa": "カスケード等価性仮説: 音声 LLM が ASR$\\rightarrow$LLM パイプラインのように動作するのはどのような場合ですか?"
-    },
-    {
       "id": "2602.17594",
       "arxivId": "2602.17594",
       "title": "AI Gamestore: Scalable, Open-Ended Evaluation of Machine General Intelligence with Human Games",
@@ -862,8 +1024,611 @@
       "url": "https://arxiv.org/abs/2602.17557",
       "pdfUrl": "https://arxiv.org/pdf/2602.17557.pdf",
       "titleJa": "アルツハイマー病およびレビー小体型認知症の診断のための回旋折り畳みに基づく皮質類似性ネットワークにおける確率不変ランダムウォーク学習"
+    },
+    {
+      "id": "2602.15491",
+      "arxivId": "2602.15491",
+      "title": "The Equalizer: Introducing Shape-Gain Decomposition in Neural Audio Codecs",
+      "authors": [
+        "Samir Sadok",
+        "Laurent Girin",
+        "Xavier Alameda-Pineda"
+      ],
+      "publishedDate": "2026-02-17",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "Neural audio codecs (NACs) typically encode the short-term energy (gain) and normalized structure (shape) of speech/audio signals jointly within the same latent space. As a result, they are poorly robust to a global variation of the input signal level in the sense that such variation has strong influence on the embedding vectors at the output of the encoder and their quantization. This methodology is inherently inefficient, leading to codebook redundancy and suboptimal bitrate-distortion performance. To address these limitations, we propose to introduce shape-gain decomposition, widely used in classical speech/audio coding, into the NAC framework. The principle of the proposed Equalizer methodology is to decompose the input signal -- before the NAC encoder -- into gain and normalized shape vector on a short-term basis. The shape vector is processed by the NAC, while the gain is quantized with scalar quantization and transmitted separately. The output (decoded) signal is reconstructed from the normalized output of the NAC and the quantized gain. Our experiments conducted on speech signals show that this general methodology, easily applicable to any NAC, enables a substantial gain in bitrate-distortion performance, as well as a massive reduction in complexity.",
+      "url": "https://arxiv.org/abs/2602.15491",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15491.pdf",
+      "titleJa": "イコライザー：ニューラルオーディオコーデックにおけるシェイプゲイン分解の導入"
+    },
+    {
+      "id": "2602.13928",
+      "arxivId": "2602.13928",
+      "title": "voice2mode: Phonation Mode Classification in Singing using Self-Supervised Speech Models",
+      "authors": [
+        "Aju Ani Justus",
+        "Ruchit Agrawal",
+        "Sudarsana Reddy Kadiri",
+        "Shrikanth Narayanan"
+      ],
+      "publishedDate": "2026-02-14",
+      "categories": [
+        "cs.SD",
+        "cs.LG"
+      ],
+      "abstract": "We present voice2mode, a method for classification of four singing phonation modes (breathy, neutral (modal), flow, and pressed) using embeddings extracted from large self-supervised speech models. Prior work on singing phonation has relied on handcrafted signal features or task-specific neural nets; this work evaluates the transferability of speech foundation models to singing phonation classification. voice2mode extracts layer-wise representations from HuBERT and two wav2vec2 variants, applies global temporal pooling, and classifies the pooled embeddings with lightweight classifiers (SVM, XGBoost). Experiments on a publicly available soprano dataset (763 sustained vowel recordings, four labels) show that foundation-model features substantially outperform conventional spectral baselines (spectrogram, mel-spectrogram, MFCC). HuBERT embeddings obtained from early layers yield the best result (~95.7% accuracy with SVM), an absolute improvement of ~12-15% over the best traditional baseline. We also show layer-wise behaviour: lower layers, which retain acoustic/phonetic detail, are more effective than top layers specialized for Automatic Speech Recognition (ASR).",
+      "url": "https://arxiv.org/abs/2602.13928",
+      "pdfUrl": "https://arxiv.org/pdf/2602.13928.pdf",
+      "titleJa": "voice2mode: 自己教師あり音声モデルを用いた歌唱における発声モードの分類"
+    },
+    {
+      "id": "2602.11910",
+      "arxivId": "2602.11910",
+      "title": "TADA! Tuning Audio Diffusion Models through Activation Steering",
+      "authors": [
+        "Łukasz Staniszewski",
+        "Katarzyna Zaleska",
+        "Mateusz Modrzejewski",
+        "Kamil Deja"
+      ],
+      "publishedDate": "2026-02-12",
+      "categories": [
+        "cs.SD",
+        "cs.LG"
+      ],
+      "abstract": "Audio diffusion models can synthesize high-fidelity music from text, yet their internal mechanisms for representing high-level concepts remain poorly understood. In this work, we use activation patching to demonstrate that distinct semantic musical concepts, such as the presence of specific instruments, vocals, or genre characteristics, are controlled by a small, shared subset of attention layers in state-of-the-art audio diffusion architectures. Next, we demonstrate that applying Contrastive Activation Addition and Sparse Autoencoders in these layers enables more precise control over the generated audio, indicating a direct benefit of the specialization phenomenon. By steering activations of the identified layers, we can alter specific musical elements with high precision, such as modulating tempo or changing a track's mood.",
+      "url": "https://arxiv.org/abs/2602.11910",
+      "pdfUrl": "https://arxiv.org/pdf/2602.11910.pdf",
+      "titleJa": "TADA! アクティベーションステアリングによるオーディオ拡散モデルのチューニング"
+    },
+    {
+      "id": "2602.11896",
+      "arxivId": "2602.11896",
+      "title": "Musical Metamerism with Time--Frequency Scattering",
+      "authors": [
+        "Vincent Lostanlen",
+        "Han Han"
+      ],
+      "publishedDate": "2026-02-12",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "abstract": "The concept of metamerism originates from colorimetry, where it describes a sensation of visual similarity between two colored lights despite significant differences in spectral content. Likewise, we propose to call ``musical metamerism'' the sensation of auditory similarity which is elicited by two music fragments which differ in terms of underlying waveforms. In this technical report, we describe a method to generate musical metamers from any audio recording. Our method is based on joint time--frequency scattering in Kymatio, an open-source software in Python which enables GPU computing and automatic differentiation. The advantage of our method is that it does not require any manual preprocessing, such as transcription, beat tracking, or source separation. We provide a mathematical description of JTFS as well as some excerpts from the Kymatio source code. Lastly, we review the prior work on JTFS and draw connections with closely related algorithms, such as spectrotemporal receptive fields (STRF), modulation power spectra (MPS), and Gabor filterbank (GBFB).",
+      "url": "https://arxiv.org/abs/2602.11896",
+      "pdfUrl": "https://arxiv.org/pdf/2602.11896.pdf",
+      "titleJa": "時間周波数散乱を伴う音楽的メタメリズム"
+    },
+    {
+      "id": "2602.10934",
+      "arxivId": "2602.10934",
+      "title": "MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio Foundation Models",
+      "authors": [
+        "Yitian Gong",
+        "Kuangwei Chen",
+        "Zhaoye Fei",
+        "Xiaogui Yang",
+        "Ke Chen",
+        "Yang Wang",
+        "Kexin Huang",
+        "Mingshu Chen",
+        "Ruixiao Li",
+        "Qingyuan Cheng",
+        "Shimin Li",
+        "Xipeng Qiu"
+      ],
+      "publishedDate": "2026-02-11",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "abstract": "Discrete audio tokenizers are fundamental to empowering large language models with native audio processing and generation capabilities. Despite recent progress, existing approaches often rely on pretrained encoders, semantic distillation, or heterogeneous CNN-based architectures. These designs introduce fixed inductive biases that limit reconstruction fidelity and hinder effective scaling. In this paper, we argue that discrete audio tokenization should be learned fully end-to-end using a homogeneous and scalable architecture. To this end, we first propose CAT (Causal Audio Tokenizer with Transformer), a purely Transformer-based architecture that jointly optimizes the encoder, quantizer, and decoder from scratch for high-fidelity reconstruction. Building on the CAT architecture, we develop MOSS-Audio-Tokenizer, a large-scale audio tokenizer featuring 1.6 billion parameters, pre-trained on 3 million hours of diverse, general audio data. We show that this simple, fully end-to-end approach built from homogeneous, causal Transformer blocks scales gracefully and supports high-fidelity reconstruction across diverse audio domains. Across speech, sound, and music, MOSS-Audio-Tokenizer consistently outperforms prior codecs over a wide range of bitrates, while exhibiting predictable improvements with increased scale. Notably, leveraging the discrete tokens from our model, we develop the first purely autoregressive TTS model that surpasses prior non-autoregressive and cascaded systems. Furthermore, MOSS-Audio-Tokenizer enables competitive ASR performance without auxiliary encoders. Our findings position the CAT architecture as a unified, scalable interface for the next generation of native audio foundation models.",
+      "url": "https://arxiv.org/abs/2602.10934",
+      "pdfUrl": "https://arxiv.org/pdf/2602.10934.pdf",
+      "titleJa": "MOSS-Audio-Tokenizer: 将来のオーディオ基盤モデルに向けたオーディオトークナイザーのスケーリング"
+    },
+    {
+      "id": "2602.12301",
+      "arxivId": "2602.12301",
+      "title": "Beyond Musical Descriptors: Extracting Preference-Bearing Intent in Music Queries",
+      "authors": [
+        "Marion Baranes",
+        "Romain Hennequin",
+        "Elena V. Epure"
+      ],
+      "publishedDate": "2026-02-11",
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "cs.IR",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "abstract": "Although annotated music descriptor datasets for user queries are increasingly common, few consider the user's intent behind these descriptors, which is essential for effectively meeting their needs. We introduce MusicRecoIntent, a manually annotated corpus of 2,291 Reddit music requests, labeling musical descriptors across seven categories with positive, negative, or referential preference-bearing roles. We then investigate how reliably large language models (LLMs) can extract these music descriptors, finding that they do capture explicit descriptors but struggle with context-dependent ones. This work can further serve as a benchmark for fine-grained modeling of user intent and for gaining insights into improving LLM-based music understanding systems.",
+      "url": "https://arxiv.org/abs/2602.12301",
+      "pdfUrl": "https://arxiv.org/pdf/2602.12301.pdf",
+      "titleJa": "音楽記述子を超えて：音楽検索クエリにおける嗜好意図の抽出"
+    },
+    {
+      "id": "2602.10656",
+      "arxivId": "2602.10656",
+      "title": "AudioRAG: A Challenging Benchmark for Audio Reasoning and Information Retrieval",
+      "authors": [
+        "Jingru Lin",
+        "Chen Zhang",
+        "Tianrui Wang",
+        "Haizhou Li"
+      ],
+      "publishedDate": "2026-02-11",
+      "categories": [
+        "eess.AS",
+        "cs.SD"
+      ],
+      "abstract": "Due to recent advancements in Large Audio-Language Models (LALMs) that demonstrate remarkable performance across a range of sound-, speech- and music-related tasks, there is a growing interest in proposing benchmarks to assess these models. Existing benchmarks generally focus only on reasoning with internal knowledge, neglecting real-world scenarios that require external information grounding. To bridge this gap, we introduce AudioRAG, a novel benchmark designed to evaluate audio-based reasoning augmented by information retrieval in realistic web environments. This benchmark comprises both LLM-generated and manually curated question-answer pairs. Our evaluations reveal that even the state-of-the-art LALMs struggle to answer these questions. We therefore propose an agentic pipeline that integrates audio reasoning with retrieval-augmented generation, providing a stronger baseline for future research.",
+      "url": "https://arxiv.org/abs/2602.10656",
+      "pdfUrl": "https://arxiv.org/pdf/2602.10656.pdf",
+      "titleJa": "AudioRAG: オーディオ推論と情報検索のための挑戦的なベンチマーク"
+    },
+    {
+      "id": "2602.10058",
+      "arxivId": "2602.10058",
+      "title": "Evaluating Disentangled Representations for Controllable Music Generation",
+      "authors": [
+        "Laura Ibáñez-Martínez",
+        "Chukwuemeka Nkama",
+        "Andrea Poltronieri",
+        "Xavier Serra",
+        "Martín Rocamora"
+      ],
+      "publishedDate": "2026-02-10",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "abstract": "Recent approaches in music generation rely on disentangled representations, often labeled as structure and timbre or local and global, to enable controllable synthesis. Yet the underlying properties of these embeddings remain underexplored. In this work, we evaluate such disentangled representations in a set of music audio models for controllable generation using a probing-based framework that goes beyond standard downstream tasks. The selected models reflect diverse unsupervised disentanglement strategies, including inductive biases, data augmentations, adversarial objectives, and staged training procedures. We further isolate specific strategies to analyze their effect. Our analysis spans four key axes: informativeness, equivariance, invariance, and disentanglement, which are assessed across datasets, tasks, and controlled transformations. Our findings reveal inconsistencies between intended and actual semantics of the embeddings, suggesting that current strategies fall short of producing truly disentangled representations, and prompting a re-examination of how controllability is approached in music generation.",
+      "url": "https://arxiv.org/abs/2602.10058",
+      "pdfUrl": "https://arxiv.org/pdf/2602.10058.pdf",
+      "titleJa": "制御可能な音楽生成のための分離表現の評価"
+    },
+    {
+      "id": "2602.09891",
+      "arxivId": "2602.09891",
+      "title": "Stemphonic: All-at-once Flexible Multi-stem Music Generation",
+      "authors": [
+        "Shih-Lun Wu",
+        "Ge Zhu",
+        "Juan-Pablo Caceres",
+        "Cheng-Zhi Anna Huang",
+        "Nicholas J. Bryan"
+      ],
+      "publishedDate": "2026-02-10",
+      "categories": [
+        "cs.SD",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "abstract": "Music stem generation, the task of producing musically-synchronized and isolated instrument audio clips, offers the potential of greater user control and better alignment with musician workflows compared to conventional text-to-music models. Existing stem generation approaches, however, either rely on fixed architectures that output a predefined set of stems in parallel, or generate only one stem at a time, resulting in slow inference despite flexibility in stem combination. We propose Stemphonic, a diffusion-/flow-based framework that overcomes this trade-off and generates a variable set of synchronized stems in one inference pass. During training, we treat each stem as a batch element, group synchronized stems in a batch, and apply a shared noise latent to each group. At inference-time, we use a shared initial noise latent and stem-specific text inputs to generate synchronized multi-stem outputs in one pass. We further expand our approach to enable one-pass conditional multi-stem generation and stem-wise activity controls to empower users to iteratively generate and orchestrate the temporal layering of a mix. We benchmark our results on multiple open-source stem evaluation sets and show that Stemphonic produces higher-quality outputs while accelerating the full mix generation process by 25 to 50%. Demos at: https://stemphonic-demo.vercel.app.",
+      "url": "https://arxiv.org/abs/2602.09891",
+      "pdfUrl": "https://arxiv.org/pdf/2602.09891.pdf",
+      "titleJa": "Stemphonic: 一度に柔軟なマルチステム音楽生成"
+    },
+    {
+      "id": "2602.08794",
+      "arxivId": "2602.08794",
+      "title": "MOVA: Towards Scalable and Synchronized Video-Audio Generation",
+      "authors": [
+        "SII-OpenMOSS Team",
+        " :",
+        "Donghua Yu",
+        "Mingshu Chen",
+        "Qi Chen",
+        "Qi Luo",
+        "Qianyi Wu",
+        "Qinyuan Cheng",
+        "Ruixiao Li",
+        "Tianyi Liang",
+        "Wenbo Zhang",
+        "Wenming Tu",
+        "Xiangyu Peng",
+        "Yang Gao",
+        "Yanru Huo",
+        "Ying Zhu",
+        "Yinze Luo",
+        "Yiyang Zhang",
+        "Yuerong Song",
+        "Zhe Xu",
+        "Zhiyu Zhang",
+        "Chenchen Yang",
+        "Cheng Chang",
+        "Chushu Zhou",
+        "Hanfu Chen",
+        "Hongnan Ma",
+        "Jiaxi Li",
+        "Jingqi Tong",
+        "Junxi Liu",
+        "Ke Chen",
+        "Shimin Li",
+        "Shiqi Jiang",
+        "Songlin Wang",
+        "Wei Jiang",
+        "Zhaoye Fei",
+        "Zhiyuan Ning",
+        "Chunguo Li",
+        "Chenhui Li",
+        "Ziwei He",
+        "Zengfeng Huang",
+        "Xie Chen",
+        "Xipeng Qiu"
+      ],
+      "publishedDate": "2026-02-09",
+      "categories": [
+        "cs.CV",
+        "cs.SD"
+      ],
+      "abstract": "Audio is indispensable for real-world video, yet generation models have largely overlooked audio components. Current approaches to producing audio-visual content often rely on cascaded pipelines, which increase cost, accumulate errors, and degrade overall quality. While systems such as Veo 3 and Sora 2 emphasize the value of simultaneous generation, joint multimodal modeling introduces unique challenges in architecture, data, and training. Moreover, the closed-source nature of existing systems limits progress in the field. In this work, we introduce MOVA (MOSS Video and Audio), an open-source model capable of generating high-quality, synchronized audio-visual content, including realistic lip-synced speech, environment-aware sound effects, and content-aligned music. MOVA employs a Mixture-of-Experts (MoE) architecture, with a total of 32B parameters, of which 18B are active during inference. It supports IT2VA (Image-Text to Video-Audio) generation task. By releasing the model weights and code, we aim to advance research and foster a vibrant community of creators. The released codebase features comprehensive support for efficient inference, LoRA fine-tuning, and prompt enhancement.",
+      "url": "https://arxiv.org/abs/2602.08794",
+      "pdfUrl": "https://arxiv.org/pdf/2602.08794.pdf",
+      "titleJa": "MOVA: スケーラブルで同期したビデオ・オーディオ生成に向けて"
+    },
+    {
+      "id": "2602.08671",
+      "arxivId": "2602.08671",
+      "title": "Input-Adaptive Spectral Feature Compression by Sequence Modeling for Source Separation",
+      "authors": [
+        "Kohei Saijo",
+        "Yoshiaki Bando"
+      ],
+      "publishedDate": "2026-02-09",
+      "categories": [
+        "eess.AS"
+      ],
+      "abstract": "Time-frequency domain dual-path models have demonstrated strong performance and are widely used in source separation. Because their computational cost grows with the number of frequency bins, these models often use the band-split (BS) module in high-sampling-rate tasks such as music source separation (MSS) and cinematic audio source separation (CASS). The BS encoder compresses frequency information by encoding features for each predefined subband. It achieves effective compression by introducing an inductive bias that places greater emphasis on low-frequency parts. Despite its success, the BS module has two inherent limitations: (i) it is not input-adaptive, preventing the use of input-dependent information, and (ii) the parameter count is large, since each subband requires a dedicated module. To address these issues, we propose Spectral Feature Compression (SFC). SFC compresses the input using a single sequence modeling module, making it both input-adaptive and parameter-efficient. We investigate two variants of SFC, one based on cross-attention and the other on Mamba, and introduce inductive biases inspired by the BS module to make them suitable for frequency information compression. Experiments on MSS and CASS tasks demonstrate that the SFC module consistently outperforms the BS module across different separator sizes and compression ratios. We also provide an analysis showing that SFC adaptively captures frequency patterns from the input.",
+      "url": "https://arxiv.org/abs/2602.08671",
+      "pdfUrl": "https://arxiv.org/pdf/2602.08671.pdf",
+      "titleJa": "音源分離のためのシーケンスモデリングによる入力適応型スペクトル特徴圧縮"
+    },
+    {
+      "id": "2602.09070",
+      "arxivId": "2602.09070",
+      "title": "NarraScore: Bridging Visual Narrative and Musical Dynamics via Hierarchical Affective Control",
+      "authors": [
+        "Yufan Wen",
+        "Zhaocheng Liu",
+        "YeGuo Hua",
+        "Ziyi Guo",
+        "Lihua Zhang",
+        "Chun Yuan",
+        "Jian Wu"
+      ],
+      "publishedDate": "2026-02-09",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS"
+      ],
+      "abstract": "Synthesizing coherent soundtracks for long-form videos remains a formidable challenge, currently stalled by three critical impediments: computational scalability, temporal coherence, and, most critically, a pervasive semantic blindness to evolving narrative logic. To bridge these gaps, we propose NarraScore, a hierarchical framework predicated on the core insight that emotion serves as a high-density compression of narrative logic. Uniquely, we repurpose frozen Vision-Language Models (VLMs) as continuous affective sensors, distilling high-dimensional visual streams into dense, narrative-aware Valence-Arousal trajectories. Mechanistically, NarraScore employs a Dual-Branch Injection strategy to reconcile global structure with local dynamism: a \\textit{Global Semantic Anchor} ensures stylistic stability, while a surgical \\textit{Token-Level Affective Adapter} modulates local tension via direct element-wise residual injection. This minimalist design bypasses the bottlenecks of dense attention and architectural cloning, effectively mitigating the overfitting risks associated with data scarcity. Experiments demonstrate that NarraScore achieves state-of-the-art consistency and narrative alignment with negligible computational overhead, establishing a fully autonomous paradigm for long-video soundtrack generation.",
+      "url": "https://arxiv.org/abs/2602.09070",
+      "pdfUrl": "https://arxiv.org/pdf/2602.09070.pdf",
+      "titleJa": "NarraScore: 階層的感情制御による視覚的物語と音楽的ダイナミクスの橋渡し"
+    },
+    {
+      "id": "2602.08233",
+      "arxivId": "2602.08233",
+      "title": "Tutti: Expressive Multi-Singer Synthesis via Structure-Level Timbre Control and Vocal Texture Modeling",
+      "authors": [
+        "Jiatao Chen",
+        "Xing Tang",
+        "Xiaoyue Duan",
+        "Yutang Feng",
+        "Jinchao Zhang",
+        "Jie Zhou"
+      ],
+      "publishedDate": "2026-02-09",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "While existing Singing Voice Synthesis systems achieve high-fidelity solo performances, they are constrained by global timbre control, failing to address dynamic multi-singer arrangement and vocal texture within a single song. To address this, we propose Tutti, a unified framework designed for structured multi-singer generation. Specifically, we introduce a Structure-Aware Singer Prompt to enable flexible singer scheduling evolving with musical structure, and propose Complementary Texture Learning via Condition-Guided VAE to capture implicit acoustic textures (e.g., spatial reverberation and spectral fusion) that are complementary to explicit controls. Experiments demonstrate that Tutti excels in precise multi-singer scheduling and significantly enhances the acoustic realism of choral generation, offering a novel paradigm for complex multi-singer arrangement. Audio samples are available at https://annoauth123-ctrl.github.io/Tutii_Demo/.",
+      "url": "https://arxiv.org/abs/2602.08233",
+      "pdfUrl": "https://arxiv.org/pdf/2602.08233.pdf",
+      "titleJa": "Tutti: 構造レベルの音色制御とボーカルテクスチャモデリングによる表現力豊かなマルチシンガー合成"
+    },
+    {
+      "id": "2602.08148",
+      "arxivId": "2602.08148",
+      "title": "SNC: A Stem-Native Codec for Efficient Lossless Audio Storage with Adaptive Playback Capabilities",
+      "authors": [
+        "Shaad Sufi"
+      ],
+      "publishedDate": "2026-02-08",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "abstract": "Current audio formats present a fundamental trade-off between file size and functionality: lossless formats like FLAC preserve quality but lack adaptability, while lossy formats reduce size at the cost of fidelity and offer no stem-level access.We introduce the Stem-Native Codec (SNC), a novel audio container format that stores music as independently encoded stems plus a low-energy mastering residual. By exploiting the lower information entropy of separated stems compared to mixed audio, SNC achieves a 38.2% file size reduction versus FLAC (7.76 MB vs. 12.55 MB for a 2:18 test track) while maintaining perceptual transparency (STOI = 0.996). Unlike existing formats, SNC enables context-aware adaptive playback, spatial audio rendering, and user-controlled remixing without requiring additional storage. Our experimental validation demonstrates that the stems-plus residual architecture successfully decouples the conflicting requirements of compression efficiency and feature richness, offering a practical path toward next-generation audio distribution systems.",
+      "url": "https://arxiv.org/abs/2602.08148",
+      "pdfUrl": "https://arxiv.org/pdf/2602.08148.pdf",
+      "titleJa": "SNC: 適応型再生機能を備えた効率的なロスレスオーディオストレージのためのステムネイティブコーデック"
+    },
+    {
+      "id": "2602.07803",
+      "arxivId": "2602.07803",
+      "title": "SoulX-Singer: Towards High-Quality Zero-Shot Singing Voice Synthesis",
+      "authors": [
+        "Jiale Qian",
+        "Hao Meng",
+        "Tian Zheng",
+        "Pengcheng Zhu",
+        "Haopeng Lin",
+        "Yuhang Dai",
+        "Hanke Xie",
+        "Wenxiao Cao",
+        "Ruixuan Shang",
+        "Jun Wu",
+        "Hongmei Liu",
+        "Hanlin Wen",
+        "Jian Zhao",
+        "Zhonglin Jiang",
+        "Yong Chen",
+        "Shunshun Yin",
+        "Ming Tao",
+        "Jianguo Wei",
+        "Lei Xie",
+        "Xinsheng Wang"
+      ],
+      "publishedDate": "2026-02-08",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.SD"
+      ],
+      "abstract": "While recent years have witnessed rapid progress in speech synthesis, open-source singing voice synthesis (SVS) systems still face significant barriers to industrial deployment, particularly in terms of robustness and zero-shot generalization. In this report, we introduce SoulX-Singer, a high-quality open-source SVS system designed with practical deployment considerations in mind. SoulX-Singer supports controllable singing generation conditioned on either symbolic musical scores (MIDI) or melodic representations, enabling flexible and expressive control in real-world production workflows. Trained on more than 42,000 hours of vocal data, the system supports Mandarin Chinese, English, and Cantonese and consistently achieves state-of-the-art synthesis quality across languages under diverse musical conditions. Furthermore, to enable reliable evaluation of zero-shot SVS performance in practical scenarios, we construct SoulX-Singer-Eval, a dedicated benchmark with strict training-test disentanglement, facilitating systematic assessment in zero-shot settings.",
+      "url": "https://arxiv.org/abs/2602.07803",
+      "pdfUrl": "https://arxiv.org/pdf/2602.07803.pdf",
+      "titleJa": "SoulX-Singer: 高品質なゼロショット歌声合成に向けて"
+    },
+    {
+      "id": "2602.06917",
+      "arxivId": "2602.06917",
+      "title": "Automatic Detection and Analysis of Singing Mistakes for Music Pedagogy",
+      "authors": [
+        "Sumit Kumar",
+        "Suraj Jaiswal",
+        "Parampreet Singh",
+        "Vipul Arora"
+      ],
+      "publishedDate": "2026-02-06",
+      "categories": [
+        "eess.AS",
+        "cs.LG"
+      ],
+      "abstract": "The advancement of machine learning in audio analysis has opened new possibilities for technology-enhanced music education. This paper introduces a framework for automatic singing mistake detection in the context of music pedagogy, supported by a newly curated dataset. The dataset comprises synchronized teacher learner vocal recordings, with annotations marking different types of mistakes made by learners. Using this dataset, we develop different deep learning models for mistake detection and benchmark them. To compare the efficacy of mistake detection systems, a new evaluation methodology is proposed. Experiments indicate that the proposed learning-based methods are superior to rule-based methods. A systematic study of errors and a cross-teacher study reveal insights into music pedagogy that can be utilised for various music applications. This work sets out new directions of research in music pedagogy. The codes and dataset are publicly available.",
+      "url": "https://arxiv.org/abs/2602.06917",
+      "pdfUrl": "https://arxiv.org/pdf/2602.06917.pdf",
+      "titleJa": "音楽教育のための歌唱ミスの自動検出と分析"
+    },
+    {
+      "id": "2602.06823",
+      "arxivId": "2602.06823",
+      "title": "AI-Generated Music Detection in Broadcast Monitoring",
+      "authors": [
+        "David Lopez-Ayala",
+        "Asier Cabello",
+        "Pablo Zinemanas",
+        "Emilio Molina",
+        "Martin Rocamora"
+      ],
+      "publishedDate": "2026-02-06",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "eess.AS",
+        "eess.SP"
+      ],
+      "abstract": "AI music generators have advanced to the point where their outputs are often indistinguishable from human compositions. While detection methods have emerged, they are typically designed and validated in music streaming contexts with clean, full-length tracks. Broadcast audio, however, poses a different challenge: music appears as short excerpts, often masked by dominant speech, conditions under which existing detectors fail. In this work, we introduce AI-OpenBMAT, the first dataset tailored to broadcast-style AI-music detection. It contains 3,294 one-minute audio excerpts (54.9 hours) that follow the duration patterns and loudness relations of real television audio, combining human-made production music with stylistically matched continuations generated with Suno v3.5. We benchmark a CNN baseline and state-of-the-art SpectTTTra models to assess SNR and duration robustness, and evaluate on a full broadcast scenario. Across all settings, models that excel in streaming scenarios suffer substantial degradation, with F1-scores dropping below 60% when music is in the background or has a short duration. These results highlight speech masking and short music length as critical open challenges for AI music detection, and position AI-OpenBMAT as a benchmark for developing detectors capable of meeting industrial broadcast requirements.",
+      "url": "https://arxiv.org/abs/2602.06823",
+      "pdfUrl": "https://arxiv.org/pdf/2602.06823.pdf",
+      "titleJa": "放送監視におけるAI生成音楽検出"
+    },
+    {
+      "id": "2602.07063",
+      "arxivId": "2602.07063",
+      "title": "Video-based Music Generation",
+      "authors": [
+        "Serkan Sulun"
+      ],
+      "publishedDate": "2026-02-05",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "abstract": "As the volume of video content on the internet grows rapidly, finding a suitable soundtrack remains a significant challenge. This thesis presents EMSYNC (EMotion and SYNChronization), a fast, free, and automatic solution that generates music tailored to the input video, enabling content creators to enhance their productions without composing or licensing music. Our model creates music that is emotionally and rhythmically synchronized with the video. A core component of EMSYNC is a novel video emotion classifier. By leveraging pretrained deep neural networks for feature extraction and keeping them frozen while training only fusion layers, we reduce computational complexity while improving accuracy. We show the generalization abilities of our method by obtaining state-of-the-art results on Ekman-6 and MovieNet. Another key contribution is a large-scale, emotion-labeled MIDI dataset for affective music generation. We then present an emotion-based MIDI generator, the first to condition on continuous emotional values rather than discrete categories, enabling nuanced music generation aligned with complex emotional content. To enhance temporal synchronization, we introduce a novel temporal boundary conditioning method, called \"boundary offset encodings,\" aligning musical chords with scene changes. Combining video emotion classification, emotion-based music generation, and temporal boundary conditioning, EMSYNC emerges as a fully automatic video-based music generator. User studies show that it consistently outperforms existing methods in terms of music richness, emotional alignment, temporal synchronization, and overall preference, setting a new state-of-the-art in video-based music generation.",
+      "url": "https://arxiv.org/abs/2602.07063",
+      "pdfUrl": "https://arxiv.org/pdf/2602.07063.pdf",
+      "titleJa": "ビデオベースの音楽生成"
+    },
+    {
+      "id": "2602.14664",
+      "arxivId": "2602.14664",
+      "title": "Probing Human Articulatory Constraints in End-to-End TTS with Reverse and Mismatched Speech-Text Directions",
+      "authors": [
+        "Parth Khadse",
+        "Sunil Kumar Kopparapu"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "An end-to-end (e2e) text-to-speech (TTS) system is a deep architecture that learns to associate a text string with acoustic speech patterns from a curated dataset. It is expected that all aspects associated with speech production, such as phone duration, speaker characteristics, and intonation among other things are captured in the trained TTS model to enable the synthesized speech to be natural and intelligible. Human speech is complex, involving smooth transitions between articulatory configurations (ACs). Due to anatomical constraints, some ACs are challenging to mimic or transition between. In this paper, we experimentally study if the constraints imposed by human anatomy have an implication on training an e2e-TTS systems. We experiment with two e2e-TTS architectures, namely, Tacotron-2 an autoregressive model and VITS-TTS a non-autoregressive model. In this study, we build TTS systems using (a) forward text, forward speech (conventional, e2e-TTS), (b) reverse text, reverse speech (r-e2e-TTS), and (c) reverse text, forward speech (rtfs-e2e-TTS). Experiments demonstrate that e2e-TTS systems are purely data-driven. Interestingly, the generated speech by r-e2e-TTS systems exhibits better fidelity, better perceptual intelligibility, and better naturalness",
+      "url": "https://arxiv.org/abs/2602.14664",
+      "pdfUrl": "https://arxiv.org/pdf/2602.14664.pdf",
+      "titleJa": "逆方向および不一致な音声テキスト方向を持つエンドツーエンドTTSにおける人間の調音制約の調査"
+    },
+    {
+      "id": "2602.15082",
+      "arxivId": "2602.15082",
+      "title": "S-PRESSO: Ultra Low Bitrate Sound Effect Compression With Diffusion Autoencoders And Offline Quantization",
+      "authors": [
+        "Zineb Lahrichi",
+        "Gaëtan Hadjeres",
+        "Gaël Richard",
+        "Geoffroy Peeters"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.MM"
+      ],
+      "abstract": "Neural audio compression models have recently achieved extreme compression rates, enabling efficient latent generative modeling. Conversely, latent generative models have been applied to compression, pushing the limits of continuous and discrete approaches. However, existing methods remain constrained to low-resolution audio and degrade substantially at very low bitrates, where audible artifacts are prominent. In this paper, we present S-PRESSO, a 48kHz sound effect compression model that produces both continuous and discrete embeddings at ultra-low bitrates, down to 0.096 kbps, via offline quantization. Our model relies on a pretrained latent diffusion model to decode compressed audio embeddings learned by a latent encoder. Leveraging the generative priors of the diffusion decoder, we achieve extremely low frame rates, down to 1Hz (750x compression rate), producing convincing and realistic reconstructions at the cost of exact fidelity. Despite operating at high compression rates, we demonstrate that S-PRESSO outperforms both continuous and discrete baselines in audio quality, acoustic similarity and reconstruction metrics.",
+      "url": "https://arxiv.org/abs/2602.15082",
+      "pdfUrl": "https://arxiv.org/pdf/2602.15082.pdf",
+      "titleJa": "S-PRESSO: 拡散オートエンコーダとオフライン量子化による超低ビットレート効果音圧縮"
+    },
+    {
+      "id": "2602.14612",
+      "arxivId": "2602.14612",
+      "title": "LongAudio-RAG: Event-Grounded Question Answering over Multi-Hour Long Audio",
+      "authors": [
+        "Naveen Vakada",
+        "Kartik Hegde",
+        "Arvind Krishna Sridhar",
+        "Yinyi Guo",
+        "Erik Visser"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "Long-duration audio is increasingly common in industrial and consumer settings, yet reviewing multi-hour recordings is impractical, motivating systems that answer natural-language queries with precise temporal grounding and minimal hallucination. Existing audio-language models show promise, but long-audio question answering remains difficult due to context-length limits. We introduce LongAudio-RAG (LA-RAG), a hybrid framework that grounds Large Language Model (LLM) outputs in retrieved, timestamped acoustic event detections rather than raw audio. Multi-hour streams are converted into structured event records stored in an SQL database, and at inference time the system resolves natural-language time references, classifies intent, retrieves only the relevant events, and generates answers using this constrained evidence. To evaluate performance, we construct a synthetic long-audio benchmark by concatenating recordings with preserved timestamps and generating template-based question-answer pairs for detection, counting, and summarization tasks. Finally, we demonstrate the practicality of our approach by deploying it in a hybrid edge-cloud environment, where the audio grounding model runs on-device on IoT-class hardware while the LLM is hosted on a GPU-backed server. This architecture enables low-latency event extraction at the edge and high-quality language reasoning in the cloud. Experiments show that structured, event-level retrieval significantly improves accuracy compared to vanilla Retrieval-Augmented Generation (RAG) or text-to-SQL approaches.",
+      "url": "https://arxiv.org/abs/2602.14612",
+      "pdfUrl": "https://arxiv.org/pdf/2602.14612.pdf",
+      "titleJa": "LongAudio-RAG: 数時間にわたる音声によるイベントベースの質問応答"
+    },
+    {
+      "id": "2602.14560",
+      "arxivId": "2602.14560",
+      "title": "Preliminary sonification of ENSO using traditional Javanese gamelan scales",
+      "authors": [
+        "Sandy H. S. Herho",
+        "Rusmawan Suwarman",
+        "Nurjanna J. Trilaksono",
+        "Iwan P. Anwar",
+        "Faiz R. Fajary"
+      ],
+      "publishedDate": "2026-02-16",
+      "categories": [
+        "physics.soc-ph",
+        "cs.SD",
+        "physics.ao-ph"
+      ],
+      "abstract": "Sonification -- the mapping of data to non-speech audio -- offers an underexplored channel for representing complex dynamical systems. We treat El Niño-Southern Oscillation (ENSO), a canonical example of low-dimensional climate chaos, as a test case for culturally-situated sonification evaluated through complex systems diagnostics. Using parameter-mapping sonification of the Niño 3.4 sea surface temperature anomaly index (1870--2024), we encode ENSO variability into two traditional Javanese gamelan pentatonic systems (pelog and slendro) across four composition strategies, then analyze the resulting audio as trajectories in a two-dimensional acoustic phase space. Recurrence-based diagnostics, convex hull geometry, and coupling analysis reveal that the sonification pipeline preserves key dynamical signatures: alternating modes produce the highest trajectory recurrence rates, echoing ENSO's quasi-periodicity; layered polyphonic modes explore the broadest phase space regions; and the two scale families induce qualitatively distinct coupling regimes between spectral brightness and energy -- predominantly anti-phase in pelog but near-independent in slendro. Phase space trajectory analysis provides a rigorous geometric framework for comparing sonification designs within a complex systems context. Perceptual validation remains necessary; we contribute the dynamical systems methodology for evaluating such mappings.",
+      "url": "https://arxiv.org/abs/2602.14560",
+      "pdfUrl": "https://arxiv.org/pdf/2602.14560.pdf",
+      "titleJa": "伝統的なジャワガムラン音階を用いたENSOの予備的な音響化"
+    },
+    {
+      "id": "2602.14172",
+      "arxivId": "2602.14172",
+      "title": "Investigation for Relative Voice Impression Estimation",
+      "authors": [
+        "Kenichi Fujita",
+        "Yusuke Ijima"
+      ],
+      "publishedDate": "2026-02-15",
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "abstract": "Paralinguistic and non-linguistic aspects of speech strongly influence listener impressions. While most research focuses on absolute impression scoring, this study investigates relative voice impression estimation (RIE), a framework for predicting the perceptual difference between two utterances from the same speaker. The estimation target is a low-dimensional vector derived from subjective evaluations, quantifying the perceptual shift of the second utterance relative to the first along an antonymic axis (e.g., ``Dark--Bright''). To isolate expressive and prosodic variation, we used recordings of a professional speaker reading a text in various styles. We compare three modeling approaches: classical acoustic features commonly used for speech emotion recognition, self-supervised speech representations, and multimodal large language models (MLLMs). Our results demonstrate that models using self-supervised representations outperform methods with classical acoustic features, particularly in capturing complex and dynamic impressions (e.g., ``Cold--Warm'') where classical features fail. In contrast, current MLLMs prove unreliable for this fine-grained pairwise task. This study provides the first systematic investigation of RIE and demonstrates the strength of self-supervised speech models in capturing subtle perceptual variations.",
+      "url": "https://arxiv.org/abs/2602.14172",
+      "pdfUrl": "https://arxiv.org/pdf/2602.14172.pdf",
+      "titleJa": "相対的な音声印象推定に関する調査"
+    },
+    {
+      "id": "2602.13891",
+      "arxivId": "2602.13891",
+      "title": "GSRM: Generative Speech Reward Model for Speech RLHF",
+      "authors": [
+        "Maohao Shen",
+        "Tejas Jayashankar",
+        "Osama Hanna",
+        "Naoyuki Kanda",
+        "Yancheng Wang",
+        "Kateřina Žmolíková",
+        "Ruiming Xie",
+        "Niko Moritz",
+        "Anfeng Xu",
+        "Yashesh Gaur",
+        "Gregory Wornell",
+        "Qing He",
+        "Jilong Wu"
+      ],
+      "publishedDate": "2026-02-14",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "Recent advances in speech language models, such as GPT-4o Voice Mode and Gemini Live, have demonstrated promising speech generation capabilities. Nevertheless, the aesthetic naturalness of the synthesized audio still lags behind that of human speech. Enhancing generation quality requires a reliable evaluator of speech naturalness. However, existing naturalness evaluators typically regress raw audio to scalar scores, offering limited interpretability of the evaluation and moreover fail to generalize to speech across different taxonomies. Inspired by recent advances in generative reward modeling, we propose the Generative Speech Reward Model (GSRM), a reasoning-centric reward model tailored for speech. The GSRM is trained to decompose speech naturalness evaluation into an interpretable acoustic feature extraction stage followed by feature-grounded chain-of-thought reasoning, enabling explainable judgments. To achieve this, we curated a large-scale human feedback dataset comprising 31k expert ratings and an out-of-domain benchmark of real-world user-assistant speech interactions. Experiments show that GSRM substantially outperforms existing speech naturalness predictors, achieving model-human correlation of naturalness score prediction that approaches human inter-rater consistency. We further show how GSRM can improve the naturalness of speech LLM generations by serving as an effective verifier for online RLHF.",
+      "url": "https://arxiv.org/abs/2602.13891",
+      "pdfUrl": "https://arxiv.org/pdf/2602.13891.pdf",
+      "titleJa": "GSRM: 音声RLHFのための生成音声報酬モデル"
+    },
+    {
+      "id": "2602.13835",
+      "arxivId": "2602.13835",
+      "title": "Audiocards: Structured Metadata Improves Audio Language Models For Sound Design",
+      "authors": [
+        "Sripathi Sridhar",
+        "Prem Seetharaman",
+        "Oriol Nieto",
+        "Mark Cartwright",
+        "Justin Salamon"
+      ],
+      "publishedDate": "2026-02-14",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "Sound designers search for sounds in large sound effects libraries using aspects such as sound class or visual context. However, the metadata needed for such search is often missing or incomplete, and requires significant manual effort to add. Existing solutions to automate this task by generating metadata, i.e. captioning, and search using learned embeddings, i.e. text-audio retrieval, are not trained on metadata with the structure and information pertinent to sound design. To this end we propose audiocards, structured metadata grounded in acoustic attributes and sonic descriptors, by exploiting the world knowledge of LLMs. We show that training on audiocards improves downstream text-audio retrieval, descriptive captioning, and metadata generation on professional sound effects libraries. Moreover, audiocards also improve performance on general audio captioning and retrieval over the baseline single-sentence captioning approach. We release a curated dataset of sound effects audiocards to invite further research in audio language modeling for sound design.",
+      "url": "https://arxiv.org/abs/2602.13835",
+      "pdfUrl": "https://arxiv.org/pdf/2602.13835.pdf",
+      "titleJa": "オーディオカード：構造化メタデータがサウンドデザインのためのオーディオ言語モデルを改善"
+    },
+    {
+      "id": "2602.13685",
+      "arxivId": "2602.13685",
+      "title": "AuTAgent: A Reinforcement Learning Framework for Tool-Augmented Audio Reasoning",
+      "authors": [
+        "Siqian Tong",
+        "Xuan Li",
+        "Yiwei Wang",
+        "Baolong Bi",
+        "Yujun Cai",
+        "Shenghua Liu",
+        "Yuchen He",
+        "Chengpeng Hao"
+      ],
+      "publishedDate": "2026-02-14",
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "abstract": "Large Audio Language Models (LALMs) excel at perception but struggle with complex reasoning requiring precise acoustic measurements. While external tools can extract fine-grained features like exact tempo or pitch, effective integration remains challenging: naively using all tools causes information overload, while prompt-based selection fails to assess context-dependent utility. To address this, we propose AuTAgent (Audio Tool Agent), a reinforcement learning framework that learns when and which tools to invoke. By employing a sparse-feedback training strategy with a novel Differential Reward mechanism, the agent learns to filter out irrelevant tools and invokes external assistance only when it yields a net performance gain over the base model. Experimental results confirm that AuTAgent complements the representation bottleneck of LALMs by providing verifiable acoustic evidence. It improves accuracy by 4.20% / 6.20% and 9.80% / 8.00% for open-source and closed-source backbones on the MMAU Test-mini and the MMAR benchmarks, respectively. In addition, further experiments demonstrate exceptional transferability. We highlight the complementary role of external tools in augmenting audio model reasoning.",
+      "url": "https://arxiv.org/abs/2602.13685",
+      "pdfUrl": "https://arxiv.org/pdf/2602.13685.pdf",
+      "titleJa": "AuTAgent: ツール拡張型音声推論のための強化学習フレームワーク"
     }
   ],
-  "lastUpdated": "2026-02-21T01:03:23.208504",
-  "totalCount": 40
+  "lastUpdated": "2026-02-22T01:06:39.625230",
+  "totalCount": 74
 }
