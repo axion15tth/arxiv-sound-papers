@@ -22,7 +22,7 @@
       "abstract": "Recent audio generation models typically rely on Variational Autoencoders (VAEs) and perform generation within the VAE latent space. Although VAEs excel at compression and reconstruction, their latents inherently encode low-level acoustic details rather than semantically discriminative information, leading to entangled event semantics and complicating the training of generative models. To address these issues, we discard VAE acoustic latents and introduce semantic encoder latents, thereby proposing SemanticVocoder, a generative vocoder that directly synthesizes waveforms from semantic latents. Equipped with SemanticVocoder, our text-to-audio generation model achieves a Frechet Distance of 12.823 and a Frechet Audio Distance of 1.709 on the AudioCaps test set, as the introduced semantic latents exhibit superior discriminability compared to acoustic VAE latents. Beyond improved generation performance, it also serves as a promising attempt towards unifying audio understanding and generation within a shared semantic space. Generated samples are available at https://zeyuxie29.github.io/SemanticVocoder/.",
       "url": "https://arxiv.org/abs/2602.23333",
       "pdfUrl": "https://arxiv.org/pdf/2602.23333.pdf",
-      "titleJa": "SemanticVocoder: 意味的潜在情報による音声生成と音声理解の橋渡し"
+      "titleJa": "SemanticVocoder: 意味的潜在情報によるオーディオ生成とオーディオ理解の橋渡し"
     },
     {
       "id": "2602.23070",
@@ -627,7 +627,7 @@
       "abstract": "Emotion recognition from multi-modal physiological and behavioral signals plays a pivotal role in affective computing, yet most existing models remain constrained to the prediction of singular emotions in controlled laboratory settings. Real-world human emotional experiences, by contrast, are often characterized by the simultaneous presence of multiple affective states, spurring recent interest in mixed emotion recognition as an emotion distribution learning problem. Current approaches, however, often neglect the valence consistency and structured correlations inherent among coexisting emotions. To address this limitation, we propose a Memory-guided Prototypical Co-occurrence Learning (MPCL) framework that explicitly models emotion co-occurrence patterns. Specifically, we first fuse multi-modal signals via a multi-scale associative memory mechanism. To capture cross-modal semantic relationships, we construct emotion-specific prototype memory banks, yielding rich physiological and behavioral representations, and employ prototype relation distillation to ensure cross-modal alignment in the latent prototype space. Furthermore, inspired by human cognitive memory systems, we introduce a memory retrieval strategy to extract semantic-level co-occurrence associations across emotion categories. Through this bottom-up hierarchical abstraction process, our model learns affectively informative representations for accurate emotion distribution prediction. Comprehensive experiments on two public datasets demonstrate that MPCL consistently outperforms state-of-the-art methods in mixed emotion recognition, both quantitatively and qualitatively.",
       "url": "https://arxiv.org/abs/2602.20530",
       "pdfUrl": "https://arxiv.org/pdf/2602.20530.pdf",
-      "titleJa": "混合感情認識のための記憶誘導プロトタイプ共起学習"
+      "titleJa": "混合感情認識のための記憶誘導型プロトタイプ共起学習"
     },
     {
       "id": "2602.19825",
@@ -1753,6 +1753,6 @@
       "titleJa": "畳み込みニューラルネットワークと音響信号を用いた3Dプリンターのリアルタイム故障検出"
     }
   ],
-  "lastUpdated": "2026-02-28T00:58:14.512286",
+  "lastUpdated": "2026-03-01T01:12:15.287625",
   "totalCount": 81
 }
