@@ -627,7 +627,7 @@
       "abstract": "Emotion recognition from multi-modal physiological and behavioral signals plays a pivotal role in affective computing, yet most existing models remain constrained to the prediction of singular emotions in controlled laboratory settings. Real-world human emotional experiences, by contrast, are often characterized by the simultaneous presence of multiple affective states, spurring recent interest in mixed emotion recognition as an emotion distribution learning problem. Current approaches, however, often neglect the valence consistency and structured correlations inherent among coexisting emotions. To address this limitation, we propose a Memory-guided Prototypical Co-occurrence Learning (MPCL) framework that explicitly models emotion co-occurrence patterns. Specifically, we first fuse multi-modal signals via a multi-scale associative memory mechanism. To capture cross-modal semantic relationships, we construct emotion-specific prototype memory banks, yielding rich physiological and behavioral representations, and employ prototype relation distillation to ensure cross-modal alignment in the latent prototype space. Furthermore, inspired by human cognitive memory systems, we introduce a memory retrieval strategy to extract semantic-level co-occurrence associations across emotion categories. Through this bottom-up hierarchical abstraction process, our model learns affectively informative representations for accurate emotion distribution prediction. Comprehensive experiments on two public datasets demonstrate that MPCL consistently outperforms state-of-the-art methods in mixed emotion recognition, both quantitatively and qualitatively.",
       "url": "https://arxiv.org/abs/2602.20530",
       "pdfUrl": "https://arxiv.org/pdf/2602.20530.pdf",
-      "titleJa": "混合感情認識のための記憶誘導型プロトタイプ共起学習"
+      "titleJa": "混合感情認識のための記憶誘導プロトタイプ共起学習"
     },
     {
       "id": "2602.19825",
@@ -719,7 +719,7 @@
       "abstract": "The Platonic Representation Hypothesis posits that neural networks trained on different modalities converge toward a shared statistical model of the world. Recent work exploits this convergence by aligning frozen pretrained vision and language models with lightweight alignment layers, but typically relies on contrastive losses and millions of paired samples. In this work, we ask whether meaningful alignment can be achieved with substantially less supervision. We introduce a semi-supervised setting in which pretrained unimodal encoders are aligned using a small number of image-text pairs together with large amounts of unpaired data. To address this challenge, we propose SOTAlign, a two-stage framework that first recovers a coarse shared geometry from limited paired data using a linear teacher, then refines the alignment on unpaired samples via an optimal-transport-based divergence that transfers relational structure without overconstraining the target space. Unlike existing semi-supervised methods, SOTAlign effectively leverages unpaired images and text, learning robust joint embeddings across datasets and encoder pairs, and significantly outperforming supervised and semi-supervised baselines.",
       "url": "https://arxiv.org/abs/2602.23353",
       "pdfUrl": "https://arxiv.org/pdf/2602.23353.pdf",
-      "titleJa": "SOTAlign: 最適輸送によるユニモーダル視覚・言語モデルの半教師ありアライメント"
+      "titleJa": "SOTAlign: 最適輸送によるユニモーダル視覚・言語モデルの半教師付きアライメント"
     },
     {
       "id": "2602.23349",
@@ -1753,6 +1753,6 @@
       "titleJa": "畳み込みニューラルネットワークと音響信号を用いた3Dプリンターのリアルタイム故障検出"
     }
   ],
-  "lastUpdated": "2026-03-01T01:12:15.287625",
+  "lastUpdated": "2026-03-02T01:05:08.795777",
   "totalCount": 81
 }
