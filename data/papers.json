@@ -228,7 +228,7 @@
       "abstract": "Continuous valence-arousal estimation in real-world environments is challenging due to inconsistent modality reliability and interaction-dependent variability in audio-visual signals. Existing approaches primarily focus on modeling temporal dynamics, often overlooking the fact that modality reliability can vary substantially across interaction stages. To address this issue, we propose SAGE, a Stage-Adaptive reliability modeling framework that explicitly estimates and calibrates modality-wise confidence during multimodal integration. SAGE introduces a reliability-aware fusion mechanism that dynamically rebalances audio and visual representations according to their stage-dependent informativeness, preventing unreliable signals from dominating the prediction process. By separating reliability estimation from feature representation, the proposed framework enables more stable emotion estimation under cross-modal noise, occlusion, and varying interaction conditions. Extensive experiments on the Aff-Wild2 benchmark demonstrate that SAGE consistently improves concordance correlation coefficient scores compared with existing multimodal fusion approaches, highlighting the effectiveness of reliability-driven modeling for continuous affect prediction.",
       "url": "https://arxiv.org/abs/2603.11468",
       "pdfUrl": "https://arxiv.org/pdf/2603.11468.pdf",
-      "titleJa": "連続的な感情価・覚醒度推定のための段階適応型信頼性モデリング"
+      "titleJa": "連続的な快不快度・覚醒度推定のための段階適応型信頼性モデリング"
     },
     {
       "id": "2603.11397",
@@ -382,7 +382,7 @@
       "abstract": "Generating music that temporally aligns with video events is challenging for existing text-to-music models, which lack fine-grained temporal control. We introduce V2M-Zero, a zero-pair video-to-music generation approach that outputs time-aligned music for video. Our method is motivated by a key observation: temporal synchronization requires matching when and how much change occurs, not what changes. While musical and visual events differ semantically, they exhibit shared temporal structure that can be captured independently within each modality. We capture this structure through event curves computed from intra-modal similarity using pretrained music and video encoders. By measuring temporal change within each modality independently, these curves provide comparable representations across modalities. This enables a simple training strategy: fine-tune a text-to-music model on music-event curves, then substitute video-event curves at inference without cross-modal training or paired data. Across OES-Pub, MovieGenBench-Music, and AIST++, V2M-Zero achieves substantial gains over paired-data baselines: 5-21% higher audio quality, 13-15% better semantic alignment, 21-52% improved temporal synchronization, and 28% higher beat alignment on dance videos. We find similar results via a large crowd-source subjective listening test. Overall, our results validate that temporal alignment through within-modality features, rather than paired cross-modal supervision, is effective for video-to-music generation. Results are available at https://genjib.github.io/v2m_zero/",
       "url": "https://arxiv.org/abs/2603.11042",
       "pdfUrl": "https://arxiv.org/pdf/2603.11042.pdf",
-      "titleJa": "V2M-Zero: ゼロペア時間整合ビデオから音楽への生成"
+      "titleJa": "V2M-Zero：ゼロペア時間同期ビデオ・音楽生成"
     },
     {
       "id": "2603.10921",
@@ -957,7 +957,7 @@
       "abstract": "Understanding freely moving animal behavior is central to neuroscience, where pose estimation and behavioral understanding form the foundation for linking neural activity to natural actions. Yet both tasks still depend heavily on human annotation or unstable unsupervised pipelines, limiting scalability and reproducibility. We present BehaviorVLM, a unified vision-language framework for pose estimation and behavioral understanding that requires no task-specific finetuning and minimal human labeling by guiding pretrained Vision-Language Models (VLMs) through detailed, explicit, and verifiable reasoning steps. For pose estimation, we leverage quantum-dot-grounded behavioral data and propose a multi-stage pipeline that integrates temporal, spatial, and cross-view reasoning. This design greatly reduces human annotation effort, exposes low-confidence labels through geometric checks such as reprojection error, and produces labels that can later be filtered, corrected, or used to fine-tune downstream pose models. For behavioral understanding, we propose a pipeline that integrates deep embedded clustering for over-segmented behavior discovery, VLM-based per-clip video captioning, and LLM-based reasoning to merge and semantically label behavioral segments. The behavioral pipeline can operate directly from visual information and does not require keypoints to segment behavior. Together, these components enable scalable, interpretable, and label-light analysis of multi-animal behavior.",
       "url": "https://arxiv.org/abs/2603.12176",
       "pdfUrl": "https://arxiv.org/pdf/2603.12176.pdf",
-      "titleJa": "BehaviorVLM：視覚言語推論による、微調整不要の統合型行動理解"
+      "titleJa": "BehaviorVLM：視覚言語推論を用いた、微調整不要の統合型行動理解"
     },
     {
       "id": "2603.12163",
@@ -1496,7 +1496,7 @@
       "abstract": "This paper introduces DashengTokenizer, a continuous audio tokenizer engineered for joint use in both understanding and generation tasks. Unlike conventional approaches, which train acoustic tokenizers and subsequently integrate frozen semantic knowledge, our method inverts this paradigm: we leverage frozen semantic features and inject acoustic information. In linear evaluation across 22 diverse tasks, our method outperforms previous audio codec and audio encoder baselines by a significant margin while maintaining competitive audio reconstruction quality. Notably, we demonstrate that this acoustic injection improves performance for tasks such as speech emotion recognition, music understanding, and acoustic scene classification. We further evaluate the tokenizer's generative performance on text-to-audio (TTA), text-to-music (TTM), and speech enhancement (SE). Our approach surpasses standard variational autoencoder (VAE)-based methods on TTA and TTM tasks, while its effectiveness on SE underscores its capabilities as a general-purpose audio encoder. Finally, our results challenge the prevailing assumption that VAE-based architectures are a prerequisite for audio synthesis. Checkpoints are available at https://huggingface.co/mispeech/dashengtokenizer.",
       "url": "https://arxiv.org/abs/2602.23765",
       "pdfUrl": "https://arxiv.org/pdf/2602.23765.pdf",
-      "titleJa": "DashengTokenizer: 統一された音声理解と生成には、1つのレイヤーで十分です。"
+      "titleJa": "DashengTokenizer: 統一された音声理解と生成には、1つのレイヤーで十分です"
     },
     {
       "id": "2602.23649",
@@ -1733,6 +1733,6 @@
       "titleJa": "感情認識型接頭辞：音声変換モデルにおける明示的な感情制御に向けて"
     }
   ],
-  "lastUpdated": "2026-03-14T01:03:34.327880",
+  "lastUpdated": "2026-03-15T01:14:24.951279",
   "totalCount": 79
 }
