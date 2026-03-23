@@ -1,6 +1,157 @@
 {
   "papers": [
     {
+      "id": "2603.19857",
+      "arxivId": "2603.19857",
+      "title": "FoleyDirector: Fine-Grained Temporal Steering for Video-to-Audio Generation via Structured Scripts",
+      "authors": [
+        "You Li",
+        "Dewei Zhou",
+        "Fan Ma",
+        "Fu Li",
+        "Dongliang He",
+        "Yi Yang"
+      ],
+      "publishedDate": "2026-03-20",
+      "categories": [
+        "cs.SD",
+        "cs.CV"
+      ],
+      "abstract": "Recent Video-to-Audio (V2A) methods have achieved remarkable progress, enabling the synthesis of realistic, high-quality audio. However, they struggle with fine-grained temporal control in multi-event scenarios or when visual cues are insufficient, such as small regions, off-screen sounds, or occluded or partially visible objects. In this paper, we propose FoleyDirector, a framework that, for the first time, enables precise temporal guidance in DiT-based V2A generation while preserving the base model's audio quality and allowing seamless switching between V2A generation and temporally controlled synthesis. FoleyDirector introduces Structured Temporal Scripts (STS), a set of captions corresponding to short temporal segments, to provide richer temporal information. These features are integrated via the Script-Guided Temporal Fusion Module, which employs Temporal Script Attention to fuse STS features coherently. To handle complex multi-event scenarios, we further propose Bi-Frame Sound Synthesis, enabling parallel in-frame and out-of-frame audio generation and improving controllability. To support training and evaluation, we construct the DirectorSound dataset and introduce VGGSoundDirector and DirectorBench. Experiments demonstrate that FoleyDirector substantially enhances temporal controllability while maintaining high audio fidelity, empowering users to act as Foley directors and advancing V2A toward more expressive and controllable generation.",
+      "url": "https://arxiv.org/abs/2603.19857",
+      "pdfUrl": "https://arxiv.org/pdf/2603.19857.pdf",
+      "titleJa": "FoleyDirector：構造化スクリプトによるビデオからオーディオへの変換における、きめ細かな時間制御"
+    },
+    {
+      "id": "2603.19798",
+      "arxivId": "2603.19798",
+      "title": "Borderless Long Speech Synthesis",
+      "authors": [
+        "Xingchen Song",
+        "Di Wu",
+        "Dinghao Zhou",
+        "Pengyu Cheng",
+        "Hongwu Ding",
+        "Yunchao He",
+        "Jie Wang",
+        "Shengfan Shen",
+        "Sixiang Lv",
+        "Lichun Fan",
+        "Hang Su",
+        "Yifeng Wang",
+        "Shuai Wang",
+        "Meng Meng",
+        "Jian Luan"
+      ],
+      "publishedDate": "2026-03-20",
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "abstract": "Most existing text-to-speech (TTS) systems either synthesize speech sentence by sentence and stitch the results together, or drive synthesis from plain-text dialogues alone. Both approaches leave models with little understanding of global context or paralinguistic cues, making it hard to capture real-world phenomena such as multi-speaker interactions (interruptions, overlapping speech), evolving emotional arcs, and varied acoustic environments. We introduce the Borderless Long Speech Synthesis framework for agent-centric, borderless long audio synthesis. Rather than targeting a single narrow task, the system is designed as a unified capability set spanning VoiceDesigner, multi-speaker synthesis, Instruct TTS, and long-form text synthesis. On the data side, we propose a \"Labeling over filtering/cleaning\" strategy and design a top-down, multi-level annotation schema we call Global-Sentence-Token. On the model side, we adopt a backbone with a continuous tokenizer and add Chain-of-Thought (CoT) reasoning together with Dimension Dropout, both of which markedly improve instruction following under complex conditions. We further show that the system is Native Agentic by design: the hierarchical annotation doubles as a Structured Semantic Interface between the LLM Agent and the synthesis engine, creating a layered control protocol stack that spans from scene semantics down to phonetic detail. Text thereby becomes an information-complete, wide-band control channel, enabling a front-end LLM to convert inputs of any modality into structured generation commands, extending the paradigm from Text2Speech to borderless long speech synthesis.",
+      "url": "https://arxiv.org/abs/2603.19798",
+      "pdfUrl": "https://arxiv.org/pdf/2603.19798.pdf",
+      "titleJa": "ボーダーレス長文音声合成"
+    },
+    {
+      "id": "2603.19739",
+      "arxivId": "2603.19739",
+      "title": "MOSS-TTSD: Text to Spoken Dialogue Generation",
+      "authors": [
+        "Yuqian Zhang",
+        "Donghua Yu",
+        "Zhengyuan Lin",
+        "Botian Jiang",
+        "Mingshu Chen",
+        "Yaozhou Jiang",
+        "Yiwei Zhao",
+        "Yiyang Zhang",
+        "Yucheng Yuan",
+        "Hanfu Chen",
+        "Kexin Huang",
+        "Jun Zhan",
+        "Cheng Chang",
+        "Zhaoye Fei",
+        "Shimin Li",
+        "Xiaogui Yang",
+        "Qinyuan Cheng",
+        "Xipeng Qiu"
+      ],
+      "publishedDate": "2026-03-20",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "Spoken dialogue generation is crucial for applications like podcasts, dynamic commentary, and entertainment content, but poses significant challenges compared to single-utterance text-to-speech (TTS). Key requirements include accurate turn-taking, cross-turn acoustic consistency, and long-form stability, which current models often fail to address due to a lack of dialogue context modeling. To bridge this gap, we present MOSS-TTSD, a spoken dialogue synthesis model designed for expressive, multi-party conversational speech across multiple languages. With enhanced long-context modeling, MOSS-TTSD generates long-form spoken conversations from dialogue scripts with explicit speaker tags, supporting up to 60 minutes of single-pass synthesis, multi-party dialogue with up to 5 speakers, and zero-shot voice cloning from a short reference audio clip. The model supports various mainstream languages, including English and Chinese, and is adapted to several long-form scenarios. Additionally, to address limitations of existing evaluation methods, we propose TTSD-eval, an objective evaluation framework based on forced alignment that measures speaker attribution accuracy and speaker similarity without relying on speaker diarization tools. Both objective and subjective evaluation results show that MOSS-TTSD surpasses strong open-source and proprietary baselines in dialogue synthesis.",
+      "url": "https://arxiv.org/abs/2603.19739",
+      "pdfUrl": "https://arxiv.org/pdf/2603.19739.pdf",
+      "titleJa": "MOSS-TTSD：テキストから音声への対話生成"
+    },
+    {
+      "id": "2603.19697",
+      "arxivId": "2603.19697",
+      "title": "Plug-and-Steer: Decoupling Separation and Selection in Audio-Visual Target Speaker Extraction",
+      "authors": [
+        "Doyeop Kwak",
+        "Suyeon Lee",
+        "Joon Son Chung"
+      ],
+      "publishedDate": "2026-03-20",
+      "categories": [
+        "eess.AS",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "abstract": "The goal of this paper is to provide a new perspective on audio-visual target speaker extraction (AV-TSE) by decoupling the separation and target selection. Conventional AV-TSE systems typically integrate audio and visual features deeply to re-learn the entire separation process, which can act as a fidelity ceiling due to the noisy nature of in-the-wild audio-visual datasets. To address this, we propose Plug-and-Steer, which assigns high-fidelity separation to a frozen audio-only backbone and limits the role of visual modality strictly to target selection. We introduce the Latent Steering Matrix (LSM), a minimalist linear transformation that re-routes latent features within the backbone to anchor the target speaker to a designated channel. Experiments across four representative architectures show that our method effectively preserves the acoustic priors of diverse backbones, achieving perceptual quality comparable to the original backbones. Audio samples are available at: https://plugandsteer.github.io",
+      "url": "https://arxiv.org/abs/2603.19697",
+      "pdfUrl": "https://arxiv.org/pdf/2603.19697.pdf",
+      "titleJa": "プラグアンドステア：オーディオビジュアルにおけるターゲットスピーカー抽出における分離と選択のデカップリング"
+    },
+    {
+      "id": "2603.19615",
+      "arxivId": "2603.19615",
+      "title": "CAF-Score: Calibrating CLAP with LALMs for Reference-free Audio Captioning Evaluation",
+      "authors": [
+        "Insung Lee",
+        "Taeyoung Jeong",
+        "Haejun Yoo",
+        "Du-Seong Chang",
+        "Myoung-Wan Koo"
+      ],
+      "publishedDate": "2026-03-20",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "While Large Audio-Language Models (LALMs) have advanced audio captioning, robust evaluation remains difficult. Reference-based metrics are expensive and often fail to assess acoustic fidelity, while Contrastive Language-Audio Pretraining (CLAP)-based approaches frequently overlook syntactic errors and fine-grained details. We propose CAF-Score, a reference-free metric that calibrates CLAP's coarse-grained semantic alignment with the fine-grained comprehension and syntactic awareness of LALMs. By combining contrastive audio-text embeddings with LALM reasoning, CAF-Score effectively detects syntactic inconsistencies and subtle hallucinations. Experiments on the BRACE benchmark demonstrate that our approach achieves the highest correlation with human judgments, even outperforming reference-based baselines in challenging scenarios. These results highlight the efficacy of CAF-Score for reference-free audio captioning evaluation. Code and results are available at https://github.com/inseong00/CAF-Score.",
+      "url": "https://arxiv.org/abs/2603.19615",
+      "pdfUrl": "https://arxiv.org/pdf/2603.19615.pdf",
+      "titleJa": "CAF-Score: 参照不要の音声キャプション評価のためのLALMを用いたCLAPの較正"
+    },
+    {
+      "id": "2603.19468",
+      "arxivId": "2603.19468",
+      "title": "Listen First, Then Answer: Timestamp-Grounded Speech Reasoning",
+      "authors": [
+        "Jihoon Jeong",
+        "Pooneh Mousavi",
+        "Mirco Ravanelli",
+        "Cem Subakan"
+      ],
+      "publishedDate": "2026-03-19",
+      "categories": [
+        "cs.SD",
+        "eess.AS"
+      ],
+      "abstract": "Large audio-language models (LALMs) can generate reasoning chains for their predictions, but it remains unclear whether these reasoning chains remain grounded in the input audio. In this paper, we propose an RL-based strategy that grounds the reasoning outputs of LALMs with explicit timestamp annotations referring to relevant segments of the audio signal. Our analysis shows that timestamp grounding leads the model to attend more strongly to audio tokens during reasoning generation. Experiments on four speech-based benchmark datasets demonstrate that our approach improves performance compared to both zero-shot reasoning and fine-tuning without timestamp grounding. Additionally, grounding amplifies desirable reasoning behaviors, such as region exploration, audiology verification, and consistency, underscoring the importance of grounding mechanisms for faithful multimodal reasoning.",
+      "url": "https://arxiv.org/abs/2603.19468",
+      "pdfUrl": "https://arxiv.org/pdf/2603.19468.pdf",
+      "titleJa": "まず聞いてから答える：タイムスタンプに基づく音声推論"
+    },
+    {
       "id": "2603.19195",
       "arxivId": "2603.19195",
       "title": "How Auditory Knowledge in LLM Backbones Shapes Audio Language Models: A Holistic Evaluation",
@@ -52,6 +203,51 @@
       "titleJa": "マルチモーダルフローマッチングを用いた少数ショット音響合成"
     },
     {
+      "id": "2603.18758",
+      "arxivId": "2603.18758",
+      "title": "Dual-Model Prediction of Affective Engagement and Vocal Attractiveness from Speaker Expressiveness in Video Learning",
+      "authors": [
+        "Hung-Yue Suen",
+        "Kuo-En Hung",
+        "Fan-Hsun Tseng"
+      ],
+      "publishedDate": "2026-03-19",
+      "categories": [
+        "cs.HC",
+        "cs.CV",
+        "cs.SD"
+      ],
+      "abstract": "This paper outlines a machine learning-enabled speaker-centric Emotion AI approach capable of predicting audience-affective engagement and vocal attractiveness in asynchronous video-based learning, relying solely on speaker-side affective expressions. Inspired by the demand for scalable, privacy-preserving affective computing applications, this speaker-centric Emotion AI approach incorporates two distinct regression models that leverage a massive corpus developed within Massive Open Online Courses (MOOCs) to enable affectively engaging experiences. The regression model predicting affective engagement is developed by assimilating emotional expressions emanating from facial dynamics, oculomotor features, prosody, and cognitive semantics, while incorporating a second regression model to predict vocal attractiveness based exclusively on speaker-side acoustic features. Notably, on speaker-independent test sets, both regression models yielded impressive predictive performance (R2 = 0.85 for affective engagement and R2 = 0.88 for vocal attractiveness), confirming that speaker-side affect can functionally represent aggregated audience feedback. This paper provides a speaker-centric Emotion AI approach substantiated by an empirical study discovering that speaker-side multimodal features, including acoustics, can prospectively forecast audience feedback without necessarily employing audience-side input information.",
+      "url": "https://arxiv.org/abs/2603.18758",
+      "pdfUrl": "https://arxiv.org/pdf/2603.18758.pdf",
+      "titleJa": "動画学習における話者の表現力から情動的関与と声の魅力を予測するデュアルモデル"
+    },
+    {
+      "id": "2603.18678",
+      "arxivId": "2603.18678",
+      "title": "Words at Play: Benchmarking Audio Pun Understanding in Large Audio-Language Models",
+      "authors": [
+        "Yuchen Su",
+        "Shaoxin Zhong",
+        "Yonghua Zhu",
+        "Ruofan Wang",
+        "Zijian Huang",
+        "Qiqi Wang",
+        "Na Zhao",
+        "Diana Benavides-Prado",
+        "Michael Witbrock"
+      ],
+      "publishedDate": "2026-03-19",
+      "categories": [
+        "cs.SD",
+        "cs.CL"
+      ],
+      "abstract": "Puns represent a typical linguistic phenomenon that exploits polysemy and phonetic ambiguity to generate humour, posing unique challenges for natural language understanding. Within pun research, audio plays a central role in human communication except text and images, while datasets and systematic resources for spoken puns remain scarce, leaving this crucial modality largely underexplored. In this paper, we present APUN-Bench, the first benchmark dedicated to evaluating large audio language models (LALMs) on audio pun understanding. Our benchmark contains 4,434 audio samples annotated across three stages: pun recognition, pun word location and pun meaning inference. We conduct a deep analysis of APUN-Bench by systematically evaluating 10 state-of-the-art LALMs, uncovering substantial performance gaps in recognizing, localizing, and interpreting audio puns. This analysis reveals key challenges, such as positional biases in audio pun location and error cases in meaning inference, offering actionable insights for advancing humour-aware audio intelligence.",
+      "url": "https://arxiv.org/abs/2603.18678",
+      "pdfUrl": "https://arxiv.org/pdf/2603.18678.pdf",
+      "titleJa": "言葉遊び：大規模音声言語モデルにおける音声ダジャレ理解のベンチマーク"
+    },
+    {
       "id": "2603.18612",
       "arxivId": "2603.18612",
       "title": "DiscoPhon: Benchmarking the Unsupervised Discovery of Phoneme Inventories With Discrete Speech Units",
@@ -73,6 +269,244 @@
       "url": "https://arxiv.org/abs/2603.18612",
       "pdfUrl": "https://arxiv.org/pdf/2603.18612.pdf",
       "titleJa": "DiscoPhon：離散音声単位を用いた音素目録の教師なし発見のベンチマーク"
+    },
+    {
+      "id": "2603.18359",
+      "arxivId": "2603.18359",
+      "title": "Towards Interpretable Framework for Neural Audio Codecs via Sparse Autoencoders: A Case Study on Accent Information",
+      "authors": [
+        "Shih-Heng Wang",
+        "Tiantian Feng",
+        "Aditya Kommineni",
+        "Thanathai Lertpetchpun",
+        "Bowen Yi",
+        "Xuan Shi",
+        "Shrikanth Narayanan"
+      ],
+      "publishedDate": "2026-03-18",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "Neural Audio Codecs (NACs) are widely adopted in modern speech systems, yet how they encode linguistic and paralinguistic information remains unclear. Improving the interpretability of NAC representations is critical for understanding and deploying them in sensitive applications. Hence, we employ Sparse Autoencoders (SAEs) to decompose dense NAC representations into sparse, interpretable activations. In this work, we focus on a challenging paralinguistic attribute-accent-and propose a framework to quantify NAC interpretability. We evaluate four NAC models under 16 SAE configurations using a relative performance index. Our results show that DAC and SpeechTokenizer achieve the highest interpretability. We further reveal that acoustic-oriented NACs encode accent information primarily in activation magnitudes of sparse representations, whereas phonetic-oriented NACs rely more on activation positions, and that low-bitrate EnCodec variants show higher interpretability.",
+      "url": "https://arxiv.org/abs/2603.18359",
+      "pdfUrl": "https://arxiv.org/pdf/2603.18359.pdf",
+      "titleJa": "スパースオートエンコーダーを用いたニューラルオーディオコーデックの解釈可能なフレームワークに向けて：アクセント情報に関するケーススタディ"
+    },
+    {
+      "id": "2603.18299",
+      "arxivId": "2603.18299",
+      "title": "ALIGN: Adversarial Learning for Generalizable Speech Neuroprosthesis",
+      "authors": [
+        "Zhanqi Zhang",
+        "Shun Li",
+        "Bernardo L. Sabatini",
+        "Mikio Aoi",
+        "Gal Mishne"
+      ],
+      "publishedDate": "2026-03-18",
+      "categories": [
+        "cs.LG",
+        "cs.NE",
+        "cs.SD"
+      ],
+      "abstract": "Intracortical brain-computer interfaces (BCIs) can decode speech from neural activity with high accuracy when trained on data pooled across recording sessions. In realistic deployment, however, models must generalize to new sessions without labeled data, and performance often degrades due to cross-session nonstationarities (e.g., electrode shifts, neural turnover, and changes in user strategy). In this paper, we propose ALIGN, a session-invariant learning framework based on multi-domain adversarial neural networks for semi-supervised cross-session adaptation. ALIGN trains a feature encoder jointly with a phoneme classifier and a domain classifier operating on the latent representation. Through adversarial optimization, the encoder is encouraged to preserve task-relevant information while suppressing session-specific cues. We evaluate ALIGN on intracortical speech decoding and find that it generalizes consistently better to previously unseen sessions, improving both phoneme error rate and word error rate relative to baselines. These results indicate that adversarial domain alignment is an effective approach for mitigating session-level distribution shift and enabling robust longitudinal BCI decoding.",
+      "url": "https://arxiv.org/abs/2603.18299",
+      "pdfUrl": "https://arxiv.org/pdf/2603.18299.pdf",
+      "titleJa": "ALIGN：汎用的な音声神経補綴のための敵対的学習"
+    },
+    {
+      "id": "2603.17769",
+      "arxivId": "2603.17769",
+      "title": "Modeling Overlapped Speech with Shuffles",
+      "authors": [
+        "Matthew Wiesner",
+        "Samuele Cornell",
+        "Alexander Polok",
+        "Lucas Ondel Yang",
+        "Lukáš Burget",
+        "Sanjeev Khudanpur"
+      ],
+      "publishedDate": "2026-03-18",
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "cs.LG",
+        "eess.AS"
+      ],
+      "abstract": "We propose to model parallel streams of data, such as overlapped speech, using shuffles. Specifically, this paper shows how the shuffle product and partial order finite-state automata (FSAs) can be used for alignment and speaker-attributed transcription of overlapped speech. We train using the total score on these FSAs as a loss function, marginalizing over all possible serializations of overlapping sequences at subword, word, and phrase levels. To reduce graph size, we impose temporal constraints by constructing partial order FSAs. We address speaker attribution by modeling (token, speaker) tuples directly. Viterbi alignment through the shuffle product FSA directly enables one-pass alignment. We evaluate performance on synthetic LibriSpeech overlaps. To our knowledge, this is the first algorithm that enables single-pass alignment of multi-talker recordings. All algorithms are implemented using k2 / Icefall.",
+      "url": "https://arxiv.org/abs/2603.17769",
+      "pdfUrl": "https://arxiv.org/pdf/2603.17769.pdf",
+      "titleJa": "シャッフルを用いた重複音声のモデリング"
+    },
+    {
+      "id": "2603.18103",
+      "arxivId": "2603.18103",
+      "title": "STEP: Detecting Audio Backdoor Attacks via Stability-based Trigger Exposure Profiling",
+      "authors": [
+        "Kun Wang",
+        "Meng Chen",
+        "Junhao Wang",
+        "Yuli Wu",
+        "Li Lu",
+        "Chong Zhang",
+        "Peng Cheng",
+        "Jiaheng Zhang",
+        "Kui Ren"
+      ],
+      "publishedDate": "2026-03-18",
+      "categories": [
+        "cs.CR",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "abstract": "With the widespread deployment of deep-learning-based speech models in security-critical applications, backdoor attacks have emerged as a serious threat: an adversary who poisons a small fraction of training data can implant a hidden trigger that controls the model's output while preserving normal behavior on clean inputs. Existing inference-time defenses are not well suited to the audio domain, as they either rely on trigger over-robustness assumptions that fail on transformation-based and semantic triggers, or depend on properties specific to image or text modalities. In this paper, we propose STEP (Stability-based Trigger Exposure Profiling), a black-box, retraining-free backdoor detector that operates under hard-label-only access. Its core idea is to exploit a characteristic dual anomaly of backdoor triggers: anomalous label stability under semantic-breaking perturbations, and anomalous label fragility under semantic-preserving perturbations. STEP profiles each test sample with two complementary perturbation branches that target these two properties respectively, scores the resulting stability features with one-class anomaly detectors trained on benign references, and fuses the two scores via unsupervised weighting. Extensive experiments across seven backdoor attacks show that STEP achieves an average AUROC of 97.92% and EER of 4.54%, substantially outperforming state-of-the-art baselines, and generalizes across model architectures, speech tasks, an open-set verification scenario, and over-the-air physical-world settings.",
+      "url": "https://arxiv.org/abs/2603.18103",
+      "pdfUrl": "https://arxiv.org/pdf/2603.18103.pdf",
+      "titleJa": "ステップ：安定性に基づくトリガー露出プロファイリングによるオーディオバックドア攻撃の検出"
+    },
+    {
+      "id": "2603.17558",
+      "arxivId": "2603.17558",
+      "title": "Zipper-LoRA: Dynamic Parameter Decoupling for Speech-LLM based Multilingual Speech Recognition",
+      "authors": [
+        "Yuxiang Mei",
+        "Delai Qiu",
+        "Shengping Liu",
+        "Jiaen Liang",
+        "Yanhua Long"
+      ],
+      "publishedDate": "2026-03-18",
+      "categories": [
+        "cs.CL",
+        "cs.SD"
+      ],
+      "abstract": "Speech Large Language Models (Speech-LLMs) have emerged as a powerful approach for automatic speech recognition (ASR) by aligning speech encoders with large language models. However, adapting these systems to multilingual settings with imbalanced data distributions remains challenging. In such scenarios, a stability-plasticity dilemma often arises: fully shared Parameter-Efficient Fine-Tuning (PEFT) can cause negative inter-lingual interference for under-represented languages, while fully language-specific tuning limits the cross-lingual beneficial knowledge transfer needed for low-resource tasks. To address this, we propose Zipper-LoRA, a novel rank-level decoupling framework with three variants (Static, Hard, and Soft) that dynamically synthesizes LoRA updates from shared and language-specific subspaces. By using a lightweight language-conditioned router, Zipper-LoRA dynamically controls the contribution of each subspace at the LoRA rank level, enabling fine-grained sharing where languages are compatible and strict decoupling when conflicts occur. To further stabilize optimization under imbalanced data, we propose a two-stage training strategy with an Initial-B warm start that significantly accelerates convergence. Experiments on a 12-language mixed-resource setting show that Zipper-LoRA consistently outperforms both fully shared and independent baselines, particularly in extremely low-resource scenarios. Moreover, we demonstrate that these gains are robust across both chunked and non-chunked encoder configurations, confirming the framework's reliability for practical, large-scale multilingual ASR. Our code and data will be available at https://github.com/YuCeong-May/Zipper-LoRA for reproducibility.",
+      "url": "https://arxiv.org/abs/2603.17558",
+      "pdfUrl": "https://arxiv.org/pdf/2603.17558.pdf",
+      "titleJa": "Zipper-LoRA：音声LLMに基づく多言語音声認識のための動的パラメータ分離"
+    },
+    {
+      "id": "2603.18090",
+      "arxivId": "2603.18090",
+      "title": "MOSS-TTS Technical Report",
+      "authors": [
+        "Yitian Gong",
+        "Botian Jiang",
+        "Yiwei Zhao",
+        "Yucheng Yuan",
+        "Kuangwei Chen",
+        "Yaozhou Jiang",
+        "Cheng Chang",
+        "Dong Hong",
+        "Mingshu Chen",
+        "Ruixiao Li",
+        "Yiyang Zhang",
+        "Yang Gao",
+        "Hanfu Chen",
+        "Ke Chen",
+        "Songlin Wang",
+        "Xiaogui Yang",
+        "Yuqian Zhang",
+        "Kexin Huang",
+        "ZhengYuan Lin",
+        "Kang Yu",
+        "Ziqi Chen",
+        "Jin Wang",
+        "Zhaoye Fei",
+        "Qinyuan Cheng",
+        "Shimin Li",
+        "Xipeng Qiu"
+      ],
+      "publishedDate": "2026-03-18",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "abstract": "This technical report presents MOSS-TTS, a speech generation foundation model built on a scalable recipe: discrete audio tokens, autoregressive modeling, and large-scale pretraining. Built on MOSS-Audio-Tokenizer, a causal Transformer tokenizer that compresses 24 kHz audio to 12.5 fps with variable-bitrate RVQ and unified semantic-acoustic representations, we release two complementary generators: MOSS-TTS, which emphasizes structural simplicity, scalability, and long-context/control-oriented deployment, and MOSS-TTS-Local-Transformer, which introduces a frame-local autoregressive module for higher modeling efficiency, stronger speaker preservation, and a shorter time to first audio. Across multilingual and open-domain settings, MOSS-TTS supports zero-shot voice cloning, token-level duration control, phoneme-/pinyin-level pronunciation control, smooth code-switching, and stable long-form generation. This report summarizes the design, training recipe, and empirical characteristics of the released models.",
+      "url": "https://arxiv.org/abs/2603.18090",
+      "pdfUrl": "https://arxiv.org/pdf/2603.18090.pdf",
+      "titleJa": "MOSS-TTS技術報告書"
+    },
+    {
+      "id": "2603.18082",
+      "arxivId": "2603.18082",
+      "title": "EgoAdapt: Enhancing Robustness in Egocentric Interactive Speaker Detection Under Missing Modalities",
+      "authors": [
+        "Xinyuan Qian",
+        "Xinjia Zhu",
+        "Alessio Brutti",
+        "Dong Liang"
+      ],
+      "publishedDate": "2026-03-18",
+      "categories": [
+        "cs.MM",
+        "cs.CV",
+        "cs.SD"
+      ],
+      "abstract": "TTM (Talking to Me) task is a pivotal component in understanding human social interactions, aiming to determine who is engaged in conversation with the camera-wearer. Traditional models often face challenges in real-world scenarios due to missing visual data, neglecting the role of head orientation, and background noise. This study addresses these limitations by introducing EgoAdapt, an adaptive framework designed for robust egocentric \"Talking to Me\" speaker detection under missing modalities. Specifically, EgoAdapt incorporates three key modules: (1) a Visual Speaker Target Recognition (VSTR) module that captures head orientation as a non-verbal cue and lip movement as a verbal cue, allowing a comprehensive interpretation of both verbal and non-verbal signals to address TTM, setting it apart from tasks focused solely on detecting speaking status; (2) a Parallel Shared-weight Audio (PSA) encoder for enhanced audio feature extraction in noisy environments; and (3) a Visual Modality Missing Awareness (VMMA) module that estimates the presence or absence of each modality at each frame to adjust the system response dynamically.Comprehensive evaluations on the TTM benchmark of the Ego4D dataset demonstrate that EgoAdapt achieves a mean Average Precision (mAP) of 67.39% and an Accuracy (Acc) of 62.01%, significantly outperforming the state-of-the-art method by 4.96% in Accuracy and 1.56% in mAP.",
+      "url": "https://arxiv.org/abs/2603.18082",
+      "pdfUrl": "https://arxiv.org/pdf/2603.18082.pdf",
+      "titleJa": "EgoAdapt: 欠損モダリティ下における自己中心型対話型話者検出の堅牢性の向上"
+    },
+    {
+      "id": "2603.16805",
+      "arxivId": "2603.16805",
+      "title": "Making Separation-First Multi-Stream Audio Watermarking Feasible via Joint Training",
+      "authors": [
+        "Houmin Sun",
+        "Zi Hu",
+        "Linxi Li",
+        "Yechen Wang",
+        "Liwei Jin",
+        "Ming Li"
+      ],
+      "publishedDate": "2026-03-17",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "Modern audio is created by mixing stems from different sources, raising the question: can we independently watermark each stem and recover all watermarks after separation? We study a separation-first, multi-stream watermarking framework-embedding distinct information into stems using unique keys but a shared structure, mixing, separating, and decoding from each output. A naive pipeline (robust watermarking + off-the-shelf separation) yields poor bit recovery, showing robustness to generic distortions does not ensure robustness to separation artifacts. To enable this, we jointly train the watermark system and the separator in an end-to-end manner, encouraging the separator to preserve watermark cues while adapting embedding to separation-specific distortions. Experiments on speech+music and vocal+accompaniment mixtures show substantial gains in post-separation recovery while maintaining perceptual quality.",
+      "url": "https://arxiv.org/abs/2603.16805",
+      "pdfUrl": "https://arxiv.org/pdf/2603.16805.pdf",
+      "titleJa": "共同トレーニングによる分離優先型マルチストリームオーディオ透かしの実現"
+    },
+    {
+      "id": "2603.16713",
+      "arxivId": "2603.16713",
+      "title": "Evaluating Latent Space Structure in Timbre VAEs: A Comparative Study of Unsupervised, Descriptor-Conditioned, and Perceptual Feature-Conditioned Models",
+      "authors": [
+        "Joseph Cameron",
+        "Alan Blackwell"
+      ],
+      "publishedDate": "2026-03-17",
+      "categories": [
+        "cs.SD"
+      ],
+      "abstract": "We present a comparative evaluation of latent space organization in three Variational Autoencoders (VAEs) for musical timbre generation: an unsupervised VAE, a descriptor-conditioned VAE, and a VAE conditioned on continuous perceptual features from the AudioCommons timbral models. Using a curated dataset of electric guitar sounds labeled with 19 semantic descriptors across four intensity levels, we assess each model's latent structure with a suite of clustering and interpretability metrics. These include silhouette scores, timbre descriptor compactness, pitch-conditional separation, trajectory linearity, and cross-pitch consistency. Our findings show that conditioning on perceptual features yields a more compact, discriminative, and pitch-invariant latent space, outperforming both the unsupervised and discrete descriptor-conditioned models. This work highlights the limitations of one-hot semantic conditioning and provides methodological tools for evaluating timbre latent spaces, contributing to the development of more controllable and interpretable generative audio models.",
+      "url": "https://arxiv.org/abs/2603.16713",
+      "pdfUrl": "https://arxiv.org/pdf/2603.16713.pdf",
+      "titleJa": "音色VAEにおける潜在空間構造の評価：教師なし学習、記述子条件付き学習、知覚特徴条件付き学習モデルの比較研究"
+    },
+    {
+      "id": "2603.19831",
+      "arxivId": "2603.19831",
+      "title": "Gesture2Speech: How Far Can Hand Movements Shape Expressive Speech?",
+      "authors": [
+        "Lokesh Kumar",
+        "Nirmesh Shah",
+        "Ashishkumar P. Gudmalwar",
+        "Pankaj Wasnik"
+      ],
+      "publishedDate": "2026-03-20",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.MM"
+      ],
+      "abstract": "Human communication seamlessly integrates speech and bodily motion, where hand gestures naturally complement vocal prosody to express intent, emotion, and emphasis. While recent text-to-speech (TTS) systems have begun incorporating multimodal cues such as facial expressions or lip movements, the role of hand gestures in shaping prosody remains largely underexplored. We propose a novel multimodal TTS framework, Gesture2Speech, that leverages visual gesture cues to modulate prosody in synthesized speech. Motivated by the observation that confident and expressive speakers coordinate gestures with vocal prosody, we introduce a multimodal Mixture-of-Experts (MoE) architecture that dynamically fuses linguistic content and gesture features within a dedicated style extraction module. The fused representation conditions an LLM-based speech decoder, enabling prosodic modulation that is temporally aligned with hand movements. We further design a gesture-speech alignment loss that explicitly models their temporal correspondence to ensure fine-grained synchrony between gestures and prosodic contours. Evaluations on the PATS dataset show that Gesture2Speech outperforms state-of-the-art baselines in both speech naturalness and gesture-speech synchrony. To the best of our knowledge, this is the first work to utilize hand gesture cues for prosody control in neural speech synthesis. Demo samples are available at https://research.sri-media-analysis.com/aaai26-beeu-gesture2speech/",
+      "url": "https://arxiv.org/abs/2603.19831",
+      "pdfUrl": "https://arxiv.org/pdf/2603.19831.pdf",
+      "titleJa": "ジェスチャーから音声へ：手の動きは表現豊かな発話にどれほど影響を与えることができるのか？"
     },
     {
       "id": "2603.18485",
@@ -132,30 +566,6 @@
       "url": "https://arxiv.org/abs/2603.17822",
       "pdfUrl": "https://arxiv.org/pdf/2603.17822.pdf",
       "titleJa": "音声質問応答のための複数ソース証拠の融合"
-    },
-    {
-      "id": "2603.17769",
-      "arxivId": "2603.17769",
-      "title": "Modeling Overlapped Speech with Shuffles",
-      "authors": [
-        "Matthew Wiesner",
-        "Samuele Cornell",
-        "Alexander Polok",
-        "Lucas Ondel Yang",
-        "Lukáš Burget",
-        "Sanjeev Khudanpur"
-      ],
-      "publishedDate": "2026-03-18",
-      "categories": [
-        "cs.SD",
-        "cs.CL",
-        "cs.LG",
-        "eess.AS"
-      ],
-      "abstract": "We propose to model parallel streams of data, such as overlapped speech, using shuffles. Specifically, this paper shows how the shuffle product and partial order finite-state automata (FSAs) can be used for alignment and speaker-attributed transcription of overlapped speech. We train using the total score on these FSAs as a loss function, marginalizing over all possible serializations of overlapping sequences at subword, word, and phrase levels. To reduce graph size, we impose temporal constraints by constructing partial order FSAs. We address speaker attribution by modeling (token, speaker) tuples directly. Viterbi alignment through the shuffle product FSA directly enables one-pass alignment. We evaluate performance on synthetic LibriSpeech overlaps. To our knowledge, this is the first algorithm that enables single-pass alignment of multi-talker recordings. All algorithms are implemented using k2 / Icefall.",
-      "url": "https://arxiv.org/abs/2603.17769",
-      "pdfUrl": "https://arxiv.org/pdf/2603.17769.pdf",
-      "titleJa": "シャッフルを用いた重複音声のモデリング"
     },
     {
       "id": "2603.17383",
@@ -271,10 +681,10 @@
         "Yunjia Qi",
         "Qi Cao",
         "Yu Zheng",
-        "Weisheng Xu",
+        "Yutong Zhang",
         "Ziteng Wang",
         "Ruofan Liao",
-        "Yutong Zhang",
+        "Weisheng Xu",
         "Sichen Liu"
       ],
       "publishedDate": "2026-03-17",
@@ -343,95 +753,6 @@
       "titleJa": "Wav2Vec音声認識ニューラルネットワークに対する無線ホワイトボックス攻撃"
     },
     {
-      "id": "2603.16280",
-      "arxivId": "2603.16280",
-      "title": "CAST-TTS: A Simple Cross-Attention Framework for Unified Timbre Control in TTS",
-      "authors": [
-        "Zihao Zheng",
-        "Wen Wu",
-        "Chao Zhang",
-        "Mengyue Wu",
-        "Xuenan Xu"
-      ],
-      "publishedDate": "2026-03-17",
-      "categories": [
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "Current Text-to-Speech (TTS) systems typically use separate models for speech-prompted and text-prompted timbre control. While unifying both control signals into a single model is desirable, the challenge of cross-modal alignment often results in overly complex architectures and training objective. To address this challenge, we propose CAST-TTS, a simple yet effective framework for unified timbre control. Features are extracted from speech prompts and text prompts using pre-trained encoders. The multi-stage training strategy efficiently aligns the speech and projected text representations within a shared embedding space. A single cross-attention mechanism then allows the model to use either of these representations to control the timbre. Extensive experiments validate that the unified cross-attention mechanism is critical for achieving high-quality synthesis. CAST-TTS achieves performance comparable to specialized single-input models while operating within a unified architecture. The demo page can be accessed at https://HiRookie9.github.io/CAST-TTS-Page.",
-      "url": "https://arxiv.org/abs/2603.16280",
-      "pdfUrl": "https://arxiv.org/pdf/2603.16280.pdf",
-      "titleJa": "CAST-TTS：TTSにおける統一的な音色制御のためのシンプルなクロスアテンションフレームワーク"
-    },
-    {
-      "id": "2603.16278",
-      "arxivId": "2603.16278",
-      "title": "Speakers Localization Using Batch EM In Unfolding Neural Network",
-      "authors": [
-        "Rina Veler",
-        "Sharon Gannot"
-      ],
-      "publishedDate": "2026-03-17",
-      "categories": [
-        "eess.AS",
-        "eess.SP"
-      ],
-      "abstract": "We propose an interpretable Batch-EM Unfolded Network for robust speaker localization. By embedding the iterative EM procedure within an encoder-EM-decoder architecture, the method mitigates initialization sensitivity and improves convergence. Experiments show superior accuracy and robustness over the classical Batch-EM in reverberant conditions.",
-      "url": "https://arxiv.org/abs/2603.16278",
-      "pdfUrl": "https://arxiv.org/pdf/2603.16278.pdf",
-      "titleJa": "展開型ニューラルネットワークにおけるバッチEMを用いた話者位置特定"
-    },
-    {
-      "id": "2603.16966",
-      "arxivId": "2603.16966",
-      "title": "CineSRD: Leveraging Visual, Acoustic, and Linguistic Cues for Open-World Visual Media Speaker Diarization",
-      "authors": [
-        "Liangbin Huang",
-        "Xiaohua Liao",
-        "Chaoqun Cui",
-        "Shijing Wang",
-        "Zhaolong Huang",
-        "Yanlong Du",
-        "Wenji Mao"
-      ],
-      "publishedDate": "2026-03-17",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.MM",
-        "cs.SD",
-        "eess.AS"
-      ],
-      "abstract": "Traditional speaker diarization systems have primarily focused on constrained scenarios such as meetings and interviews, where the number of speakers is limited and acoustic conditions are relatively clean. To explore open-world speaker diarization, we extend this task to the visual media domain, encompassing complex audiovisual programs such as films and TV series. This new setting introduces several challenges, including long-form video understanding, a large number of speakers, cross-modal asynchrony between audio and visual cues, and uncontrolled in-the-wild variability. To address these challenges, we propose Cinematic Speaker Registration & Diarization (CineSRD), a unified multimodal framework that leverages visual, acoustic, and linguistic cues from video, speech, and subtitles for speaker annotation. CineSRD first performs visual anchor clustering to register initial speakers and then integrates an audio language model for speaker turn detection, refining annotations and supplementing unregistered off-screen speakers. Furthermore, we construct and release a dedicated speaker diarization benchmark for visual media that includes Chinese and English programs. Experimental results demonstrate that CineSRD achieves superior performance on the proposed benchmark and competitive results on conventional datasets, validating its robustness and generalizability in open-world visual media settings.",
-      "url": "https://arxiv.org/abs/2603.16966",
-      "pdfUrl": "https://arxiv.org/pdf/2603.16966.pdf",
-      "titleJa": "CineSRD：オープンワールド型ビジュアルメディアにおける話者ダイアライゼーションのための視覚、音響、言語的手がかりの活用"
-    },
-    {
-      "id": "2603.16201",
-      "arxivId": "2603.16201",
-      "title": "Robust Generative Audio Quality Assessment: Disentangling Quality from Spurious Correlations",
-      "authors": [
-        "Kuan-Tang Huang",
-        "Chien-Chun Wang",
-        "Cheng-Yeh Yang",
-        "Hung-Shin Lee",
-        "Hsin-Min Wang",
-        "Berlin Chen"
-      ],
-      "publishedDate": "2026-03-17",
-      "categories": [
-        "eess.AS",
-        "cs.AI",
-        "cs.SD",
-        "eess.SP"
-      ],
-      "abstract": "The rapid proliferation of AI-Generated Content (AIGC) has necessitated robust metrics for perceptual quality assessment. However, automatic Mean Opinion Score (MOS) prediction models are often compromised by data scarcity, predisposing them to learn spurious correlations-- such as dataset-specific acoustic signatures-- rather than generalized quality features. To address this, we leverage domain adversarial training (DAT) to disentangle true quality perception from these nuisance factors. Unlike prior works that rely on static domain priors, we systematically investigate domain definition strategies ranging from explicit metadata-driven labels to implicit data-driven clusters. Our findings reveal that there is no \"one-size-fits-all\" domain definition; instead, the optimal strategy is highly dependent on the specific MOS aspect being evaluated. Experimental results demonstrate that our aspect-specific domain strategy effectively mitigates acoustic biases, significantly improving correlation with human ratings and achieving superior generalization on unseen generative scenarios.",
-      "url": "https://arxiv.org/abs/2603.16201",
-      "pdfUrl": "https://arxiv.org/pdf/2603.16201.pdf",
-      "titleJa": "堅牢な生成型音声品質評価：偽相関から品質を切り離す"
-    },
-    {
       "id": "2603.19229",
       "arxivId": "2603.19229",
       "title": "NavTrust: Benchmarking Trustworthiness for Embodied Navigation",
@@ -483,7 +804,7 @@
       "abstract": "Real-world financial decision-making is a challenging problem that requires reasoning over heterogeneous signals, including company fundamentals derived from regulatory filings and trading signals computed from price dynamics. Recently, with the advancement of Large Language Models (LLMs), financial analysts have begun to use them for financial decision-making tasks. However, existing financial question answering benchmarks for testing these models primarily focus on company balance sheet data and rarely evaluate reasoning over how company stocks trade in the market or their interactions with fundamentals. To take advantage of the strengths of both approaches, we introduce FinTradeBench, a benchmark for evaluating financial reasoning that integrates company fundamentals and trading signals. FinTradeBench contains 1,400 questions grounded in NASDAQ-100 companies over a ten-year historical window. The benchmark is organized into three reasoning categories: fundamentals-focused, trading-signal-focused, and hybrid questions requiring cross-signal reasoning. To ensure reliability at scale, we adopt a calibration-then-scaling framework that combines expert seed questions, multi-model response generation, intra-model self-filtering, numerical auditing, and human-LLM judge alignment. We evaluate 14 LLMs under zero-shot prompting and retrieval-augmented settings and witness a clear performance gap. Retrieval substantially improves reasoning over textual fundamentals, but provides limited benefit for trading-signal reasoning. These findings highlight fundamental challenges in the numerical and time-series reasoning for current LLMs and motivate future research in financial intelligence.",
       "url": "https://arxiv.org/abs/2603.19225",
       "pdfUrl": "https://arxiv.org/pdf/2603.19225.pdf",
-      "titleJa": "FinTradeBench：LLM（法学修士）のための金融推論ベンチマーク"
+      "titleJa": "FinTradeBench：法学修士課程（LLM）向けの金融推論ベンチマーク"
     },
     {
       "id": "2603.19223",
@@ -923,262 +1244,7 @@
       "abstract": "FL has emerged as a transformative paradigm for ITS, notably camera-based Road Condition Classification (RCC). However, by enabling collaboration, FL-based RCC exposes the system to adversarial participants launching Targeted Label-Flipping Attacks (TLFAs). Malicious clients (vehicles) can relabel their local training data (e.g., from an actual uneven road to a wrong smooth road), consequently compromising global model predictions and jeopardizing transportation safety. Existing countermeasures against such poisoning attacks fail to maintain resilient model performance near the necessary attack-free levels in various attack scenarios due to: 1) not tailoring poisoned local model detection to TLFAs, 2) not excluding malicious vehicular clients based on historical behavior, and 3) not remedying the already-corrupted global model after exclusion. To close this research gap, we propose FedTrident, which introduces: 1) neuron-wise analysis for local model misbehavior detection (notably including attack goal identification, critical feature extraction, and GMM-based model clustering and filtering); 2) adaptive client rating for client exclusion according to the local model detection results in each FL round; and 3) machine unlearning for corrupted global model remediation once malicious clients are excluded during FL. Extensive evaluation across diverse FL-RCC models, tasks, and configurations demonstrates that FedTrident can effectively thwart TLFAs, achieving performance comparable to that in attack-free scenarios and outperforming eight baseline countermeasures by 9.49% and 4.47% for the two most critical metrics. Moreover, FedTrident is resilient to various malicious client rates, data heterogeneity levels, complicated multi-task, and dynamic attacks.",
       "url": "https://arxiv.org/abs/2603.19101",
       "pdfUrl": "https://arxiv.org/pdf/2603.19101.pdf",
-      "titleJa": "FedTrident：連合学習におけるポイズニング攻撃に対する耐性のある道路状況分類"
-    },
-    {
-      "id": "2603.18678",
-      "arxivId": "2603.18678",
-      "title": "Words at Play: Benchmarking Audio Pun Understanding in Large Audio-Language Models",
-      "authors": [
-        "Yuchen Su",
-        "Shaoxin Zhong",
-        "Yonghua Zhu",
-        "Ruofan Wang",
-        "Zijian Huang",
-        "Qiqi Wang",
-        "Na Zhao",
-        "Diana Benavides-Prado",
-        "Michael Witbrock"
-      ],
-      "publishedDate": "2026-03-19",
-      "categories": [
-        "cs.SD",
-        "cs.CL"
-      ],
-      "abstract": "Puns represent a typical linguistic phenomenon that exploits polysemy and phonetic ambiguity to generate humour, posing unique challenges for natural language understanding. Within pun research, audio plays a central role in human communication except text and images, while datasets and systematic resources for spoken puns remain scarce, leaving this crucial modality largely underexplored. In this paper, we present APUN-Bench, the first benchmark dedicated to evaluating large audio language models (LALMs) on audio pun understanding. Our benchmark contains 4,434 audio samples annotated across three stages: pun recognition, pun word location and pun meaning inference. We conduct a deep analysis of APUN-Bench by systematically evaluating 10 state-of-the-art LALMs, uncovering substantial performance gaps in recognizing, localizing, and interpreting audio puns. This analysis reveals key challenges, such as positional biases in audio pun location and error cases in meaning inference, offering actionable insights for advancing humour-aware audio intelligence.",
-      "url": "https://arxiv.org/abs/2603.18678",
-      "pdfUrl": "https://arxiv.org/pdf/2603.18678.pdf",
-      "titleJa": "言葉遊び：大規模音声言語モデルにおける音声ダジャレ理解のベンチマーク"
-    },
-    {
-      "id": "2603.18359",
-      "arxivId": "2603.18359",
-      "title": "Towards Interpretable Framework for Neural Audio Codecs via Sparse Autoencoders: A Case Study on Accent Information",
-      "authors": [
-        "Shih-Heng Wang",
-        "Tiantian Feng",
-        "Aditya Kommineni",
-        "Thanathai Lertpetchpun",
-        "Bowen Yi",
-        "Xuan Shi",
-        "Shrikanth Narayanan"
-      ],
-      "publishedDate": "2026-03-18",
-      "categories": [
-        "cs.SD"
-      ],
-      "abstract": "Neural Audio Codecs (NACs) are widely adopted in modern speech systems, yet how they encode linguistic and paralinguistic information remains unclear. Improving the interpretability of NAC representations is critical for understanding and deploying them in sensitive applications. Hence, we employ Sparse Autoencoders (SAEs) to decompose dense NAC representations into sparse, interpretable activations. In this work, we focus on a challenging paralinguistic attribute-accent-and propose a framework to quantify NAC interpretability. We evaluate four NAC models under 16 SAE configurations using a relative performance index. Our results show that DAC and SpeechTokenizer achieve the highest interpretability. We further reveal that acoustic-oriented NACs encode accent information primarily in activation magnitudes of sparse representations, whereas phonetic-oriented NACs rely more on activation positions, and that low-bitrate EnCodec variants show higher interpretability.",
-      "url": "https://arxiv.org/abs/2603.18359",
-      "pdfUrl": "https://arxiv.org/pdf/2603.18359.pdf",
-      "titleJa": "スパースオートエンコーダーを用いたニューラルオーディオコーデックの解釈可能なフレームワークに向けて：アクセント情報に関するケーススタディ"
-    },
-    {
-      "id": "2603.18103",
-      "arxivId": "2603.18103",
-      "title": "STEP: Detecting Audio Backdoor Attacks via Stability-based Trigger Exposure Profiling",
-      "authors": [
-        "Kun Wang",
-        "Meng Chen",
-        "Junhao Wang",
-        "Yuli Wu",
-        "Li Lu",
-        "Chong Zhang",
-        "Peng Cheng",
-        "Jiaheng Zhang",
-        "Kui Ren"
-      ],
-      "publishedDate": "2026-03-18",
-      "categories": [
-        "cs.CR",
-        "cs.LG",
-        "cs.SD"
-      ],
-      "abstract": "With the widespread deployment of deep-learning-based speech models in security-critical applications, backdoor attacks have emerged as a serious threat: an adversary who poisons a small fraction of training data can implant a hidden trigger that controls the model's output while preserving normal behavior on clean inputs. Existing inference-time defenses are not well suited to the audio domain, as they either rely on trigger over-robustness assumptions that fail on transformation-based and semantic triggers, or depend on properties specific to image or text modalities. In this paper, we propose STEP (Stability-based Trigger Exposure Profiling), a black-box, retraining-free backdoor detector that operates under hard-label-only access. Its core idea is to exploit a characteristic dual anomaly of backdoor triggers: anomalous label stability under semantic-breaking perturbations, and anomalous label fragility under semantic-preserving perturbations. STEP profiles each test sample with two complementary perturbation branches that target these two properties respectively, scores the resulting stability features with one-class anomaly detectors trained on benign references, and fuses the two scores via unsupervised weighting. Extensive experiments across seven backdoor attacks show that STEP achieves an average AUROC of 97.92% and EER of 4.54%, substantially outperforming state-of-the-art baselines, and generalizes across model architectures, speech tasks, an open-set verification scenario, and over-the-air physical-world settings.",
-      "url": "https://arxiv.org/abs/2603.18103",
-      "pdfUrl": "https://arxiv.org/pdf/2603.18103.pdf",
-      "titleJa": "ステップ：安定性に基づくトリガー露出プロファイリングによるオーディオバックドア攻撃の検出"
-    },
-    {
-      "id": "2603.18090",
-      "arxivId": "2603.18090",
-      "title": "MOSS-TTS Technical Report",
-      "authors": [
-        "Yitian Gong",
-        "Botian Jiang",
-        "Yiwei Zhao",
-        "Yucheng Yuan",
-        "Kuangwei Chen",
-        "Yaozhou Jiang",
-        "Cheng Chang",
-        "Dong Hong",
-        "Mingshu Chen",
-        "Ruixiao Li",
-        "Yiyang Zhang",
-        "Yang Gao",
-        "Hanfu Chen",
-        "Ke Chen",
-        "Songlin Wang",
-        "Xiaogui Yang",
-        "Yuqian Zhang",
-        "Kexin Huang",
-        "ZhengYuan Lin",
-        "Kang Yu",
-        "Ziqi Chen",
-        "Jin Wang",
-        "Zhaoye Fei",
-        "Qinyuan Cheng",
-        "Shimin Li",
-        "Xipeng Qiu"
-      ],
-      "publishedDate": "2026-03-18",
-      "categories": [
-        "cs.SD",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "abstract": "This technical report presents MOSS-TTS, a speech generation foundation model built on a scalable recipe: discrete audio tokens, autoregressive modeling, and large-scale pretraining. Built on MOSS-Audio-Tokenizer, a causal Transformer tokenizer that compresses 24 kHz audio to 12.5 fps with variable-bitrate RVQ and unified semantic-acoustic representations, we release two complementary generators: MOSS-TTS, which emphasizes structural simplicity, scalability, and long-context/control-oriented deployment, and MOSS-TTS-Local-Transformer, which introduces a frame-local autoregressive module for higher modeling efficiency, stronger speaker preservation, and a shorter time to first audio. Across multilingual and open-domain settings, MOSS-TTS supports zero-shot voice cloning, token-level duration control, phoneme-/pinyin-level pronunciation control, smooth code-switching, and stable long-form generation. This report summarizes the design, training recipe, and empirical characteristics of the released models.",
-      "url": "https://arxiv.org/abs/2603.18090",
-      "pdfUrl": "https://arxiv.org/pdf/2603.18090.pdf",
-      "titleJa": "MOSS-TTS技術報告書"
-    },
-    {
-      "id": "2603.18082",
-      "arxivId": "2603.18082",
-      "title": "EgoAdapt: Enhancing Robustness in Egocentric Interactive Speaker Detection Under Missing Modalities",
-      "authors": [
-        "Xinyuan Qian",
-        "Xinjia Zhu",
-        "Alessio Brutti",
-        "Dong Liang"
-      ],
-      "publishedDate": "2026-03-18",
-      "categories": [
-        "cs.MM",
-        "cs.CV",
-        "cs.SD"
-      ],
-      "abstract": "TTM (Talking to Me) task is a pivotal component in understanding human social interactions, aiming to determine who is engaged in conversation with the camera-wearer. Traditional models often face challenges in real-world scenarios due to missing visual data, neglecting the role of head orientation, and background noise. This study addresses these limitations by introducing EgoAdapt, an adaptive framework designed for robust egocentric \"Talking to Me\" speaker detection under missing modalities. Specifically, EgoAdapt incorporates three key modules: (1) a Visual Speaker Target Recognition (VSTR) module that captures head orientation as a non-verbal cue and lip movement as a verbal cue, allowing a comprehensive interpretation of both verbal and non-verbal signals to address TTM, setting it apart from tasks focused solely on detecting speaking status; (2) a Parallel Shared-weight Audio (PSA) encoder for enhanced audio feature extraction in noisy environments; and (3) a Visual Modality Missing Awareness (VMMA) module that estimates the presence or absence of each modality at each frame to adjust the system response dynamically.Comprehensive evaluations on the TTM benchmark of the Ego4D dataset demonstrate that EgoAdapt achieves a mean Average Precision (mAP) of 67.39% and an Accuracy (Acc) of 62.01%, significantly outperforming the state-of-the-art method by 4.96% in Accuracy and 1.56% in mAP.",
-      "url": "https://arxiv.org/abs/2603.18082",
-      "pdfUrl": "https://arxiv.org/pdf/2603.18082.pdf",
-      "titleJa": "EgoAdapt: 欠損モダリティ下における自己中心型対話型話者検出の堅牢性の向上"
-    },
-    {
-      "id": "2603.16805",
-      "arxivId": "2603.16805",
-      "title": "Making Separation-First Multi-Stream Audio Watermarking Feasible via Joint Training",
-      "authors": [
-        "Houmin Sun",
-        "Zi Hu",
-        "Linxi Li",
-        "Yechen Wang",
-        "Liwei Jin",
-        "Ming Li"
-      ],
-      "publishedDate": "2026-03-17",
-      "categories": [
-        "cs.SD"
-      ],
-      "abstract": "Modern audio is created by mixing stems from different sources, raising the question: can we independently watermark each stem and recover all watermarks after separation? We study a separation-first, multi-stream watermarking framework-embedding distinct information into stems using unique keys but a shared structure, mixing, separating, and decoding from each output. A naive pipeline (robust watermarking + off-the-shelf separation) yields poor bit recovery, showing robustness to generic distortions does not ensure robustness to separation artifacts. To enable this, we jointly train the watermark system and the separator in an end-to-end manner, encouraging the separator to preserve watermark cues while adapting embedding to separation-specific distortions. Experiments on speech+music and vocal+accompaniment mixtures show substantial gains in post-separation recovery while maintaining perceptual quality.",
-      "url": "https://arxiv.org/abs/2603.16805",
-      "pdfUrl": "https://arxiv.org/pdf/2603.16805.pdf",
-      "titleJa": "共同トレーニングによる分離優先型マルチストリームオーディオ透かしの実現"
-    },
-    {
-      "id": "2603.16713",
-      "arxivId": "2603.16713",
-      "title": "Evaluating Latent Space Structure in Timbre VAEs: A Comparative Study of Unsupervised, Descriptor-Conditioned, and Perceptual Feature-Conditioned Models",
-      "authors": [
-        "Joseph Cameron",
-        "Alan Blackwell"
-      ],
-      "publishedDate": "2026-03-17",
-      "categories": [
-        "cs.SD"
-      ],
-      "abstract": "We present a comparative evaluation of latent space organization in three Variational Autoencoders (VAEs) for musical timbre generation: an unsupervised VAE, a descriptor-conditioned VAE, and a VAE conditioned on continuous perceptual features from the AudioCommons timbral models. Using a curated dataset of electric guitar sounds labeled with 19 semantic descriptors across four intensity levels, we assess each model's latent structure with a suite of clustering and interpretability metrics. These include silhouette scores, timbre descriptor compactness, pitch-conditional separation, trajectory linearity, and cross-pitch consistency. Our findings show that conditioning on perceptual features yields a more compact, discriminative, and pitch-invariant latent space, outperforming both the unsupervised and discrete descriptor-conditioned models. This work highlights the limitations of one-hot semantic conditioning and provides methodological tools for evaluating timbre latent spaces, contributing to the development of more controllable and interpretable generative audio models.",
-      "url": "https://arxiv.org/abs/2603.16713",
-      "pdfUrl": "https://arxiv.org/pdf/2603.16713.pdf",
-      "titleJa": "音色VAEにおける潜在空間構造の評価：教師なし学習、記述子条件付き学習、知覚特徴条件付き学習モデルの比較研究"
-    },
-    {
-      "id": "2603.18299",
-      "arxivId": "2603.18299",
-      "title": "ALIGN: Adversarial Learning for Generalizable Speech Neuroprosthesis",
-      "authors": [
-        "Zhanqi Zhang",
-        "Shun Li",
-        "Bernardo L. Sabatini",
-        "Mikio Aoi",
-        "Gal Mishne"
-      ],
-      "publishedDate": "2026-03-18",
-      "categories": [
-        "cs.LG",
-        "cs.NE",
-        "cs.SD"
-      ],
-      "abstract": "Intracortical brain-computer interfaces (BCIs) can decode speech from neural activity with high accuracy when trained on data pooled across recording sessions. In realistic deployment, however, models must generalize to new sessions without labeled data, and performance often degrades due to cross-session nonstationarities (e.g., electrode shifts, neural turnover, and changes in user strategy). In this paper, we propose ALIGN, a session-invariant learning framework based on multi-domain adversarial neural networks for semi-supervised cross-session adaptation. ALIGN trains a feature encoder jointly with a phoneme classifier and a domain classifier operating on the latent representation. Through adversarial optimization, the encoder is encouraged to preserve task-relevant information while suppressing session-specific cues. We evaluate ALIGN on intracortical speech decoding and find that it generalizes consistently better to previously unseen sessions, improving both phoneme error rate and word error rate relative to baselines. These results indicate that adversarial domain alignment is an effective approach for mitigating session-level distribution shift and enabling robust longitudinal BCI decoding.",
-      "url": "https://arxiv.org/abs/2603.18299",
-      "pdfUrl": "https://arxiv.org/pdf/2603.18299.pdf",
-      "titleJa": "ALIGN：汎用的な音声神経補綴のための敵対的学習"
-    },
-    {
-      "id": "2603.17558",
-      "arxivId": "2603.17558",
-      "title": "Zipper-LoRA: Dynamic Parameter Decoupling for Speech-LLM based Multilingual Speech Recognition",
-      "authors": [
-        "Yuxiang Mei",
-        "Delai Qiu",
-        "Shengping Liu",
-        "Jiaen Liang",
-        "Yanhua Long"
-      ],
-      "publishedDate": "2026-03-18",
-      "categories": [
-        "cs.CL",
-        "cs.SD"
-      ],
-      "abstract": "Speech Large Language Models (Speech-LLMs) have emerged as a powerful approach for automatic speech recognition (ASR) by aligning speech encoders with large language models. However, adapting these systems to multilingual settings with imbalanced data distributions remains challenging. In such scenarios, a stability-plasticity dilemma often arises: fully shared Parameter-Efficient Fine-Tuning (PEFT) can cause negative inter-lingual interference for under-represented languages, while fully language-specific tuning limits the cross-lingual beneficial knowledge transfer needed for low-resource tasks. To address this, we propose Zipper-LoRA, a novel rank-level decoupling framework with three variants (Static, Hard, and Soft) that dynamically synthesizes LoRA updates from shared and language-specific subspaces. By using a lightweight language-conditioned router, Zipper-LoRA dynamically controls the contribution of each subspace at the LoRA rank level, enabling fine-grained sharing where languages are compatible and strict decoupling when conflicts occur. To further stabilize optimization under imbalanced data, we propose a two-stage training strategy with an Initial-B warm start that significantly accelerates convergence. Experiments on a 12-language mixed-resource setting show that Zipper-LoRA consistently outperforms both fully shared and independent baselines, particularly in extremely low-resource scenarios. Moreover, we demonstrate that these gains are robust across both chunked and non-chunked encoder configurations, confirming the framework's reliability for practical, large-scale multilingual ASR. Our code and data will be available at https://github.com/YuCeong-May/Zipper-LoRA for reproducibility.",
-      "url": "https://arxiv.org/abs/2603.17558",
-      "pdfUrl": "https://arxiv.org/pdf/2603.17558.pdf",
-      "titleJa": "Zipper-LoRA：音声LLMに基づく多言語音声認識のための動的パラメータ分離"
-    },
-    {
-      "id": "2603.18758",
-      "arxivId": "2603.18758",
-      "title": "Dual-Model Prediction of Affective Engagement and Vocal Attractiveness from Speaker Expressiveness in Video Learning",
-      "authors": [
-        "Hung-Yue Suen",
-        "Kuo-En Hung",
-        "Fan-Hsun Tseng"
-      ],
-      "publishedDate": "2026-03-19",
-      "categories": [
-        "cs.HC",
-        "cs.CV",
-        "cs.SD"
-      ],
-      "abstract": "This paper outlines a machine learning-enabled speaker-centric Emotion AI approach capable of predicting audience-affective engagement and vocal attractiveness in asynchronous video-based learning, relying solely on speaker-side affective expressions. Inspired by the demand for scalable, privacy-preserving affective computing applications, this speaker-centric Emotion AI approach incorporates two distinct regression models that leverage a massive corpus developed within Massive Open Online Courses (MOOCs) to enable affectively engaging experiences. The regression model predicting affective engagement is developed by assimilating emotional expressions emanating from facial dynamics, oculomotor features, prosody, and cognitive semantics, while incorporating a second regression model to predict vocal attractiveness based exclusively on speaker-side acoustic features. Notably, on speaker-independent test sets, both regression models yielded impressive predictive performance (R2 = 0.85 for affective engagement and R2 = 0.88 for vocal attractiveness), confirming that speaker-side affect can functionally represent aggregated audience feedback. This paper provides a speaker-centric Emotion AI approach substantiated by an empirical study discovering that speaker-side multimodal features, including acoustics, can prospectively forecast audience feedback without necessarily employing audience-side input information.",
-      "url": "https://arxiv.org/abs/2603.18758",
-      "pdfUrl": "https://arxiv.org/pdf/2603.18758.pdf",
-      "titleJa": "動画学習における話者の表現力から情動的関与と声の魅力を予測するデュアルモデル"
-    },
-    {
-      "id": "2603.16682",
-      "arxivId": "2603.16682",
-      "title": "A Semantic Timbre Dataset for the Electric Guitar",
-      "authors": [
-        "Joseph Cameron",
-        "Alan Blackwell"
-      ],
-      "publishedDate": "2026-03-17",
-      "categories": [
-        "cs.SD"
-      ],
-      "abstract": "Understanding and manipulating timbre is central to audio synthesis, yet this remains under-explored in machine learning due to a lack of annotated datasets linking perceptual timbre dimensions to semantic descriptors. We present the Semantic Timbre Dataset, a curated collection of monophonic electric guitar sounds, each labeled with one of 19 semantic timbre descriptors and corresponding magnitudes. These descriptors were derived from a qualitative analysis of physical and virtual guitar effect units and applied systematically to clean guitar tones. The dataset bridges perceptual timbre and machine learning representations, supporting learning for timbre control and semantic audio generation. We validate the dataset by training a variational autoencoder (VAE) on its latent space and evaluating it using human perceptual judgments and descriptor classifiers. Results show that the VAE captures timbral structure and enables smooth interpolation across descriptors. We release the dataset, code, and evaluation protocols to support timbre-aware generative AI research.",
-      "url": "https://arxiv.org/abs/2603.16682",
-      "pdfUrl": "https://arxiv.org/pdf/2603.16682.pdf",
-      "titleJa": "エレキギターのセマンティック音色データセット"
+      "titleJa": "FedTrident：連合学習における毒物攻撃に対する耐性のある道路状況分類"
     },
     {
       "id": "2603.16093",
@@ -1530,6 +1596,56 @@
       "titleJa": "LoopLens：ループベースの音楽作曲における検索を創造としてサポートする"
     },
     {
+      "id": "2603.16966",
+      "arxivId": "2603.16966",
+      "title": "CineSRD: Leveraging Visual, Acoustic, and Linguistic Cues for Open-World Visual Media Speaker Diarization",
+      "authors": [
+        "Liangbin Huang",
+        "Xiaohua Liao",
+        "Chaoqun Cui",
+        "Shijing Wang",
+        "Zhaolong Huang",
+        "Yanlong Du",
+        "Wenji Mao"
+      ],
+      "publishedDate": "2026-03-17",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MM",
+        "cs.SD",
+        "eess.AS"
+      ],
+      "abstract": "Traditional speaker diarization systems have primarily focused on constrained scenarios such as meetings and interviews, where the number of speakers is limited and acoustic conditions are relatively clean. To explore open-world speaker diarization, we extend this task to the visual media domain, encompassing complex audiovisual programs such as films and TV series. This new setting introduces several challenges, including long-form video understanding, a large number of speakers, cross-modal asynchrony between audio and visual cues, and uncontrolled in-the-wild variability. To address these challenges, we propose Cinematic Speaker Registration & Diarization (CineSRD), a unified multimodal framework that leverages visual, acoustic, and linguistic cues from video, speech, and subtitles for speaker annotation. CineSRD first performs visual anchor clustering to register initial speakers and then integrates an audio language model for speaker turn detection, refining annotations and supplementing unregistered off-screen speakers. Furthermore, we construct and release a dedicated speaker diarization benchmark for visual media that includes Chinese and English programs. Experimental results demonstrate that CineSRD achieves superior performance on the proposed benchmark and competitive results on conventional datasets, validating its robustness and generalizability in open-world visual media settings.",
+      "url": "https://arxiv.org/abs/2603.16966",
+      "pdfUrl": "https://arxiv.org/pdf/2603.16966.pdf",
+      "titleJa": "CineSRD：オープンワールド型ビジュアルメディアにおける話者ダイアライゼーションのための視覚、音響、言語的手がかりの活用"
+    },
+    {
+      "id": "2603.16201",
+      "arxivId": "2603.16201",
+      "title": "Robust Generative Audio Quality Assessment: Disentangling Quality from Spurious Correlations",
+      "authors": [
+        "Kuan-Tang Huang",
+        "Chien-Chun Wang",
+        "Cheng-Yeh Yang",
+        "Hung-Shin Lee",
+        "Hsin-Min Wang",
+        "Berlin Chen"
+      ],
+      "publishedDate": "2026-03-17",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.SD",
+        "eess.SP"
+      ],
+      "abstract": "The rapid proliferation of AI-Generated Content (AIGC) has necessitated robust metrics for perceptual quality assessment. However, automatic Mean Opinion Score (MOS) prediction models are often compromised by data scarcity, predisposing them to learn spurious correlations-- such as dataset-specific acoustic signatures-- rather than generalized quality features. To address this, we leverage domain adversarial training (DAT) to disentangle true quality perception from these nuisance factors. Unlike prior works that rely on static domain priors, we systematically investigate domain definition strategies ranging from explicit metadata-driven labels to implicit data-driven clusters. Our findings reveal that there is no \"one-size-fits-all\" domain definition; instead, the optimal strategy is highly dependent on the specific MOS aspect being evaluated. Experimental results demonstrate that our aspect-specific domain strategy effectively mitigates acoustic biases, significantly improving correlation with human ratings and achieving superior generalization on unseen generative scenarios.",
+      "url": "https://arxiv.org/abs/2603.16201",
+      "pdfUrl": "https://arxiv.org/pdf/2603.16201.pdf",
+      "titleJa": "堅牢な生成型音声品質評価：偽相関から品質を切り離す"
+    },
+    {
       "id": "2603.16086",
       "arxivId": "2603.16086",
       "title": "Towards the Vision-Sound-Language-Action Paradigm: The HEAR Framework for Sound-Centric Manipulation",
@@ -1594,7 +1710,7 @@
         "cs.MM",
         "eess.AS"
       ],
-      "abstract": "Existing video-to-audio (V2A) generation methods predominantly rely on text prompts alongside visual information to synthesize audio. However, two critical bottlenecks persist: semantic granularity gaps in training data, such as conflating acoustically distinct sounds under coarse labels, and textual ambiguity in describing micro-acoustic features. These bottlenecks make it difficult to perform fine-grained sound synthesis using text-controlled modes. To address these limitations, we propose AC-Foley, an audio-conditioned V2A model that directly leverages reference audio to achieve precise and fine-grained control over generated sounds. This approach enables fine-grained sound synthesis, timbre transfer, zero-shot sound generation, and improved audio quality. By directly conditioning on audio signals, our approach bypasses the semantic ambiguities of text descriptions while enabling precise manipulation of acoustic attributes. Empirically, AC-Foley achieves state-of-the-art performance for Foley generation when conditioned on reference audio, while remaining competitive with state-of-the-art video-to-audio methods even without audio conditioning.",
+      "abstract": "Existing video-to-audio (V2A) generation methods predominantly rely on text prompts alongside visual information to synthesize audio. However, two critical bottlenecks persist: semantic granularity gaps in training data, such as conflating acoustically distinct sounds under coarse labels, and textual ambiguity in describing micro-acoustic features. These bottlenecks make it difficult to perform fine-grained sound synthesis using text-controlled modes. To address these limitations, we propose AC-Foley, an audio-conditioned V2A model that directly leverages reference audio to achieve precise and fine-grained control over generated sounds. This approach enables fine-grained sound synthesis, timbre transfer, zero-shot sound generation, and improved audio quality. By directly conditioning on audio signals, our approach bypasses the semantic ambiguities of text descriptions while enabling precise manipulation of acoustic attributes. Empirically, AC-Foley achieves state-of-the-art performance for Foley generation when conditioned on reference audio, while remaining competitive with state-of-the-art video-to-audio methods even without audio conditioning. Code and demo are available at: https://ff2416.github.io/AC-Foley-Page",
       "url": "https://arxiv.org/abs/2603.15597",
       "pdfUrl": "https://arxiv.org/pdf/2603.15597.pdf",
       "titleJa": "AC-Foley：音響転送機能を備えた、基準音声誘導型ビデオ・オーディオ合成"
@@ -1623,92 +1739,8 @@
       "url": "https://arxiv.org/abs/2603.15516",
       "pdfUrl": "https://arxiv.org/pdf/2603.15516.pdf",
       "titleJa": "spINAch：話者の年齢と性別を統制したフランス語放送音声の通時的コーパス"
-    },
-    {
-      "id": "2603.15352",
-      "arxivId": "2603.15352",
-      "title": "NV-Bench: Benchmark of Nonverbal Vocalization Synthesis for Expressive Text-to-Speech Generation",
-      "authors": [
-        "Qinke Ni",
-        "Huan Liao",
-        "Dekun Chen",
-        "Yuxiang Wang",
-        "Zhizheng Wu"
-      ],
-      "publishedDate": "2026-03-16",
-      "categories": [
-        "cs.SD",
-        "cs.AI",
-        "eess.AS"
-      ],
-      "abstract": "While recent text-to-speech (TTS) systems increasingly integrate nonverbal vocalizations (NVs), their evaluations lack standardized metrics and reliable ground-truth references. To bridge this gap, we propose NV-Bench, the first benchmark grounded in a functional taxonomy that treats NVs as communicative acts rather than acoustic artifacts. NV-Bench comprises 1,651 multi-lingual, in-the-wild utterances with paired human reference audio, balanced across 14 NV categories. We introduce a dual-dimensional evaluation protocol: (1) Instruction Alignment, utilizing the proposed paralinguistic character error rate (PCER) to assess controllability, (2) Acoustic Fidelity, measuring the distributional gap to real recordings to assess acoustic realism. We evaluate diverse TTS models and develop two baselines. Experimental results demonstrate a strong correlation between our objective metrics and human perception, establishing NV-Bench as a standardized evaluation framework.",
-      "url": "https://arxiv.org/abs/2603.15352",
-      "pdfUrl": "https://arxiv.org/pdf/2603.15352.pdf",
-      "titleJa": "NV-Bench：表現力豊かなテキスト音声生成のための非言語音声合成ベンチマーク"
-    },
-    {
-      "id": "2603.15045",
-      "arxivId": "2603.15045",
-      "title": "LLMs and Speech: Integration vs. Combination",
-      "authors": [
-        "Robin Schmitt",
-        "Albert Zeyer",
-        "Mohammad Zeineldeen",
-        "Ralf Schlüter",
-        "Hermann Ney"
-      ],
-      "publishedDate": "2026-03-16",
-      "categories": [
-        "eess.AS"
-      ],
-      "abstract": "In this work, we study how to best utilize pre-trained LLMs for automatic speech recognition. Specifically, we compare the tight integration of an acoustic model (AM) with the LLM (\"speech LLM\") to the traditional way of combining AM and LLM via shallow fusion. For tight integration, we provide ablations on the effect of different label units, fine-tuning strategies, LLM sizes and pre-training data, attention interfaces, encoder downsampling, text prompts, and length normalization. Additionally, we investigate joint recognition with a CTC model to mitigate hallucinations of speech LLMs and present effective optimizations for this joint recognition. For shallow fusion, we investigate the effect of fine-tuning the LLM on the transcriptions using different label units, and we compare rescoring AM hypotheses to single-pass recognition with label-wise or delayed fusion of AM and LLM scores. We train on Librispeech and Loquacious and evaluate our models on the HuggingFace ASR leaderboard.",
-      "url": "https://arxiv.org/abs/2603.15045",
-      "pdfUrl": "https://arxiv.org/pdf/2603.15045.pdf",
-      "titleJa": "法学修士（LLM）とスピーチ：統合か組み合わせか"
-    },
-    {
-      "id": "2603.14986",
-      "arxivId": "2603.14986",
-      "title": "Deep Filter Estimation from Inter-Frame Correlations for Monaural Speech Dereverberation",
-      "authors": [
-        "Ui-Hyeop Shin",
-        "Jun Hyung Kim",
-        "Jangyeon Kim",
-        "Wooseok Kim",
-        "Hyung-Min Park"
-      ],
-      "publishedDate": "2026-03-16",
-      "categories": [
-        "eess.AS"
-      ],
-      "abstract": "Speech dereverberation in distant-microphone scenarios remains challenging due to the high correlation between reverberation and target signals, often leading to poor generalization in real-world environments. We propose IF-CorrNet, a correlation-to-filter architecture designed for robustness against acoustic variability. Unlike conventional black-box mapping methods that directly estimate complex spectra, IF-CorrNet explicitly exploits inter-frame STFT correlations to estimate multi-frame deep filters for each time-frequency bin. By shifting the learning objective from direct mapping to filter estimation, the network effectively constrains the solution space, which simplifies the training process and mitigates overfitting to synthetic data. Experimental results on the REVERB Challenge dataset demonstrate that IF-CorrNet achieves a substantial gain in the SRMR metric on RealData, confirming its robustness in suppressing reverberation and noise in practical, non-synthetic environments.",
-      "url": "https://arxiv.org/abs/2603.14986",
-      "pdfUrl": "https://arxiv.org/pdf/2603.14986.pdf",
-      "titleJa": "単耳音声の残響除去のためのフレーム間相関に基づく深層フィルタ推定"
-    },
-    {
-      "id": "2603.14853",
-      "arxivId": "2603.14853",
-      "title": "WhispSynth: Scaling Multilingual Whisper Corpus through Real Data Curation and A Novel Pitch-free Generative Framework",
-      "authors": [
-        "Tianyi Tan",
-        "Jiaxin Ye",
-        "Yuanming Zhang",
-        "Xiaohuai Le",
-        "Xianjun Xia",
-        "Chuanzeng Huang",
-        "Jing Lu"
-      ],
-      "publishedDate": "2026-03-16",
-      "categories": [
-        "cs.SD"
-      ],
-      "abstract": "Whisper generation is constrained by the difficulty of data collection. Because whispered speech has low acoustic amplitude, high-fidelity recording is challenging. In this paper, we introduce WhispSynth, a large-scale multilingual corpus constructed via a novel high-fidelity generative framework. Specifically, we propose a pipeline integrating Differentiable Digital Signal Processing (DDSP)-based pitch-free method with Text-to-Speech (TTS) models. This framework refines a comprehensive collection of resources, including our newly constructed WhispNJU dataset, into 118 hours of high-fidelity whispered speech from 479 speakers. Unlike standard synthetic or noisy real data, our data engine faithfully preserves source vocal timbre and linguistic content while ensuring acoustic consistency, providing a robust foundation for text-to-whisper research. Experimental results demonstrate that WhispSynth exhibits significantly higher quality than existing corpora. Moreover, our CosyWhisper, tuned with WhispSynth, achieves speech naturalness on par with ground-truth samples. The official implementation and related resources are available at https://github.com/tan90xx/cosywhisper.",
-      "url": "https://arxiv.org/abs/2603.14853",
-      "pdfUrl": "https://arxiv.org/pdf/2603.14853.pdf",
-      "titleJa": "WhispSynth：実データキュレーションと新しいピッチフリー生成フレームワークによる多言語ささやきコーパスの拡張"
     }
   ],
-  "lastUpdated": "2026-03-22T01:10:00.904696",
+  "lastUpdated": "2026-03-23T01:10:45.420871",
   "totalCount": 76
 }
