@@ -1,436 +1,491 @@
 {
   "papers": [
     {
-      "id": "2603.25741",
-      "arxivId": "2603.25741",
-      "title": "Vega: Learning to Drive with Natural Language Instructions",
+      "id": "2603.26660",
+      "arxivId": "2603.26660",
+      "title": "Ruka-v2: Tendon Driven Open-Source Dexterous Hand with Wrist and Abduction for Robot Learning",
       "authors": [
-        "Sicheng Zuo",
-        "Yuxuan Li",
-        "Wenzhao Zheng",
-        "Zheng Zhu",
-        "Jie Zhou",
-        "Jiwen Lu"
+        " Xinqi",
+        " Liu",
+        "Ruoxi Hu",
+        "Alejandro Ojeda Olarte",
+        "Zhuoran Chen",
+        "Kenny Ma",
+        "Charles Cheng Ji",
+        "Lerrel Pinto",
+        "Raunaq Bhirangi",
+        "Irmak Guzey"
       ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.RO"
-      ],
-      "abstract": "Vision-language-action models have reshaped autonomous driving to incorporate languages into the decision-making process. However, most existing pipelines only utilize the language modality for scene descriptions or reasoning and lack the flexibility to follow diverse user instructions for personalized driving. To address this, we first construct a large-scale driving dataset (InstructScene) containing around 100,000 scenes annotated with diverse driving instructions with the corresponding trajectories. We then propose a unified Vision-Language-World-Action model, Vega, for instruction-based generation and planning. We employ the autoregressive paradigm to process visual inputs (vision) and language instructions (language) and the diffusion paradigm to generate future predictions (world modeling) and trajectories (action). We perform joint attention to enable interactions between the modalities and use individual projection layers for different modalities for more capabilities. Extensive experiments demonstrate that our method not only achieves superior planning performance but also exhibits strong instruction-following abilities, paving the way for more intelligent and personalized driving systems.",
-      "url": "https://arxiv.org/abs/2603.25741",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25741.pdf",
-      "titleJa": "Vega：自然言語による説明で運転を学ぶ"
-    },
-    {
-      "id": "2603.25740",
-      "arxivId": "2603.25740",
-      "title": "Drive My Way: Preference Alignment of Vision-Language-Action Model for Personalized Driving",
-      "authors": [
-        "Zehao Wang",
-        "Huaide Jiang",
-        "Shuaiwu Dong",
-        "Yuping Wang",
-        "Hang Qiu",
-        "Jiachen Li"
-      ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.RO",
-        "cs.AI",
-        "cs.CV",
-        "cs.LG",
-        "cs.MA"
+        "cs.AI"
       ],
-      "abstract": "Human driving behavior is inherently personal, which is shaped by long-term habits and influenced by short-term intentions. Individuals differ in how they accelerate, brake, merge, yield, and overtake across diverse situations. However, existing end-to-end autonomous driving systems either optimize for generic objectives or rely on fixed driving modes, lacking the ability to adapt to individual preferences or interpret natural language intent. To address this gap, we propose Drive My Way (DMW), a personalized Vision-Language-Action (VLA) driving framework that aligns with users' long-term driving habits and adapts to real-time user instructions. DMW learns a user embedding from our personalized driving dataset collected across multiple real drivers and conditions the policy on this embedding during planning, while natural language instructions provide additional short-term guidance. Closed-loop evaluation on the Bench2Drive benchmark demonstrates that DMW improves style instruction adaptation, and user studies show that its generated behaviors are recognizable as each driver's own style, highlighting personalization as a key capability for human-centered autonomous driving. Our data and code are available at https://dmw-cvpr.github.io/.",
-      "url": "https://arxiv.org/abs/2603.25740",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25740.pdf",
-      "titleJa": "自分好みの運転を：パーソナライズされた運転のための視覚・言語・行動モデルの嗜好の整合"
+      "abstract": "Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom - 2 per finger and 3 at the thumb - buildable for under $1,300. It was one of the first fully open-sourced humanoid hands, and introduced a novel data-driven approach to finger control that captures tendon dynamics within the control system. Despite these contributions, Ruka lacked two degrees of freedom essential for closely imitating human behavior: wrist mobility and finger adduction/abduction. In this paper, we introduce Ruka-v2: a fully open-sourced, tendon-driven humanoid hand featuring a decoupled 2-DOF parallel wrist and abduction/adduction at the fingers. The parallel wrist adds smooth, independent flexion/extension and radial/ulnar deviation, enabling manipulation in confined environments such as cabinets. Abduction enables motions such as grasping thin objects, in-hand rotation, and calligraphy. We present the design of Ruka-v2 and evaluate it against Ruka through user studies on teleoperated tasks, finding a 51.3% reduction in completion time and a 21.2% increase in success rate. We further demonstrate its full range of applications for robot learning: bimanual and single-arm teleoperation across 13 dexterous tasks, and autonomous policy learning on 3 tasks. All 3D print files, assembly instructions, controller software, and videos are available at https://ruka-hand-v2.github.io/ .",
+      "url": "https://arxiv.org/abs/2603.26660",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26660.pdf",
+      "titleJa": "Ruka-v2：腱駆動型オープンソースの手首と外転機能を備えたロボット学習用器用ハンド"
     },
     {
-      "id": "2603.25737",
-      "arxivId": "2603.25737",
-      "title": "Training the Knowledge Base through Evidence Distillation and Write-Back Enrichment",
+      "id": "2603.26653",
+      "arxivId": "2603.26653",
+      "title": "PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning",
       "authors": [
-        "Yuxing Lu",
-        "Xukai Zhao",
-        "Wei Wu",
-        "Jinzhuo Wang"
+        "Shaoxuan Li",
+        "Zhixuan Zhao",
+        "Hanze Deng",
+        "Zirun Ma",
+        "Shulin Tian",
+        "Zuyan Liu",
+        "Yushi Hu",
+        "Haoning Wu",
+        "Yuhao Dong",
+        "Benlin Liu",
+        "Ziwei Liu",
+        "Ranjay Krishna"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
       "categories": [
+        "cs.CV",
         "cs.AI",
         "cs.CL",
-        "cs.IR"
-      ],
-      "abstract": "The knowledge base in a retrieval-augmented generation (RAG) system is typically assembled once and never revised, even though the facts a query requires are often fragmented across documents and buried in irrelevant content. We argue that the knowledge base should be treated as a trainable component and propose WriteBack-RAG, a framework that uses labeled examples to identify where retrieval succeeds, isolate the relevant documents, and distill them into compact knowledge units that are indexed alongside the original corpus. Because the method modifies only the corpus, it can be applied once as an offline preprocessing step and combined with any RAG pipeline. Across four RAG methods, six benchmarks, and two LLM backbones, WriteBack-RAG improves every evaluated setting, with gains averaging +2.14%. Cross-method transfer experiments further show that the distilled knowledge benefits RAG pipelines other than the one used to produce it, confirming that the improvement resides in the corpus itself.",
-      "url": "https://arxiv.org/abs/2603.25737",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25737.pdf",
-      "titleJa": "証拠抽出と書き戻しによる知識ベースの強化を通じたトレーニング"
-    },
-    {
-      "id": "2603.25730",
-      "arxivId": "2603.25730",
-      "title": "PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference",
-      "authors": [
-        "Xiaofeng Mao",
-        "Shaohao Rui",
-        "Kaining Ying",
-        "Bo Zheng",
-        "Chuanhao Li",
-        "Mingmin Chi",
-        "Kaipeng Zhang"
-      ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "abstract": "Autoregressive video diffusion models have demonstrated remarkable progress, yet they remain bottlenecked by intractable linear KV-cache growth, temporal repetition, and compounding errors during long-video generation. To address these challenges, we present PackForcing, a unified framework that efficiently manages the generation history through a novel three-partition KV-cache strategy. Specifically, we categorize the historical context into three distinct types: (1) Sink tokens, which preserve early anchor frames at full resolution to maintain global semantics; (2) Mid tokens, which achieve a massive spatiotemporal compression (32x token reduction) via a dual-branch network fusing progressive 3D convolutions with low-resolution VAE re-encoding; and (3) Recent tokens, kept at full resolution to ensure local temporal coherence. To strictly bound the memory footprint without sacrificing quality, we introduce a dynamic top-$k$ context selection mechanism for the mid tokens, coupled with a continuous Temporal RoPE Adjustment that seamlessly re-aligns position gaps caused by dropped tokens with negligible overhead. Empowered by this principled hierarchical context compression, PackForcing can generate coherent 2-minute, 832x480 videos at 16 FPS on a single H200 GPU. It achieves a bounded KV cache of just 4 GB and enables a remarkable 24x temporal extrapolation (5s to 120s), operating effectively either zero-shot or trained on merely 5-second clips. Extensive results on VBench demonstrate state-of-the-art temporal consistency (26.07) and dynamic degree (56.25), proving that short-video supervision is sufficient for high-quality, long-video synthesis. https://github.com/ShandaAI/PackForcing",
-      "url": "https://arxiv.org/abs/2603.25730",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25730.pdf",
-      "titleJa": "PackForcing: 短い動画のトレーニングで長い動画のサンプリングと長いコンテキスト推論が可能"
-    },
-    {
-      "id": "2603.25728",
-      "arxivId": "2603.25728",
-      "title": "PixelSmile: Toward Fine-Grained Facial Expression Editing",
-      "authors": [
-        "Jiabin Hua",
-        "Hengyuan Xu",
-        "Aojie Li",
-        "Wei Cheng",
-        "Gang Yu",
-        "Xingjun Ma",
-        "Yu-Gang Jiang"
-      ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "abstract": "Fine-grained facial expression editing has long been limited by intrinsic semantic overlap. To address this, we construct the Flex Facial Expression (FFE) dataset with continuous affective annotations and establish FFE-Bench to evaluate structural confusion, editing accuracy, linear controllability, and the trade-off between expression editing and identity preservation. We propose PixelSmile, a diffusion framework that disentangles expression semantics via fully symmetric joint training. PixelSmile combines intensity supervision with contrastive learning to produce stronger and more distinguishable expressions, achieving precise and stable linear expression control through textual latent interpolation. Extensive experiments demonstrate that PixelSmile achieves superior disentanglement and robust identity preservation, confirming its effectiveness for continuous, controllable, and fine-grained expression editing, while naturally supporting smooth expression blending.",
-      "url": "https://arxiv.org/abs/2603.25728",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25728.pdf",
-      "titleJa": "PixelSmile：きめ細やかな顔表情編集を目指して"
-    },
-    {
-      "id": "2603.25727",
-      "arxivId": "2603.25727",
-      "title": "Back to Basics: Revisiting ASR in the Age of Voice Agents",
-      "authors": [
-        "Geeyang Tay",
-        "Wentao Ma",
-        "Jaewon Lee",
-        "Yuzhi Tang",
-        "Daniel Lee",
-        "Weisu Yin",
-        "Dongming Shen",
-        "Silin Meng",
-        "Yi Zhu",
-        "Mu Li",
-        "Alex Smola"
-      ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.AI",
-        "cs.MM"
-      ],
-      "abstract": "Automatic speech recognition (ASR) systems have achieved near-human accuracy on curated benchmarks, yet still fail in real-world voice agents under conditions that current evaluations do not systematically cover. Without diagnostic tools that isolate specific failure factors, practitioners cannot anticipate which conditions, in which languages, will cause what degree of degradation. We introduce WildASR, a multilingual (four-language) diagnostic benchmark sourced entirely from real human speech that factorizes ASR robustness along three axes: environmental degradation, demographic shift, and linguistic diversity. Evaluating seven widely used ASR systems, we find severe and uneven performance degradation, and model robustness does not transfer across languages or conditions. Critically, models often hallucinate plausible but unspoken content under partial or degraded inputs, creating concrete safety risks for downstream agent behavior. Our results demonstrate that targeted, factor-isolated evaluation is essential for understanding and improving ASR reliability in production systems. Besides the benchmark itself, we also present three analytical tools that practitioners can use to guide deployment decisions.",
-      "url": "https://arxiv.org/abs/2603.25727",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25727.pdf",
-      "titleJa": "基本に立ち返る：音声エージェント時代のASR再考"
-    },
-    {
-      "id": "2603.25723",
-      "arxivId": "2603.25723",
-      "title": "Natural-Language Agent Harnesses",
-      "authors": [
-        "Linyue Pan",
-        "Lexiao Zou",
-        "Shuo Guo",
-        "Jingchen Ni",
-        "Hai-Tao Zheng"
-      ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "abstract": "Agent performance increasingly depends on \\emph{harness engineering}, yet harness design is usually buried in controller code and runtime-specific conventions, making it hard to transfer, compare, and study as a scientific object. We ask whether the high-level control logic of an agent harness can instead be externalized as a portable executable artifact. We introduce \\textbf{Natural-Language Agent Harnesses} (NLAHs), which express harness behavior in editable natural language, and \\textbf{Intelligent Harness Runtime} (IHR), a shared runtime that executes these harnesses through explicit contracts, durable artifacts, and lightweight adapters. Across coding and computer-use benchmarks, we conduct controlled evaluations of operational viability, module ablation, and code-to-text harness migration.",
-      "url": "https://arxiv.org/abs/2603.25723",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25723.pdf",
-      "titleJa": "自然言語エージェントの活用"
-    },
-    {
-      "id": "2603.25720",
-      "arxivId": "2603.25720",
-      "title": "R-C2: Cycle-Consistent Reinforcement Learning Improves Multimodal Reasoning",
-      "authors": [
-        "Zirui Zhang",
-        "Haoyu Dong",
-        "Kexin Pei",
-        "Chengzhi Mao"
-      ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.AI",
-        "cs.CV"
-      ],
-      "abstract": "Robust perception and reasoning require consistency across sensory modalities. Yet current multimodal models often violate this principle, yielding contradictory predictions for visual and textual representations of the same concept. Rather than masking these failures with standard voting mechanisms, which can amplify systematic biases, we show that cross-modal inconsistency provides a rich and natural signal for learning. We introduce RC2, a reinforcement learning framework that resolves internal conflicts by enforcing cross-modal cycle consistency. By requiring a model to perform backward inference, switch modalities, and reliably reconstruct the answer through forward inference, we obtain a dense, label-free reward. This cyclic constraint encourages the model to align its internal representations autonomously. Optimizing for this structure mitigates modality-specific errors and improves reasoning accuracy by up to 7.6 points. Our results suggest that advanced reasoning emerges not only from scaling data, but also from enforcing a structurally consistent understanding of the world.",
-      "url": "https://arxiv.org/abs/2603.25720",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25720.pdf",
-      "titleJa": "R-C2：サイクル一貫性強化学習によるマルチモーダル推論の改善"
-    },
-    {
-      "id": "2603.25719",
-      "arxivId": "2603.25719",
-      "title": "Agent Factories for High Level Synthesis: How Far Can General-Purpose Coding Agents Go in Hardware Optimization?",
-      "authors": [
-        "Abhishek Bhandwaldar",
-        "Mihir Choudhury",
-        "Ruchir Puri",
-        "Akash Srivastava"
-      ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.AI",
-        "cs.AR",
         "cs.LG"
       ],
-      "abstract": "We present an empirical study of how far general-purpose coding agents -- without hardware-specific training -- can optimize hardware designs from high-level algorithmic specifications. We introduce an agent factory, a two-stage pipeline that constructs and coordinates multiple autonomous optimization agents. In Stage~1, the pipeline decomposes a design into sub-kernels, independently optimizes each using pragma and code-level transformations, and formulates an Integer Linear Program (ILP) to assemble globally promising configurations under an area constraint. In Stage~2, it launches $N$ expert agents over the top ILP solutions, each exploring cross-function optimizations such as pragma recombination, loop fusion, and memory restructuring that are not captured by sub-kernel decomposition. We evaluate the approach on 12 kernels from HLS-Eval and Rodinia-HLS using Claude Code (Opus~4.5/4.6) with AMD Vitis HLS. Scaling from 1 to 10 agents yields a mean $8.27\\times$ speedup over baseline, with larger gains on harder benchmarks: streamcluster exceeds $20\\times$ and kmeans reaches approximately $10\\times$. Across benchmarks, agents consistently rediscover known hardware optimization patterns without domain-specific training, and the best designs often do not originate from top-ranked ILP candidates, indicating that global optimization exposes improvements missed by sub-kernel search. These results establish agent scaling as a practical and effective axis for HLS optimization.",
-      "url": "https://arxiv.org/abs/2603.25719",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25719.pdf",
-      "titleJa": "高レベル合成のためのエージェントファクトリー：汎用コーディングエージェントはハードウェア最適化においてどこまで貢献できるのか？"
+      "abstract": "We introduce PerceptionComp, a manually annotated benchmark for complex, long-horizon, perception-centric video reasoning. PerceptionComp is designed so that no single moment is sufficient: answering each question requires multiple temporally separated pieces of visual evidence and compositional constraints under conjunctive and sequential logic, spanning perceptual subtasks such as objects, attributes, relations, locations, actions, and events, and requiring skills including semantic recognition, visual correspondence, temporal reasoning, and spatial reasoning. The benchmark contains 1,114 highly complex questions on 279 videos from diverse domains including city walk tours, indoor villa tours, video games, and extreme outdoor sports, with 100% manual annotation. Human studies show that PerceptionComp requires substantial test-time thinking and repeated perception steps: participants take much longer than on prior benchmarks, and accuracy drops to near chance (18.97%) when rewatching is disallowed. State-of-the-art MLLMs also perform substantially worse on PerceptionComp than on existing benchmarks: the best model in our evaluation, Gemini-3-Flash, reaches only 45.96% accuracy in the five-choice setting, while open-source models remain below 40%. These results suggest that perception-centric long-horizon video reasoning remains a major bottleneck, and we hope PerceptionComp will help drive progress in perceptual reasoning.",
+      "url": "https://arxiv.org/abs/2603.26653",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26653.pdf",
+      "titleJa": "PerceptionComp：複雑な知覚中心推論のためのビデオベンチマーク"
     },
     {
-      "id": "2603.25716",
-      "arxivId": "2603.25716",
-      "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
+      "id": "2603.26648",
+      "arxivId": "2603.26648",
+      "title": "Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification",
       "authors": [
-        "Kaijin Chen",
-        "Dingkang Liang",
-        "Xin Zhou",
-        "Yikang Ding",
-        "Xiaoqiang Liu",
-        "Pengfei Wan",
-        "Xiang Bai"
+        "Zehai He",
+        "Wenyi Hong",
+        "Zhen Yang",
+        "Ziyang Pan",
+        "Mingdao Liu",
+        "Xiaotao Gu",
+        "Jie Tang"
       ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "abstract": "Video world models have shown immense potential in simulating the physical world, yet existing memory mechanisms primarily treat environments as static canvases. When dynamic subjects hide out of sight and later re-emerge, current methods often struggle, leading to frozen, distorted, or vanishing subjects. To address this, we introduce Hybrid Memory, a novel paradigm requiring models to simultaneously act as precise archivists for static backgrounds and vigilant trackers for dynamic subjects, ensuring motion continuity during out-of-view intervals. To facilitate research in this direction, we construct HM-World, the first large-scale video dataset dedicated to hybrid memory. It features 59K high-fidelity clips with decoupled camera and subject trajectories, encompassing 17 diverse scenes, 49 distinct subjects, and meticulously designed exit-entry events to rigorously evaluate hybrid coherence. Furthermore, we propose HyDRA, a specialized memory architecture that compresses memory into tokens and utilizes a spatiotemporal relevance-driven retrieval mechanism. By selectively attending to relevant motion cues, HyDRA effectively preserves the identity and motion of hidden subjects. Extensive experiments on HM-World demonstrate that our method significantly outperforms state-of-the-art approaches in both dynamic subject consistency and overall generation quality.",
-      "url": "https://arxiv.org/abs/2603.25716",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25716.pdf",
-      "titleJa": "目には見えないが、忘れられない：動的ビデオワールドモデルのためのハイブリッドメモリ"
-    },
-    {
-      "id": "2603.25699",
-      "arxivId": "2603.25699",
-      "title": "Neural Network Conversion of Machine Learning Pipelines",
-      "authors": [
-        "Man-Ling Sung",
-        "Jan Silovsky",
-        "Man-Hung Siu",
-        "Herbert Gish",
-        "Chinnu Pittapally"
-      ],
-      "publishedDate": "2026-03-26",
-      "categories": [
-        "cs.LG",
-        "cs.AI"
-      ],
-      "abstract": "Transfer learning and knowledge distillation has recently gained a lot of attention in the deep learning community. One transfer approach, the student-teacher learning, has been shown to successfully create ``small'' student neural networks that mimic the performance of a much bigger and more complex ``teacher'' networks. In this paper, we investigate an extension to this approach and transfer from a non-neural-based machine learning pipeline as teacher to a neural network (NN) student, which would allow for joint optimization of the various pipeline components and a single unified inference engine for multiple ML tasks. In particular, we explore replacing the random forest classifier by transfer learning to a student NN. We experimented with various NN topologies on 100 OpenML tasks in which random forest has been one of the best solutions. Our results show that for the majority of the tasks, the student NN can indeed mimic the teacher if one can select the right NN hyper-parameters. We also investigated the use of random forest for selecting the right NN hyper-parameters.",
-      "url": "https://arxiv.org/abs/2603.25699",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25699.pdf",
-      "titleJa": "機械学習パイプラインのニューラルネットワーク変換"
-    },
-    {
-      "id": "2603.25697",
-      "arxivId": "2603.25697",
-      "title": "The Kitchen Loop: User-Spec-Driven Development for a Self-Evolving Codebase",
-      "authors": [
-        "Yannick Roy"
-      ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.SE",
         "cs.AI"
       ],
-      "abstract": "Code production is now a commodity; the bottleneck is knowing what to build and proving it works. We present the Kitchen Loop, a framework for autonomous, self-evolving software built on a unified trust model: (1) a specification surface enumerating what the product claims to support; (2) 'As a User x 1000', where an LLM agent exercises that surface as a synthetic power user at 1,000x human cadence; (3) Unbeatable Tests, ground-truth verification the code author cannot fake; and (4) Drift Control, continuous quality measurement with automated pause gates. We validate across two production systems over 285+ iterations, producing 1,094+ merged pull requests with zero regressions detected by the regression oracle (methodology in Section 6.1). We observe emergent properties at scale: multi-iteration self-correction chains, autonomous infrastructure healing, and monotonically improving quality gates. The primitives are not new; our contribution is their composition into a production-tested system with the operational discipline that makes long-running autonomous evolution safe.",
-      "url": "https://arxiv.org/abs/2603.25697",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25697.pdf",
-      "titleJa": "キッチンループ：自己進化するコードベースのためのユーザー仕様主導型開発"
+      "abstract": "Recent advances in large language models have improved the capabilities of coding agents, yet systematic evaluation of complex, end-to-end website development remains limited. To address this gap, we introduce Vision2Web, a hierarchical benchmark for visual website development, spanning from static UI-to-code generation, interactive multi-page frontend reproduction, to long-horizon full-stack website development. The benchmark is constructed from real-world websites and comprises a total of 193 tasks across 16 categories, with 918 prototype images and 1,255 test cases. To support flexible, thorough and reliable evaluation, we propose workflow-based agent verification paradigm based on two complementary components: a GUI agent verifier and a VLM-based judge. We evaluate multiple visual language models instantiated under different coding-agent frameworks, revealing substantial performance gaps at all task levels, with state-of-the-art models still struggling on full-stack development.",
+      "url": "https://arxiv.org/abs/2603.26648",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26648.pdf",
+      "titleJa": "Vision2Web：エージェント検証機能を備えたビジュアルWebサイト開発のための階層型ベンチマーク"
     },
     {
-      "id": "2603.25692",
-      "arxivId": "2603.25692",
-      "title": "A Unified Memory Perspective for Probabilistic Trustworthy AI",
+      "id": "2603.26639",
+      "arxivId": "2603.26639",
+      "title": "Make Geometry Matter for Spatial Reasoning",
       "authors": [
-        "Xueji Zhao",
-        "Likai Pei",
-        "Jianbo Liu",
-        "Kai Ni",
-        "Ningyuan Cao"
+        "Shihua Zhang",
+        "Qiuhong Shen",
+        "Shizun Wang",
+        "Tianbo Pan",
+        "Xinchao Wang"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "abstract": "Empowered by large-scale training, vision-language models (VLMs) achieve strong image and video understanding, yet their ability to perform spatial reasoning in both static scenes and dynamic videos remains limited. Recent advances try to handle this limitation by injecting geometry tokens from pretrained 3D foundation models into VLMs. Nevertheless, we observe that naive token fusion followed by standard fine-tuning in this line of work often leaves such geometric cues underutilized for spatial reasoning, as VLMs tend to rely heavily on 2D visual cues. In this paper, we propose GeoSR, a framework designed to make geometry matter by encouraging VLMs to actively reason with geometry tokens. GeoSR introduces two key components: (1) Geometry-Unleashing Masking, which strategically masks portions of 2D vision tokens during training to weaken non-geometric shortcuts and force the model to consult geometry tokens for spatial reasoning; and (2) Geometry-Guided Fusion, a gated routing mechanism that adaptively amplifies geometry token contributions in regions where geometric evidence is critical. Together, these designs unleash the potential of geometry tokens for spatial reasoning tasks. Extensive experiments on both static and dynamic spatial reasoning benchmarks demonstrate that GeoSR consistently outperforms prior methods and establishes new state-of-the-art performance by effectively leveraging geometric information. The project page is available at https://suhzhang.github.io/GeoSR/.",
+      "url": "https://arxiv.org/abs/2603.26639",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26639.pdf",
+      "titleJa": "空間推論に幾何学を活かす"
+    },
+    {
+      "id": "2603.26632",
+      "arxivId": "2603.26632",
+      "title": "Machine Learning Transferability for Malware Detection",
+      "authors": [
+        "César Vieira",
+        "João Vitorino",
+        "Eva Maia",
+        "Isabel Praça"
+      ],
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "Malware continues to be a predominant operational risk for organizations, especially when obfuscation techniques are used to evade detection. Despite the ongoing efforts in the development of Machine Learning (ML) detection approaches, there is still a lack of feature compatibility in public datasets. This limits generalization when facing distribution shifts, as well as transferability to different datasets. This study evaluates the suitability of different data preprocessing approaches for the detection of Portable Executable (PE) files with ML models. The preprocessing pipeline unifies EMBERv2 (2,381-dim) features datasets, trains paired models under two training setups: EMBER + BODMAS and EMBER + BODMAS + ERMDS. Regarding model evaluation, both EMBER + BODMAS and EMBER + BODMAS + ERMDS models are tested against TRITIUM, INFERNO and SOREL-20M. ERMDS is also used for testing for the EMBER + BODMAS setup.",
+      "url": "https://arxiv.org/abs/2603.26632",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26632.pdf",
+      "titleJa": "マルウェア検出における機械学習の応用可能性"
+    },
+    {
+      "id": "2603.26610",
+      "arxivId": "2603.26610",
+      "title": "Think over Trajectories: Leveraging Video Generation to Reconstruct GPS Trajectories from Cellular Signaling",
+      "authors": [
+        "Ruixing Zhang",
+        "Hanzhang Jiang",
+        "Leilei Sun",
+        "Liangzhe Han",
+        "Jibin Wang",
+        "Weifeng Lv"
+      ],
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "abstract": "Mobile devices continuously interact with cellular base stations, generating massive volumes of signaling records that provide broad coverage for understanding human mobility. However, such records offer only coarse location cues (e.g., serving-cell identifiers) and therefore limit their direct use in applications that require high-precision GPS trajectories. This paper studies the Sig2GPS problem: reconstructing GPS trajectories from cellular signaling. Inspired by domain experts often lay the signaling trace on the map and sketch the corresponding GPS route, unlike conventional solutions that rely on complex multi-stage engineering pipelines or regress coordinates, Sig2GPS is reframed as an image-to-video generation task that directly operates in the map-visual domain: signaling traces are rendered on a map, and a video generation model is trained to draw a continuous GPS path. To support this paradigm, a paired signaling-to-trajectory video dataset is constructed to fine-tune an open-source video model, and a trajectory-aware reinforcement learning-based optimization method is introduced to improve generation fidelity via rewards. Experiments on large-scale real-world datasets show substantial improvements over strong engineered and learning-based baselines, while additional results on next GPS prediction indicate scalability and cross-city transferability. Overall, these results suggest that map-visual video generation provides a practical interface for trajectory data mining by enabling direct generation and refinement of continuous paths under map constraints.",
+      "url": "https://arxiv.org/abs/2603.26610",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26610.pdf",
+      "titleJa": "軌跡を再考する：動画生成を活用して携帯電話信号からGPS軌跡を再構築する"
+    },
+    {
+      "id": "2603.26603",
+      "arxivId": "2603.26603",
+      "title": "Sustainability Is Not Linear: Quantifying Performance, Energy, and Privacy Trade-offs in On-Device Intelligence",
+      "authors": [
+        "Eziyo Ehsani",
+        "Luca Giamattei",
+        "Ivano Malavolta",
+        "Roberto Pietrantuono"
+      ],
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "abstract": "The migration of Large Language Models (LLMs) from cloud clusters to edge devices promises enhanced privacy and offline accessibility, but this transition encounters a harsh reality: the physical constraints of mobile batteries, thermal limits, and, most importantly, memory constraints. To navigate this landscape, we constructed a reproducible experimental pipeline to profile the complex interplay between energy consumption, latency, and quality. Unlike theoretical studies, we captured granular power metrics across eight models ranging from 0.5B to 9B parameters without requiring root access, ensuring our findings reflect realistic user conditions. We harness this pipeline to conduct an empirical case study on a flagship Android device, the Samsung Galaxy S25 Ultra, establishing foundational hypotheses regarding the trade-offs between generation quality, performance, and resource consumption. Our investigation uncovered a counter-intuitive quantization-energy paradox. While modern importance-aware quantization successfully reduces memory footprints to fit larger models into RAM, we found it yields negligible energy savings compared to standard mixed-precision methods. This proves that for battery life, the architecture of the model, not its quantization scheme, is the decisive factor. We further identified that Mixture-of-Experts (MoE) architectures defy the standard size-energy trend, offering the storage capacity of a 7B model while maintaining the lower energy profile of a 1B to 2B model. Finally, an analysis of these multi-objective trade-offs reveals a pragmatic sweet spot of mid-sized models, such as Qwen2.5-3B, that effectively balance response quality with sustainable energy consumption.",
+      "url": "https://arxiv.org/abs/2603.26603",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26603.pdf",
+      "titleJa": "持続可能性は直線的ではない：デバイス内インテリジェンスにおけるパフォーマンス、エネルギー、プライバシーのトレードオフを定量化する"
+    },
+    {
+      "id": "2603.26592",
+      "arxivId": "2603.26592",
+      "title": "Evaluating Interactive 2D Visualization as a Sample Selection Strategy for Biomedical Time-Series Data Annotation",
+      "authors": [
+        "Einari Vaaras",
+        "Manu Airaksinen",
+        "Okko Räsänen"
+      ],
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.LG",
         "cs.AI",
-        "cs.AR",
-        "cs.ET"
+        "cs.HC"
       ],
-      "abstract": "Trustworthy artificial intelligence increasingly relies on probabilistic computation to achieve robustness, interpretability, security and privacy. In practical systems, such workloads interleave deterministic data access with repeated stochastic sampling across models, data paths and system functions, shifting performance bottlenecks from arithmetic units to memory systems that must deliver both data and randomness. Here we present a unified data-access perspective in which deterministic access is treated as a limiting case of stochastic sampling, enabling both modes to be analyzed within a common framework. This view reveals that increasing stochastic demand reduces effective data-access efficiency and can drive systems into entropy-limited operation. Based on this insight, we define memory-level evaluation criteria, including unified operation, distribution programmability, efficiency, robustness to hardware non-idealities and parallel compatibility. Using these criteria, we analyze limitations of conventional architectures and examine emerging probabilistic compute-in-memory approaches that integrate sampling with memory access, outlining pathways toward scalable hardware for trustworthy AI.",
-      "url": "https://arxiv.org/abs/2603.25692",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25692.pdf",
-      "titleJa": "確率的に信頼できるAIのための統一メモリの視点"
+      "abstract": "Reliable machine-learning models in biomedical settings depend on accurate labels, yet annotating biomedical time-series data remains challenging. Algorithmic sample selection may support annotation, but evidence from studies involving real human annotators is scarce. Consequently, we compare three sample selection methods for annotation: random sampling (RND), farthest-first traversal (FAFT), and a graphical user interface-based method enabling exploration of complementary 2D visualizations (2DVs) of high-dimensional data. We evaluated the methods across four classification tasks in infant motility assessment (IMA) and speech emotion recognition (SER). Twelve annotators, categorized as experts or non-experts, performed data annotation under a limited annotation budget, and post-annotation experiments were conducted to evaluate the sampling methods. Across all classification tasks, 2DV performed best when aggregating labels across annotators. In IMA, 2DV most effectively captured rare classes, but also exhibited greater annotator-to-annotator label distribution variability resulting from the limited annotation budget, decreasing classification performance when models were trained on individual annotators' labels; in these cases, FAFT excelled. For SER, 2DV outperformed the other methods among expert annotators and matched their performance for non-experts in the individual-annotator setting. A failure risk analysis revealed that RND was the safest choice when annotator count or annotator expertise was uncertain, whereas 2DV had the highest risk due to its greater label distribution variability. Furthermore, post-experiment interviews indicated that 2DV made the annotation task more interesting and enjoyable. Overall, 2DV-based sampling appears promising for biomedical time-series data annotation, particularly when the annotation budget is not highly constrained.",
+      "url": "https://arxiv.org/abs/2603.26592",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26592.pdf",
+      "titleJa": "生物医学時系列データ注釈におけるサンプル選択戦略としての対話型2D可視化の評価"
     },
     {
-      "id": "2603.25686",
-      "arxivId": "2603.25686",
-      "title": "Just Zoom In: Cross-View Geo-Localization via Autoregressive Zooming",
+      "id": "2603.26571",
+      "arxivId": "2603.26571",
+      "title": "Generation Is Compression: Zero-Shot Video Coding via Stochastic Rectified Flow",
       "authors": [
-        "Yunus Talha Erzurumlu",
-        "Jiyong Kwag",
-        "Alper Yilmaz"
+        "Ziyue Zeng",
+        "Xun Su",
+        "Haoyuan Liu",
+        "Bingyu Lu",
+        "Yui Tatsumi",
+        "Hiroshi Watanabe"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.CV",
         "cs.AI"
       ],
-      "abstract": "Cross-view geo-localization (CVGL) estimates a camera's location by matching a street-view image to geo-referenced overhead imagery, enabling GPS-denied localization and navigation. Existing methods almost universally formulate CVGL as an image-retrieval problem in a contrastively trained embedding space. This ties performance to large batches and hard negative mining, and it ignores both the geometric structure of maps and the coverage mismatch between street-view and overhead imagery. In particular, salient landmarks visible from the street view can fall outside a fixed satellite crop, making retrieval targets ambiguous and limiting explicit spatial inference over the map. We propose Just Zoom In, an alternative formulation that performs CVGL via autoregressive zooming over a city-scale overhead map. Starting from a coarse satellite view, the model takes a short sequence of zoom-in decisions to select a terminal satellite cell at a target resolution, without contrastive losses or hard negative mining. We further introduce a realistic benchmark with crowd-sourced street views and high-resolution satellite imagery that reflects real capture conditions. On this benchmark, Just Zoom In achieves state-of-the-art performance, improving Recall@1 within 50 m by 5.5% and Recall@1 within 100 m by 9.6% over the strongest contrastive-retrieval baseline. These results demonstrate the effectiveness of sequential coarse-to-fine spatial reasoning for cross-view geo-localization.",
-      "url": "https://arxiv.org/abs/2603.25686",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25686.pdf",
-      "titleJa": "ズームインするだけ：自己回帰ズームによるクロスビュー地理位置特定"
+      "abstract": "Existing generative video compression methods use generative models only as post-hoc reconstruction modules atop conventional codecs. We propose \\emph{Generative Video Codec} (GVC), a zero-shot framework that turns a pretrained video generative model into the codec itself: the transmitted bitstream directly specifies the generative decoding trajectory, with no retraining required. To enable this, we convert the deterministic rectified-flow ODE of modern video foundation models into an equivalent SDE at inference time, unlocking per-step stochastic injection points for codebook-driven compression. Building on this unified backbone, we instantiate three complementary conditioning strategies -- \\emph{Image-to-Video} (I2V) with adaptive tail-frame atom allocation, \\emph{Text-to-Video} (T2V) operating at near-zero side information as a pure generative prior, and \\emph{First-Last-Frame-to-Video} (FLF2V) with boundary-sharing GOP chaining for dual-anchor temporal control. Together, these variants span a principled trade-off space between spatial fidelity, temporal coherence, and compression efficiency. Experiments on standard benchmarks show that GVC achieves high-quality reconstruction below 0.002\\,bpp while supporting flexible bitrate control through a single hyperparameter.",
+      "url": "https://arxiv.org/abs/2603.26571",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26571.pdf",
+      "titleJa": "生成は圧縮である：確率的整流フローによるゼロショットビデオコーディング"
     },
     {
-      "id": "2603.25674",
-      "arxivId": "2603.25674",
-      "title": "Measuring What Matters -- or What's Convenient?: Robustness of LLM-Based Scoring Systems to Construct-Irrelevant Factors",
+      "id": "2603.26567",
+      "arxivId": "2603.26567",
+      "title": "Beyond Code Snippets: Benchmarking LLMs on Repository-Level Question Answering",
       "authors": [
-        "Cole Walsh",
-        "Rodica Ivan"
+        "Yoseph Berhanu Alebachew",
+        "Hunter Leary",
+        "Swanand Vaishampayan",
+        "Chris Brown"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "abstract": "Large Language Models (LLMs) have shown impressive capabilities across software engineering tasks, including question answering (QA). However, most studies and benchmarks focus on isolated functions or single-file snippets, overlooking the challenges of real-world program comprehension, which often spans multiple files and system-level dependencies. In this work, we introduce StackRepoQA, the first multi-project, repository-level question answering dataset constructed from 1,318 real developer questions and accepted answers across 134 open-source Java projects. Using this dataset, we systematically evaluate two widely used LLMs (Claude 3.5 Sonnet and GPT-4o) under both direct prompting and agentic configurations. We compare baseline performance with retrieval-augmented generation methods that leverage file-level retrieval and graph-based representations of structural dependencies. Our results show that LLMs achieve moderate accuracy at baseline, with performance improving when structural signals are incorporated. Nonetheless, overall accuracy remains limited for repository-scale comprehension. The analysis reveals that high scores often result from verbatim reproduction of Stack Overflow answers rather than genuine reasoning. To our knowledge, this is the first empirical study to provide such evidence in repository-level QA. We release StackRepoQA to encourage further research into benchmarks, evaluation protocols, and augmentation strategies that disentangle memorization from reasoning, advancing LLMs as reliable tool for repository-scale program comprehension.",
+      "url": "https://arxiv.org/abs/2603.26567",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26567.pdf",
+      "titleJa": "コードスニペットを超えて：リポジトリレベルの質問応答におけるLLMのベンチマーク"
+    },
+    {
+      "id": "2603.26556",
+      "arxivId": "2603.26556",
+      "title": "When Perplexity Lies: Generation-Focused Distillation of Hybrid Sequence Models",
+      "authors": [
+        "Juan Gabriel Kostelec",
+        "Xiang Wang",
+        "Axel Laborieux",
+        "Christos Sourmpis",
+        "Qinghai Guo"
+      ],
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.CL",
-        "cs.AI",
-        "cs.CY"
+        "cs.AI"
       ],
-      "abstract": "Automated systems have been widely adopted across the educational testing industry for open-response assessment and essay scoring. These systems commonly achieve performance levels comparable to or superior than trained human raters, but have frequently been demonstrated to be vulnerable to the influence of construct-irrelevant factors (i.e., features of responses that are unrelated to the construct assessed) and adversarial conditions. Given the rising usage of large language models in automated scoring systems, there is a renewed focus on ``hallucinations'' and the robustness of these LLM-based automated scoring approaches to construct-irrelevant factors. This study investigates the effects of construct-irrelevant factors on a dual-architecture LLM-based scoring system designed to score short essay-like open-response items in a situational judgment test. It was found that the scoring system was generally robust to padding responses with meaningless text, spelling errors, and writing sophistication. Duplicating large passages of text resulted in lower scores predicted by the system, on average, contradicting results from previous studies of non-LLM-based scoring systems, while off-topic responses were heavily penalized by the scoring system. These results provide encouraging support for the robustness of future LLM-based scoring systems when designed with construct relevance in mind.",
-      "url": "https://arxiv.org/abs/2603.25674",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25674.pdf",
-      "titleJa": "重要なことを測定するのか、それとも都合の良いことを測定するのか？：構成概念に無関係な要因に対するLLMベースのスコアリングシステムの堅牢性"
+      "abstract": "Converting a pretrained Transformer into a more efficient hybrid model through distillation offers a promising approach to reducing inference costs. However, achieving high-quality generation in distilled models requires careful joint design of both the student architecture and the distillation process. Many prior distillation works evaluate downstream multiple-choice benchmarks by ranking candidate answers with log-likelihood rather than requiring autoregressive generation, which can obscure important differences in model quality. For example, we show that a 7B parameter distilled model that nearly matches its teacher to within 0.2\\,pp under log-likelihood scoring actually falls behind by 20.8\\,pp when the model must generate answers autoregressively. We propose a Hybrid Kimi Delta Attention (Hybrid-KDA) architecture paired with GenDistill, a multi-stage distillation pipeline, and use generation-based evaluation throughout to guide design decisions. Applying this approach to Qwen3-0.6B, we systematically ablate six design axes: training objective, loss masking, training duration, dataset selection, parameter freezing, and architecture choice. We find that log-likelihood-based evaluation consistently underestimates the gap between teacher and student, and can in some cases reverse the ranking of design choices, meaning that conclusions drawn from perplexity-only evaluation may be misleading. Among the factors we study, dataset selection, completion-only masking, and freezing attention layers during post-training have the largest impact on generation quality. Our best Hybrid-KDA model retains 86--90\\% of teacher accuracy on knowledge benchmarks while reducing KV cache memory by up to 75\\% and improving time-to-first-token by 2--4$\\times$ at 128K-token contexts.",
+      "url": "https://arxiv.org/abs/2603.26556",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26556.pdf",
+      "titleJa": "難解さの根源：ハイブリッドシーケンスモデルの世代別抽出"
     },
     {
-      "id": "2603.25646",
-      "arxivId": "2603.25646",
-      "title": "A Mentalistic Interface for Probing Folk-Psychological Attribution to Non-Humanoid Robots",
+      "id": "2603.26551",
+      "arxivId": "2603.26551",
+      "title": "Beyond MACs: Hardware Efficient Architecture Design for Vision Backbones",
       "authors": [
-        "Giulio Pisaneschi",
-        "Pierpaolo Serio",
-        "Estelle Gerbier",
-        "Andrea Dan Ryals",
-        "Lorenzo Pollini",
-        "Mario G. C. A. Cimino"
+        "Moritz Nottebaum",
+        "Matteo Dunnhofer",
+        "Christian Micheloni"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "abstract": "Vision backbone networks play a central role in modern computer vision. Enhancing their efficiency directly benefits a wide range of downstream applications. To measure efficiency, many publications rely on MACs (Multiply Accumulate operations) as a predictor of execution time. In this paper, we experimentally demonstrate the shortcomings of such a metric, especially in the context of edge devices. By contrasting the MAC count and execution time of common architectural design elements, we identify key factors for efficient execution and provide insights to optimize backbone design. Based on these insights, we present LowFormer, a novel vision backbone family. LowFormer features a streamlined macro and micro design that includes Lowtention, a lightweight alternative to Multi-Head Self-Attention. Lowtention not only proves more efficient, but also enables superior results on ImageNet. Additionally, we present an edge GPU version of LowFormer, that can further improve upon its baseline's speed on edge GPU and desktop GPU. We demonstrate LowFormer's wide applicability by evaluating it on smaller image classification datasets, as well as adapting it to several downstream tasks, such as object detection, semantic segmentation, image retrieval, and visual object tracking. LowFormer models consistently achieve remarkable speed-ups across various hardware platforms compared to recent state-of-the-art backbones. Code and models are available at https://github.com/altair199797/LowFormer/blob/main/Beyond_MACs.md.",
+      "url": "https://arxiv.org/abs/2603.26551",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26551.pdf",
+      "titleJa": "MACを超えて：ビジョンバックボーンのためのハードウェア効率の高いアーキテクチャ設計"
+    },
+    {
+      "id": "2603.26542",
+      "arxivId": "2603.26542",
+      "title": "The Multi-AMR Buffer Storage, Retrieval, and Reshuffling Problem: Exact and Heuristic Approaches",
+      "authors": [
+        "Max Disselnmeyer",
+        "Thomas Bömer",
+        "Laura Dörr",
+        "Bastian Amberg",
+        "Anne Meyer"
+      ],
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.RO",
         "cs.AI",
-        "cs.HC"
+        "cs.MA",
+        "math.OC"
       ],
-      "abstract": "This paper presents an experimental platform for studying intentional-state attribution toward a non-humanoid robot. The system combines a simulated robot, realistic task environments, and large language model-based explanatory layers that can express the same behavior in mentalistic, teleological, or mechanistic terms. By holding behavior constant while varying the explanatory frame, the platform provides a controlled way to investigate how language and framing shape the adoption of the intentional stance in robotics.",
-      "url": "https://arxiv.org/abs/2603.25646",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25646.pdf",
-      "titleJa": "非人間型ロボットに対する民俗心理学的帰属を調査するための精神性インターフェース"
+      "abstract": "Buffer zones are essential in production systems to decouple sequential processes. In dense floor storage environments, such as space-constrained brownfield facilities, manual operation is increasingly challenged by severe labor shortages and rising operational costs. Automating these zones requires solving the Buffer Storage, Retrieval, and Reshuffling Problem (BSRRP). While previous work has addressed scenarios where the focus is limited to reshuffling and retrieving a fixed set of items, real-world manufacturing necessitates an adaptive approach that also incorporates arriving unit loads. This paper introduces the Multi-AMR BSRRP, coordinating a robot fleet to manage concurrent reshuffling, alongside time-windowed storage and retrieval tasks, within a shared floor area. We formulate a Binary Integer Programming (IP) model to obtain exact solutions for benchmarking purposes. As the problem is NP-hard, rendering exact methods computationally intractable for industrial scales, we propose a hierarchical heuristic. This approach decomposes the problem into an A* search for task-level sequence planning of unit load placements, and a Constraint Programming (CP) approach for multi-robot coordination and scheduling. Experiments demonstrate orders-of-magnitude computation time reductions compared to the exact formulation. These results confirm the heuristic's viability as responsive control logic for high-density production environments.",
+      "url": "https://arxiv.org/abs/2603.26542",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26542.pdf",
+      "titleJa": "マルチAMRバッファの保存、検索、および再配置問題：厳密解法とヒューリスティック解法"
     },
     {
-      "id": "2603.25638",
-      "arxivId": "2603.25638",
-      "title": "Beyond Via: Analysis and Estimation of the Impact of Large Language Models in Academic Papers",
+      "id": "2603.26539",
+      "arxivId": "2603.26539",
+      "title": "How Open Must Language Models be to Enable Reliable Scientific Inference?",
       "authors": [
-        "Mingmeng Geng",
-        "Yuhang Dong",
-        "Thierry Poibeau"
+        "James A. Michaelov",
+        "Catherine Arnett",
+        "Tyler A. Chang",
+        "Pamela D. Rivière",
+        "Samuel M. Taylor",
+        "Cameron R. Jones",
+        "Sean Trott",
+        "Roger P. Levy",
+        "Benjamin K. Bergen",
+        "Micah Altman"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "abstract": "How does the extent to which a model is open or closed impact the scientific inferences that can be drawn from research that involves it? In this paper, we analyze how restrictions on information about model construction and deployment threaten reliable inference. We argue that current closed models are generally ill-suited for scientific purposes, with some notable exceptions, and discuss ways in which the issues they present to reliable inference can be resolved or mitigated. We recommend that when models are used in research, potential threats to inference should be systematically identified along with the steps taken to mitigate them, and that specific justifications for model selection should be provided.",
+      "url": "https://arxiv.org/abs/2603.26539",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26539.pdf",
+      "titleJa": "信頼性の高い科学的推論を可能にするためには、言語モデルはどの程度オープンである必要があるのか？"
+    },
+    {
+      "id": "2603.26535",
+      "arxivId": "2603.26535",
+      "title": "Stabilizing Rubric Integration Training via Decoupled Advantage Normalization",
+      "authors": [
+        "Zelin Tan",
+        "Zhouliang Yu",
+        "Bohan Lin",
+        "Zijie Geng",
+        "Hejia Geng",
+        "Yudong Zhang",
+        "Mulei Zhang",
+        "Yang Chen",
+        "Shuyue Hu",
+        "Zhenfei Yin",
+        "Chen Zhang",
+        "Lei Bai"
+      ],
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.AI"
+      ],
+      "abstract": "We propose Process-Aware Policy Optimization (PAPO), a method that integrates process-level evaluation into Group Relative Policy Optimization (GRPO) through decoupled advantage normalization, to address two limitations of existing reward designs. Outcome reward models (ORM) evaluate only final-answer correctness, treating all correct responses identically regardless of reasoning quality, and gradually lose the advantage signal as groups become uniformly correct. Process reward models (PRM) offer richer supervision, but directly using PRM scores causes reward hacking, where models exploit verbosity to inflate scores while accuracy collapses. PAPO resolves both by composing the advantage from an outcome component Aout, derived from ORM and normalized over all responses, and a process component Aproc, derived from a rubric-based PRM and normalized exclusively among correct responses. This decoupled design ensures that Aout anchors training on correctness while Aproc differentiates reasoning quality without distorting the outcome signal. Experiments across multiple model scales and six benchmarks demonstrate that PAPO consistently outperforms ORM, reaching 51.3% vs.\\ 46.3% on OlympiadBench while continuing to improve as ORM plateaus and declines.",
+      "url": "https://arxiv.org/abs/2603.26535",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26535.pdf",
+      "titleJa": "分離型アドバンテージ正規化によるルーブリック統合トレーニングの安定化"
+    },
+    {
+      "id": "2603.26516",
+      "arxivId": "2603.26516",
+      "title": "ALBA: A European Portuguese Benchmark for Evaluating Language and Linguistic Dimensions in Generative LLMs",
+      "authors": [
+        "Inês Vieira",
+        "Inês Calvo",
+        "Iago Paulo",
+        "James Furtado",
+        "Rafael Ferreira",
+        "Diogo Tavares",
+        "Diogo Glória-Silva",
+        "David Semedo",
+        "João Magalhães"
+      ],
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.CL",
         "cs.AI",
-        "cs.CY",
-        "cs.DL",
         "cs.LG"
       ],
-      "abstract": "Through an analysis of arXiv papers, we report several shifts in word usage that are likely driven by large language models (LLMs) but have not previously received sufficient attention, such as the increased frequency of \"beyond\" and \"via\" in titles and the decreased frequency of \"the\" and \"of\" in abstracts. Due to the similarities among different LLMs, experiments show that current classifiers struggle to accurately determine which specific model generated a given text in multi-class classification tasks. Meanwhile, variations across LLMs also result in evolving patterns of word usage in academic papers. By adopting a direct and highly interpretable linear approach and accounting for differences between models and prompts, we quantitatively assess these effects and show that real-world LLM usage is heterogeneous and dynamic.",
-      "url": "https://arxiv.org/abs/2603.25638",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25638.pdf",
-      "titleJa": "Viaを超えて：学術論文における大規模言語モデルの影響の分析と推定"
+      "abstract": "As Large Language Models (LLMs) expand across multilingual domains, evaluating their performance in under-represented languages becomes increasingly important. European Portuguese (pt-PT) is particularly affected, as existing training data and benchmarks are mainly in Brazilian Portuguese (pt-BR). To address this, we introduce ALBA, a linguistically grounded benchmark designed from the ground up to assess LLM proficiency in linguistic-related tasks in pt-PT across eight linguistic dimensions, including Language Variety, Culture-bound Semantics, Discourse Analysis, Word Plays, Syntax, Morphology, Lexicology, and Phonetics and Phonology. ALBA is manually constructed by language experts and paired with an LLM-as-a-judge framework for scalable evaluation of pt-PT generated language. Experiments on a diverse set of models reveal performance variability across linguistic dimensions, highlighting the need for comprehensive, variety-sensitive benchmarks that support further development of tools in pt-PT.",
+      "url": "https://arxiv.org/abs/2603.26516",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26516.pdf",
+      "titleJa": "ALBA：生成言語モデルにおける言語および言語学的側面を評価するためのヨーロッパ・ポルトガル語ベンチマーク"
     },
     {
-      "id": "2603.25633",
-      "arxivId": "2603.25633",
-      "title": "Is Mathematical Problem-Solving Expertise in Large Language Models Associated with Assessment Performance?",
+      "id": "2603.26515",
+      "arxivId": "2603.26515",
+      "title": "JAL-Turn: Joint Acoustic-Linguistic Modeling for Real-Time and Robust Turn-Taking Detection in Full-Duplex Spoken Dialogue Systems",
       "authors": [
-        "Liang Zhang",
-        "Yu Fu",
-        "Xinyi Jin"
+        "Guangzhao Yang",
+        "Yu Pan",
+        "Shi Qiu",
+        "Ningjie Bai"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "abstract": "Despite recent advances, efficient and robust turn-taking detection remains a significant challenge in industrial-grade Voice AI agent deployments. Many existing systems rely solely on acoustic or semantic cues, leading to suboptimal accuracy and stability, while recent attempts to endow large language models with full-duplex capabilities require costly full-duplex data and incur substantial training and deployment overheads, limiting real-time performance. In this paper, we propose JAL-Turn, a lightweight and efficient speech-only turn-taking framework that adopts a joint acoustic-linguistic modeling paradigm, in which a cross-attention module adaptively integrates pre-trained acoustic representations with linguistic features to support low-latency prediction of hold vs shift states. By sharing a frozen ASR encoder, JAL-Turn enables turn-taking prediction to run fully in parallel with speech recognition, introducing no additional end-to-end latency or computational overhead. In addition, we introduce a scalable data construction pipeline that automatically derives reliable turn-taking labels from large-scale real-world dialogue corpora. Extensive experiments on public multilingual benchmarks and an in-house Japanese customer-service dataset show that JAL-Turn consistently outperforms strong state-of-the-art baselines in detection accuracy while maintaining superior real-time performance.",
+      "url": "https://arxiv.org/abs/2603.26515",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26515.pdf",
+      "titleJa": "JAL-Turn：全二重音声対話システムにおけるリアルタイムかつ堅牢なターン交代検出のための音響言語統合モデリング"
+    },
+    {
+      "id": "2603.26512",
+      "arxivId": "2603.26512",
+      "title": "CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation",
+      "authors": [
+        "Jesse Barkley",
+        "Rumi Loghmani",
+        "Amir Barati Farimani"
+      ],
+      "publishedDate": "2026-03-27",
       "categories": [
         "cs.AI"
       ],
-      "abstract": "Large Language Models (LLMs) are increasingly used in math education not only as problem solvers but also as assessors of learners' reasoning. However, it remains unclear whether stronger math problem-solving ability is associated with stronger step-level assessment performance. This study examines that relationship using the GSM8K and MATH subsets of PROCESSBENCH, a human-annotated benchmark for identifying the earliest erroneous step in mathematical reasoning. We evaluate two LLM-based math tutor agent settings, instantiated with GPT-4 and GPT-5, in two independent tasks on the same math problems: solving the original problem and assessing a benchmark-provided solution by predicting the earliest erroneous step. Results show a consistent within-model pattern: assessment accuracy is substantially higher on math problem items the same model solved correctly than on items it solved incorrectly, with statistically significant associations across both models and datasets. At the same time, assessment remains more difficult than direct problem solving, especially on error-present solutions. These findings suggest that math problem-solving expertise supports stronger assessment performance, but reliable step-level diagnosis also requires additional capabilities such as step tracking, monitoring, and precise error localization. The results have implications for the design and evaluation of AI-supported Adaptive Instructional Systems (AISs) for formative assessment in math education.",
-      "url": "https://arxiv.org/abs/2603.25633",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25633.pdf",
-      "titleJa": "大規模言語モデルにおける数学的問題解決能力は、評価成績と関連しているか？"
+      "abstract": "Existing methods for text-to-CAD generation either operate in a single pass with no geometric verification or rely on lossy visual feedback that cannot resolve dimensional errors. We present CADSmith, a multi-agent pipeline that generates CadQuery code from natural language. It then undergoes an iterative refinement process through two nested correction loops: an inner loop that resolves execution errors and an outer loop grounded in programmatic geometric validation. The outer loop combines exact measurements from the OpenCASCADE kernel (bounding box dimensions, volume, solid validity) with holistic visual assessment from an independent vision-language model Judge. This provides both the numerical precision and the high-level shape awareness needed to converge on the correct geometry. The system uses retrieval-augmented generation over API documentation rather than fine-tuning, maintaining a current database as the underlying CAD library evolves. We evaluate on a custom benchmark of 100 prompts in three difficulty tiers (T1 through T3) with three ablation configurations. Against a zero-shot baseline, CADSmith achieves a 100% execution rate (up from 95%), improves the median F1 score from 0.9707 to 0.9846, the median IoU from 0.8085 to 0.9629, and reduces the mean Chamfer Distance from 28.37 to 0.74, demonstrating that closed-loop refinement with programmatic geometric feedback substantially improves the quality and reliability of LLM-generated CAD models.",
+      "url": "https://arxiv.org/abs/2603.26512",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26512.pdf",
+      "titleJa": "CADSmith：プログラムによる幾何形状検証機能を備えたマルチエージェントCAD生成"
     },
     {
-      "id": "2603.25624",
-      "arxivId": "2603.25624",
-      "title": "Visual or Textual: Effects of Explanation Format and Personal Characteristics on the Perception of Explanations in an Educational Recommender System",
+      "id": "2603.26511",
+      "arxivId": "2603.26511",
+      "title": "AMALIA Technical Report: A Fully Open Source Large Language Model for European Portuguese",
       "authors": [
-        "Qurat Ul Ain",
-        "Mohamed Amine Chatti",
-        "Nasim Yazdian Varjani",
-        "Farah Kamal",
-        "Astrid Rosenthal-von der Pütten"
+        "Afonso Simplício",
+        "Gonçalo Vinagre",
+        "Miguel Moura Ramos",
+        "Diogo Tavares",
+        "Rafael Ferreira",
+        "Giuseppe Attanasio",
+        "Duarte M. Alves",
+        "Inês Calvo",
+        "Inês Vieira",
+        "Rui Guerra",
+        "James Furtado",
+        "Beatriz Canaverde",
+        "Iago Paulo",
+        "Vasco Ramos",
+        "Diogo Glória-Silva",
+        "Miguel Faria",
+        "Marcos Treviso",
+        "Daniel Gomes",
+        "Pedro Gomes",
+        "David Semedo",
+        "André Martins",
+        "João Magalhães"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
       "categories": [
-        "cs.HC",
+        "cs.CL",
         "cs.AI",
-        "cs.CY"
+        "cs.LG"
       ],
-      "abstract": "Explanations are central to improving transparency, trust, and user satisfaction in recommender systems (RS), yet it remains unclear how different explanation formats (visual vs. textual) are suited to users with different personal characteristics (PCs). To this end, we report a within-subject user study (n=54) comparing visual and textual explanations and examine how explanation format and PCs jointly influence perceived control, transparency, trust, and satisfaction in an educational recommender system (ERS). Using robust mixed-effects models, we analyze the moderating effects of a wide range of PCs, including Big Five traits, need for cognition, decision making style, visualization familiarity, and technical expertise. Our results show that a well-designed visual, simple, interactive, selective, easy to understand visualization that clearly and intuitively communicates how user preferences are linked to recommendations, fosters perceived control, transparency, appropriate trust, and satisfaction in the ERS for most users, independent of their PCs. Moreover, we derive a set of guidelines to support the effective design of explanations in ERSs.",
-      "url": "https://arxiv.org/abs/2603.25624",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25624.pdf",
-      "titleJa": "視覚的かテキスト的か：教育推薦システムにおける説明の認識に対する説明形式と個人的特性の影響"
+      "abstract": "Despite rapid progress in open large language models (LLMs), European Portuguese (pt-PT) remains underrepresented in both training data and native evaluation, with machine-translated benchmarks likely missing the variant's linguistic and cultural nuances. We introduce AMALIA, a fully open LLM that prioritizes pt-PT by using more high-quality pt-PT data during both the mid- and post-training stages. To evaluate pt-PT more faithfully, we release a suite of pt-PT benchmarks that includes translated standard tasks and four new datasets targeting pt-PT generation, linguistic competence, and pt-PT/pt-BR bias. Experiments show that AMALIA matches strong baselines on translated benchmarks while substantially improving performance on pt-PT-specific evaluations, supporting the case for targeted training and native benchmarking for European Portuguese.",
+      "url": "https://arxiv.org/abs/2603.26511",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26511.pdf",
+      "titleJa": "AMALIA技術レポート：ヨーロッパポルトガル語のための完全オープンソース大規模言語モデル"
     },
     {
-      "id": "2603.25613",
-      "arxivId": "2603.25613",
-      "title": "Demographic Fairness in Multimodal LLMs: A Benchmark of Gender and Ethnicity Bias in Face Verification",
+      "id": "2603.26499",
+      "arxivId": "2603.26499",
+      "title": "AIRA_2: Overcoming Bottlenecks in AI Research Agents",
       "authors": [
-        "Ünsal Öztürk",
-        "Hatef Otroshi Shahreza",
-        "Sébastien Marcel"
+        "Karen Hambardzumyan",
+        "Nicolas Baldwin",
+        "Edan Toledo",
+        "Rishi Hazra",
+        "Michael Kuchnik",
+        "Bassel Al Omari",
+        "Thomas Simon Foster",
+        "Anton Protopopov",
+        "Jean-Christophe Gagnon-Audet",
+        "Ishita Mediratta",
+        "Kelvin Niu",
+        "Michael Shvartsman",
+        "Alisia Lupidi",
+        "Alexis Audran-Reiss",
+        "Parth Pathak",
+        "Tatiana Shavrina",
+        "Despoina Magka",
+        "Hela Momand",
+        "Derek Dunfield",
+        "Nicola Cancedda",
+        "Pontus Stenetorp",
+        "Carole-Jean Wu",
+        "Jakob Nicolaus Foerster",
+        "Yoram Bachrach",
+        "Martin Josifoski"
       ],
-      "publishedDate": "2026-03-26",
+      "publishedDate": "2026-03-27",
       "categories": [
-        "cs.CV",
         "cs.AI"
       ],
-      "abstract": "Multimodal Large Language Models (MLLMs) have recently been explored as face verification systems that determine whether two face images are of the same person. Unlike dedicated face recognition systems, MLLMs approach this task through visual prompting and rely on general visual and reasoning abilities. However, the demographic fairness of these models remains largely unexplored. In this paper, we present a benchmarking study that evaluates nine open-source MLLMs from six model families, ranging from 2B to 8B parameters, on the IJB-C and RFW face verification protocols across four ethnicity groups and two gender groups. We measure verification accuracy with the Equal Error Rate and True Match Rate at multiple operating points per demographic group, and we quantify demographic disparity with four FMR-based fairness metrics. Our results show that FaceLLM-8B, the only face-specialised model in our study, substantially outperforms general-purpose MLLMs on both benchmarks. The bias patterns we observe differ from those commonly reported for traditional face recognition, with different groups being most affected depending on the benchmark and the model. We also note that the most accurate models are not necessarily the fairest and that models with poor overall accuracy can appear fair simply because they produce uniformly high error rates across all demographic groups.",
-      "url": "https://arxiv.org/abs/2603.25613",
-      "pdfUrl": "https://arxiv.org/pdf/2603.25613.pdf",
-      "titleJa": "マルチモーダルLLMにおける人口統計学的公平性：顔認証における性別および民族バイアスのベンチマーク"
+      "abstract": "Existing research has identified three structural performance bottlenecks in AI research agents: (1) synchronous single-GPU execution constrains sample throughput, limiting the benefit of search; (2) a generalization gap where validation-based selection causes performance to degrade over extended search horizons; and (3) the limited capability of fixed, single-turn LLM operators imposes a ceiling on search performance. We introduce AIRA$_2$, which addresses these bottlenecks through three architectural choices: an asynchronous multi-GPU worker pool that increases experiment throughput linearly; a Hidden Consistent Evaluation protocol that delivers a reliable evaluation signal; and ReAct agents that dynamically scope their actions and debug interactively. On MLE-bench-30, AIRA$_2$ achieves a mean Percentile Rank of 71.8% at 24 hours - surpassing the previous best of 69.9% - and steadily improves to 76.0% at 72 hours. Ablation studies reveal that each component is necessary and that the \"overfitting\" reported in prior work was driven by evaluation noise rather than true data memorization.",
+      "url": "https://arxiv.org/abs/2603.26499",
+      "pdfUrl": "https://arxiv.org/pdf/2603.26499.pdf",
+      "titleJa": "AIRA_2：AI研究エージェントにおけるボトルネックの克服"
     }
   ],
-  "lastUpdated": "2026-03-30T01:18:52.016790",
+  "lastUpdated": "2026-03-31T01:15:45.970690",
   "totalCount": 20
 }
